@@ -1,2 +1,2 @@
 # PlaylistLP
-Playlistの採用サイトのLPです。
+ - Playlistの採用サイトのLPです。
