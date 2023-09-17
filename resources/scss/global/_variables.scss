@@ -1,0 +1,24 @@
+// colorやfontなどの変数ファイル
+
+//////////* Font *//////////
+
+// 日本語フォント
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+$base-font-Japanese: 'Noto Sans JP';
+
+// 欧文フォント
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+$base-font-English: 'Montserrat';
+
+//////////* Color *//////////
+
+// Color
+$color-white: #ffffff;
+$color-black: #333333;
+$color-balack-light: #595959;
+$color-logo-parts01: #F35A5A;
+$color-logo-parts02: #FF9933;
+$color-logo-parts03: #3F66A5;
+$color-logo-parts04: #00A7A3;
+$color-gray-light: #F4F4F4;
+$color-gray-black: #999999;
