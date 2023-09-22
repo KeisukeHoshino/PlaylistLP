@@ -4,11 +4,11 @@
 
 // 日本語フォント
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
-$base-font-Japanese: 'Noto Sans JP';
+$base-font-Japanese: 'Noto Sans JP', sans-serif;
 
 // 欧文フォント
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-$base-font-English: 'Montserrat';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+$base-font-English: 'Montserrat', sans-serif;
 
 //////////* Color *//////////
 
