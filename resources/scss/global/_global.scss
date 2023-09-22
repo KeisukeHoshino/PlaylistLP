@@ -1,0 +1,27 @@
+// 共通処理
+@charset "UTF-8";
+@use "./variables" as variables;
+
+body {
+    font-family: variables.$base-font-English, variables.$base-font-Japanese;
+    font-size: 12px;
+    line-height: 1.6;
+    color: variables.$color-black;
+}
+
+    ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: variables.$color-black;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: bottom;
+    max-width: 100%;
+    height: auto;
+}
