@@ -1,1 +1,48 @@
 // 募集要項ページについて
+@use "../global/variables" as variables;
+
+body{
+    background-color: variables.$color-white;
+}
+
+.title{
+    width: 90.66%;
+    padding: 120px 0px 70px 0px;
+
+    @media (640px <= width) {
+
+    }
+    @media (960px <= width) {
+    
+    }
+}
+
+h1 {
+    color: variables.$color-logo-parts03;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: 1.44px;
+
+    @media (640px <= width) {
+
+    }
+    @media (960px <= width) {
+    
+    }
+}
+
+.subtitle{
+    color: variables.$color-black;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+
+    @media (640px <= width) {
+
+    }
+    @media (960px <= width) {
+    
+    }
+}
