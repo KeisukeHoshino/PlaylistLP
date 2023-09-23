@@ -94,7 +94,7 @@ h1 {
     display: grid;
     gap: 30px;
 
-    .requirements-container{
+    .c-requirements-container{
         display: grid;
         gap: 15px;
 
@@ -120,4 +120,12 @@ h1 {
             display: block;
         }
     }
+}
+
+.c-requirements-heading-container{
+    width: 90.66%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    display: grid;
+    gap: 15px;
 }

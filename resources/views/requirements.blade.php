@@ -34,7 +34,7 @@
         </h3>
     </div>
     <div class="requirements-wrapper">
-        <div class="requirements-container">
+        <div class="c-requirements-container">
             <h4>
                 雇用形態
             </h4>
@@ -42,7 +42,7 @@
                 正社員 （当社規定による、半年間の試用期間を設けています）
             </p>
         </div>
-        <div class="requirements-container">
+        <div class="c-requirements-container">
             <h4>
                 勤務時間
             </h4>
@@ -54,7 +54,7 @@
                 ※上記は配属先のプロジェクトによって異なります。
             </p>
         </div>
-        <div class="requirements-container">
+        <div class="c-requirements-container">
             <h4>
                 勤務地
             </h4>
@@ -63,7 +63,7 @@
                 リモートの可能性有
             </p>
         </div>
-        <div class="requirements-container">
+        <div class="c-requirements-container">
             <h4>
                 給与
             </h4>
@@ -71,7 +71,7 @@
                 月給 23万円～35万円（固定残業手当を含む）<br>（あくまでも目安の金額であり、選考を通じてご相談させていただきます。）
             </p>
         </div>
-        <div class="requirements-container">
+        <div class="c-requirements-container">
             <h4>
                 有給休暇
             </h4>
@@ -79,7 +79,7 @@
                 入社初年度は入社月に応じて最大10日 （入社次年度以降 11日〜20日（最大20日））
             </p>
         </div>
-        <div class="requirements-container">
+        <div class="c-requirements-container">
             <h4>
                 休日・休暇
             </h4>
@@ -87,7 +87,7 @@
                 週休2日制/祝日休み/年末年始休暇/夏季休暇/会社の指定した休日/有給休暇/慶弔休暇/育休休暇/産前・産後休暇
             </p>
         </div>
-        <div class="requirements-container">
+        <div class="c-requirements-container">
             <h4>
                 待遇
             </h4>
@@ -98,7 +98,7 @@
                 賞与（業績 / 貢献に応じて当社規定により支給）
             </p>
         </div>
-        <div class="requirements-container">
+        <div class="c-requirements-container">
             <h4>
                 福利厚生
             </h4>
@@ -109,7 +109,7 @@
                 リファラル採用（インセンティブ有）
             </p>
         </div>
-        <div class="requirements-container">
+        <div class="c-requirements-container">
             <h4>
                 支援制度
             </h4>
@@ -120,7 +120,7 @@
                 PC / 備品貸与（モニター1台 / ノートPC1台 など）
             </p>
         </div>
-        <div class="requirements-container">
+        <div class="c-requirements-container">
             <h4>
                 研修
             </h4>
@@ -133,7 +133,7 @@
                 ※目指すキャリアに合わせてその他研修も可能
             </p>
         </div>
-        <div class="requirements-container">
+        <div class="c-requirements-container">
             <h4>
                 社員交流
             </h4>
@@ -154,13 +154,18 @@
             歓迎スキル
         </h3>
     </div>
+
     
-    <div>
-        下記一つでも当てはまれば、お気軽にご連絡下さい。
-        社会人経験（異業種可）
-        ITスクール卒業生（同等の知見でも可）
-        リーダー / マネジメント の経験
-        言語は問いませんが何らかの開発経験（チーム・個人問わず）
+    <div class="c-requirements-heading-container">
+        <p>
+            下記一つでも当てはまれば、お気軽にご連絡下さい。
+        </p>
+        <p>
+            社会人経験（異業種可）<br>
+            ITスクール卒業生（同等の知見でも可）<br>
+            リーダー / マネジメント の経験<br>
+            言語は問いませんが何らかの開発経験（チーム・個人問わず）
+        </p>
     </div>
 
     <div class="c-heading">
@@ -171,15 +176,19 @@
             将来キャリアアップ
         </h3>
     </div>
-    <div>
-        SES業界だからこそ、様々なプロジェクトを経験することで最新のスキルや知識習得にチャレンジしています！
-        なりたいエンジニアに向けてスキルを身に付けながら共に成長していきましょう！！
-        プロジェクトマネージャー/リーダー
-        フロントエンドエンジニア
-        バックエンドエンジニア
-        ネットワークエンジニア
-        セキュリティエンジニア
-        RPAエンジニア
+    <div class="c-requirements-heading-container">
+        <p>
+            SES業界だからこそ、様々なプロジェクトを経験することで最新のスキルや知識習得にチャレンジしています！<br>
+            なりたいエンジニアに向けてスキルを身に付けながら共に成長していきましょう！！<br>
+        </p>
+        <p>
+            ・プロジェクトマネージャー/リーダー<br>
+            ・フロントエンドエンジニア<br>
+            ・バックエンドエンジニア<br>
+            ・ネットワークエンジニア<br>
+            ・セキュリティエンジニア<br>
+            ・RPAエンジニア
+        </p>
     </div>
 
     <div class="c-heading">
@@ -190,15 +199,15 @@
             SES事業でのプロジェクト例
         </h3>
     </div>
-    <div>
-        社内DX化に向けた業務自動化開発
-        車載ソフトウェアの開発
-        商社のシステム運用
-        保険会社Webシステム開発案件
-        金融系の経営管理システムの開発
-        社内システムのユーザ管理
-        大手自動車メーカーのPMアシスタント
-        官公庁プロジェクトのサポート案件
+    <div class="c-requirements-heading-container">
+        ・社内DX化に向けた業務自動化開発<br>
+        ・車載ソフトウェアの開発<br>
+        ・商社のシステム運用<br>
+        ・保険会社Webシステム開発案件<br>
+        ・金融系の経営管理システムの開発<br>
+        ・社内システムのユーザ管理<br>
+        ・大手自動車メーカーのPMアシスタント<br>
+        ・官公庁プロジェクトのサポート案件
     </div>
 
     <div>
