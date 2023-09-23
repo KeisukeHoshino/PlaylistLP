@@ -25,7 +25,7 @@
         </ul>
     </div>
 
-    <div>
+    <div class="c-heading">
         <span>
             REQUIREMENTS
         </span>
@@ -131,7 +131,7 @@
     </div>
             
     
-    <div>
+    <div class="c-heading">
         <span>
             WELCOME SKILLS
         </span>
@@ -148,7 +148,7 @@
         言語は問いませんが何らかの開発経験（チーム・個人問わず）
     </div>
 
-    <div>
+    <div class="c-heading">
         <span>
             CAREER ADVANCEMENT
         </span>
@@ -167,7 +167,7 @@
         RPAエンジニア
     </div>
 
-    <div>
+    <div class="c-heading">
         <span>
             PROJECT CASE
         </span>
