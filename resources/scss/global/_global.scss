@@ -3,13 +3,22 @@
 @use "./variables" as variables;
 
 body {
-    font-family: variables.$base-font-English, variables.$base-font-Japanese;
+    font-family: variables.$base-font-Japanese;
+    font-weight: 700;
     font-size: 12px;
-    line-height: 1.6;
+    line-height: 1.8;
+    letter-spacing: 0.48px;
     color: variables.$color-black;
 }
 
-    ul{
+@media (640px <= width) {
+    body {
+        font-size: 14px;
+        letter-spacing: 0.56px;
+    }
+}
+
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
