@@ -157,6 +157,7 @@
 
     
     <div class="c-requirements-heading-container">
+        <img src="{{asset('img/requirements/requirements.jpeg')}}" class="c-requirements-img">
         <p>
             下記一つでも当てはまれば、お気軽にご連絡下さい。
         </p>
@@ -177,6 +178,7 @@
         </h3>
     </div>
     <div class="c-requirements-heading-container">
+        <img src="{{asset('/img/requirements/career_advancement.jpeg')}}" class="c-requirements-img">
         <p>
             SES業界だからこそ、様々なプロジェクトを経験することで最新のスキルや知識習得にチャレンジしています！<br>
             なりたいエンジニアに向けてスキルを身に付けながら共に成長していきましょう！！<br>
@@ -200,6 +202,7 @@
         </h3>
     </div>
     <div class="c-requirements-heading-container">
+        <img src="{{asset('/img/requirements/project_case.jpeg')}}" class="c-requirements-img">
         ・社内DX化に向けた業務自動化開発<br>
         ・車載ソフトウェアの開発<br>
         ・商社のシステム運用<br>
