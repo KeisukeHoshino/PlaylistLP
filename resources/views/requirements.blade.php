@@ -15,7 +15,7 @@
         </p>
     </div>
 
-    <div class="anchor">
+    <div class="requirements-anchor">
         <ul>
             <li><h6>募集要項</h6></li>
             <li><h6>歓迎スキル</h6></li>

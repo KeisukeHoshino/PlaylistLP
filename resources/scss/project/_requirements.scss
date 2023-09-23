@@ -46,3 +46,27 @@ h1 {
     
     }
 }
+
+.requirements-anchor{
+    width: 90.66%;
+    margin: 0 auto;
+    padding-bottom: 70px;
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px 20px;
+
+        @media (640px <= width) {
+
+            }
+        @media (960px <= width) {
+            
+            }
+        
+        li{
+            border-bottom: 1px solid variables.$color-black;
+            width: calc((100% - 20px) / 2);
+        }
+    }
+}
