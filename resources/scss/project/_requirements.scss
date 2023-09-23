@@ -86,3 +86,38 @@ h1 {
         font-size: 18px;
     }
 }
+
+.requirements-wrapper{
+    width: 90.66%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    display: grid;
+    gap: 30px;
+
+    .requirements-container{
+        display: grid;
+        gap: 15px;
+
+        h4{
+            font-size: 14px;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        h4:before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            display: inline-block;
+            width: 20px;
+            height: 3px;
+            background-color: variables.$color-logo-parts03;
+            border-radius: 2px;
+        }
+
+        p{
+            display: block;
+        }
+    }
+}
