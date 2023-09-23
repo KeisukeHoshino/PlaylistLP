@@ -6,11 +6,11 @@
 @endsection
 <body>
     
-    <div class="title">
+    <div class="requirements-title">
         <h1>
             REQUIREMENTS
         </h1>
-        <p class="subtitle">
+        <p class="requirements-subtitle">
             募集要項・選考フロー
         </p>
     </div>

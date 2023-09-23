@@ -1,11 +1,7 @@
 // 募集要項ページについて
 @use "../global/variables" as variables;
 
-body{
-    background-color: variables.$color-white;
-}
-
-.title{
+.requirements-title{
     width: 90.66%;
     padding: 120px 0px 70px 0px;
 
@@ -33,7 +29,7 @@ h1 {
     }
 }
 
-.subtitle{
+.requirements-subtitle{
     color: variables.$color-black;
     text-align: center;
     font-size: 12px;
