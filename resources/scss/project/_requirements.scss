@@ -1,1 +1,196 @@
 // 募集要項ページについて
+@use "../global/variables" as variables;
+
+.requirements-title{
+    width: 90.66%;
+    padding: 120px 0px 70px 0px;
+
+    @media (640px <= width) {
+
+    }
+    @media (960px <= width) {
+    
+    }
+}
+
+h1 {
+    font-family: variables.$base-font-English;
+    color: variables.$color-logo-parts03;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: 1.44px;
+
+    @media (640px <= width) {
+
+    }
+    @media (960px <= width) {
+    
+    }
+}
+
+.requirements-subtitle{
+    color: variables.$color-black;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+
+    @media (640px <= width) {
+
+    }
+    @media (960px <= width) {
+    
+    }
+}
+
+.requirements-anchor{
+    width: 90.66%;
+    margin: 0 auto;
+    padding-bottom: 70px;
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px 20px;
+
+        @media (640px <= width) {
+
+            }
+        @media (960px <= width) {
+            
+            }
+        
+        li{
+            border-bottom: 1px solid variables.$color-black;
+            width: calc((100% - 20px) / 2);
+        }
+    }
+}
+
+.c-heading{
+    width: 90.66%;
+    margin: 0 auto;
+    padding-bottom: 34px;
+
+    span{
+        font-family: variables.$base-font-English;
+        color: variables.$color-logo-parts03;
+        font-size: 10px;
+        font-weight: 800;
+        line-height: 27px;
+        letter-spacing: 0.4px;
+    }
+
+    h3{
+        font-size: 18px;
+    }
+}
+
+.requirements-wrapper{
+    width: 90.66%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    display: grid;
+    gap: 30px;
+
+    .c-requirements-container{
+        display: grid;
+        gap: 15px;
+
+        h4{
+            font-size: 14px;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        h4:before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            display: inline-block;
+            width: 20px;
+            height: 3px;
+            background-color: variables.$color-logo-parts03;
+            border-radius: 2px;
+        }
+
+        p{
+            display: block;
+        }
+    }
+}
+
+.c-requirements-heading-container{
+    width: 90.66%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    display: grid;
+    gap: 15px;
+
+    .c-requirements-img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+}
+
+.flow-wrapper{
+    width: 90.66%;
+    margin: 0 auto;
+
+    .c-flow-container{
+        gap: 25px;
+
+        .c-flow-item{
+            height: 185px;
+            flex-shrink: 0;
+            border-radius: 10px;
+            background: #F2F7FF;
+
+            .c-flow-itemNum{
+                display: flex;
+                width: 23.23%;
+                height: 16.21%;
+                flex-shrink: 0;
+                background-color: variables.$color-logo-parts03;
+                border-radius: 10px 0px;
+                font-family: variables.$base-font-English;
+                color: variables.$color-white;
+                font-weight: 800;
+
+                p:nth-child(1) {
+                    margin: 10 0 0 auto;
+                }
+
+                p:nth-child(2){
+                    margin: 0 auto 0 5;
+                    font-size: 20px;
+                    font-weight: 800;
+                }
+
+            }
+
+            .c-flow-itemText{
+                width: 88.23%;
+                margin: 0 auto;
+                text-align: center;
+
+                p:nth-child(1){
+                    margin: 10 0;
+                    font-size: 14px;
+                    color: variables.$color-logo-parts03;
+                    line-height: 25.2px;
+                    letter-spacing: 0.56px;
+                }
+            }
+
+        }
+        
+        .c-flow-arrow{
+            width: 90.66%;
+            margin: 25px auto;
+        }
+    }
+}
