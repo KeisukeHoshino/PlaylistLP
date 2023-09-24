@@ -34,6 +34,7 @@
         </h3>
     </div>
     <div class="requirements-wrapper">
+        <hr>
         <div class="c-requirements-container">
             <h4>
                 雇用形態
@@ -42,6 +43,7 @@
                 正社員 （当社規定による、半年間の試用期間を設けています）
             </p>
         </div>
+        <hr>
         <div class="c-requirements-container">
             <h4>
                 勤務時間
@@ -54,6 +56,7 @@
                 ※上記は配属先のプロジェクトによって異なります。
             </p>
         </div>
+        <hr>
         <div class="c-requirements-container">
             <h4>
                 勤務地
@@ -63,6 +66,7 @@
                 リモートの可能性有
             </p>
         </div>
+        <hr>
         <div class="c-requirements-container">
             <h4>
                 給与
@@ -71,6 +75,7 @@
                 月給 23万円～35万円（固定残業手当を含む）<br>（あくまでも目安の金額であり、選考を通じてご相談させていただきます。）
             </p>
         </div>
+        <hr>
         <div class="c-requirements-container">
             <h4>
                 有給休暇
@@ -79,6 +84,7 @@
                 入社初年度は入社月に応じて最大10日 （入社次年度以降 11日〜20日（最大20日））
             </p>
         </div>
+        <hr>
         <div class="c-requirements-container">
             <h4>
                 休日・休暇
@@ -87,6 +93,7 @@
                 週休2日制/祝日休み/年末年始休暇/夏季休暇/会社の指定した休日/有給休暇/慶弔休暇/育休休暇/産前・産後休暇
             </p>
         </div>
+        <hr>
         <div class="c-requirements-container">
             <h4>
                 待遇
@@ -98,6 +105,7 @@
                 賞与（業績 / 貢献に応じて当社規定により支給）
             </p>
         </div>
+        <hr>
         <div class="c-requirements-container">
             <h4>
                 福利厚生
@@ -109,6 +117,7 @@
                 リファラル採用（インセンティブ有）
             </p>
         </div>
+        <hr>
         <div class="c-requirements-container">
             <h4>
                 支援制度
@@ -120,6 +129,7 @@
                 PC / 備品貸与（モニター1台 / ノートPC1台 など）
             </p>
         </div>
+        <hr>
         <div class="c-requirements-container">
             <h4>
                 研修
@@ -133,6 +143,7 @@
                 ※目指すキャリアに合わせてその他研修も可能
             </p>
         </div>
+        <hr>
         <div class="c-requirements-container">
             <h4>
                 社員交流
@@ -143,6 +154,7 @@
                 社員旅行（2021年度オンライン海外ツアーinパリ）
             </p>
         </div>
+        <hr>
     </div>
             
     

@@ -115,15 +115,40 @@ h1 {
     display: grid;
     gap: 30px;
 
+    @media (640px <= width) {
+        width: 80.52%;
+        gap: 22px;
+
+        hr{
+            border: none;
+            border-bottom: 1px solid #F4F4F4;
+            margin: 0;
+        }
+    }
+
     .c-requirements-container{
         display: grid;
         gap: 15px;
+
+        @media (640px <= width) {
+            width: 93.63%;
+            margin: 0 50;
+            display: flex;
+            gap: 40px;
+        }
 
         h4{
             font-size: 14px;
             position: relative;
             display: inline-block;
             margin-bottom: 8px;
+            height: 25px;
+
+            @media (640px <= width) {
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.64px;
+            }
         }
 
         h4:before {
@@ -135,10 +160,18 @@ h1 {
             height: 3px;
             background-color: variables.$color-logo-parts03;
             border-radius: 2px;
+
+            @media (640px <= width) {
+                bottom: -8px;
+            }
         }
 
         p{
             display: block;
+
+            @media (640px <= width) {
+                font-size: 14px;
+            }
         }
     }
 }
