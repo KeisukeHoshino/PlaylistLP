@@ -60,7 +60,7 @@ h1 {
             gap: 40px;
 
             }
-        
+
         li{
             border-bottom: 1px solid variables.$color-black;
             width: calc((100% - 20px) / 2);
@@ -118,11 +118,17 @@ h1 {
     @media (640px <= width) {
         width: 80.52%;
         gap: 22px;
+    }
 
-        hr{
-            border: none;
-            border-bottom: 1px solid #F4F4F4;
+    tr{
+        padding: 16px 0;
+
+        @media (640px <= width) {
             margin: 0;
+            border-bottom: 1px solid #F4F4F4;
+            &:first-child{
+                border-top: 1px solid #F4F4F4;
+            }
         }
     }
 
@@ -137,12 +143,14 @@ h1 {
             gap: 40px;
         }
 
-        h4{
+        th{
             font-size: 14px;
             position: relative;
             display: inline-block;
             margin-bottom: 8px;
             height: 25px;
+            width: 15%;
+            text-align: start;
 
             @media (640px <= width) {
                 font-size: 16px;
@@ -151,7 +159,7 @@ h1 {
             }
         }
 
-        h4:before {
+        th:before {
             content: '';
             position: absolute;
             bottom: -5px;
@@ -166,10 +174,11 @@ h1 {
             }
         }
 
-        p{
+        td{
             display: block;
 
             @media (640px <= width) {
+                width: 85%;
                 font-size: 14px;
             }
         }
@@ -263,7 +272,7 @@ h1 {
             }
 
         }
-        
+
         .c-flow-arrow{
             width: 90.66%;
             margin: 25px auto;
