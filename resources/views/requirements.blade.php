@@ -219,7 +219,7 @@
     </div>
 
     
-    <div>
+    <div class="c-heading">
         <span>
             SELECTION FLOW
         </span>
@@ -228,35 +228,71 @@
         </h3>
     </div>
 
-    <div>
-        <div>
-            <div>
-                STEP 1
-                エントリーフォームからご応募
-                <button>ENTRY</button>
-                3営業日以内にご連絡させて頂きます。
+    <div class="flow-wrapper">
+        <div class="c-flow-container">
+            <div class="c-flow-item">
+                <div class="c-flow-itemNum">
+                    <p>STEP</p>
+                    <p>1</p>
+                </div>
+                <div  class="c-flow-itemText">
+                    <P>
+                        エントリーフォームからご応募
+                    </P>
+                    <button>ENTRY</button>
+                    <p>
+                        3営業日以内にご連絡させて頂きます。
+                    </p>
+                </div>
             </div>
-            <div>
-                <span>→</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12" fill="none" class="c-flow-arrow">
+                <path d="M0.383077 2.08378C-0.0890917 1.62697 0.325287 0.77604 1.02024 0.775406L20.2266 0.759488C20.8788 0.758921 21.1459 1.52168 20.6629 2.00472L11.3486 11.319C10.9437 11.7239 10.2813 11.7283 9.87117 11.3286L0.383077 2.08378Z" fill="#3F66A5"/>
+            </svg>
+            <div class="c-flow-item">
+                <div class="c-flow-itemNum">
+                    <p>STEP</p>
+                    <p>2</p>
+                </div>
+                <div class="c-flow-itemText">
+                    <P>
+                        カジュアル面談
+                    </P>
+                    <p>
+                        選考前に会社の社風や働き方を知ってもらうために、お話する機会を設けています。
+                        その後、希望者には面接に進んで頂きます。
+                    </p>
+                </div>
             </div>
-            <div>
-                STEP 2
-                カジュアル面談
-                選考前に会社の社風や働き方を知ってもらうために、お話する機会を設けています。
-                その後、希望者には面接に進んで頂きます。
-            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12" fill="none" class="c-flow-arrow">
+            <path d="M0.383077 2.08378C-0.0890917 1.62697 0.325287 0.77604 1.02024 0.775406L20.2266 0.759488C20.8788 0.758921 21.1459 1.52168 20.6629 2.00472L11.3486 11.319C10.9437 11.7239 10.2813 11.7283 9.87117 11.3286L0.383077 2.08378Z" fill="#3F66A5"/>
+            </svg>
         </div>
-        <span>→</span>
-        <div>
-            <div>
-                STEP 3
-                面接1〜2回
-                基本的には一次面接のみですが、稀に二次面接が必要となる場合がございます。
+        <div class="c-flow-container">
+            <div class="c-flow-item">
+                <div class="c-flow-itemNum">
+                    <p>STEP</p>
+                    <p>3</p>
+                </div>
+                <div class="c-flow-itemText">
+                    <P>
+                        面接1〜2回
+                    </P>
+                    <p>
+                        基本的には一次面接のみですが、稀に二次面接が必要となる場合がございます。                </p>
+                    </P>
+                </div>
             </div>
-            <span>→</span>
-            <div>
-                STEP 4
-                内定
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12" fill="none" class="c-flow-arrow">
+                <path d="M0.383077 2.08378C-0.0890917 1.62697 0.325287 0.77604 1.02024 0.775406L20.2266 0.759488C20.8788 0.758921 21.1459 1.52168 20.6629 2.00472L11.3486 11.319C10.9437 11.7239 10.2813 11.7283 9.87117 11.3286L0.383077 2.08378Z" fill="#3F66A5"/>
+            </svg>
+            <div class="c-flow-item">
+                <div class="c-flow-itemNum">
+                    <p>STEP</p>
+                    <p>4</p>
+                </div>
+                <div class="c-flow-itemText">
+                    <p>内定</p>
+                </div>
             </div>
         </div>
     </div>

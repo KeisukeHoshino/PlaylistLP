@@ -135,3 +135,62 @@ h1 {
         border-radius: 10px;
     }
 }
+
+.flow-wrapper{
+    width: 90.66%;
+    margin: 0 auto;
+
+    .c-flow-container{
+        gap: 25px;
+
+        .c-flow-item{
+            height: 185px;
+            flex-shrink: 0;
+            border-radius: 10px;
+            background: #F2F7FF;
+
+            .c-flow-itemNum{
+                display: flex;
+                width: 23.23%;
+                height: 16.21%;
+                flex-shrink: 0;
+                background-color: variables.$color-logo-parts03;
+                border-radius: 10px 0px;
+                font-family: variables.$base-font-English;
+                color: variables.$color-white;
+                font-weight: 800;
+
+                p:nth-child(1) {
+                    margin: 10 0 0 auto;
+                }
+
+                p:nth-child(2){
+                    margin: 0 auto 0 5;
+                    font-size: 20px;
+                    font-weight: 800;
+                }
+
+            }
+
+            .c-flow-itemText{
+                width: 88.23%;
+                margin: 0 auto;
+                text-align: center;
+
+                p:nth-child(1){
+                    margin: 10 0;
+                    font-size: 14px;
+                    color: variables.$color-logo-parts03;
+                    line-height: 25.2px;
+                    letter-spacing: 0.56px;
+                }
+            }
+
+        }
+        
+        .c-flow-arrow{
+            width: 90.66%;
+            margin: 25px auto;
+        }
+    }
+}
