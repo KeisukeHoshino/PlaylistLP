@@ -170,15 +170,17 @@
     
     <div class="c-requirements-heading-container">
         <img src="{{asset('img/requirements/requirements.jpeg')}}" class="c-requirements-img">
-        <p>
-            下記一つでも当てはまれば、お気軽にご連絡下さい。
-        </p>
-        <p>
-            社会人経験（異業種可）<br>
-            ITスクール卒業生（同等の知見でも可）<br>
-            リーダー / マネジメント の経験<br>
-            言語は問いませんが何らかの開発経験（チーム・個人問わず）
-        </p>
+        <div class="c-headingText">
+            <p>
+                下記一つでも当てはまれば、お気軽にご連絡下さい。
+            </p>
+            <p>
+                社会人経験（異業種可）<br>
+                ITスクール卒業生（同等の知見でも可）<br>
+                リーダー / マネジメント の経験<br>
+                言語は問いませんが何らかの開発経験（チーム・個人問わず）
+            </p>
+        </div>
     </div>
 
     <div class="c-heading">
@@ -189,20 +191,22 @@
             将来キャリアアップ
         </h3>
     </div>
-    <div class="c-requirements-heading-container">
+    <div class="c-requirements-heading-container headingContainer-reverse">
         <img src="{{asset('/img/requirements/career_advancement.jpeg')}}" class="c-requirements-img">
-        <p>
-            SES業界だからこそ、様々なプロジェクトを経験することで最新のスキルや知識習得にチャレンジしています！<br>
-            なりたいエンジニアに向けてスキルを身に付けながら共に成長していきましょう！！<br>
-        </p>
-        <p>
-            ・プロジェクトマネージャー/リーダー<br>
-            ・フロントエンドエンジニア<br>
-            ・バックエンドエンジニア<br>
-            ・ネットワークエンジニア<br>
-            ・セキュリティエンジニア<br>
-            ・RPAエンジニア
-        </p>
+        <div class="c-headingText">
+            <p>
+                SES業界だからこそ、様々なプロジェクトを経験することで最新のスキルや知識習得にチャレンジしています！<br>
+                なりたいエンジニアに向けてスキルを身に付けながら共に成長していきましょう！！<br>
+            </p>
+            <p>
+                ・プロジェクトマネージャー/リーダー<br>
+                ・フロントエンドエンジニア<br>
+                ・バックエンドエンジニア<br>
+                ・ネットワークエンジニア<br>
+                ・セキュリティエンジニア<br>
+                ・RPAエンジニア
+            </p>
+        </div>
     </div>
 
     <div class="c-heading">
@@ -215,14 +219,16 @@
     </div>
     <div class="c-requirements-heading-container">
         <img src="{{asset('/img/requirements/project_case.jpeg')}}" class="c-requirements-img">
-        ・社内DX化に向けた業務自動化開発<br>
-        ・車載ソフトウェアの開発<br>
-        ・商社のシステム運用<br>
-        ・保険会社Webシステム開発案件<br>
-        ・金融系の経営管理システムの開発<br>
-        ・社内システムのユーザ管理<br>
-        ・大手自動車メーカーのPMアシスタント<br>
-        ・官公庁プロジェクトのサポート案件
+        <div class="c-headingText">
+            ・社内DX化に向けた業務自動化開発<br>
+            ・車載ソフトウェアの開発<br>
+            ・商社のシステム運用<br>
+            ・保険会社Webシステム開発案件<br>
+            ・金融系の経営管理システムの開発<br>
+            ・社内システムのユーザ管理<br>
+            ・大手自動車メーカーのPMアシスタント<br>
+            ・官公庁プロジェクトのサポート案件
+        </div>
     </div>
 
     <div>
