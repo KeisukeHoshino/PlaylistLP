@@ -45,21 +45,29 @@ h1 {
     margin: 0 auto;
     padding-bottom: 70px;
 
+    @media (640px <= width) {
+        padding-bottom: 100px;
+
+        }
+
     ul{
         display: flex;
         flex-wrap: wrap;
         gap: 16px 20px;
 
         @media (640px <= width) {
+            flex-wrap: nowrap;
+            gap: 40px;
 
-            }
-        @media (960px <= width) {
-            
             }
         
         li{
             border-bottom: 1px solid variables.$color-black;
             width: calc((100% - 20px) / 2);
+
+            @media (640px <= width) {
+                width: calc((100% - 40px) / 2);
+            }
         }
     }
 }
