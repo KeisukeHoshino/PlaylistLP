@@ -27,6 +27,55 @@
     </div>
   </section>
 
+  {{--  お気に入りポイント --}}
+  <section class="p-top-points u-top-bg-orange">
+    <div class="c-top-inner-pc c-top-inner-sp">
+      <h2 class="c-top-heading-h2 -white"><span>Playlist <br class="u-top-only-sp">POINTS</span>実際に働く社員のPlaylistお気に入りポイント</h2>
+      <ul class="p-top-points_list">
+        <li data-frame-size-sp="large">
+          <p>
+            <picture>
+              <source srcset="/img/top/voice01-pc.svg" media="(min-width:640px)" type="image/svg+xml">
+              <img class="u-top-img" src="/img/top/voice01.svg" alt="SESだから自分が得たい・伸ばしたいスキルを効率的に学びながら働ける">
+            </picture>
+          </p>
+        </li>
+        <li data-frame-size-sp="small">
+          <p>
+            <picture>
+              <source srcset="/img/top/voice02-pc.svg" media="(min-width:640px)" type="image/svg+xml">
+              <img class="u-top-img" src="/img/top/voice02.svg" alt="研修が豊富だから業界未経験でも不安が少なかった">
+            </picture>
+          </p>
+        </li>
+        <li data-frame-size-sp="small">
+          <p>
+            <picture>
+              <source srcset="/img/top/voice03-pc.svg" media="(min-width:640px)" type="image/svg+xml">
+              <img class="u-top-img" src="/img/top/voice03.svg" alt="やりたい気持ちを応援、支援してくれる">
+            </picture>
+          </p>
+        </li>
+        <li data-frame-size-sp="large">
+          <p>
+            <picture>
+              <source srcset="/img/top/voice04-pc.svg" media="(min-width:640px)" type="image/svg+xml">
+              <img class="u-top-img" src="/img/top/voice04.svg" alt="現場によって使っているツールなども違うから様々なものに触れることができる">
+            </picture>
+          </p>
+        </li>
+        <li data-frame-size-sp="large">
+          <p>
+            <picture>
+              <source srcset="/img/top/voice05-pc.svg" media="(min-width:640px)" type="image/svg+xml">
+              <img class="u-top-img" src="/img/top/voice05.svg" alt="社員同士の距離感が近いから意見を言いやすい">
+            </picture>
+          </p>
+        </li>
+      </ul>
+      <a href="/member/" class="p-top-points_btn">社員のことをもっと知る</a>
+    </div>
+  </section>
 
 </main>
 

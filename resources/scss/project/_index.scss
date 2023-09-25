@@ -150,3 +150,166 @@
     }
   }
 }
+
+.p-top-points {
+  padding: 60px 0;
+
+  @media (640px <=width) {
+    padding: 100px 0;
+  }
+
+  &_list {
+    display: flex;
+    gap: 15px 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media (640px <=width) {
+      gap: 26px 40px;
+      justify-content: center;
+    }
+
+    li {
+      z-index: 0;
+      width: 100%;
+      position: relative;
+
+      @media (640px <=width) {
+        width: calc((100% - 80px) / 3);
+      }
+
+      &:nth-of-type(1) {
+        @media (640px <=width) {
+          order: 0;
+        }
+
+        &::before {
+          background-image: url("/img/top/bg-voice-red-right.png");
+
+          @media (640px <=width) {
+            background-image: url("/img/top/bg-voice-red-pc.png");
+          }
+        }
+      }
+
+      &:nth-of-type(2) {
+        @media (640px <=width) {
+          order: 1;
+        }
+
+        &::before {
+          background-image: url("/img/top/bg-voice-blue-small.png");
+
+          @media (640px <=width) {
+            background-image: url("/img/top/bg-voice-blue-pc.png");
+          }
+        }
+      }
+
+      &:nth-of-type(3) {
+        @media (640px <=width) {
+          order: 2;
+        }
+
+        &::before {
+          background-image: url("/img/top/bg-voice-green-small.png");
+
+          @media (640px <=width) {
+            background-image: url("/img/top/bg-voice-green-pc.png");
+          }
+        }
+      }
+
+      &:nth-of-type(4) {
+        @media (640px <=width) {
+          order: 4;
+        }
+
+        &::before {
+          background-image: url("/img/top/bg-voice-red-left.png");
+
+          @media (640px <=width) {
+            background-image: url("/img/top/bg-voice-red-pc.png");
+          }
+        }
+      }
+
+      &:nth-of-type(5) {
+        @media (640px <=width) {
+          order: 3;
+        }
+
+        &::before {
+          background-image: url("/img/top/bg-voice-green.png");
+
+          @media (640px <=width) {
+            background-image: url("/img/top/bg-voice-green-pc.png");
+          }
+        }
+      }
+
+      &[data-frame-size-sp="small"] {
+        @media (639px >=width) {
+          width: calc((100% - 20px) / 2);
+        }
+      }
+
+      &::before {
+        left: 0;
+        top: 50%;
+        content: "";
+        z-index: -1;
+        height: 100%;
+        position: absolute;
+        width: calc(100% + 4px);
+        background-size: 100% auto;
+        background-repeat: repeat-y;
+        background-repeat: no-repeat;
+        transform: translate(0, -50%);
+      }
+    }
+  }
+
+  &_btn {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    margin-top: 36px;
+    position: relative;
+    text-align: center;
+    padding: 17px 35px;
+    border-radius: 9999px;
+    background: variables.$color-white;
+    border: 2px solid variables.$color-black;
+    box-shadow: 4px 4px 0 variables.$color-black;
+
+    @media (640px <=width) {
+      font-size: 16px;
+      max-width: 340px;
+      padding: 13px 35px;
+      margin: 46px auto 0;
+      transition: 0.3s ease-in-out;
+    }
+
+    &:hover {
+      @media (640px <=width) {
+        transform: translate(4px, 4px);
+        box-shadow: 0 0 0 variables.$color-black;
+      }
+    }
+
+    &::before {
+      top: 35%;
+      content: "";
+      right: 24px;
+      width: 10px;
+      height: 10px;
+      display: block;
+      position: absolute;
+      background-size: contain;
+      background-repeat: no-repeat;
+      transform: rotate(-135deg) translateY(-50%);
+      background-image: url("/img/top/ico-triangle-black.svg");
+    }
+  }
+}
