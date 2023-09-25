@@ -1,7 +1,152 @@
 // topページについて
-html{
-  background-color: #ccc;
+@use "../global/variables"as variables;
+
+// ---------------------------------------
+// utility
+// ---------------------------------------
+.u-top-img {
+  width: 100%;
+  vertical-align: bottom;
 }
-.a{
-  color: aqua;
+
+.u-top-only-sp {
+  @media (640px <=width) {
+    display: none;
+  }
+}
+
+.u-top-only-pc {
+  @media (639px >=width) {
+    display: none;
+  }
+}
+
+.u-top-bg-orange {
+  background: variables.$color-logo-parts02;
+}
+
+// ---------------------------------------
+// component
+// ---------------------------------------
+.c-top-inner-sp {
+  @media (639px >=width) {
+    width: 90.66%;
+    margin: 0 auto;
+  }
+}
+
+.c-top-inner-pc {
+  @media (640px <=width) {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 25px;
+    max-width: 1150px;
+  }
+}
+
+.c-top-heading-h2 {
+  line-height: 1;
+  font-size: 12px;
+  margin-bottom: 45px;
+
+  @media (640px <=width) {
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
+
+  span {
+    display: block;
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom: 14px;
+    letter-spacing: 0.04em;
+    color: variables.$color-logo-parts01;
+    font-family: variables.$base-font-English;
+
+    @media (640px <=width) {
+      font-size: 64px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &.-white {
+    color: variables.$color-white;
+
+    span {
+      color: variables.$color-white;
+    }
+  }
+}
+
+// ---------------------------------------
+// project
+// ---------------------------------------
+.p-top-message {
+  padding: 100px 0;
+
+  @media (640px <=width) {
+    padding: 130px 0;
+  }
+
+  &_column {
+    @media (640px <=width) {
+      display: flex;
+      gap: 40px;
+    }
+  }
+
+  &_img {
+    @media (640px <=width) {
+      width: 39.54%;
+    }
+  }
+
+  &_text {
+    margin-top: 40px;
+
+    @media (640px <=width) {
+      margin-top: 0;
+      width: 56.81%;
+    }
+  }
+
+  &_eyecatch {
+    font-size: 25px;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+
+    @media (640px <=width) {
+      font-size: 35px;
+      line-height: 1.5;
+    }
+  }
+
+  &_main {
+    margin-top: 24px;
+    color: variables.$color-balack-light;
+
+    @media (640px <=width) {
+      margin-top: 40px;
+    }
+  }
+
+  &_from {
+    margin-top: 20px;
+    text-align: right;
+
+    @media (640px <=width) {
+      font-size: 20px;
+      margin-top: 35px;
+    }
+
+    span {
+      font-size: 18px;
+      margin-left: 10px;
+
+      @media (640px <=width) {
+        font-size: 25px;
+        margin-left: 15px;
+      }
+    }
+  }
 }
