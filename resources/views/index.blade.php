@@ -1,4 +1,5 @@
 @extends('layouts.footer')
+@extends('components.entry_btn')
 @extends('layouts.header')
 
 
@@ -6,6 +7,9 @@
 @endsection
 
 <main>
+
+  @section('entry_btn')
+  @endsection
 
   {{--  代表メッセージ --}}
   <section class="p-top-message">
@@ -77,8 +81,10 @@
     </div>
   </section>
 
-</main>
+  @section('entry_btn')
+  @endsection
 
+</main>
 
 
 @section('footer')
