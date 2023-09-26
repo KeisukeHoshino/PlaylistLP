@@ -1,9 +1,8 @@
-@extends('layouts.footer')
-@extends('layouts.header')
+@extends('layouts.layout')
+@include('components.entry_btn')
+@include('layouts.header')
 
-
-@section('header')
-@endsection
+@section('content')
 <div class="member-introduction-wrapper">
     {{-- タイトル --}}
     <div class="member-introduction-title">
@@ -116,6 +115,9 @@
         </div>
         </section>
 
+        {{-- エントリーボタンの呼び出し --}}
+        @yield('entry_btn')
+
         {{-- CAREER PATH --}}
         <div class="career-path-wrapper">
             <div class="b-heading">
@@ -132,8 +134,6 @@
             </div>
         </div>
 </div>
-
-
-
-@section('footer')
 @endsection
+
+@include('layouts.footer')
