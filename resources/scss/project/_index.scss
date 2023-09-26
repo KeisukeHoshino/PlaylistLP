@@ -184,10 +184,10 @@
         }
 
         &::before {
-          background-image: url("/img/top/bg-voice-red-right.png");
+          background-image: url("/public/img/top/bg-voice-red-right.png");
 
           @media (640px <=width) {
-            background-image: url("/img/top/bg-voice-red-pc.png");
+            background-image: url("/public/img/top/bg-voice-red-pc.png");
           }
         }
       }
@@ -198,10 +198,10 @@
         }
 
         &::before {
-          background-image: url("/img/top/bg-voice-blue-small.png");
+          background-image: url("/public/img/top/bg-voice-blue-small.png");
 
           @media (640px <=width) {
-            background-image: url("/img/top/bg-voice-blue-pc.png");
+            background-image: url("/public/img/top/bg-voice-blue-pc.png");
           }
         }
       }
@@ -212,10 +212,10 @@
         }
 
         &::before {
-          background-image: url("/img/top/bg-voice-green-small.png");
+          background-image: url("/public/img/top/bg-voice-green-small.png");
 
           @media (640px <=width) {
-            background-image: url("/img/top/bg-voice-green-pc.png");
+            background-image: url("/public/img/top/bg-voice-green-pc.png");
           }
         }
       }
@@ -226,10 +226,10 @@
         }
 
         &::before {
-          background-image: url("/img/top/bg-voice-red-left.png");
+          background-image: url("/public/img/top/bg-voice-red-left.png");
 
           @media (640px <=width) {
-            background-image: url("/img/top/bg-voice-red-pc.png");
+            background-image: url("/public/img/top/bg-voice-red-pc.png");
           }
         }
       }
@@ -240,10 +240,10 @@
         }
 
         &::before {
-          background-image: url("/img/top/bg-voice-green.png");
+          background-image: url("/public/img/top/bg-voice-green.png");
 
           @media (640px <=width) {
-            background-image: url("/img/top/bg-voice-green-pc.png");
+            background-image: url("/public/img/top/bg-voice-green-pc.png");
           }
         }
       }
@@ -309,7 +309,7 @@
       background-size: contain;
       background-repeat: no-repeat;
       transform: rotate(-135deg) translateY(-50%);
-      background-image: url("/img/top/ico-triangle-black.svg");
+      background-image: url("/public/img/top/ico-triangle-black.svg");
     }
   }
 }

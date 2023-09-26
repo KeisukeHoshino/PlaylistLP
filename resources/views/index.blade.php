@@ -14,8 +14,8 @@
       <div class="p-top-message_column">
         <div class="p-top-message_img">
           <picture>
-            <source srcset="/img/top/message-pc.png" media="(min-width:640px)" type="image/png">
-            <img class="u-top-img" src="/img/top/message.png" alt="吉村優太">
+            <source srcset="{{asset('img/top/message-pc.png')}}" media="(min-width:640px)" type="image/png">
+            <img class="u-top-img" src="{{asset('img/top/message.png')}}" alt="吉村優太">
           </picture>
         </div>
         <div class="p-top-message_text">
@@ -35,40 +35,40 @@
         <li data-frame-size-sp="large">
           <p>
             <picture>
-              <source srcset="/img/top/voice01-pc.svg" media="(min-width:640px)" type="image/svg+xml">
-              <img class="u-top-img" src="/img/top/voice01.svg" alt="SESだから自分が得たい・伸ばしたいスキルを効率的に学びながら働ける">
+              <source srcset="{{asset('img/top/voice01-pc.svg')}}" media="(min-width:640px)" type="image/svg+xml">
+              <img class="u-top-img" src="{{asset('img/top/voice01.svg')}}" alt="SESだから自分が得たい・伸ばしたいスキルを効率的に学びながら働ける">
             </picture>
           </p>
         </li>
         <li data-frame-size-sp="small">
           <p>
             <picture>
-              <source srcset="/img/top/voice02-pc.svg" media="(min-width:640px)" type="image/svg+xml">
-              <img class="u-top-img" src="/img/top/voice02.svg" alt="研修が豊富だから業界未経験でも不安が少なかった">
+              <source srcset="{{asset('img/top/voice02-pc.svg')}}" media="(min-width:640px)" type="image/svg+xml">
+              <img class="u-top-img" src="{{asset('img/top/voice02.svg')}}" alt="研修が豊富だから業界未経験でも不安が少なかった">
             </picture>
           </p>
         </li>
         <li data-frame-size-sp="small">
           <p>
             <picture>
-              <source srcset="/img/top/voice03-pc.svg" media="(min-width:640px)" type="image/svg+xml">
-              <img class="u-top-img" src="/img/top/voice03.svg" alt="やりたい気持ちを応援、支援してくれる">
+              <source srcset="{{asset('img/top/voice03-pc.svg')}}" media="(min-width:640px)" type="image/svg+xml">
+              <img class="u-top-img" src="{{asset('img/top/voice03.svg')}}" alt="やりたい気持ちを応援、支援してくれる">
             </picture>
           </p>
         </li>
         <li data-frame-size-sp="large">
           <p>
             <picture>
-              <source srcset="/img/top/voice04-pc.svg" media="(min-width:640px)" type="image/svg+xml">
-              <img class="u-top-img" src="/img/top/voice04.svg" alt="現場によって使っているツールなども違うから様々なものに触れることができる">
+              <source srcset="{{asset('img/top/voice04-pc.svg')}}" media="(min-width:640px)" type="image/svg+xml">
+              <img class="u-top-img" src="{{asset('img/top/voice04.svg')}}" alt="現場によって使っているツールなども違うから様々なものに触れることができる">
             </picture>
           </p>
         </li>
         <li data-frame-size-sp="large">
           <p>
             <picture>
-              <source srcset="/img/top/voice05-pc.svg" media="(min-width:640px)" type="image/svg+xml">
-              <img class="u-top-img" src="/img/top/voice05.svg" alt="社員同士の距離感が近いから意見を言いやすい">
+              <source srcset="{{asset('img/top/voice05-pc.svg')}}" media="(min-width:640px)" type="image/svg+xml">
+              <img class="u-top-img" src="{{asset('img/top/voice05.svg')}}" alt="社員同士の距離感が近いから意見を言いやすい">
             </picture>
           </p>
         </li>
