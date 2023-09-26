@@ -1,6 +1,6 @@
-@yield('footer')
 <!-- footerについて -->
-
-</body>
-
-</html>
+@section('footer')
+<div>
+  footerです
+</div>
+@endsection
