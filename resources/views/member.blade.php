@@ -1,6 +1,5 @@
 @extends('layouts.layout')
 @include('components.entry_btn')
-@include('layouts.header')
 
 @section('content')
 <div class="member-introduction-wrapper">
@@ -136,4 +135,4 @@
 </div>
 @endsection
 
-@include('layouts.footer')
+
