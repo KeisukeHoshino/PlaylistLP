@@ -1,6 +1,4 @@
-@yield('footer')
-<!-- footerについて -->
+{{-- footerについて --}}
+@section('footer')
 
-</body>
-
-</html>
+@endsection
