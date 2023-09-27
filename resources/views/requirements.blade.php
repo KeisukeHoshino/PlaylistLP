@@ -1,9 +1,8 @@
-@extends('layouts.footer')
-@extends('layouts.header')
+@extends('layouts.layout')
+@include('components.entry_btn')
 
 
-@section('header')
-@endsection
+@section('content')
 
 {{-- mainとして区分け --}}
 <main>
@@ -253,10 +252,7 @@
         </div>
     </div>
 
-    <div>
-        <button>ENTRY</button>
-        <a href="#">募集要項はこちら</a>
-    </div>
+    @yield('entry_btn')
 
     {{-- ここで<div class="flow-wrapper">の挿入 --}}
     <div>
@@ -346,13 +342,9 @@
         </div>
     </div>
 
-    <div>
-        <button>ENTRY</button>
-        <a href="#">募集要項はこちら</a>
-    </div>
+    @yield('entry_btn')
 
 </main>
 
 
-@section('footer')
 @endsection
