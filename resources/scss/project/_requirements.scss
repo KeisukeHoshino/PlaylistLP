@@ -220,20 +220,34 @@ h1 {
     }
 }
 
-.headingContainer-reverse{
+.headingGrid-reverse{
     flex-direction: row-reverse;
+}
+
+.requirements-selectionFlowHeading{
+    margin-top: 60px;
 }
 
 .selectionFlow-container{
     width: 90.66%;
     margin: 0 auto;
 
+    @media (960px <= width) {
+        width: 80.52%;
+        display: flex;
+    }
+
         .c-selectionFlow-item{
             height: 185px;
             flex-shrink: 0;
             border-radius: 10px;
             background: #F2F7FF;
+            position: relative;
 
+            @media (960px <= width) {
+                height: 290px;
+                width: calc((100% - 90px) / 4);
+            }
 
             .c-selectionFlow-itemNum{
                 display: flex;
@@ -246,13 +260,30 @@ h1 {
                 color: variables.$color-white;
                 font-weight: 800;
 
+                @media (960px <= width) {
+                    width: 35.51%;
+                    font-size: 14px;
+                    line-height: 21px;
+                    letter-spacing: 0.56px;
+                }
+            
+
                 p:nth-child(1) {
                     margin: 10px 0 0 auto;
+
+                    @media (960px <= width){
+                        margin-top: 20px;
+                    }
                 }
 
                 p:nth-child(2){
                     margin: 0 auto 0 5px;
                     font-size: 20px;
+
+                    @media (960px <= width) {
+                        margin-top: 18px;
+                        font-size: 22px;
+                    }
                 }
 
             }
@@ -268,14 +299,62 @@ h1 {
                     color: variables.$color-logo-parts03;
                     line-height: 25.2px;
                     letter-spacing: 0.56px;
+
+                    @media (960px <= width){
+                        margin: 25px 0;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.64px;
+                    }
                 }
+
+                @media (960px <= width){
+                    font-size: 14px;
+                }
+            }
+
+            .selectionFlow-entryBtm{
+                width: 83.64%;
+                inset: 50px 0px 75px 0px;
+                font: 800 18px/1.5 variables.$base-font-English;
+                text-decoration: none;
+                padding: 17px 35px;
+                background-color: variables.$color-white;
+                border: 2px solid variables.$color-black;
+                border-radius: 65px;
+                color: variables.$color-black;
+                cursor: pointer;
+                margin: 0 auto 10px auto;
+                box-shadow: 2px 2px 0 variables.$color-black;
+                text-align: center;
+
+                @media (960px <= width){
+                    margin: 0 auto 25px auto;
+
+                }
+
+                .selectionFlow-entryBtm-arrow{
+                    inset: 22px 0px 0px 300px;            
+                }
+            }
+
+            .selectionFlow-getOffer{
+                position: absolute;
+                top: 30%;
+                left: 5%;
             }
 
         }
 
         .c-selectionFlow-arrow{
-            width: 90.66%;
+            width: 100%;
             margin: 25px auto;
+
+            @media (960px <= width){
+                transform: rotate(-90deg);
+                width: 22px;
+                height: 22px;
+                margin: auto 5px auto 5px;
+            }
         }
-    // }
 }

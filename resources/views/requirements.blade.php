@@ -190,7 +190,7 @@
                     将来キャリアアップ
                 </h3>
             </div>
-            <div class="c-requirements-headingGrid headingContainer-reverse">
+            <div class="c-requirements-headingGrid headingGrid-reverse">
                 <img src="{{asset('/img/requirements/career_advancement.jpeg')}}" class="c-requirements-img">
                 <div class="c-headingText">
                     <p>
@@ -240,7 +240,7 @@
 
     <div class="c-requirements-wrapper">
         <div class="c-requirements-container">
-            <div class="c-requirements-heading">
+            <div class="c-requirements-heading requirements-selectionFlowHeading">
                 <span>
                     SELECTION FLOW
                 </span>
@@ -258,7 +258,12 @@
                         <P>
                             エントリーフォームからご応募
                         </P>
-                        <button>ENTRY</button>
+                        <button class="selectionFlow-entryBtm">
+                            ENTRY
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none" class="selectionFlow-entryBtm-arrow">
+                                <path d="M7.6155 14.3938C7.32701 14.7085 6.7962 14.4252 6.79932 13.9581L6.88661 1.04944C6.88955 0.611111 7.3686 0.435877 7.66868 0.763277L13.4548 7.07626C13.7064 7.35074 13.7057 7.79596 13.4534 8.06932L7.6155 14.3938Z" fill="#333333"/>
+                            </svg>
+                        </button>
                         <p>
                             3営業日以内にご連絡させて頂きます。
                         </p>
@@ -307,7 +312,7 @@
                         <p>STEP</p>
                         <p>4</p>
                     </div>
-                    <div class="c-selectionFlow-itemText">
+                    <div class="c-selectionFlow-itemText selectionFlow-getOffer">
                         <p>内定</p>
                     </div>
                 </div>
