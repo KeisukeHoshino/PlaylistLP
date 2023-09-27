@@ -157,6 +157,8 @@ h1 {
             margin: 0 50;
             display: flex;
             gap: 40px;
+            padding-left: 55px;
+            padding-right: 55px;
         }
 
         th{
@@ -217,7 +219,6 @@ h1 {
     .c-headingText{
         margin: auto 0;
         display: grid;
-        font-size: 14px;
         gap: 20px;
     }
 
@@ -273,9 +274,6 @@ h1 {
 
                 @media (960px <= width) {
                     width: 35.51%;
-                    font-size: 14px;
-                    line-height: 21px;
-                    letter-spacing: 0.56px;
                 }
             
 
@@ -292,7 +290,7 @@ h1 {
                     font-size: 20px;
 
                     @media (960px <= width) {
-                        margin-top: 18px;
+                        margin-top: 10px;
                         font-size: 22px;
                     }
                 }
@@ -317,10 +315,6 @@ h1 {
                         line-height: 24px;
                         letter-spacing: 0.64px;
                     }
-                }
-
-                @media (960px <= width){
-                    font-size: 14px;
                 }
             }
 
