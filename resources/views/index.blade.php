@@ -1,15 +1,10 @@
-@extends('layouts.footer')
-@extends('components.entry_btn')
-@extends('layouts.header')
+@extends('layouts.layout')
+@include('components.entry_btn')
 
-
-@section('header')
-@endsection
-
+@section('content')
 <main>
 
-  @section('entry_btn')
-  @endsection
+  @yield('entry_btn')
 
   {{--  代表メッセージ --}}
   <section class="p-top-message">
@@ -81,11 +76,8 @@
     </div>
   </section>
 
-  @section('entry_btn')
-  @endsection
+  @yield('entry_btn')
 
 </main>
 
-
-@section('footer')
 @endsection
