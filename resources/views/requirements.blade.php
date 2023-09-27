@@ -4,11 +4,10 @@
 
 @section('content')
 
-{{-- mainとして区分け --}}
 <main>
 
-    <div class="c-requirements-titleWrapper">
-        <div class="c-wrapper-titleContainer">
+    <div class="c-requirements-wrapper">
+        <div class="c-requirements-container">
             <div class="requirements-title">
                 <h1>
                     REQUIREMENTS
@@ -30,12 +29,9 @@
         </div>
     </div>
 
-    {{-- ここで<div class="***-wrapper">の挿入 --}}
-    <div>
-        {{-- ここで<div class="c-requirements-heading-container">の挿入 --}}
-        <div>
-            {{-- requirementsわすれずに --}}
-            <div class="c-heading">
+    <div class="c-requirements-wrapper">
+        <div class="c-requirements-container">
+            <div class="c-requirements-heading">
                 <span>
                     REQUIREMENTS
                 </span>
@@ -43,8 +39,8 @@
                     募集要項
                 </h3>
             </div>
-            <table class="requirements-wrapper">
-                <tr class="c-requirements-container">
+            <table class="c-requirements-items">
+                <tr class="c-requirements-item">
                     <th>
                         雇用形態
                     </th>
@@ -52,7 +48,7 @@
                         正社員 （当社規定による、半年間の試用期間を設けています）
                     </td>
                 </tr>
-                <tr class="c-requirements-container">
+                <tr class="c-requirements-item">
                     <th>
                         勤務時間
                     </th>
@@ -64,7 +60,7 @@
                         ※上記は配属先のプロジェクトによって異なります。
                     </td>
                 </tr>
-                <tr class="c-requirements-container">
+                <tr class="c-requirements-item">
                     <th>
                         勤務地
                     </th>
@@ -73,7 +69,7 @@
                         リモートの可能性有
                     </td>
                 </tr>
-                <tr class="c-requirements-container">
+                <tr class="c-requirements-item">
                     <th>
                         給与
                     </th>
@@ -81,7 +77,7 @@
                         月給 23万円～35万円（固定残業手当を含む）<br>（あくまでも目安の金額であり、選考を通じてご相談させていただきます。）
                     </td>
                 </tr>
-                <tr class="c-requirements-container">
+                <tr class="c-requirements-item">
                     <th>
                         有給休暇
                     </th>
@@ -89,7 +85,7 @@
                         入社初年度は入社月に応じて最大10日 （入社次年度以降 11日〜20日（最大20日））
                     </td>
                 </tr>
-                <tr class="c-requirements-container">
+                <tr class="c-requirements-item">
                     <th>
                         休日・休暇
                     </th>
@@ -97,7 +93,7 @@
                         週休2日制/祝日休み/年末年始休暇/夏季休暇/会社の指定した休日/有給休暇/慶弔休暇/育休休暇/産前・産後休暇
                     </td>
                 </tr>
-                <tr class="c-requirements-container">
+                <tr class="c-requirements-item">
                     <th>
                         待遇
                     </th>
@@ -108,7 +104,7 @@
                         賞与（業績 / 貢献に応じて当社規定により支給）
                     </td>
                 </tr>
-                <tr class="c-requirements-container">
+                <tr class="c-requirements-item">
                     <th>
                         福利厚生
                     </th>
@@ -119,7 +115,7 @@
                         リファラル採用（インセンティブ有）
                     </td>
                 </tr>
-                <tr class="c-requirements-container">
+                <tr class="c-requirements-item">
                     <th>
                         支援制度
                     </th>
@@ -130,7 +126,7 @@
                         PC / 備品貸与（モニター1台 / ノートPC1台 など）
                     </td>
                 </tr>
-                <tr class="c-requirements-container">
+                <tr class="c-requirements-item">
                     <th>
                         研修
                     </th>
@@ -143,7 +139,7 @@
                         ※目指すキャリアに合わせてその他研修も可能
                     </td>
                 </tr>
-                <tr class="c-requirements-container">
+                <tr class="c-requirements-item">
                     <th>
                         社員交流
                     </th>
@@ -157,13 +153,9 @@
         </div>
     </div>
 
-    {{-- ここで<div class="***-wrapper">の挿入 --}}
-    <div>
-        {{-- ここで<div class="c-requirements-heading-container">の挿入 --}}
-        <div>
-            {{-- headingよりもwelcomeSkillsのほうがわかりやすいかも --}}
-            {{-- requirementsわすれずに --}}
-            <div class="c-heading">
+    <div class="c-requirements-wrapper">
+        <div class="c-requirements-container">
+            <div class="c-requirements-heading">
                 <span>
                     WELCOME SKILLS
                 </span>
@@ -171,7 +163,7 @@
                     歓迎スキル
                 </h3>
             </div>
-            <div class="c-requirements-heading-container">
+            <div class="c-requirements-headingGrid">
                 <img src="{{asset('img/requirements/requirements.jpeg')}}" class="c-requirements-img">
                 <div class="c-headingText">
                     <p>
@@ -188,13 +180,9 @@
         </div>
     </div>
 
-    {{-- ここで<div class="***-wrapper">の挿入 --}}
-    <div>
-        {{-- ここで<div class="c-requirements-heading-container">の挿入 --}}
-        <div>
-            {{-- headingよりはCareerAdvancementのほうがいいかも --}}
-            {{-- requirementsわすれずに --}}
-            <div class="c-heading">
+    <div class="c-requirements-wrapper">
+        <div class="c-requirements-container">
+            <div class="c-requirements-heading">
                 <span>
                     CAREER ADVANCEMENT
                 </span>
@@ -202,7 +190,7 @@
                     将来キャリアアップ
                 </h3>
             </div>
-            <div class="c-requirements-heading-container headingContainer-reverse">
+            <div class="c-requirements-headingGrid headingContainer-reverse">
                 <img src="{{asset('/img/requirements/career_advancement.jpeg')}}" class="c-requirements-img">
                 <div class="c-headingText">
                     <p>
@@ -222,13 +210,9 @@
         </div>
     </div>
 
-    {{-- ここで<div class="***-wrapper">の挿入 --}}
-    <div>
-        {{-- ここで<div class="c-requirements-heading-container">の挿入 --}}
-        <div>
-            {{-- headingよりはProjectCaseのほうがいいかも --}}
-            {{-- requirementsわすれずに --}}
-            <div class="c-heading">
+    <div class="c-requirements-wrapper">
+        <div class="c-requirements-container">
+            <div class="c-requirements-heading">
                 <span>
                     PROJECT CASE
                 </span>
@@ -236,7 +220,7 @@
                     SES事業でのプロジェクト例
                 </h3>
             </div>
-            <div class="c-requirements-heading-container">
+            <div class="c-requirements-headingGrid">
                 <img src="{{asset('/img/requirements/project_case.jpeg')}}" class="c-requirements-img">
                 <div class="c-headingText">
                     ・社内DX化に向けた業務自動化開発<br>
@@ -254,13 +238,9 @@
 
     @yield('entry_btn')
 
-    {{-- ここで<div class="flow-wrapper">の挿入 --}}
-    <div>
-        {{-- ここで<div class="c-requirements-heading-container">の挿入 --}}
-        <div>
-            {{-- headingよりはselectionFlowHeadingのほうがいいかも --}}
-            {{-- requirementsわすれずに --}}
-            <div class="c-heading">
+    <div class="c-requirements-wrapper">
+        <div class="c-requirements-container">
+            <div class="c-requirements-heading">
                 <span>
                     SELECTION FLOW
                 </span>
@@ -268,74 +248,67 @@
                     選考フロー
                 </h3>
             </div>
-            <div class="flow-wrapper">
-                <div class="c-flow-container">
-                    <div class="c-flow-item">
-                        <div class="c-flow-itemNum">
-                            <p>STEP</p>
-                            <p>1</p>
-                        </div>
-                        <div  class="c-flow-itemText">
-                            <P>
-                                エントリーフォームからご応募
-                            </P>
-                            <button>ENTRY</button>
-                            <p>
-                                3営業日以内にご連絡させて頂きます。
-                            </p>
-                        </div>
+            <div class="selectionFlow-container">
+                <div class="c-selectionFlow-item">
+                    <div class="c-selectionFlow-itemNum">
+                        <p>STEP</p>
+                        <p>1</p>
                     </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12" fill="none" class="c-flow-arrow">
-                        <path d="M0.383077 2.08378C-0.0890917 1.62697 0.325287 0.77604 1.02024 0.775406L20.2266 0.759488C20.8788 0.758921 21.1459 1.52168 20.6629 2.00472L11.3486 11.319C10.9437 11.7239 10.2813 11.7283 9.87117 11.3286L0.383077 2.08378Z" fill="#3F66A5"/>
-                    </svg>
-                    <div class="c-flow-item">
-                        <div class="c-flow-itemNum">
-                            <p>STEP</p>
-                            <p>2</p>
-                        </div>
-                        <div class="c-flow-itemText">
-                            <P>
-                                カジュアル面談
-                            </P>
-                            <p>
-                                選考前に会社の社風や働き方を知ってもらうために、お話する機会を設けています。
-                                その後、希望者には面接に進んで頂きます。
-                            </p>
-                        </div>
+                    <div  class="c-selectionFlow-itemText">
+                        <P>
+                            エントリーフォームからご応募
+                        </P>
+                        <button>ENTRY</button>
+                        <p>
+                            3営業日以内にご連絡させて頂きます。
+                        </p>
                     </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12" fill="none" class="c-flow-arrow">
-                    <path d="M0.383077 2.08378C-0.0890917 1.62697 0.325287 0.77604 1.02024 0.775406L20.2266 0.759488C20.8788 0.758921 21.1459 1.52168 20.6629 2.00472L11.3486 11.319C10.9437 11.7239 10.2813 11.7283 9.87117 11.3286L0.383077 2.08378Z" fill="#3F66A5"/>
-                    </svg>
-                {{-- 横一列になるようであれば、不要な区分けのため削除 --}}
-                {{-- START --}}
                 </div>
-                <div class="c-flow-container">
-                {{-- END --}}
-                    <div class="c-flow-item">
-                        <div class="c-flow-itemNum">
-                            <p>STEP</p>
-                            <p>3</p>
-                        </div>
-                        <div class="c-flow-itemText">
-                            <P>
-                                面接1〜2回
-                            </P>
-                            <p>
-                                基本的には一次面接のみですが、稀に二次面接が必要となる場合がございます。                </p>
-                            </P>
-                        </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12" fill="none" class="c-selectionFlow-arrow">
+                    <path d="M0.383077 2.08378C-0.0890917 1.62697 0.325287 0.77604 1.02024 0.775406L20.2266 0.759488C20.8788 0.758921 21.1459 1.52168 20.6629 2.00472L11.3486 11.319C10.9437 11.7239 10.2813 11.7283 9.87117 11.3286L0.383077 2.08378Z" fill="#3F66A5"/>
+                </svg>
+                <div class="c-selectionFlow-item">
+                    <div class="c-selectionFlow-itemNum">
+                        <p>STEP</p>
+                        <p>2</p>
                     </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12" fill="none" class="c-flow-arrow">
-                        <path d="M0.383077 2.08378C-0.0890917 1.62697 0.325287 0.77604 1.02024 0.775406L20.2266 0.759488C20.8788 0.758921 21.1459 1.52168 20.6629 2.00472L11.3486 11.319C10.9437 11.7239 10.2813 11.7283 9.87117 11.3286L0.383077 2.08378Z" fill="#3F66A5"/>
-                    </svg>
-                    <div class="c-flow-item">
-                        <div class="c-flow-itemNum">
-                            <p>STEP</p>
-                            <p>4</p>
-                        </div>
-                        <div class="c-flow-itemText">
-                            <p>内定</p>
-                        </div>
+                    <div class="c-selectionFlow-itemText">
+                        <P>
+                            カジュアル面談
+                        </P>
+                        <p>
+                            選考前に会社の社風や働き方を知ってもらうために、お話する機会を設けています。
+                            その後、希望者には面接に進んで頂きます。
+                        </p>
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12" fill="none" class="c-selectionFlow-arrow">
+                <path d="M0.383077 2.08378C-0.0890917 1.62697 0.325287 0.77604 1.02024 0.775406L20.2266 0.759488C20.8788 0.758921 21.1459 1.52168 20.6629 2.00472L11.3486 11.319C10.9437 11.7239 10.2813 11.7283 9.87117 11.3286L0.383077 2.08378Z" fill="#3F66A5"/>
+                </svg>
+                <div class="c-selectionFlow-item">
+                    <div class="c-selectionFlow-itemNum">
+                        <p>STEP</p>
+                        <p>3</p>
+                    </div>
+                    <div class="c-selectionFlow-itemText">
+                        <P>
+                            面接1〜2回
+                        </P>
+                        <p>
+                            基本的には一次面接のみですが、稀に二次面接が必要となる場合がございます。                </p>
+                        </P>
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12" fill="none" class="c-selectionFlow-arrow">
+                    <path d="M0.383077 2.08378C-0.0890917 1.62697 0.325287 0.77604 1.02024 0.775406L20.2266 0.759488C20.8788 0.758921 21.1459 1.52168 20.6629 2.00472L11.3486 11.319C10.9437 11.7239 10.2813 11.7283 9.87117 11.3286L0.383077 2.08378Z" fill="#3F66A5"/>
+                </svg>
+                <div class="c-selectionFlow-item">
+                    <div class="c-selectionFlow-itemNum">
+                        <p>STEP</p>
+                        <p>4</p>
+                    </div>
+                    <div class="c-selectionFlow-itemText">
+                        <p>内定</p>
                     </div>
                 </div>
             </div>

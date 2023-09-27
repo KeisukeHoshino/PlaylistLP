@@ -72,7 +72,11 @@ h1 {
     }
 }
 
-.c-heading{
+.c-requirements-container{
+    margin-bottom: 100px;
+}
+
+.c-requirements-heading{
     width: 90.66%;
     margin: 0 auto;
     padding-bottom: 34px;
@@ -108,10 +112,9 @@ h1 {
     }
 }
 
-.requirements-wrapper{
+.c-requirements-items{
     width: 90.66%;
     margin: 0 auto;
-    margin-bottom: 100px;
     display: grid;
     gap: 30px;
 
@@ -132,7 +135,7 @@ h1 {
         }
     }
 
-    .c-requirements-container{
+    .c-requirements-item{
         display: grid;
         gap: 15px;
 
@@ -185,7 +188,7 @@ h1 {
     }
 }
 
-.c-requirements-heading-container{
+.c-requirements-headingGrid{
     width: 90.66%;
     margin: 0 auto;
     margin-bottom: 60px;
@@ -196,13 +199,13 @@ h1 {
         width: 80.52%;
         display: flex;
         gap: 40px;
+    }
 
-        .c-headingText{
-            height: 275px;
-            margin: auto 0;
-            display: grid;
-            font-size: 14px;
-        }
+    .c-headingText{
+        margin: auto 0;
+        display: grid;
+        font-size: 14px;
+        gap: 20px;
     }
 
     .c-requirements-img{
@@ -221,20 +224,18 @@ h1 {
     flex-direction: row-reverse;
 }
 
-.flow-wrapper{
+.selectionFlow-container{
     width: 90.66%;
     margin: 0 auto;
 
-    .c-flow-container{
-        gap: 25px;
-
-        .c-flow-item{
+        .c-selectionFlow-item{
             height: 185px;
             flex-shrink: 0;
             border-radius: 10px;
             background: #F2F7FF;
 
-            .c-flow-itemNum{
+
+            .c-selectionFlow-itemNum{
                 display: flex;
                 width: 23.23%;
                 height: 16.21%;
@@ -246,24 +247,23 @@ h1 {
                 font-weight: 800;
 
                 p:nth-child(1) {
-                    margin: 10 0 0 auto;
+                    margin: 10px 0 0 auto;
                 }
 
                 p:nth-child(2){
-                    margin: 0 auto 0 5;
+                    margin: 0 auto 0 5px;
                     font-size: 20px;
-                    font-weight: 800;
                 }
 
             }
 
-            .c-flow-itemText{
+            .c-selectionFlow-itemText{
                 width: 88.23%;
                 margin: 0 auto;
                 text-align: center;
 
                 p:nth-child(1){
-                    margin: 10 0;
+                    margin: 10px 0;
                     font-size: 14px;
                     color: variables.$color-logo-parts03;
                     line-height: 25.2px;
@@ -273,9 +273,9 @@ h1 {
 
         }
 
-        .c-flow-arrow{
+        .c-selectionFlow-arrow{
             width: 90.66%;
             margin: 25px auto;
         }
-    }
+    // }
 }
