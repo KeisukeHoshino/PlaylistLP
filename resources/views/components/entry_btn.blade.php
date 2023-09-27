@@ -1,4 +1,4 @@
-@yield('entry_btn')
+@section('entry_btn')
 {{-- ENTRYボタン --}}
 <section id="entry-btn">
   <div class="entry-btn_background">
@@ -17,3 +17,4 @@
     募集要項はこちら
   </a>
 </section>
+@endsection
