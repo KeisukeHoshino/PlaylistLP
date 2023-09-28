@@ -98,6 +98,90 @@
     }
 }
 
+#interview {
+    margin-bottom: 100px;
+    h2 {
+        font-family: variables.$base-font-English;
+        color: variables.$color-logo-parts02;
+        font-size: 10px;
+        line-height: 2.7;
+        letter-spacing: 0.4px;
+    }
+
+    h3 {
+        font-size: 18px;
+        letter-spacing: 0.72px;
+        margin-bottom: 34px;
+        line-height: 1.5;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        .interview-list {
+            margin-bottom: 30px;
+            width: 48%;
+            &_date {
+                font-size: 10px;
+                font-family: variables.$base-font-English;
+                color: variables.$color-gray-black;
+            }
+            &_img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 24vw;
+                background-color: #f2f2f2;
+                border-radius: 4px;
+            }
+            &_content {
+                color: variables.$color-black-light;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+        }
+    }
+    .interview-seemore {
+        position: relative;
+        height: 90px;
+        &_btn {
+            font-size: 14px;
+            width: 340px;
+            inset: 35px auto auto 50%;
+            translate: -50% -50%;
+            position: absolute;
+            text-decoration: none;
+            padding: 17px 35px;
+            background-color: variables.$color-white;
+            border: 2px solid variables.$color-black;
+            border-radius: 65px;
+            color: variables.$color-black;
+            cursor: pointer;
+            box-shadow: 2px 2px 0 variables.$color-black;
+            text-align: center;
+            &:hover {
+                transform: translate(2px, 2px);
+                box-shadow: none;
+            }
+        }
+        &_jump {
+            position: absolute;
+            inset: 22px 0px 0px 300px;
+        }
+        &_kome {
+            font-size: 10px;
+            color: variables.$color-gray-black;
+            position: absolute;
+            inset: 90px auto auto 50%;
+            translate: -50% -50%;
+        }
+    }
+}
+
 .annotation {
     font-family: variables.$base-font-Japanese;
     color: variables.$color-gray-black;
