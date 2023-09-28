@@ -29,8 +29,7 @@
     </div>
 
     {{-- MEMBER --}}
-    <section>
-        <div class="b-heading">
+    <section id="member">
             <h2>
                 MEMBER
             </h2>
@@ -38,68 +37,68 @@
                 メンバー
             </h3>
             <p class="member-message">
-                PlaylistはIT未経験からエンジニアを目指している人が多い会社です。社内メンバーと共に一緒に成長していける環境を整えていますので、エンジニアになるためのキャリアを私たちと共に描きましょう！！
+                PlaylistはIT未経験からエンジニアを目指している人が多い会社です。<br class="sp_br">
+                社内メンバーと共に一緒に成長していける環境を整えていますので、エンジニアになるためのキャリアを私たちと共に描きましょう！！
             </p>
             <ul>
                 <li>
                     <!-- TODO：画像を修正 -->
                     <img src="{{asset('img/member/career_ryo.jpeg')}}" alt="">
-                    <p class="post">CEO</p>
+                    <p class="role">CEO</p>
                     <h4>Yuta.Y</h4>
                 </li>
                 <li>
                     <!-- TODO：画像を修正 -->
                     <img src="{{asset('img/member/career_hoshino.jpeg')}}" alt="">
-                    <p>COO/SALES</p>
+                    <p class="role">COO/SALES</p>
                     <h4>Takahiro.A</h4>
                 </li>
                 <li>
                     <!-- TODO：画像を修正 -->
                     <img src="{{asset('img/member/career_ryo.jpeg')}}" alt="">
-                    <p>CHO/HR/PR</p>
+                    <p class="role">CHO/HR/PR</p>
                     <h4>Taro.T</h4>
                 </li>
                 <li>
                     <!-- TODO：画像を修正 -->
                     <img src="{{asset('img/member/career_hoshino.jpeg')}}" alt="">
-                    <p>BDR</p>
+                    <p class="role">BDR</p>
                     <h4>Minami.Y</h4>
                 </li>
                 <li>
                     <!-- TODO：画像を修正 -->
                     <img src="{{asset('img/member/career_ryo.jpeg')}}" alt="">
-                    <p>ENGINEER</p>
+                    <p class="role">ENGINEER</p>
                     <h4>Mao.O</h4>
                 </li>
                 <li>
                     <!-- TODO：画像を修正 -->
                     <img src="{{asset('img/member/career_hoshino.jpeg')}}" alt="">
-                    <p>ENGINEER</p>
+                    <p class="role">ENGINEER</p>
                     <h4>Takuya.M</h4>
                 </li>
                 <li>
                     <!-- TODO：画像を修正 -->
                     <img src="{{asset('img/member/career_ryo.jpeg')}}" alt="">
-                    <p>ENGINEER</p>
+                    <p class="role">ENGINEER</p>
                     <h4>Ryo.W</h4>
                 </li>
                 <li>
                     <!-- TODO：画像を修正 -->
                     <img src="{{asset('img/member/career_hoshino.jpeg')}}" alt="">
-                    <p>ENGINEER</p>
+                    <p class="role">ENGINEER</p>
                     <h4>Masahiro.S</h4>
                 </li>
                 <li>
                     <!-- TODO：画像を修正 -->
                     <img src="{{asset('img/member/career_ryo.jpeg')}}" alt="">
-                    <p>ENGINEER</p>
+                    <p class="role">ENGINEER</p>
                     <h4>Yui.O</h4>
                 </li>
                 <li class="andmore">
                     <p>and more...</p>
                 </li>
             </ul>
-        </div>
     </section>
 
     {{-- INTERBVIEW --}}

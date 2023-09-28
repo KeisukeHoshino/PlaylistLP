@@ -44,8 +44,8 @@
     }
 }
 
-.b-heading {
-    padding-bottom: 100px;
+#member {
+    margin-bottom: 100px;
 
     h2 {
         font-family: variables.$base-font-English;
@@ -53,6 +53,12 @@
         font-size: 10px;
         line-height: 2.7;
         letter-spacing: 0.4px;
+        @media (640px <= width) {
+            font-size: 12px;
+            line-height: 2.25;
+            letter-spacing: 0.48px;
+            text-align: center;
+        }
     }
 
     h3 {
@@ -60,39 +66,73 @@
         letter-spacing: 0.72px;
         margin-bottom: 34px;
         line-height: 1.5;
+        @media (640px <= width) {
+            font-size: 24px;
+            margin-bottom: 48px;
+            letter-spacing: 0.96px;
+            text-align: center;
+        }
     }
     .member-message {
         line-height: 1.8;
         margin-bottom: 40px;
+        @media (640px <= width) {
+            margin-bottom: 45px;
+        }
+        @media (960px <= width) {
+            margin-bottom: 50px;
+        }
+
+        .sp_br {
+            display: none;
+            @media (640px <= width) {
+                display: inline;
+            }
+        }
     }
     ul {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+        @media (640px <= width) {
+            gap: 30px;
+        }
         li {
             flex-grow: 1;
             width: 42.66%;
             margin-bottom: 5px;
-            p {
+            @media (640px <= width) {
+                width: 15%;
+                margin-bottom: 30px;
+            }
+            @media (960px <= width) {
+                width: 17%;
+            }
+            .role {
                 font-size: 10px;
                 margin-top: 10px;
                 line-height: normal;
+                @media (640px <= width) {
+                    font-size: 12px;
+                }
             }
             h4 {
                 font-size: 14px;
                 line-height: normal;
+                @media (640px <= width) {
+                    font-size: 16px;
+                }
             }
         }
         .andmore {
-            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             p {
                 font-size: 16px;
                 font-family: variables.$base-font-English;
-                letter-spacing: 1.64px;
+                letter-spacing: 0.64px;
                 color: variables.$color-black-light;
-                position: absolute;
-                inset: 50% auto auto 50%;
-                translate: -50% -50%;
             }
         }
     }
