@@ -1,0 +1,218 @@
+@use "../global/variables"as variables;
+//
+// header
+//
+
+//
+// 共通対応
+//
+
+//
+// header 全体
+//
+.c-headerMenubar{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.c-headerMenubar-nav {
+    text-align: center;
+}
+
+// ヘッダーの固定
+.c-headerMenubarWrapper{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: variables.$color-white;
+}
+
+// フレキシブルにしてロゴとナビ要素を左右に寄せる、など
+.c-headerMenubarContainer{
+    width: 80%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+// フレキシブルにしてロゴとナビ要素を横並び下部でそろえる
+.c-headerTitle__link{
+    display: flex;
+    align-items: flex-end;
+    gap: 2vw;
+}
+
+// ナビ要素内の見出しスタイルを調整
+.c-headerMenubar-nav ul li {
+    display: inline-block;
+    width: max-content;
+    padding-top: 8px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+}
+
+// ナビ要素内のサブメニューのスタイルを調整
+.c-headerMenubar-nav>ul>li>a {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 20px 5px;
+}
+
+// 文字色を栗で統一
+.c-headerMenubar-nav ul li:hover a {
+    color: variables.$color-black-light;
+}
+
+// 出たり消えたりする部分のスタイル調整
+.subMenu--display  {
+    display: none;
+    opacity: 0;
+    & a{
+        &::before{
+            content: url('/public/img/layout/icon_arrow-right.svg');
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+    }
+}
+
+//
+// 個別対応
+//
+// TODO: まとめられる部分を整理する
+// TODO: メディアクエリの対応（960->640）
+//
+
+//
+// TOPのnav用
+//
+
+// 親要素としてスタイルを調整
+#c-headerMenubar-navTop{
+    position: relative;
+    &>ul>li>a{
+        padding: 20px 5px;
+    }
+}
+
+// 見出しの色を赤色にする
+.c-headerMenubar-nav ul li:hover a#c-headerMenubar-navTop__heading {
+    color: variables.$color-logo-parts01;
+}
+
+// 子要素としてスタイルを調整、親要素の中央に表示させるように更新
+.c-headerMenubar-nav ul li:hover .c-headerMenubar-navTop__subMenu {
+    display: block;
+    opacity: 1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: variables.$color-white;
+    border: 1px solid variables.$color-logo-parts01;
+    box-shadow: 2px 2px 0 variables.$color-logo-parts01;
+    border-radius: 5px;
+    margin: 16px auto;
+    padding: 20px;
+    align-items: center;
+}
+
+// 出たり消えたりする部分のli周りを調整
+.c-headerMenubar-nav ul li:hover .c-headerMenubar-navTop__subMenu ul li {
+    display: block;
+    opacity: 1;
+    border-bottom: 1px dotted white;
+    &>a:hover{
+        color: variables.$color-logo-parts01;
+    }
+}
+
+
+//
+// 社員紹介のnav用
+//
+
+// 親要素としてスタイルを調整
+#c-headerMenubar-navMember{
+    position: relative;
+    &>ul>li>a{
+        padding: 20px 5px;
+    }
+}
+
+// 見出しの色をオレンジ色にする
+.c-headerMenubar-nav ul li:hover a#c-headerMenubar-navMember__heading {
+    color: variables.$color-logo-parts02;
+}
+
+// 子要素としてスタイルを調整、親要素の中央に表示させるように更新
+.c-headerMenubar-nav ul li:hover .c-headerMenubar-navMember__subMenu {
+    display: block;
+    opacity: 1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: variables.$color-white;
+    border: 1px solid variables.$color-logo-parts02;
+    box-shadow: 2px 2px 0 variables.$color-logo-parts02;
+    border-radius: 5px;
+    margin: 16px auto;
+    padding: 20px;
+    align-items: center;
+}
+
+// 出たり消えたりする部分のli周りを調整
+.c-headerMenubar-nav ul li:hover .c-headerMenubar-navMember__subMenu ul li {
+    display: block;
+    opacity: 1;
+    border-bottom: 1px dotted white;
+    &>a:hover{
+        color: variables.$color-logo-parts02;
+    }
+}
+
+
+//
+// 募集要項のnav用
+//
+
+// 親要素としてスタイルを調整
+#c-headerMenubar-navRequirements{
+    position: relative;
+    &>ul>li>a{
+        padding: 20px;
+    }
+}
+
+// 見出しの色を青色にする
+.c-headerMenubar-nav ul li:hover a#c-headerMenubar-navRequirements__heading {
+    color: variables.$color-logo-parts03;
+}
+
+// 子要素としてスタイルを調整、親要素の中央に表示させるように更新
+.c-headerMenubar-nav ul li:hover .c-headerMenubar-navRequirements__subMenu {
+    display: block;
+    opacity: 1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: variables.$color-white;
+    border: 1px solid variables.$color-logo-parts03;
+    box-shadow: 2px 2px 0 variables.$color-logo-parts03;
+    border-radius: 5px;
+    margin: 16px auto;
+    padding: 20px;
+    align-items: center;
+}
+
+// 出たり消えたりする部分のli周りを調整
+.c-headerMenubar-nav ul li:hover .c-headerMenubar-navRequirements__subMenu ul li {
+    display: block;
+    opacity: 1;
+    border-bottom: 1px dotted white;
+    &>a:hover{
+        color: variables.$color-logo-parts03;
+    }
+}
