@@ -173,7 +173,7 @@
     @yield('entry_btn')
 
     {{-- CAREER PATH --}}
-    <div class="career-path-wrapper">
+    <section id="career-path">
         <div class="b-heading">
             <span>
                 CAREER PATH
@@ -186,6 +186,22 @@
             <p>Playlist社員の入社後のキャリアパスをご紹介します。</p>
             <span class="annotation">※情報は2023年8月時点のものです。</span>
         </div>
-    </div>
+        <div class="career-path-1">
+            <div class="career-path-img">
+                <img src="{{asset('img/member/career_hoshino.jpeg')}}">
+            </div>
+            <div class="career-path-about">
+                <div class="career-path-about-name">
+                    <p>Keisuke.H（25歳）</p>
+                </div>
+                <div class="career-path-about-text">
+                    <p>独学でIT知識やプログラミング知識・技術を1年学習。Playlistへ⼊社後、1年で開発案件を担当。現在はWebエンジニアを⽬指し活躍中。</p>
+                </div>
+            </div>
+        </div>
+        <div class="career-path-2">
+        </div>
+
+    </section>
 </div>
 @endsection
