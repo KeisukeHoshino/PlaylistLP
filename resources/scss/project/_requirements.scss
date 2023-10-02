@@ -46,6 +46,7 @@ h1 {
     padding-bottom: 70px;
 
     @media (640px <= width) {
+        width: 80.52%;
         padding-bottom: 100px;
 
         }
@@ -57,6 +58,7 @@ h1 {
 
         @media (640px <= width) {
             flex-wrap: nowrap;
+            justify-content: center;
             gap: 40px;
 
             }
@@ -69,15 +71,13 @@ h1 {
             justify-content: space-between;
 
             @media (640px <= width) {
-                width: calc((100% - 40px) / 2);
-                justify-content: normal;
-                gap: 15px;
+                width: calc((75% - 160px) / 4);
             }
 
             h6{
                 font-size: 12px;
 
-                @media (640px <= width) {
+                @media (960px <= width) {
                     font-size: 14px;
                 }
             }
@@ -171,6 +171,7 @@ h1 {
             text-align: start;
 
             @media (640px <= width) {
+                width: 30%;
                 font-size: 16px;
                 line-height: 24px;
                 letter-spacing: 0.64px;
@@ -212,6 +213,9 @@ h1 {
 
     @media (640px <= width) {
         width: 80.52%;
+    }
+
+    @media (960px <= width) {
         display: flex;
         gap: 40px;
     }
@@ -225,7 +229,7 @@ h1 {
     .c-requirements-img{
         border-radius: 10px;
 
-        @media (640px <= width) {
+        @media (960px <= width) {
             width: 56.81%;
             height: 100%;
         }
@@ -279,6 +283,10 @@ h1 {
 
                 p:nth-child(1) {
                     margin: 10px 0 0 auto;
+
+                    @media (640px <= width) {
+                        margin-top: 5px;
+                    }
 
                     @media (960px <= width){
                         margin-top: 20px;
@@ -334,7 +342,7 @@ h1 {
                 text-align: center;
 
                 @media (960px <= width){
-                    margin: 0 auto 25px auto;
+                    margin: 0 auto 10px auto;
 
                 }
 
