@@ -1,2 +1,168 @@
 // エントリー画面について
+@use "../global/variables" as variables;
 
+.entry-wrapper {
+    width: 90.66%;
+    margin: 0 auto;
+}
+
+.entry-title {
+    padding: 120px 0px 70px 0px;
+    margin: 0 auto;
+    h1 {
+        font-family: variables.$base-font-English;
+        color: variables.$color-logo-parts04;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: 1.44px;
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+    }
+}
+
+.entryform {
+    margin-bottom: 130px;
+    ul {
+        margin-top: 50px;
+        li {
+            margin: 0 auto;
+            width: 100%;
+            margin-bottom: 30px;
+            label {
+                margin-bottom: 26px;
+                display: block;
+                h3 {
+                    font-size: 14px;
+                    line-height: 1.8;
+                    letter-spacing: 0.56px;
+                    position: relative;
+                    span {
+                        color: variables.$color-logo-parts01;
+                        border: 1px solid variables.$color-logo-parts01;
+                        border-radius: 9999px;
+                        padding: 3px 12px;
+                        margin-left: 10px;
+                    }
+                }
+                ::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -8px;
+                    width: 20px;
+                    height: 3px;
+                    background: repeating-linear-gradient(
+                        transparent 50%,
+                        variables.$color-logo-parts04 50%
+                    );
+                    border-radius: 9999px;
+                }
+            }
+            input {
+                width: 100%;
+                background-color: variables.$color-gray-light;
+                border: none;
+                border-radius: 4px;
+                height: 32px;
+                padding: 5px 20px;
+            }
+            :focus {
+                outline: none;
+            }
+        }
+        .entryform-list_file {
+            &_request {
+                margin-bottom: 15px;
+            }
+            &_select {
+                background-color: variables.$color-gray-light;
+                text-align: center;
+                height: 32px;
+                width: 100%;
+                padding: 5px 20px;
+                cursor: pointer;
+            }
+            &_attention {
+                font-size: 10px;
+                color: variables.$color-gray-black;
+            }
+            &_selectfile {
+                color: variables.$color-gray-black;
+                text-align: center;
+                margin: 5px 0 15px 0;
+            }
+        }
+        .entryform-list_url {
+            p {
+                margin: 15px 0;
+            }
+        }
+        .entryform-list_message {
+            textarea {
+                width: 100%;
+                height: 215px;
+                padding: 5px;
+                resize: none;
+            }
+        }
+    }
+}
+::placeholder {
+    color: variables.$color-gray-black;
+}
+input[type="file"] {
+    display: none;
+}
+
+.privacy {
+    height: 200px;
+    margin-bottom: 50px;
+    padding: 20px 18px;
+    border: 1px solid #000;
+    overflow-y: scroll;
+    h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        color: variables.$color-black;
+    }
+    h4 {
+        font-size: 15px;
+        color: variables.$color-black-light;
+    }
+    p {
+        margin-bottom: 15px;
+        color: variables.$color-black-light;
+    }
+}
+
+#entryform-check-btn {
+    position: relative;
+    height: 61px;
+    .entryform-check-btn {
+        width: 340px;
+        margin: auto;
+        inset: 0px 0px 0px 0px;
+        font-size: 14px;
+        position: absolute;
+        text-decoration: none;
+        padding: 5px 35px;
+        background-color: variables.$color-white;
+        border: 2px solid variables.$color-black;
+        border-radius: 65px;
+        color: variables.$color-black;
+        cursor: pointer;
+        box-shadow: 2px 2px 0 variables.$color-black;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .entryform-check-btn:hover {
+        transform: translate(2px, 2px);
+        box-shadow: none;
+    }
+    .entry-btn_arrow {
+        position: absolute;
+        inset: 22px 0px 0px 300px;
+    }
+}
