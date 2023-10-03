@@ -186,22 +186,239 @@
             <p>Playlist社員の入社後のキャリアパスをご紹介します。</p>
             <span class="annotation">※情報は2023年8月時点のものです。</span>
         </div>
-        <div class="career-path-1">
-            <div class="career-path-img">
-                <img src="{{asset('img/member/career_hoshino.jpeg')}}">
+        <div class="career-path-1 career-path-main">
+            <div class="career-path-a">
+                <div class="career-path-img">
+                    <img src="{{asset('img/member/career_hoshino.jpeg')}}">
+                </div>
+                <div class="career-path-about">
+                    <div class="career-path-about-name">
+                        <p>Keisuke.H（25歳）</p>
+                    </div>
+                    <div class="career-path-about-text">
+                        <p>独学でIT知識やプログラミング知識・技術を1年学習。Playlistへ⼊社後、1年で開発案件を担当。現在はWebエンジニアを⽬指し活躍中。</p>
+                    </div>
+                </div>
             </div>
-            <div class="career-path-about">
-                <div class="career-path-about-name">
-                    <p>Keisuke.H（25歳）</p>
-                </div>
-                <div class="career-path-about-text">
-                    <p>独学でIT知識やプログラミング知識・技術を1年学習。Playlistへ⼊社後、1年で開発案件を担当。現在はWebエンジニアを⽬指し活躍中。</p>
-                </div>
+            <div class="career-path-b">
+                <ul id="timeline">
+                    <span class="vertical-line">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="178" viewBox="0 0 4 178" fill="none">
+                            <path d="M2.00001 178L1.35018e-05 174.266L2.28241e-05 3.49688e-07L1.99999 1.74845e-07L3.99996 0L4 174.266L2.00001 178Z" fill="#FF9933"/>
+                        </svg>
+                    </span>
+                    <li>
+                        <div>
+                            <span class="date">2021.09</span>
+                        </div>
+                        <div class='circle'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                fill="none">
+                                <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933"
+                                    stroke-width="3" />
+                            </svg>
+                        </div>
+                        <div class="content">
+                            入社
+                            <br>
+                            テスト案件
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="date">2021.12</span>
+                        </div>
+                        <div class='circle'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                fill="none">
+                                <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933"
+                                    stroke-width="3" />
+                            </svg>
+                        </div>
+                        <div class="content">
+                            社内業務
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="date">2021.01</span>
+                        </div>
+                        <div class='circle'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                fill="none">
+                                <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933"
+                                    stroke-width="3" />
+                            </svg>
+                        </div>
+                        <div class="content">
+                            テスト案件
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="date">2022.06</span>
+                        </div>
+                        <div class='circle'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                fill="none">
+                                <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933"
+                                    stroke-width="3" />
+                            </svg>
+                        </div>
+                        <div class="content">
+                            Java開発案件
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="career-path-2">
+        <div class="career-path-2 career-path-main">
+            <div class="career-path-a">
+                <div class="career-path-img">
+                    <img src="{{asset('img/member/career_ryo.jpeg')}}">
+                </div>
+                <div class="career-path-about">
+                    <div class="career-path-about-name">
+                        <p>Ryo.W（26歳）</p>
+                    </div>
+                    <div class="career-path-about-text">
+                        <p>SIer企業にてエンジニアのキャリアをスタート。データを活⽤した技術への成⻑を⽬指しSIer企業からPlaylistへ転職。⼊社後6ヶ⽉でPythonを使⽤した案件への参画を実現。社内では、若⼿エンジニアの教育や社内の課題解決などリードメンバーとしてPlaylistを推進。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="career-path-b">
+                <ul id="timeline">
+                    <span class="vertical-line">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="126" viewBox="0 0 4 126" fill="none">
+                            <path d="M2.00001 126L1.35972e-05 123.357L2.73701e-05 3.49688e-07L2 1.74845e-07L3.99997 0L4 123.357L2.00001 126Z" fill="#FF9933"/>
+                        </svg>
+                    </span>
+                    <li>
+                        <div>
+                            <span class="date">2022.02</span>
+                        </div>
+                        <div class='circle'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                fill="none">
+                                <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933"
+                                    stroke-width="3" />
+                            </svg>
+                        </div>
+                        <div class="content">
+                            入社
+                            <br>
+                            車載ソフトウェアのテスト案件
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="date">2022.09</span>
+                        </div>
+                        <div class='circle'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                fill="none">
+                                <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933"
+                                    stroke-width="3" />
+                            </svg>
+                        </div>
+                        <div class="content">
+                            アカウント管理システムの開発
+                            <br>
+                            Playlistのリードメンバーに就任
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-
+        <div class="career-path-3 career-path-main">
+            <div class="career-path-a">
+                <div class="career-path-img">
+                    <img src="{{asset('img/member/.jpeg')}}">
+                </div>
+                <div class="career-path-about">
+                    <div class="career-path-about-name">
+                        <p>Xxxx.X（xx歳）</p>
+                    </div>
+                    <div class="career-path-about-text">
+                        <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
+                    </div>
+                </div>
+            </div>
+            <div class="career-path-b">
+                <ul id="timeline">
+                    <span class="vertical-line">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="178" viewBox="0 0 4 178" fill="none">
+                            <path d="M2.00001 178L1.35018e-05 174.266L2.28241e-05 3.49688e-07L1.99999 1.74845e-07L3.99996 0L4 174.266L2.00001 178Z" fill="#FF9933"/>
+                        </svg>
+                    </span>
+                    <li>
+                        <div>
+                            <span class="date">2021.09</span>
+                        </div>
+                        <div class='circle'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                fill="none">
+                                <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933"
+                                    stroke-width="3" />
+                            </svg>
+                        </div>
+                        <div class="content">
+                            入社
+                            <br>
+                            テスト案件
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="date">2021.12</span>
+                        </div>
+                        <div class='circle'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                fill="none">
+                                <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933"
+                                    stroke-width="3" />
+                            </svg>
+                        </div>
+                        <div class="content">
+                            社内業務
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="date">2021.01</span>
+                        </div>
+                        <div class='circle'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                fill="none">
+                                <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933"
+                                    stroke-width="3" />
+                            </svg>
+                        </div>
+                        <div class="content">
+                            テスト案件
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="date">2022.06</span>
+                        </div>
+                        <div class='circle'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                fill="none">
+                                <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933"
+                                    stroke-width="3" />
+                            </svg>
+                        </div>
+                        <div class="content">
+                            Java開発案件
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
-</div>
+
+    {{-- エントリーボタンの呼び出し --}}
+    @yield('entry_btn')
+    </div>
 @endsection

@@ -245,12 +245,13 @@
 #career-path {
     margin-top: 100px;
     margin-bottom: 100px;
-    .b-heading{
+
+    .b-heading {
         width: 90.66%;
         margin: 0 auto;
         padding-bottom: 34px;
 
-        span{
+        span {
             font-family: variables.$base-font-English;
             color: variables.$color-logo-parts02;
             font-size: 10px;
@@ -259,28 +260,34 @@
             letter-spacing: 0.4px;
         }
 
-        h3{
+        h3 {
             font-size: 18px;
         }
     }
+
     .b-heading-about {
         width: 90.66%;
         margin: 0 auto;
         padding-bottom: 40px;
+
         p {
             font-size: 12px;
         }
+
         .annotation {
             font-family: variables.$base-font-Japanese;
             font-size: 10px;
             color: variables.$color-gray-black;
         }
     }
-
-    .career-path-1 {
+    .career-path-main {
+        margin-bottom: 60px;
+    }
+    .career-path-a {
         width: 90.66%;
-        margin: 0 auto;
+        margin: 0 auto 25px auto;
         display: flex;
+
         .career-path-img {
             width: 100px;
             height: 133px;
@@ -290,11 +297,13 @@
         .career-path-about {
             font-family: variables.$base-font-Japanese;
             margin-left: 25px;
+
             .career-path-about-name {
                 font-size: 16px;
                 font-weight: 700;
                 letter-spacing: 0.64px;
                 position: relative;
+
                 &:after {
                     position: absolute;
                     background-color: variables.$color-logo-parts02;
@@ -305,18 +314,73 @@
                     width: 20px;
                 }
             }
+
             .career-path-about-text {
                 font-family: Noto Sans JP;
                 font-size: 12px;
                 font-style: normal;
                 font-weight: 700;
-                line-height: 21.6px; /* 180% */
+                line-height: 21.6px;
+                /* 180% */
                 letter-spacing: 0.48px;
                 margin-top: 23px;
             }
         }
     }
 
-    .career-path-2 {
+    .career-path-b {
+        width: 90.66%;
+        margin: 0 auto;
+        .vertical-line {
+            position: absolute;
+            left: 125px;
+            margin-top: 7px;
+        }
+        ul {
+            // 縦線疑似要素で作成
+            // &:after {
+            // display: block;
+            // position: absolute;
+            //     background-color: #ff9933;
+            //     border-radius: 9999px;
+            //     top: 31px;
+            //     left: -4px;
+            //     content: "";
+            //     height: 52px;
+            //     width: 4px;
+            //     z-index: 10;
+            // }
+        }
+        li {
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+        .date {
+            margin-right: 13.5px;
+            width: 65px;
+            padding: 0px 10px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 9999px;
+            color: white;
+            background: variables.$color-logo-parts02;
+        }
+
+        .circle {
+            margin-right: 19px;
+            z-index: 100;
+        }
+
+        .content {
+            font-family: Noto Sans JP;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 21.6px; /* 180% */
+            letter-spacing: 0.48px;
+            z-index: 100;
+            margin: 0;
+        }
     }
 }
