@@ -313,3 +313,98 @@
     }
   }
 }
+
+.p-top-faq {
+  padding: 100px 0;
+
+  @media (640px <=width) {
+    padding: 120px 0 150px;
+  }
+
+  &_item {
+    border-top: 1px solid variables.$color-gray-light;
+
+    &:last-of-type {
+      border-bottom: 1px solid variables.$color-gray-light;
+    }
+
+    dt,
+    dd {
+      position: relative;
+
+      &>span {
+        position: absolute;
+        left: 0;
+        font-size: 20px;
+        font-family: variables.$base-font-English;
+
+        @media (640px <=width) {
+          font-size: 25px;
+        }
+      }
+    }
+
+    dt {
+      cursor: pointer;
+      padding: 20px 45px 20px 40px;
+      font-size: 14px;
+
+      @media (640px <=width) {
+        padding: 23px 40px;
+        font-size: 16px;
+      }
+
+      &.is-open {
+        &::after {
+          transform: rotate(0deg);
+        }
+      }
+
+      &>span {
+        top: 12px;
+        color: variables.$color-logo-parts03;
+
+        @media (640px <=width) {
+          top: 15px;
+        }
+      }
+
+      &::before,
+      &::after {
+        position: absolute;
+        top: 32px;
+        right: 10px;
+        transition: 0.3s ease-in-out;
+        border-radius: 9999px;
+        background: variables.$color-black;
+        width: 17px;
+        height: 2px;
+        content: "";
+
+        @media (640px <=width) {
+          top: 36px;
+          right: 13px;
+        }
+      }
+
+      &::after {
+        transform: rotate(-90deg);
+      }
+    }
+
+    dd {
+      display: none;
+      padding: 0 0 17px 40px;
+      color: variables.$color-black-light;
+
+      &>span {
+        top: -7px;
+        color: variables.$color-logo-parts01;
+
+        @media (640px <=width) {
+          top: -12px;
+        }
+      }
+    }
+  }
+}

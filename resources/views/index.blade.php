@@ -76,6 +76,35 @@
     </div>
   </section>
 
+  {{--  よくある質問 --}}
+  <section class="p-top-faq">
+    <div class="c-top-inner-pc c-top-inner-sp">
+      <h2 class="c-top-heading-h2"><span>FAQ</span>よくある質問</h2>
+      <dl class="p-top-faq_list js-accordion">
+        <div class="p-top-faq_item">
+          <dt><span>Q.</span>IT業界の経験は必要ですか？</dt>
+          <dd><span>A.</span>IT未経験でも今までの経験やスキルを活かしたプロジェクトで活躍していただくことが可能です。</dd>
+        </div>
+        <div class="p-top-faq_item">
+          <dt><span>Q.</span>面接場所について教えて下さい。</dt>
+          <dd><span>A.</span>基本はオンラインです。希望者はオフラインで武蔵小杉Officeで実施可能です。</dd>
+        </div>
+        <div class="p-top-faq_item">
+          <dt><span>Q.</span>応募前に話をきいてみたいのですが、可能ですか？</dt>
+          <dd><span>A.</span>可能です。カジュアル面談を設けておりますので、<a href="/entry/">エントリー</a>よりお気軽にご連絡下さい。</a></dd>
+        </div>
+        <div class="p-top-faq_item">
+          <dt><span>Q.</span>髪型や服装に決まりはありますか？</dt>
+          <dd><span>A.</span>joinしたプロジェクトによって異なりますが、基本はオフィスカジュアルです。TPOに応じた清潔感のある服装を心がけて下さい。</dd>
+        </div>
+        <div class="p-top-faq_item">
+          <dt><span>Q.</span>研修はありますか？</dt>
+          <dd><span>A.</span>「成長に繋がるコミュニケーション」を軸に積極的な社内研修を実施しています。自社で研修を構築しているところが強みです。<br>●フロントエンド研修（自己紹介サイト）<br>●SQL研修（SQLの基本操作）<br>●VBA研修（ツール作成）<br>●RPA研修（資格取得サポート）<br>●その他（Udemyでオンライン講座：入社前研修）</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
   @yield('entry_btn')
 
 </main>
