@@ -4,6 +4,46 @@
 @section('content')
 <main>
 
+  {{--  代表メッセージ --}}
+  <div class="p-top-kv">
+    <div class="p-top-kv_pic">
+      <div class="swiper js-kvSlide">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="{{asset('img/top/kv01-pc.jpg')}}" media="(min-width:640px)" type="image/jpeg">
+              <img class="u-top-img" src="{{asset('img/top/kv01.jpg')}}" alt="">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="{{asset('img/top/kv02-pc.jpg')}}" media="(min-width:640px)" type="image/jpeg">
+              <img class="u-top-img" src="{{asset('img/top/kv02.jpg')}}" alt="">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="{{asset('img/top/kv03-pc.jpg')}}" media="(min-width:640px)" type="image/jpeg">
+              <img class="u-top-img" src="{{asset('img/top/kv03.jpg')}}" alt="">
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="p-top-kv_animation">
+        <img class="p-top-kv_animation-arrow u-top-img" src="{{asset('img/top/kv-arrow.svg')}}" alt="">
+        <img class="p-top-kv_animation-scroll u-top-img" src="{{asset('img/top/kv-scroll.svg')}}" alt="SCROLL">
+      </div>
+    </div>
+    <div class="p-top-kv_text c-top-inner-sp">
+      <p class="p-top-kv_heading-sub">GROWTH OPPORTUNITIES ARE HERE.</p>
+      <h1 class="p-top-kv_heading">成長機会が<br>ここにある</h1>
+      <div class="p-top-kv_entry">
+        <a href="/entry/" class="p-top-kv_entry_btn">ENTRY</a>
+        <a href="/requirements/" class="p-top-kv_entry_textlink">募集要項はこちら</a>
+      </div>
+    </div>
+  </div>
+
   @yield('entry_btn')
 
   {{--  代表メッセージ --}}
