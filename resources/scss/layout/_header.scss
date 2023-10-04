@@ -41,7 +41,7 @@
         &.open{
             background-color: variables.$color-white;
             opacity: 1;
-            padding-top: 80px;
+            padding-top: 60px;
         }
     }
 }
@@ -100,6 +100,7 @@
     padding-left: 20px;
 
     @media (width <= 960px) {
+        padding: 0px 0px 25px 0px;
         &.c-headerMenubar-nav-listCenter{
             margin: 0 auto;
 
@@ -113,7 +114,7 @@
             }
 
             &:hover{
-                &>a::before{
+                &::before{
                     content: "－";
                     position: absolute;
                     top: 13.0%;
@@ -133,7 +134,7 @@
     padding: 20px 5px;
 
     @media (width <= 960px) {
-        width: 40%;
+        font-size: 18px;
         text-align: left;
     }
 }
@@ -154,17 +155,10 @@
             margin-right: 10px;
         }
     }
-
-    @media (width <= 960px) {
-        width: 75%;
-    }
 }
 
 //
 // 個別対応
-//
-// TODO: まとめられる部分を整理する
-// TODO: メディアクエリの対応（960->640）
 //
 
 //
@@ -179,7 +173,6 @@
     }
 
     @media (width <= 960px) {
-        color: variables.$color-logo-parts01;
         width: 70%;
         display: flex;
         justify-content: start;
@@ -200,17 +193,20 @@
 // 子要素としてスタイルを調整、親要素の中央に表示させるように更新
 .c-headerMenubar-nav ul li:hover .c-headerMenubar-navTop__subMenu {
     display: block;
-    opacity: 1;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     background-color: variables.$color-white;
-    border: 1px solid variables.$color-logo-parts01;
-    box-shadow: 2px 2px 0 variables.$color-logo-parts01;
-    border-radius: 5px;
-    margin: 16px auto;
-    padding: 20px;
-    align-items: center;
+    opacity: 1;
+
+    @media (960px <= width) {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 1px solid variables.$color-logo-parts01;
+        box-shadow: 2px 2px 0 variables.$color-logo-parts01;
+        border-radius: 5px;
+        margin: 16px auto;
+        padding: 20px;
+        align-items: center;
+    }
 }
 
 // 出たり消えたりする部分のli周りを調整
@@ -257,19 +253,19 @@
 .c-headerMenubar-nav ul li:hover .c-headerMenubar-navMember__subMenu {
     display: block;
     opacity: 1;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     background-color: variables.$color-white;
-    border: 1px solid variables.$color-logo-parts02;
-    box-shadow: 2px 2px 0 variables.$color-logo-parts02;
-    border-radius: 5px;
-    margin: 16px auto;
-    padding: 20px;
-    align-items: center;
 
-    @media (width <= 960px) {
-        position: relative;
+
+    @media (960px <= width) {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 1px solid variables.$color-logo-parts02;
+        box-shadow: 2px 2px 0 variables.$color-logo-parts02;
+        border-radius: 5px;
+        margin: 16px auto;
+        padding: 20px;
+        align-items: center;
     }
 }
 
@@ -317,16 +313,19 @@
 .c-headerMenubar-nav ul li:hover .c-headerMenubar-navRequirements__subMenu {
     display: block;
     opacity: 1;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     background-color: variables.$color-white;
-    border: 1px solid variables.$color-logo-parts03;
-    box-shadow: 2px 2px 0 variables.$color-logo-parts03;
-    border-radius: 5px;
-    margin: 16px auto;
-    padding: 20px;
-    align-items: center;
+
+    @media (960px <= width) {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 1px solid variables.$color-logo-parts03;
+        box-shadow: 2px 2px 0 variables.$color-logo-parts03;
+        border-radius: 5px;
+        margin: 16px auto;
+        padding: 20px;
+        align-items: center;
+    }
 }
 
 // 出たり消えたりする部分のli周りを調整
@@ -354,6 +353,7 @@
     text-decoration: none;
     transition: 0.25s;
     z-index: 0; /* z-indexをauto以外にする */
+    cursor: not-allowed;
 
     &>.entry-btn_arrow{
         position: unset;
