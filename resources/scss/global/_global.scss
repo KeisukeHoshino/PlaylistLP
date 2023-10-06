@@ -2,6 +2,10 @@
 @charset "UTF-8";
 @use "./variables" as variables;
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: variables.$base-font-Japanese;
     font-weight: 700;

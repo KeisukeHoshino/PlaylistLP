@@ -13,92 +13,115 @@
         </p>
     </div>
 
-    {{-- タイトルアンカー --}}
-    <div class="member-anchor">
+    {{-- タイトルアンカー styleに関しては_requirements.scssに記載 --}}
+    <div class="title-anchor">
         <ul>
             <li>
-                <h3>メンバー</h3>
+                <a href="#member">
+                    <div>
+                        <h6>メンバー</h6>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
+                            <path d="M0.830185 0.720866C0.641318 0.538141 0.807069 0.197771 1.08505 0.197517L8.76759 0.191149C9.02846 0.190922 9.13532 0.496023 8.9421 0.689243L5.21641 4.41494C5.05442 4.57693 4.78946 4.57867 4.62542 4.41881L0.830185 0.720866Z" fill="#333333" />
+                        </svg>
+                    </div>
+                </a>
             </li>
             <li>
-                <h3>社員インタビュー</h3>
+                <a href="#interview">
+                    <div>
+                        <h6>社員インタビュー</h6>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
+                            <path d="M0.830185 0.720866C0.641318 0.538141 0.807069 0.197771 1.08505 0.197517L8.76759 0.191149C9.02846 0.190922 9.13532 0.496023 8.9421 0.689243L5.21641 4.41494C5.05442 4.57693 4.78946 4.57867 4.62542 4.41881L0.830185 0.720866Z" fill="#333333" />
+                        </svg>
+                    </div>
+                </a>
+
             </li>
+
             <li>
-                <h3>キャリアパス</h3>
+                <a href="#career-path">
+                    <div>
+                        <h6>キャリアパス</h6>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
+                            <path d="M0.830185 0.720866C0.641318 0.538141 0.807069 0.197771 1.08505 0.197517L8.76759 0.191149C9.02846 0.190922 9.13532 0.496023 8.9421 0.689243L5.21641 4.41494C5.05442 4.57693 4.78946 4.57867 4.62542 4.41881L0.830185 0.720866Z" fill="#333333" />
+                        </svg>
+                    </div>
+                </a>
             </li>
         </ul>
     </div>
 
     {{-- MEMBER --}}
     <section id="member">
-            <h2>
-                MEMBER
-            </h2>
-            <h3>
-                メンバー
-            </h3>
-            <p class="member-message">
-                PlaylistはIT未経験からエンジニアを目指している人が多い会社です。<br class="sp_br">
-                社内メンバーと共に一緒に成長していける環境を整えていますので、エンジニアになるためのキャリアを私たちと共に描きましょう！！
-            </p>
-            <ul>
-                <li>
-                    <!-- TODO：画像を修正 -->
-                    <img src="{{asset('img/member/career_ryo.jpeg')}}" alt="">
-                    <p class="role">CEO</p>
-                    <h4>Yuta.Y</h4>
-                </li>
-                <li>
-                    <!-- TODO：画像を修正 -->
-                    <img src="{{asset('img/member/career_hoshino.jpeg')}}" alt="">
-                    <p class="role">COO/SALES</p>
-                    <h4>Takahiro.A</h4>
-                </li>
-                <li>
-                    <!-- TODO：画像を修正 -->
-                    <img src="{{asset('img/member/career_ryo.jpeg')}}" alt="">
-                    <p class="role">CHO/HR/PR</p>
-                    <h4>Taro.T</h4>
-                </li>
-                <li>
-                    <!-- TODO：画像を修正 -->
-                    <img src="{{asset('img/member/career_hoshino.jpeg')}}" alt="">
-                    <p class="role">BDR</p>
-                    <h4>Minami.Y</h4>
-                </li>
-                <li>
-                    <!-- TODO：画像を修正 -->
-                    <img src="{{asset('img/member/career_ryo.jpeg')}}" alt="">
-                    <p class="role">ENGINEER</p>
-                    <h4>Mao.O</h4>
-                </li>
-                <li>
-                    <!-- TODO：画像を修正 -->
-                    <img src="{{asset('img/member/career_hoshino.jpeg')}}" alt="">
-                    <p class="role">ENGINEER</p>
-                    <h4>Takuya.M</h4>
-                </li>
-                <li>
-                    <!-- TODO：画像を修正 -->
-                    <img src="{{asset('img/member/career_ryo.jpeg')}}" alt="">
-                    <p class="role">ENGINEER</p>
-                    <h4>Ryo.W</h4>
-                </li>
-                <li>
-                    <!-- TODO：画像を修正 -->
-                    <img src="{{asset('img/member/career_hoshino.jpeg')}}" alt="">
-                    <p class="role">ENGINEER</p>
-                    <h4>Masahiro.S</h4>
-                </li>
-                <li>
-                    <!-- TODO：画像を修正 -->
-                    <img src="{{asset('img/member/career_ryo.jpeg')}}" alt="">
-                    <p class="role">ENGINEER</p>
-                    <h4>Yui.O</h4>
-                </li>
-                <li class="andmore">
-                    <p>and more...</p>
-                </li>
-            </ul>
+        <h2>
+            MEMBER
+        </h2>
+        <h3>
+            メンバー
+        </h3>
+        <p class="member-message">
+            PlaylistはIT未経験からエンジニアを目指している人が多い会社です。<br class="sp_br">
+            社内メンバーと共に一緒に成長していける環境を整えていますので、エンジニアになるためのキャリアを私たちと共に描きましょう！！
+        </p>
+        <ul>
+            <li>
+                <!-- TODO：画像を修正 -->
+                <img src="{{asset('img/member/career_ryo.jpeg')}}" alt="">
+                <p class="role">CEO</p>
+                <h4>Yuta.Y</h4>
+            </li>
+            <li>
+                <!-- TODO：画像を修正 -->
+                <img src="{{asset('img/member/career_hoshino.jpeg')}}" alt="">
+                <p class="role">COO/SALES</p>
+                <h4>Takahiro.A</h4>
+            </li>
+            <li>
+                <!-- TODO：画像を修正 -->
+                <img src="{{asset('img/member/career_ryo.jpeg')}}" alt="">
+                <p class="role">CHO/HR/PR</p>
+                <h4>Taro.T</h4>
+            </li>
+            <li>
+                <!-- TODO：画像を修正 -->
+                <img src="{{asset('img/member/career_hoshino.jpeg')}}" alt="">
+                <p class="role">BDR</p>
+                <h4>Minami.Y</h4>
+            </li>
+            <li>
+                <!-- TODO：画像を修正 -->
+                <img src="{{asset('img/member/career_ryo.jpeg')}}" alt="">
+                <p class="role">ENGINEER</p>
+                <h4>Mao.O</h4>
+            </li>
+            <li>
+                <!-- TODO：画像を修正 -->
+                <img src="{{asset('img/member/career_hoshino.jpeg')}}" alt="">
+                <p class="role">ENGINEER</p>
+                <h4>Takuya.M</h4>
+            </li>
+            <li>
+                <!-- TODO：画像を修正 -->
+                <img src="{{asset('img/member/career_ryo.jpeg')}}" alt="">
+                <p class="role">ENGINEER</p>
+                <h4>Ryo.W</h4>
+            </li>
+            <li>
+                <!-- TODO：画像を修正 -->
+                <img src="{{asset('img/member/career_hoshino.jpeg')}}" alt="">
+                <p class="role">ENGINEER</p>
+                <h4>Masahiro.S</h4>
+            </li>
+            <li>
+                <!-- TODO：画像を修正 -->
+                <img src="{{asset('img/member/career_ryo.jpeg')}}" alt="">
+                <p class="role">ENGINEER</p>
+                <h4>Yui.O</h4>
+            </li>
+            <li class="andmore">
+                <p>and more...</p>
+            </li>
+        </ul>
     </section>
 
     {{-- INTERBVIEW --}}
@@ -223,10 +246,8 @@
                                     </div>
                                     <div class='circle'>
                                         <span class="vertical-line vl-1"></span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
-                                            fill="none">
-                                            <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933"
-                                                stroke-width="3" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                            <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933" stroke-width="3" />
                                         </svg>
                                     </div>
                                     <div class="content">
@@ -240,10 +261,8 @@
                                         <span class="date">2021.12</span>
                                     </div>
                                     <div class='circle'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
-                                            fill="none">
-                                            <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933"
-                                                stroke-width="3" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                            <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933" stroke-width="3" />
                                         </svg>
                                     </div>
                                     <div class="content">
@@ -255,10 +274,8 @@
                                         <span class="date">2021.01</span>
                                     </div>
                                     <div class='circle'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
-                                            fill="none">
-                                            <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933"
-                                                stroke-width="3" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                            <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933" stroke-width="3" />
                                         </svg>
                                     </div>
                                     <div class="content">
@@ -270,10 +287,8 @@
                                         <span class="date">2022.06</span>
                                     </div>
                                     <div class='circle'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
-                                            fill="none">
-                                            <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933"
-                                                stroke-width="3" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                            <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933" stroke-width="3" />
                                         </svg>
                                     </div>
                                     <div class="content">
@@ -319,10 +334,8 @@
                                     </div>
                                     <div class='circle'>
                                         <span class="vertical-line vl-2"></span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
-                                            fill="none">
-                                            <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933"
-                                                stroke-width="3" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                            <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933" stroke-width="3" />
                                         </svg>
                                     </div>
                                     <div class="content">
@@ -336,10 +349,8 @@
                                         <span class="date">2022.09</span>
                                     </div>
                                     <div class='circle'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
-                                            fill="none">
-                                            <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933"
-                                                stroke-width="3" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                            <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933" stroke-width="3" />
                                         </svg>
                                     </div>
                                     <div class="content">
@@ -390,10 +401,8 @@
                                     </div>
                                     <div class='circle'>
                                         <span class="vertical-line vl-1"></span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
-                                            fill="none">
-                                            <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933"
-                                                stroke-width="3" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                            <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933" stroke-width="3" />
                                         </svg>
                                     </div>
                                     <div class="content">
@@ -407,10 +416,8 @@
                                         <span class="date">2021.12</span>
                                     </div>
                                     <div class='circle'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
-                                            fill="none">
-                                            <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933"
-                                                stroke-width="3" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                            <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933" stroke-width="3" />
                                         </svg>
                                     </div>
                                     <div class="content">
@@ -422,10 +429,8 @@
                                         <span class="date">2021.01</span>
                                     </div>
                                     <div class='circle'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
-                                            fill="none">
-                                            <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933"
-                                                stroke-width="3" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                            <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933" stroke-width="3" />
                                         </svg>
                                     </div>
                                     <div class="content">
@@ -437,10 +442,8 @@
                                         <span class="date">2022.06</span>
                                     </div>
                                     <div class='circle'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
-                                            fill="none">
-                                            <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933"
-                                                stroke-width="3" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                            <circle cx="11" cy="11" r="3.5" fill="white" stroke="#FF9933" stroke-width="3" />
                                         </svg>
                                     </div>
                                     <div class="content">
@@ -457,5 +460,5 @@
 
     {{-- エントリーボタンの呼び出し --}}
     @yield('entry_btn')
-    </div>
+</div>
 @endsection

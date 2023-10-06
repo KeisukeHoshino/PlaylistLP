@@ -16,44 +16,65 @@
             </p>
         </div>
 
-        <div class="requirements-anchor">
+        <div class="title-anchor">
             <ul>
                 <li>
-                    <h6>募集要項</h6>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none" class="requirements-anchorArrow">
-                        <path d="M0.830185 0.720866C0.641318 0.538141 0.807069 0.197771 1.08505 0.197517L8.76759 0.191149C9.02846 0.190922 9.13532 0.496023 8.9421 0.689243L5.21641 4.41494C5.05442 4.57693 4.78946 4.57867 4.62542 4.41881L0.830185 0.720866Z" fill="#333333" />
-                    </svg>
+                    <a href="#requirements">
+                        <div>
+                            <h6>募集要項</h6>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
+                                <path d="M0.830185 0.720866C0.641318 0.538141 0.807069 0.197771 1.08505 0.197517L8.76759 0.191149C9.02846 0.190922 9.13532 0.496023 8.9421 0.689243L5.21641 4.41494C5.05442 4.57693 4.78946 4.57867 4.62542 4.41881L0.830185 0.720866Z" fill="#333333" />
+                            </svg>
+                        </div>
+                    </a>
                 </li>
                 <li>
-                    <h6>歓迎スキル</h6>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none" class="requirements-anchorArrow">
-                        <path d="M0.830185 0.720866C0.641318 0.538141 0.807069 0.197771 1.08505 0.197517L8.76759 0.191149C9.02846 0.190922 9.13532 0.496023 8.9421 0.689243L5.21641 4.41494C5.05442 4.57693 4.78946 4.57867 4.62542 4.41881L0.830185 0.720866Z" fill="#333333" />
-                    </svg>
+                    <a href="#welcome-skils">
+                        <div>
+                            <h6>歓迎スキル</h6>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
+                                <path d="M0.830185 0.720866C0.641318 0.538141 0.807069 0.197771 1.08505 0.197517L8.76759 0.191149C9.02846 0.190922 9.13532 0.496023 8.9421 0.689243L5.21641 4.41494C5.05442 4.57693 4.78946 4.57867 4.62542 4.41881L0.830185 0.720866Z" fill="#333333" />
+                            </svg>
+                        </div>
+                    </a>
                 </li>
                 <li>
-                    <h6>将来キャリアアップ</h6>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none" class="requirements-anchorArrow">
-                        <path d="M0.830185 0.720866C0.641318 0.538141 0.807069 0.197771 1.08505 0.197517L8.76759 0.191149C9.02846 0.190922 9.13532 0.496023 8.9421 0.689243L5.21641 4.41494C5.05442 4.57693 4.78946 4.57867 4.62542 4.41881L0.830185 0.720866Z" fill="#333333" />
-                    </svg>
+                    <a href="#career-advancement">
+                        <div>
+                            <h6>将来キャリアアップ</h6>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
+                                <path d="M0.830185 0.720866C0.641318 0.538141 0.807069 0.197771 1.08505 0.197517L8.76759 0.191149C9.02846 0.190922 9.13532 0.496023 8.9421 0.689243L5.21641 4.41494C5.05442 4.57693 4.78946 4.57867 4.62542 4.41881L0.830185 0.720866Z" fill="#333333" />
+                            </svg>
+                        </div>
+                    </a>
+                </li>
+                <li class="spacer"></li>
+                <li>
+                    <a href="#project-case">
+                        <div>
+                            <h6>プロジェクト例</h6>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
+                                <path d="M0.830185 0.720866C0.641318 0.538141 0.807069 0.197771 1.08505 0.197517L8.76759 0.191149C9.02846 0.190922 9.13532 0.496023 8.9421 0.689243L5.21641 4.41494C5.05442 4.57693 4.78946 4.57867 4.62542 4.41881L0.830185 0.720866Z" fill="#333333" />
+                            </svg>
+                        </div>
+                    </a>
                 </li>
                 <li>
-                    <h6>プロジェクト例</h6>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none" class="requirements-anchorArrow">
-                        <path d="M0.830185 0.720866C0.641318 0.538141 0.807069 0.197771 1.08505 0.197517L8.76759 0.191149C9.02846 0.190922 9.13532 0.496023 8.9421 0.689243L5.21641 4.41494C5.05442 4.57693 4.78946 4.57867 4.62542 4.41881L0.830185 0.720866Z" fill="#333333" />
-                    </svg>
-                </li>
-                <li>
-                    <h6>選考フロー</h6>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none" class="requirements-anchorArrow">
-                        <path d="M0.830185 0.720866C0.641318 0.538141 0.807069 0.197771 1.08505 0.197517L8.76759 0.191149C9.02846 0.190922 9.13532 0.496023 8.9421 0.689243L5.21641 4.41494C5.05442 4.57693 4.78946 4.57867 4.62542 4.41881L0.830185 0.720866Z" fill="#333333" />
-                    </svg>
+                    <a href="#selection-flow">
+                        <div>
+                            <h6>選考フロー</h6>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
+                                <path d="M0.830185 0.720866C0.641318 0.538141 0.807069 0.197771 1.08505 0.197517L8.76759 0.191149C9.02846 0.190922 9.13532 0.496023 8.9421 0.689243L5.21641 4.41494C5.05442 4.57693 4.78946 4.57867 4.62542 4.41881L0.830185 0.720866Z" fill="#333333" />
+                            </svg>
+                        </div>
+                    </a>
                 </li>
             </ul>
         </div>
     </div>
 
     <div class="c-requirements-wrapper">
-        <div class="c-requirements-container">
+        <div id="requirements" class="c-requirements-container">
             <div class="c-requirements-heading">
                 <span>
                     REQUIREMENTS
@@ -177,7 +198,7 @@
     </div>
 
     <div class="c-requirements-wrapper">
-        <div class="c-requirements-container">
+        <div id="welcome-skils" class="c-requirements-container">
             <div class="c-requirements-heading">
                 <span>
                     WELCOME SKILLS
@@ -204,7 +225,7 @@
     </div>
 
     <div class="c-requirements-wrapper">
-        <div class="c-requirements-container">
+        <div id="career-advancement" class="c-requirements-container">
             <div class="c-requirements-heading">
                 <span>
                     CAREER ADVANCEMENT
@@ -234,7 +255,7 @@
     </div>
 
     <div class="c-requirements-wrapper">
-        <div class="c-requirements-container">
+        <div id="project-case" class="c-requirements-container">
             <div class="c-requirements-heading">
                 <span>
                     PROJECT CASE
@@ -262,7 +283,7 @@
     @yield('entry_btn')
 
     <div class="c-requirements-wrapper">
-        <div class="c-requirements-container">
+        <div id="selection-flow" class="c-requirements-container">
             <div class="c-requirements-heading requirements-selectionFlowHeading">
                 <span>
                     SELECTION FLOW

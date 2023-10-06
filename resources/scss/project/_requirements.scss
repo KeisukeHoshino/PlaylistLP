@@ -40,7 +40,8 @@ h1 {
     }
 }
 
-.requirements-anchor {
+// メンバーページと募集要項ページのタイトル下のアンカー
+.title-anchor {
     width: 90.66%;
     margin: 0 auto;
     padding-bottom: 70px;
@@ -56,28 +57,72 @@ h1 {
         gap: 16px 20px;
 
         @media (640px <= width) {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px 40px;
+            margin-left: 39px;
+        }
+
+        @media (960px <= width) {
             flex-wrap: nowrap;
             justify-content: center;
             gap: 40px;
+            margin-left: 0;
         }
 
         li {
-            border-bottom: 1px solid variables.$color-black;
             width: calc((100% - 20px) / 2);
-            display: flex;
+            border-bottom: 1px solid variables.$color-black;
             align-items: center;
             justify-content: space-between;
 
             @media (640px <= width) {
-                width: calc((75% - 160px) / 4);
+                width: auto;
+                justify-content: center;
+                border: none;
+            }
+            @media (960px <= width) {
+                width: auto;
+                justify-content: center;
             }
 
             h6 {
                 font-size: 12px;
+                margin: 0;
 
-                @media (960px <= width) {
+                @media (640px <= width) {
                     font-size: 14px;
                 }
+            }
+            div {
+                display: flex;
+                height: 30px;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                @media (640px <= width) {
+                    border-bottom: 1px solid variables.$color-black;
+                    width: auto;
+                    gap: 15px;
+                }
+            }
+        }
+        .spacer {
+            display: none;
+            @media (640px <= width) {
+                display: block;
+                width: 100%;
+            }
+            @media (960px <= width) {
+                display: none;
+            }
+        }
+        :nth-child(5) {
+            @media (640px <= width) {
+                margin-left: -90px;
+            }
+            @media (960px <= width) {
+                margin-left: 0;
             }
         }
     }
