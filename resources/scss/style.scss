@@ -1,3 +1,5 @@
+// vendor
+@use "./vendor/swiper" as swiper;
 // global
 @use "./global/reset" as reset;
 @use "./global/global" as global;
