@@ -7,50 +7,48 @@
 <main>
 
     <div class="c-requirements-wrapper">
-        <div class="c-requirements-container">
-            <div class="requirements-title">
-                <h1>
-                    REQUIREMENTS
-                </h1>
-                <p class="requirements-subtitle">
-                    募集要項・選考フロー
-                </p>
-            </div>
+        <div class="requirements-title">
+            <h1>
+                REQUIREMENTS
+            </h1>
+            <p class="requirements-subtitle">
+                募集要項・選考フロー
+            </p>
+        </div>
 
-            <div class="requirements-anchor">
-                <ul>
-                    <li>
-                        <h6>募集要項</h6>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none" class="requirements-anchorArrow">
-                            <path d="M0.830185 0.720866C0.641318 0.538141 0.807069 0.197771 1.08505 0.197517L8.76759 0.191149C9.02846 0.190922 9.13532 0.496023 8.9421 0.689243L5.21641 4.41494C5.05442 4.57693 4.78946 4.57867 4.62542 4.41881L0.830185 0.720866Z" fill="#333333" />
-                        </svg>
-                    </li>
-                    <li>
-                        <h6>歓迎スキル</h6>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none" class="requirements-anchorArrow">
-                            <path d="M0.830185 0.720866C0.641318 0.538141 0.807069 0.197771 1.08505 0.197517L8.76759 0.191149C9.02846 0.190922 9.13532 0.496023 8.9421 0.689243L5.21641 4.41494C5.05442 4.57693 4.78946 4.57867 4.62542 4.41881L0.830185 0.720866Z" fill="#333333" />
-                        </svg>
-                    </li>
-                    <li>
-                        <h6>将来キャリアアップ</h6>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none" class="requirements-anchorArrow">
-                            <path d="M0.830185 0.720866C0.641318 0.538141 0.807069 0.197771 1.08505 0.197517L8.76759 0.191149C9.02846 0.190922 9.13532 0.496023 8.9421 0.689243L5.21641 4.41494C5.05442 4.57693 4.78946 4.57867 4.62542 4.41881L0.830185 0.720866Z" fill="#333333" />
-                        </svg>
-                    </li>
-                    <li>
-                        <h6>プロジェクト例</h6>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none" class="requirements-anchorArrow">
-                            <path d="M0.830185 0.720866C0.641318 0.538141 0.807069 0.197771 1.08505 0.197517L8.76759 0.191149C9.02846 0.190922 9.13532 0.496023 8.9421 0.689243L5.21641 4.41494C5.05442 4.57693 4.78946 4.57867 4.62542 4.41881L0.830185 0.720866Z" fill="#333333" />
-                        </svg>
-                    </li>
-                    <li>
-                        <h6>選考フロー</h6>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none" class="requirements-anchorArrow">
-                            <path d="M0.830185 0.720866C0.641318 0.538141 0.807069 0.197771 1.08505 0.197517L8.76759 0.191149C9.02846 0.190922 9.13532 0.496023 8.9421 0.689243L5.21641 4.41494C5.05442 4.57693 4.78946 4.57867 4.62542 4.41881L0.830185 0.720866Z" fill="#333333" />
-                        </svg>
-                    </li>
-                </ul>
-            </div>
+        <div class="requirements-anchor">
+            <ul>
+                <li>
+                    <h6>募集要項</h6>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none" class="requirements-anchorArrow">
+                        <path d="M0.830185 0.720866C0.641318 0.538141 0.807069 0.197771 1.08505 0.197517L8.76759 0.191149C9.02846 0.190922 9.13532 0.496023 8.9421 0.689243L5.21641 4.41494C5.05442 4.57693 4.78946 4.57867 4.62542 4.41881L0.830185 0.720866Z" fill="#333333" />
+                    </svg>
+                </li>
+                <li>
+                    <h6>歓迎スキル</h6>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none" class="requirements-anchorArrow">
+                        <path d="M0.830185 0.720866C0.641318 0.538141 0.807069 0.197771 1.08505 0.197517L8.76759 0.191149C9.02846 0.190922 9.13532 0.496023 8.9421 0.689243L5.21641 4.41494C5.05442 4.57693 4.78946 4.57867 4.62542 4.41881L0.830185 0.720866Z" fill="#333333" />
+                    </svg>
+                </li>
+                <li>
+                    <h6>将来キャリアアップ</h6>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none" class="requirements-anchorArrow">
+                        <path d="M0.830185 0.720866C0.641318 0.538141 0.807069 0.197771 1.08505 0.197517L8.76759 0.191149C9.02846 0.190922 9.13532 0.496023 8.9421 0.689243L5.21641 4.41494C5.05442 4.57693 4.78946 4.57867 4.62542 4.41881L0.830185 0.720866Z" fill="#333333" />
+                    </svg>
+                </li>
+                <li>
+                    <h6>プロジェクト例</h6>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none" class="requirements-anchorArrow">
+                        <path d="M0.830185 0.720866C0.641318 0.538141 0.807069 0.197771 1.08505 0.197517L8.76759 0.191149C9.02846 0.190922 9.13532 0.496023 8.9421 0.689243L5.21641 4.41494C5.05442 4.57693 4.78946 4.57867 4.62542 4.41881L0.830185 0.720866Z" fill="#333333" />
+                    </svg>
+                </li>
+                <li>
+                    <h6>選考フロー</h6>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none" class="requirements-anchorArrow">
+                        <path d="M0.830185 0.720866C0.641318 0.538141 0.807069 0.197771 1.08505 0.197517L8.76759 0.191149C9.02846 0.190922 9.13532 0.496023 8.9421 0.689243L5.21641 4.41494C5.05442 4.57693 4.78946 4.57867 4.62542 4.41881L0.830185 0.720866Z" fill="#333333" />
+                    </svg>
+                </li>
+            </ul>
         </div>
     </div>
 
