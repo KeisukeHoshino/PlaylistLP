@@ -1,7 +1,7 @@
 // 募集要項ページについて
 @use "../global/variables" as variables;
 
-.requirements-title{
+.requirements-title {
     width: 90.66%;
     padding: 120px 0px 70px 0px;
     margin: 0 auto;
@@ -29,7 +29,7 @@ h1 {
     }
 }
 
-.requirements-subtitle{
+.requirements-subtitle {
     color: variables.$color-black;
     text-align: center;
 
@@ -40,7 +40,7 @@ h1 {
     }
 }
 
-.requirements-anchor{
+.requirements-anchor {
     width: 90.66%;
     margin: 0 auto;
     padding-bottom: 70px;
@@ -48,10 +48,9 @@ h1 {
     @media (640px <= width) {
         width: 80.52%;
         padding-bottom: 100px;
+    }
 
-        }
-
-    ul{
+    ul {
         display: flex;
         flex-wrap: wrap;
         gap: 16px 20px;
@@ -60,10 +59,9 @@ h1 {
             flex-wrap: nowrap;
             justify-content: center;
             gap: 40px;
+        }
 
-            }
-
-        li{
+        li {
             border-bottom: 1px solid variables.$color-black;
             width: calc((100% - 20px) / 2);
             display: flex;
@@ -74,7 +72,7 @@ h1 {
                 width: calc((75% - 160px) / 4);
             }
 
-            h6{
+            h6 {
                 font-size: 12px;
 
                 @media (960px <= width) {
@@ -85,11 +83,11 @@ h1 {
     }
 }
 
-.c-requirements-container{
+.c-requirements-container {
     margin-bottom: 100px;
 }
 
-.c-requirements-heading{
+.c-requirements-heading {
     width: 90.66%;
     margin: 0 auto;
     padding-bottom: 34px;
@@ -100,7 +98,7 @@ h1 {
         text-align: center;
     }
 
-    span{
+    span {
         font-family: variables.$base-font-English;
         color: variables.$color-logo-parts03;
         font-size: 10px;
@@ -113,7 +111,7 @@ h1 {
         }
     }
 
-    h3{
+    h3 {
         font-size: 18px;
 
         @media (640px <= width) {
@@ -125,7 +123,7 @@ h1 {
     }
 }
 
-.c-requirements-items{
+.c-requirements-items {
     width: 90.66%;
     margin: 0 auto;
     display: grid;
@@ -136,19 +134,19 @@ h1 {
         gap: 22px;
     }
 
-    tr{
+    tr {
         padding: 16px 0;
 
         @media (640px <= width) {
             margin: 0;
-            border-bottom: 1px solid #F4F4F4;
-            &:first-child{
-                border-top: 1px solid #F4F4F4;
+            border-bottom: 1px solid #f4f4f4;
+            &:first-child {
+                border-top: 1px solid #f4f4f4;
             }
         }
     }
 
-    .c-requirements-item{
+    .c-requirements-item {
         display: grid;
         gap: 15px;
 
@@ -161,7 +159,7 @@ h1 {
             padding-right: 55px;
         }
 
-        th{
+        th {
             font-size: 14px;
             position: relative;
             display: inline-block;
@@ -179,7 +177,7 @@ h1 {
         }
 
         th:before {
-            content: '';
+            content: "";
             position: absolute;
             bottom: -5px;
             display: inline-block;
@@ -193,7 +191,7 @@ h1 {
             }
         }
 
-        td{
+        td {
             display: block;
 
             @media (640px <= width) {
@@ -204,7 +202,7 @@ h1 {
     }
 }
 
-.c-requirements-headingGrid{
+.c-requirements-headingGrid {
     width: 90.66%;
     margin: 0 auto;
     margin-bottom: 60px;
@@ -220,13 +218,13 @@ h1 {
         gap: 40px;
     }
 
-    .c-headingText{
+    .c-headingText {
         margin: auto 0;
         display: grid;
         gap: 20px;
     }
 
-    .c-requirements-img{
+    .c-requirements-img {
         border-radius: 10px;
 
         @media (960px <= width) {
@@ -236,15 +234,15 @@ h1 {
     }
 }
 
-.headingGrid-reverse{
+.headingGrid-reverse {
     flex-direction: row-reverse;
 }
 
-.requirements-selectionFlowHeading{
+.requirements-selectionFlowHeading {
     margin-top: 60px;
 }
 
-.selectionFlow-container{
+.selectionFlow-container {
     width: 90.66%;
     margin: 0 auto;
 
@@ -253,121 +251,117 @@ h1 {
         display: flex;
     }
 
-        .c-selectionFlow-item{
-            height: 185px;
+    .c-selectionFlow-item {
+        height: 185px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: #f2f7ff;
+        position: relative;
+
+        @media (960px <= width) {
+            height: 290px;
+            width: calc((100% - 90px) / 4);
+        }
+
+        .c-selectionFlow-itemNum {
+            display: flex;
+            width: 23.23%;
+            height: 16.21%;
             flex-shrink: 0;
-            border-radius: 10px;
-            background: #F2F7FF;
-            position: relative;
+            background-color: variables.$color-logo-parts03;
+            border-radius: 10px 0px;
+            font-family: variables.$base-font-English;
+            color: variables.$color-white;
+            font-weight: 800;
 
             @media (960px <= width) {
-                height: 290px;
-                width: calc((100% - 90px) / 4);
+                width: 35.51%;
             }
 
-            .c-selectionFlow-itemNum{
-                display: flex;
-                width: 23.23%;
-                height: 16.21%;
-                flex-shrink: 0;
-                background-color: variables.$color-logo-parts03;
-                border-radius: 10px 0px;
-                font-family: variables.$base-font-English;
-                color: variables.$color-white;
-                font-weight: 800;
+            p:nth-child(1) {
+                margin: 10px 0 0 auto;
+
+                @media (640px <= width) {
+                    margin-top: 5px;
+                }
 
                 @media (960px <= width) {
-                    width: 35.51%;
-                }
-            
-
-                p:nth-child(1) {
-                    margin: 10px 0 0 auto;
-
-                    @media (640px <= width) {
-                        margin-top: 5px;
-                    }
-
-                    @media (960px <= width){
-                        margin-top: 20px;
-                    }
-                }
-
-                p:nth-child(2){
-                    margin: 0 auto 0 5px;
-                    font-size: 20px;
-
-                    @media (960px <= width) {
-                        margin-top: 10px;
-                        font-size: 22px;
-                    }
-                }
-
-            }
-
-            .c-selectionFlow-itemText{
-                width: 88.23%;
-                margin: 0 auto;
-                text-align: center;
-
-                p:nth-child(1){
-                    margin: 10px 0;
-                    font-size: 14px;
-                    color: variables.$color-logo-parts03;
-                    line-height: 25.2px;
-                    letter-spacing: 0.56px;
-
-                    @media (960px <= width){
-                        margin: 25px 0;
-                        font-size: 16px;
-                        line-height: 24px;
-                        letter-spacing: 0.64px;
-                    }
+                    margin-top: 20px;
                 }
             }
 
-            .selectionFlow-entryBtm{
-                width: 83.64%;
-                inset: 50px 0px 75px 0px;
-                font: 800 18px/1.5 variables.$base-font-English;
-                text-decoration: none;
-                padding: 17px 35px;
-                background-color: variables.$color-white;
-                border: 2px solid variables.$color-black;
-                border-radius: 65px;
-                color: variables.$color-black;
-                cursor: pointer;
+            p:nth-child(2) {
+                margin: 0 auto 0 5px;
+                font-size: 20px;
+
+                @media (960px <= width) {
+                    margin-top: 10px;
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .c-selectionFlow-itemText {
+            width: 88.23%;
+            margin: 0 auto;
+            text-align: center;
+
+            p:nth-child(1) {
+                margin: 10px 0;
+                font-size: 14px;
+                color: variables.$color-logo-parts03;
+                line-height: 25.2px;
+                letter-spacing: 0.56px;
+
+                @media (960px <= width) {
+                    margin: 25px 0;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.64px;
+                }
+            }
+        }
+
+        .selectionFlow-entryBtm {
+            width: 83.64%;
+            inset: 50px 0px 75px 0px;
+            font: 800 18px/1.5 variables.$base-font-English;
+            text-decoration: none;
+            padding: 17px 35px;
+            background-color: variables.$color-white;
+            border: 2px solid variables.$color-black;
+            border-radius: 65px;
+            color: variables.$color-black;
+            cursor: pointer;
+            margin: 0 auto 10px auto;
+            box-shadow: 2px 2px 0 variables.$color-black;
+            text-align: center;
+
+            @media (960px <= width) {
                 margin: 0 auto 10px auto;
-                box-shadow: 2px 2px 0 variables.$color-black;
-                text-align: center;
-
-                @media (960px <= width){
-                    margin: 0 auto 10px auto;
-
-                }
-
-                .selectionFlow-entryBtm-arrow{
-                    inset: 22px 0px 0px 300px;            
-                }
             }
 
-            .selectionFlow-getOffer{
-                position: absolute;
-                top: 30%;
-                left: 5%;
-            }
-
-        }
-
-        .c-selectionFlow-arrow{
-            width: 100%;
-            margin: 25px auto;
-
-            @media (960px <= width){
-                transform: rotate(-90deg);
-                width: 22px;
-                height: 22px;
-                margin: auto 5px auto 5px;
+            .selectionFlow-entryBtm-arrow {
+                inset: 22px 0px 0px 300px;
             }
         }
+
+        .selectionFlow-getOffer {
+            position: absolute;
+            top: 30%;
+            left: 5%;
+        }
+    }
+
+    .c-selectionFlow-arrow {
+        width: 100%;
+        margin: 25px auto;
+
+        @media (960px <= width) {
+            transform: rotate(-90deg);
+            width: 22px;
+            height: 22px;
+            margin: auto 5px auto 5px;
+        }
+    }
 }
