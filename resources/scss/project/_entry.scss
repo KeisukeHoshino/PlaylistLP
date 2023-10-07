@@ -166,3 +166,42 @@ input[type="file"] {
         inset: 22px 0px 0px 300px;
     }
 }
+
+#entryform-submit-btn {
+    position: relative;
+    height: 61px;
+    .entryform-submit-btn {
+        width: 340px;
+        margin: auto;
+        inset: 0px 0px 0px 0px;
+        font-size: 14px;
+        position: absolute;
+        text-decoration: none;
+        padding: 5px 35px;
+        background-color: variables.$color-white;
+        border: 2px solid variables.$color-black;
+        border-radius: 65px;
+        color: variables.$color-black;
+        cursor: pointer;
+        box-shadow: 2px 2px 0 variables.$color-black;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .entryform-submit-btn:hover {
+        transform: translate(2px, 2px);
+        box-shadow: none;
+    }
+    .entry-btn_arrow {
+        position: absolute;
+        inset: 22px 0px 0px 300px;
+    }
+}
+
+#entryform-back{
+    margin-top: 20px;
+    text-align: center;
+    .entryform-back{
+        font-size: 14px;
+        text-decoration-line: underline;
+    }
+}
