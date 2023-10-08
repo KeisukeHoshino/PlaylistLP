@@ -352,7 +352,6 @@
             }
         }
         .career-path-b {
-            height: 133px;
             margin-bottom: 25px;
             .career-path-about {
                 font-family: variables.$base-font-Japanese;
@@ -412,11 +411,16 @@
                 display: inline-block;
                 vertical-align: top;
             }
-            li {
-                display: flex;
-                margin-bottom: 15px;
+            ul {
+                margin-bottom: 90px;
+                @media (640px <= width) {
+                    margin-bottom: 80px;
+                }
+                li {
+                    display: flex;
+                    margin-bottom: 15px;
+                }
             }
-
             .date {
                 margin-right: 13.5px;
                 width: 65px;
@@ -454,24 +458,6 @@
                     left: 9px;
                     width: 4px;
                     z-index: 10;
-                }
-                .vl-1 {
-                    height: 178px;
-                    @media (640px <= width) {
-                        height: 213px;
-                    }
-                }
-                .vl-2 {
-                    height: 126px;
-                    @media (640px <= width) {
-                        height: 221px;
-                    }
-                }
-                .vl-3 {
-                    height: 178px;
-                    @media (640px <= width) {
-                        height: 213px;
-                    }
                 }
             }
 
