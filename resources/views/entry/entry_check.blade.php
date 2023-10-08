@@ -12,7 +12,7 @@
             エントリー
         </h2>
       </div>
-      <div>
+      <div clss="diventry-headline">
         <p>以下のフォームへ入力をお願いします。<br />
           内容を確認の上、3営業日以内に担当者よりご連絡させて頂きます。
         </p>
@@ -37,12 +37,14 @@
                 <h3>メールアドレス</h3>
               </label>
               <p><!-- 入力されたメールアドレスの出力 --></p>
+              <p class="entryform-attention">※半角英数字で入力してください。</p>
             </li>
             <li>
               <label>
                 <h3>電話番号</h3>
               </label>
               <p><!-- 入力された電話番号の出力 --></p>
+              <p class="entryform-attention">※半角数字で、ハイフンなしで入力してください。</p>
             </li>
             <li class="entryform-list_file">
               <label>
