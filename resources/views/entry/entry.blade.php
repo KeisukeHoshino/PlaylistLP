@@ -12,7 +12,7 @@
           エントリー
         </h2>
       </div>
-      <div>
+      <div class="entry-headline">
         <p>以下のフォームへ入力をお願いします。<br />
           内容を確認の上、3営業日以内に担当者よりご連絡させて頂きます。
         </p>
@@ -47,12 +47,14 @@
                 <h3>メールアドレス<span>必須</span></h3>
               </label>
               <input type="email" inputmode="email" name="email" value="{{old('email')}}" placeholder="yamada.taro0623@playlist.co.jp" required>
+              <p class="entryform-attention">※半角英数字で入力してください。</p>
             </li>
             <li>
               <label>
                 <h3>電話番号<span>必須</span></h3>
               </label>
               <input type="tel" inputmode="numeric" name="tel" value="{{old('tel')}}" placeholder="0123456789" required>
+              <p class="entryform-attention">※半角数字で、ハイフンなしで入力してください。</p>
             </li>
             <li class="entryform-list_file">
               <label>
