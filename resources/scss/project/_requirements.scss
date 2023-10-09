@@ -12,22 +12,23 @@
         padding: 200px 0 100px 0;
         gap: 24px;
     }
-}
 
-h1 {
-    font-family: variables.$base-font-English;
-    color: variables.$color-logo-parts03;
-    text-align: center;
-    font-size: 36px;
-    font-weight: 800;
-    line-height: 48px;
-    letter-spacing: 1.44px;
+    h1 {
+        font-family: variables.$base-font-English;
+        color: variables.$color-logo-parts03;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 48px;
+        letter-spacing: 1.44px;
 
-    @media (640px <= width) {
-        font-size: 64px;
-        letter-spacing: 2.56px;
+        @media (640px <= width) {
+            font-size: 64px;
+            letter-spacing: 2.56px;
+        }
     }
 }
+
 
 .requirements-subtitle {
     color: variables.$color-black;
@@ -319,9 +320,9 @@ h1 {
             color: variables.$color-white;
             font-weight: 800;
 
-            @media (960px <= width) {
-                width: 35.51%;
-            }
+                @media (960px <= width) {
+                    width: 35.51%;
+                }
 
             p:nth-child(1) {
                 margin: 10px 0 0 auto;
