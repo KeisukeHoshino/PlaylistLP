@@ -1,0 +1,240 @@
+@use "../global/variables"as variables;
+// --------------------------------
+// footer
+// --------------------------------
+
+.l-footer {
+  background: variables.$color-black;
+  padding: 80px 0 20px;
+  color: variables.$color-white;
+
+  @media (640px <=width) {
+    padding: 70px 0 20px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  &_pagetop {
+    display: block;
+    position: absolute;
+    top: -80px;
+    right: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+
+    @media (640px <=width) {
+      top: -70px;
+      right: 25px;
+      transition: 0.3s ease-in-out;
+    }
+
+    &:hover {
+      @media (640px <=width) {
+        transform: translateY(-60%);
+      }
+    }
+
+    &Wrap {
+      position: relative;
+      margin: 0 auto;
+      width: 90.66%;
+
+      @media (640px <=width) {
+        margin: 0 auto;
+        padding: 0 25px;
+        width: 100%;
+        max-width: 1150px;
+      }
+    }
+  }
+
+  &_inner {
+    margin: 0 auto;
+    width: 90.66%;
+
+    @media (640px <=width) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 0 70px;
+      padding: 0 25px;
+      width: 100%;
+      max-width: 960px;
+    }
+  }
+
+  &_lead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+
+    @media (640px <=width) {
+      display: block;
+      padding: 0;
+    }
+
+    &_external {
+      width: 37.5%;
+
+      @media (640px <=width) {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-top: 15px;
+        width: auto;
+      }
+    }
+
+    a {
+      display: block;
+      color: variables.$color-white;
+    }
+
+    &_item {
+      &-playlist {
+        width: 56.25%;
+
+        @media (640px <=width) {
+          width: 190px;
+        }
+
+        span {
+          display: inline-block;
+          margin-top: 5px;
+          font-size: 10px;
+
+          @media (640px <=width) {
+            font-size: 12px;
+          }
+        }
+      }
+
+      &-mynavi {
+        padding: 10px;
+
+        @media (640px <=width) {
+          padding: 10px 0;
+          width: 130px;
+        }
+      }
+
+      &-wantedly {
+        margin-top: 5px;
+
+        @media (640px <=width) {
+          width: 150px;
+        }
+      }
+    }
+  }
+
+  &_sns {
+    margin-top: 30px;
+
+    @media (640px <=width) {
+      margin-top: 0;
+    }
+
+    &_heading {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      line-height: 1.8;
+      text-align: center;
+
+      @media (640px <=width) {
+        font-size: 12px;
+      }
+
+      &::before,
+      &::after {
+        flex-grow: 1;
+        border-radius: 9999px;
+        background: rgba(variables.$color-white, 0.1);
+        height: 1px;
+        content: "";
+      }
+
+      &::before {
+        margin-right: 1em;
+
+        @media (640px <=width) {
+          display: none;
+        }
+      }
+
+      &::after {
+        margin-left: 1em;
+      }
+
+    }
+
+    &_list {
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      margin-top: 20px;
+
+      @media (640px <=width) {
+        justify-content: flex-start;
+        gap: 20px;
+        margin-top: 15px;
+      }
+
+      li {
+        width: 13.23%;
+
+        @media (640px <=width) {
+          width: auto;
+        }
+
+        a {
+          display: block;
+          color: variables.$color-white;
+          font-size: 10px;
+          text-align: center;
+
+          img {
+            @media (640px <=width) {
+              margin: 0 auto;
+              width: 30px;
+            }
+          }
+
+          span {
+            display: inline-block;
+            margin-top: 5px;
+          }
+        }
+
+      }
+    }
+  }
+
+  &_copyright {
+    margin-top: 40px;
+    font-size: 10px;
+    line-height: 1.8;
+    font-family: variables.$base-font-English;
+    text-align: center;
+
+    @media (640px <=width) {
+      margin-top: 20px;
+      width: 100%;
+      font-size: 12px;
+      text-align: right;
+    }
+
+    small {
+      font-size: inherit;
+    }
+  }
+}
