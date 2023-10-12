@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EntryValidate;
 use Illuminate\Support\Facades\Route;
 
 // トップページ
@@ -23,9 +24,7 @@ Route::get('/entry', function () {
     return view('entry/entry');
 });
 // エントリー確認画面
-Route::get('/entry_check', function () {
-    return view('entry/entry_check');
-});
+Route::get('/entry_check', [EntryValidate::class,'entryValidate']);
 // エントリー完了画面
 Route::get('/entry_complete', function () {
     return view('entry/entry_complete');
