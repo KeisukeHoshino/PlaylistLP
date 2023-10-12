@@ -200,7 +200,7 @@
         </div>
         <div class="p-top-faq_item">
           <dt><span>Q.</span>面接場所について教えて下さい。</dt>
-          <dd><span>A.</span>基本はオンラインです。希望者はオフラインで武蔵小杉Officeで実施可能です。</dd>
+          <dd><span>A.</span>基本はオンラインです。希望者はオフラインで武蔵小杉オフィスで実施可能です。</dd>
         </div>
         <div class="p-top-faq_item">
           <dt><span>Q.</span>応募前に話をきいてみたいのですが、可能ですか？</dt>
@@ -208,7 +208,7 @@
         </div>
         <div class="p-top-faq_item">
           <dt><span>Q.</span>髪型や服装に決まりはありますか？</dt>
-          <dd><span>A.</span>joinしたプロジェクトによって異なりますが、基本はオフィスカジュアルです。TPOに応じた清潔感のある服装を心がけて下さい。</dd>
+          <dd><span>A.</span>参画したプロジェクトによって異なりますが、基本はオフィスカジュアルです。TPOに応じた清潔感のある服装を心がけて下さい。</dd>
         </div>
         <div class="p-top-faq_item">
           <dt><span>Q.</span>研修はありますか？</dt>
