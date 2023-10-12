@@ -201,18 +201,20 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="career-path-a">
-                            <div class="career-path-img">
-                                <img src="{{asset('img/member/career_hoshino.jpeg')}}">
-                            </div>
-                        </div>
-                        <div class="career-path-b cp-b-sp">
-                            <div class="career-path-about">
-                                <div class="career-path-about-name">
-                                    <p>Keisuke.H（25歳）</p>
+                        <div class="d-flex">
+                            <div class="career-path-a">
+                                <div class="career-path-img">
+                                    <img src="{{asset('img/member/career_hoshino.jpeg')}}">
                                 </div>
-                                <div class="career-path-about-text">
-                                    <p>独学でIT知識やプログラミング知識・技術を1年学習。Playlistへ⼊社後、1年で開発案件を担当。現在はWebエンジニアを⽬指し活躍中。</p>
+                            </div>
+                            <div class="career-path-b cp-b-sp">
+                                <div class="career-path-about">
+                                    <div class="career-path-about-name">
+                                        <p>Keisuke.H（25歳）</p>
+                                    </div>
+                                    <div class="career-path-about-text">
+                                        <p>独学でIT知識やプログラミング知識・技術を1年学習。Playlistへ⼊社後、1年で開発案件を担当。現在はWebエンジニアを⽬指し活躍中。</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -298,18 +300,20 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="career-path-a">
-                            <div class="career-path-img">
-                                <img src="{{asset('img/member/career_ryo.jpeg')}}">
-                            </div>
-                        </div>
-                        <div class="career-path-b cp-b-sp">
-                            <div class="career-path-about">
-                                <div class="career-path-about-name">
-                                    <p>Ryo.W（26歳）</p>
+                        <div class="d-flex">
+                            <div class="career-path-a">
+                                <div class="career-path-img">
+                                    <img src="{{asset('img/member/career_ryo.jpeg')}}">
                                 </div>
-                                <div class="career-path-about-text">
-                                    <p>SIer企業にてエンジニアのキャリアをスタート。データを活⽤した技術への成⻑を⽬指しSIer企業からPlaylistへ転職。⼊社後6ヶ⽉でPythonを使⽤した案件への参画を実現。社内では、若⼿エンジニアの教育や社内の課題解決などリードメンバーとしてPlaylistを推進。</p>
+                            </div>
+                            <div class="career-path-b cp-b-sp">
+                                <div class="career-path-about">
+                                    <div class="career-path-about-name">
+                                        <p>Ryo.W（26歳）</p>
+                                    </div>
+                                    <div class="career-path-about-text">
+                                        <p>SIer企業にてエンジニアのキャリアをスタート。データを活⽤した技術への成⻑を⽬指しSIer企業からPlaylistへ転職。⼊社後6ヶ⽉でPythonを使⽤した案件への参画を実現。社内では、若⼿エンジニアの教育や社内の課題解決などリードメンバーとしてPlaylistを推進。</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -370,18 +374,20 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="career-path-a">
-                            <div class="career-path-img">
-                                <img src="{{asset('img/member/career_hoshino.jpeg')}}">
-                            </div>
-                        </div>
-                        <div class="career-path-b cp-b-sp">
-                            <div class="career-path-about">
-                                <div class="career-path-about-name">
-                                    <p>Keisuke.H（25歳）</p>
+                        <div class="d-flex">
+                            <div class="career-path-a">
+                                <div class="career-path-img">
+                                    <img src="{{asset('img/member/career_hoshino.jpeg')}}">
                                 </div>
-                                <div class="career-path-about-text">
-                                    <p>独学でIT知識やプログラミング知識・技術を1年学習。Playlistへ⼊社後、1年で開発案件を担当。現在はWebエンジニアを⽬指し活躍中。</p>
+                            </div>
+                            <div class="career-path-b cp-b-sp">
+                                <div class="career-path-about">
+                                    <div class="career-path-about-name">
+                                        <p>Keisuke.H（25歳）</p>
+                                    </div>
+                                    <div class="career-path-about-text">
+                                        <p>独学でIT知識やプログラミング知識・技術を1年学習。Playlistへ⼊社後、1年で開発案件を担当。現在はWebエンジニアを⽬指し活躍中。</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -467,18 +473,20 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="career-path-a">
-                            <div class="career-path-img">
-                                <img src="{{asset('img/member/career_ryo.jpeg')}}">
-                            </div>
-                        </div>
-                        <div class="career-path-b cp-b-sp">
-                            <div class="career-path-about">
-                                <div class="career-path-about-name">
-                                    <p>Ryo.W（26歳）</p>
+                        <div class="d-flex">
+                            <div class="career-path-a">
+                                <div class="career-path-img">
+                                    <img src="{{asset('img/member/career_ryo.jpeg')}}">
                                 </div>
-                                <div class="career-path-about-text">
-                                    <p>SIer企業にてエンジニアのキャリアをスタート。データを活⽤した技術への成⻑を⽬指しSIer企業からPlaylistへ転職。⼊社後6ヶ⽉でPythonを使⽤した案件への参画を実現。社内では、若⼿エンジニアの教育や社内の課題解決などリードメンバーとしてPlaylistを推進。</p>
+                            </div>
+                            <div class="career-path-b cp-b-sp">
+                                <div class="career-path-about">
+                                    <div class="career-path-about-name">
+                                        <p>Ryo.W（26歳）</p>
+                                    </div>
+                                    <div class="career-path-about-text">
+                                        <p>SIer企業にてエンジニアのキャリアをスタート。データを活⽤した技術への成⻑を⽬指しSIer企業からPlaylistへ転職。⼊社後6ヶ⽉でPythonを使⽤した案件への参画を実現。社内では、若⼿エンジニアの教育や社内の課題解決などリードメンバーとしてPlaylistを推進。</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -301,6 +301,9 @@
                 font-size: 0px;
                 width: calc(50% - 2px);
             }
+            .d-flex {
+                display: flex;
+            }
         }
         .career-path-1 {
             @media (640px <= width) {
