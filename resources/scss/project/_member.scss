@@ -410,9 +410,11 @@
             margin: 0 auto;
             @media (640px <= width) {
                 width: auto;
-                margin-left: 40px;
                 display: inline-block;
                 vertical-align: top;
+            }
+            @media (960px <= width) {
+                margin-left: 40px;
             }
             ul {
                 margin-bottom: 90px;
