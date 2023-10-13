@@ -34,13 +34,13 @@
               <label>
                 <h3>氏名<span>必須</span></h3>
               </label>
-              <input type="text" inputmode="text" name="name" value="{{old('name')}}" placeholder="山田 太郎" required>
+              <input type="text" inputmode="text" name="name" value="{{old('name')}}" placeholder="山田 太郎" maxlength="21" required>
             </li>
             <li>
               <label>
                 <h3>ふりがな<span>必須</span></h3>
               </label>
-              <input type="text" inputmode="kana" name="furigana" value="{{old('furigana')}}" placeholder="やまだ たろう" required>
+              <input type="text" inputmode="kana" name="furigana" value="{{old('furigana')}}" placeholder="やまだ たろう" maxlength="41" required>
             </li>
             <li>
               <label>
