@@ -13,12 +13,24 @@ class EntryMail extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $contactInfo;
+    public $playlist_name;
+    public $playlist_email;
+
     /**
      * Create a new message instance.
      */
-    public function __construct()
+    public function __construct(array $contactInfo)
     {
-        //
+        $this->contactInfo = $contactInfo;
+        $this->playlist_name = 'Playlist株式会社';
+        $this->playlist_email = 'contact@playlist.co.jp';
+    }
+
+    public function build()
+    {
+        return $this->from($this->playlist_email, $this->playlist_name)
+        ->attach(storage_path('app/' . $this->contactInfo['pdf']));;
     }
 
     /**
@@ -27,7 +39,7 @@ class EntryMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Entry Mail',
+            subject: '【Playlist株式会社】応募完了のお知らせ',
         );
     }
 
@@ -37,7 +49,7 @@ class EntryMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'view.name',
+            view: 'entry_mail.user',
         );
     }
 

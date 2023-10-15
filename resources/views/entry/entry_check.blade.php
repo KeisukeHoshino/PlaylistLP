@@ -19,36 +19,42 @@
       </div>
       <section id="entryform">
         <form class="entryform" action="/entry_complete" method="POST" enctype="multipart/form-data">
+          @csrf
           <ul>
             <li>
               <label>
                 <h3>氏名</h3>
               </label>
               <p>{{$name}}</p>
+              <input style="display: none;" type="text" name="name" value="{{$name}}">
             </li>
             <li>
               <label>
                 <h3>ふりがな</h3>
               </label>
               <p>{{$furigana}}</p>
+              <input style="display: none;" type="text" name="furigana" value="{{$furigana}}">
             </li>
             <li>
               <label>
                 <h3>メールアドレス</h3>
               </label>
               <p>{{$email}}</p>
+              <input style="display: none;" type="email" name="email" value="{{$email}}">
             </li>
             <li>
               <label>
                 <h3>電話番号</h3>
               </label>
               <p>{{$tel}}</p>
+              <input style="display: none;" type="tel" name="tel" value="{{$tel}}">
             </li>
             <li class="entryform-list_file">
               <label>
                 <h3>履歴書・職務経歴書など</h3>
               </label>
               <p>{{$pdf}}</p>
+              <input style="display: none;" type="text" name="pdf" value="{{$pdf}}">
             </li>
             <li class="entryform-list_url">
               <label>
@@ -57,12 +63,16 @@
               <p>{{$url1}}</p>
               <p>{{$url2}}</p>
               <p>{{$url3}}</p>
+              <input style="display: none;" type="url" name="url1" value="{{$url1}}">
+              <input style="display: none;" type="url" name="url2" value="{{$url2}}">
+              <input style="display: none;" type="url" name="url3" value="{{$url3}}">
             </li>
             <li class="entryform-list_message">
               <label>
                 <h3>弊社へのメッセージ</h3>
               </label>
               <p>{!! nl2br($message) !!}</p>
+              <input style="display: none;" type="text" name="message" value="{{$message}}">
             </li>
           </ul>
           <div id="entryform-submit-btn">
