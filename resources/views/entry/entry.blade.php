@@ -27,7 +27,7 @@
         </ul>
       </div>
       <section id="entryform">
-        <form class="entryform" action="/entry_check" method="GET" enctype="multipart/form-data">
+        <form class="entryform" action="/entry_check" method="POST" enctype="multipart/form-data">
           @csrf
           <ul>
             <li>
