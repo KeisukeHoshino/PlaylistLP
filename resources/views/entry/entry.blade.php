@@ -17,15 +17,15 @@
           内容を確認の上、3営業日以内に担当者よりご連絡させて頂きます。
         </p>
       </div>
-      @if ($errors->any())
       <div class="error-message-area">
         <ul>
+          @if ($errors->any())
           @foreach ($errors->all() as $error)
           <li>・{{ $error }}</li>
           @endforeach
+          @endif
         </ul>
       </div>
-      @endif
       <section id="entryform">
         <form class="entryform" action="/entry_check" method="GET" enctype="multipart/form-data">
           @csrf
