@@ -72,10 +72,10 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    height: 60px;
+    height: 90px;
 
     @media (width <= 960px) {
-        height: 90px;
+        height: 60px;
     }
 }
 
@@ -339,39 +339,57 @@
 }
 
 // エントリーボタン
-.entry-btn_grad {
+.entry-btn_grad{
+    display: block;
     position: relative;
-    display: inline-block;
-    width: 150px;
-    max-width: 100%;
-    padding: 4px 10px;
-    background: linear-gradient(90deg, variables.$color-logo-parts01 0%, variables.$color-logo-parts01 25%, variables.$color-logo-parts02 25%, variables.$color-logo-parts02 50%, variables.$color-logo-parts04 50%, variables.$color-logo-parts04 75%, variables.$color-logo-parts03 75%, variables.$color-logo-parts03 100%);
+    transform: rotateZ(1);
+    margin: 0 auto;
     border-radius: 9999px;
-    color: variables.$color-black;
+    background-color: variables.$color-white;
+    padding: 6px 40px;
+    width: 150px;
     font-size: 14px;
-    text-align: center;
-    text-decoration: none;
-    transition: 0.25s;
-    z-index: 0; /* z-indexをauto以外にする */
-    cursor: not-allowed;
+    font-family: variables.$base-font-English;
 
-    &>.entry-btn_arrow{
-        position: unset;
+    @media (640px <= width) {
+      // cursor: not-allowed;
+    }
+
+    &:hover {
+      &::after {
+        right: 19px;
+      }
     }
 
     &::before {
-        content: "";
         position: absolute;
-        background: #fff;  /* 白抜き用の背景 */
-        vertical-align: middle;
-        top: 2px;
-        right: 2px;
-        bottom: 2px;
-        left: 2px;
-        border-radius: 9999px;  /* border-radiusを調整 */
-        z-index: -1;  /* z-indexを指定 */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        border-radius: 9999px;
+        background: linear-gradient(95deg, variables.$color-logo-parts01 0%, variables.$color-logo-parts01 25%, variables.$color-logo-parts02 25%, variables.$color-logo-parts02 50%, variables.$color-logo-parts04 50%, variables.$color-logo-parts04 75%, variables.$color-logo-parts03 75%, variables.$color-logo-parts03 100%);
+        width: calc(100% + 3px);
+        height: calc(100% + 3px);
+        content: "";
+      }
+
+    &::after {
+      display: block;
+      position: absolute;
+      top: 30%;
+      right: 24px;
+      transform: rotate(-135deg) translateY(-50%);
+      transition: 0.3s ease-in-out;
+      background-image: url("/public/img/top/ico-triangle-black.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 10px;
+      height: 10px;
+      content: "";
     }
 }
+
 .toggle-btn{
     display: none;
 
