@@ -26,10 +26,18 @@ class EntryValidate extends Controller
         ]);
 
         // これ以降の行は入力エラーがなかった場合のみ実行
+
+        // エントリーと確認画面を行き来すると一意のファイルが作られてしまうためapp/pdf配下にファイルがあったら削除
+        $files = Storage::allFiles('pdf');
+        foreach ($files as $file) {
+            if ($files) {
+                Storage::delete($file);
+            }
+        }
         $pdfFile = $valideted['pdf'];
         $file_name = $pdfFile->getClientOriginalName();
-        // 送られたファイルを保存
-        Storage::putFileAs('', $pdfFile, $file_name);
+        // 送られたファイルをapp/pdf配下に保存
+        Storage::putFileAs('pdf', $pdfFile, $file_name);
 
         // エントリー確認画面
         return view('entry/entry_check', [

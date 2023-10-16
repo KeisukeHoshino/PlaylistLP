@@ -30,7 +30,7 @@ class EntryMail extends Mailable
     public function build()
     {
         return $this->from($this->playlist_email, $this->playlist_name)
-        ->attach(storage_path('app/' . $this->contactInfo['pdf']));;
+        ->attach(storage_path('app/pdf/' . $this->contactInfo['pdf']));;
     }
 
     /**

@@ -32,7 +32,7 @@ class EntryAdminMail extends Mailable
     public function build()
     {
         return $this->from($this->contactInfo['email'], $this->contactInfo['name'])
-        ->attach(storage_path('app/'.$this->contactInfo['pdf']));
+        ->attach(storage_path('app/pdf/'.$this->contactInfo['pdf']));
 
     }
 
