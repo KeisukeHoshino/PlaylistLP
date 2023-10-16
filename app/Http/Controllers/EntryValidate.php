@@ -13,7 +13,7 @@ class EntryValidate extends Controller
         $valideted = $request->validate([
             'name' => ['required', 'string', 'max:21'],
             'furigana' => ['required', 'string', 'max:41'],
-            'email' => ['required', 'string'],
+            'email' => ['required', 'string', 'email'],
             // 行頭0で始まる
             // 数字[0-9]4桁または数字([0-9]2個が3桁または数字[0-9]3個が2桁または数字[0-9]4個が1桁または0と数字4桁
             // 行末数字4桁
