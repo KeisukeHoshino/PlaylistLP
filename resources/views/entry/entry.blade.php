@@ -65,7 +65,7 @@
                 <input type="file" accept=".pdf" name="pdf" value="{{old('pdf')}}" multiple required>+ ファイルを選択
               </label>
               <p class="entryform-list_file_selectfile">選択されていません</p>
-              <p class="entryform-list_file_attention">※アップロード可能なファイルの最大サイズはxxMBです。</p>
+              <p class="entryform-list_file_attention">※アップロード可能なファイルの最大サイズは1.6MBです。</p>
               <p class="entryform-list_file_attention">※最大0ファイルまで登録できます。</p>
             </li>
             <li class="entryform-list_url">
