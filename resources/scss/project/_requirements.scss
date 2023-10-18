@@ -291,14 +291,17 @@
 .selectionFlow-container {
     width: 90.66%;
     margin: 0 auto;
+    display: block;
 
     @media (960px <= width) {
-        width: 80.52%;
+        padding: 0 25px;
+        width: 100%;
+        max-width: 1150px;
         display: flex;
+        align-items: stretch;
     }
 
     .c-selectionFlow-item {
-        height: 185px;
         flex-shrink: 0;
         border-radius: 10px;
         background: #f2f7ff;
@@ -310,7 +313,6 @@
         }
 
         .c-selectionFlow-itemNum {
-            display: flex;
             width: 23.23%;
             height: 16.21%;
             flex-shrink: 0;
@@ -320,28 +322,26 @@
             color: variables.$color-white;
             font-weight: 800;
 
+            @media (640px <= width) {
+                height: 18.00%;                
+            }
+
+            @media (960px <= width) {
+                width: 35.51%;
+                height: 16.21%;
+            }
+
+            p{
+                text-align: center;
                 @media (960px <= width) {
-                    width: 35.51%;
-                }
-
-            p:nth-child(1) {
-                margin: 10px 0 0 auto;
-
-                @media (640px <= width) {
-                    margin-top: 5px;
-                }
-
-                @media (960px <= width) {
-                    margin-top: 20px;
+                    padding-top: 5px;
                 }
             }
 
-            p:nth-child(2) {
-                margin: 0 auto 0 5px;
+            p>span{
                 font-size: 20px;
-
+                padding-left: 5px;
                 @media (960px <= width) {
-                    margin-top: 10px;
                     font-size: 22px;
                 }
             }
@@ -351,6 +351,11 @@
             width: 88.23%;
             margin: 0 auto;
             text-align: center;
+            padding-bottom: 30px;
+
+            @media (960px <= width) {
+                padding-bottom: 0px;
+            }
 
             p:nth-child(1) {
                 margin: 10px 0;
@@ -358,6 +363,12 @@
                 color: variables.$color-logo-parts03;
                 line-height: 25.2px;
                 letter-spacing: 0.56px;
+
+                .selectionFlow-br{
+                    @media (width <= 960px) {
+                        display: none;  
+                    }
+                }
 
                 @media (960px <= width) {
                     margin: 25px 0;
@@ -393,9 +404,12 @@
         }
 
         .selectionFlow-getOffer {
-            position: absolute;
-            top: 30%;
-            left: 5%;
+            @media (960px <= width) {
+                position: absolute;
+                top: 30%;
+                left: 5%;
+            }
+
         }
     }
 
