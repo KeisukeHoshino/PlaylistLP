@@ -40,7 +40,7 @@ function formValueCheck(data){
     if (pdf) {
         // ファイルサイズは最大1.6MB
         if (pdf_file.size <= 1600000) {
-            document.querySelector("p.entryform-list_file_selectfile").textContent = pdf;
+            document.querySelector("p.entryform-list_file_selectfile").textContent = pdf_file.name;
         }else{
             document.querySelector("p.entryform-list_file_selectfile").textContent = 'ファイルサイズが大きすぎます(1.6MBまで)';
             pdf = '';
