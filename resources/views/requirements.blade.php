@@ -295,12 +295,11 @@
             <div class="selectionFlow-container">
                 <div class="c-selectionFlow-item">
                     <div class="c-selectionFlow-itemNum">
-                        <p>STEP</p>
-                        <p>1</p>
+                        <p>STEP<span>1</span></p>
                     </div>
                     <div class="c-selectionFlow-itemText">
                         <P>
-                            エントリーフォームからご応募
+                            エントリーフォームから<br class="selectionFlow-br">ご応募
                         </P>
                         <button class="selectionFlow-entryBtm">
                             ENTRY
@@ -318,8 +317,7 @@
                 </svg>
                 <div class="c-selectionFlow-item">
                     <div class="c-selectionFlow-itemNum">
-                        <p>STEP</p>
-                        <p>2</p>
+                    <p>STEP<span>2</span></p>
                     </div>
                     <div class="c-selectionFlow-itemText">
                         <P>
@@ -336,8 +334,7 @@
                 </svg>
                 <div class="c-selectionFlow-item">
                     <div class="c-selectionFlow-itemNum">
-                        <p>STEP</p>
-                        <p>3</p>
+                    <p>STEP<span>3</span></p>
                     </div>
                     <div class="c-selectionFlow-itemText">
                         <P>
@@ -353,8 +350,7 @@
                 </svg>
                 <div class="c-selectionFlow-item">
                     <div class="c-selectionFlow-itemNum">
-                        <p>STEP</p>
-                        <p>4</p>
+                    <p>STEP<span>4</span></p>
                     </div>
                     <div class="c-selectionFlow-itemText selectionFlow-getOffer">
                         <p>内定</p>
