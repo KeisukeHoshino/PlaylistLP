@@ -45,7 +45,7 @@
   </div>
 
   {{-- お知らせ --}}
-  <section class="p-top-news">
+  <section id="news" class="p-top-news">
     <div class="c-top-inner-pc c-top-inner-sp">
       <h2 class="c-top-heading-h2"><span>NEWS</span>お知らせ</h2>
       <ul class="p-top-news_list">
@@ -58,7 +58,7 @@
   </section>
 
   {{-- Playlistについて --}}
-  <section class="p-top-about">
+  <section id="aboutus" class="p-top-about">
     <div class="c-top-inner-pc c-top-inner-sp">
       <h2 class="c-top-heading-h2"><span>ABOUT US</span>Playlistについて</h2>
       <div class="p-top-about_pic">
@@ -133,7 +133,7 @@
   @yield('entry_btn')
 
   {{-- 代表メッセージ --}}
-  <section class="p-top-message">
+  <section id="message" class="p-top-message">
     <div class="c-top-inner-pc c-top-inner-sp">
       <h2 class="c-top-heading-h2"><span>MESSAGE</span>代表メッセージ</h2>
       <div class="p-top-message_column">
@@ -153,7 +153,7 @@
   </section>
 
   {{-- お気に入りポイント --}}
-  <section class="p-top-points u-top-bg-orange">
+  <section id="points" class="p-top-points u-top-bg-orange">
     <div class="c-top-inner-pc c-top-inner-sp">
       <h2 class="c-top-heading-h2 -white"><span>Playlist <br class="u-top-only-sp">POINTS</span>実際に働く社員のPlaylistお気に入りポイント</h2>
       <ul class="p-top-points_list">
@@ -203,7 +203,7 @@
   </section>
 
   {{-- よくある質問 --}}
-  <section class="p-top-faq">
+  <section id="faq" class="p-top-faq">
     <div class="c-top-inner-pc c-top-inner-sp">
       <h2 class="c-top-heading-h2"><span>FAQ</span>よくある質問</h2>
       <dl class="p-top-faq_list js-accordion">
