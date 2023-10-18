@@ -301,6 +301,9 @@
                 font-size: 0px;
                 width: calc(50% - 2px);
             }
+            .d-flex {
+                display: flex;
+            }
         }
         .career-path-1 {
             @media (640px <= width) {
@@ -337,6 +340,10 @@
                 @media (960px <= width) {
                     width: 150px;
                 }
+                img {
+                    border-radius: 10px;
+                }
+
             }
         }
         .cp-b-sp {
@@ -407,9 +414,11 @@
             margin: 0 auto;
             @media (640px <= width) {
                 width: auto;
-                margin-left: 40px;
                 display: inline-block;
                 vertical-align: top;
+            }
+            @media (960px <= width) {
+                margin-left: 40px;
             }
             ul {
                 margin-bottom: 90px;
