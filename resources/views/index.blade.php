@@ -44,7 +44,19 @@
     </div>
   </div>
 
-  {{--  Playlistについて --}}
+  {{-- お知らせ --}}
+  <section class="p-top-news">
+    <div class="c-top-inner-pc c-top-inner-sp">
+      <h2 class="c-top-heading-h2"><span>NEWS</span>お知らせ</h2>
+      <ul class="p-top-news_list">
+        <li>
+          <p class="p-top-news_date">2023/10/23</p>
+          <p class="p-top-news_contents"><a href="https://tenshoku.mynavi.jp/event/tokyo/20231123A/" target="_blank">11/23（木・祝）転職フェアに参加いたします</a></p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
   {{-- Playlistについて --}}
   <section class="p-top-about">
     <div class="c-top-inner-pc c-top-inner-sp">
@@ -120,7 +132,7 @@
 
   @yield('entry_btn')
 
-  {{--  代表メッセージ --}}
+  {{-- 代表メッセージ --}}
   <section class="p-top-message">
     <div class="c-top-inner-pc c-top-inner-sp">
       <h2 class="c-top-heading-h2"><span>MESSAGE</span>代表メッセージ</h2>
@@ -140,7 +152,7 @@
     </div>
   </section>
 
-  {{--  お気に入りポイント --}}
+  {{-- お気に入りポイント --}}
   <section class="p-top-points u-top-bg-orange">
     <div class="c-top-inner-pc c-top-inner-sp">
       <h2 class="c-top-heading-h2 -white"><span>Playlist <br class="u-top-only-sp">POINTS</span>実際に働く社員のPlaylistお気に入りポイント</h2>
@@ -190,7 +202,7 @@
     </div>
   </section>
 
-  {{--  よくある質問 --}}
+  {{-- よくある質問 --}}
   <section class="p-top-faq">
     <div class="c-top-inner-pc c-top-inner-sp">
       <h2 class="c-top-heading-h2"><span>FAQ</span>よくある質問</h2>
