@@ -6,63 +6,73 @@
     <div class="entry-container">
       <div class="entry-title">
         <h1>
-            ENTRY
+          ENTRY
         </h1>
         <h2>
-            エントリー
+          エントリー
         </h2>
       </div>
-      <div clss="diventry-headline">
-        <p>以下のフォームへ入力をお願いします。<br />
+      <div>
+        <p clss="entry-headline">
           内容を確認の上、3営業日以内に担当者よりご連絡させて頂きます。
         </p>
       </div>
       <section id="entryform">
-        <form class="entryform" action="/entry_check" method="POST" enctype="multipart/form-data">
+        <form class="entryform" action="/entry_complete" method="POST" enctype="multipart/form-data">
+          @csrf
           <ul>
             <li>
               <label>
                 <h3>氏名</h3>
               </label>
-              <p><!-- 入力された氏名の出力 --></p>
+              <p>{{$name}}</p>
+              <input style="display: none;" type="text" name="name" value="{{$name}}">
             </li>
             <li>
               <label>
                 <h3>ふりがな</h3>
               </label>
-              <p><!-- 入力されたふりがなの出力 --></p>
+              <p>{{$furigana}}</p>
+              <input style="display: none;" type="text" name="furigana" value="{{$furigana}}">
             </li>
             <li>
               <label>
                 <h3>メールアドレス</h3>
               </label>
-              <p><!-- 入力されたメールアドレスの出力 --></p>
-              <p class="entryform-attention">※半角英数字で入力してください。</p>
+              <p>{{$email}}</p>
+              <input style="display: none;" type="email" name="email" value="{{$email}}">
             </li>
             <li>
               <label>
                 <h3>電話番号</h3>
               </label>
-              <p><!-- 入力された電話番号の出力 --></p>
-              <p class="entryform-attention">※半角数字で、ハイフンなしで入力してください。</p>
+              <p>{{$tel}}</p>
+              <input style="display: none;" type="tel" name="tel" value="{{$tel}}">
             </li>
             <li class="entryform-list_file">
               <label>
                 <h3>履歴書・職務経歴書など</h3>
               </label>
-              <p><!-- 入力された履歴書・職務経歴書の出力 --></p>
+              <p>{{$pdf}}</p>
+              <input style="display: none;" type="text" name="pdf" value="{{$pdf}}">
             </li>
             <li class="entryform-list_url">
               <label>
                 <h3>GitHubやブログ、<br />ポートフォリオサイトなどのURL</h3>
               </label>
-              <p><!-- 入力されたURLの出力 --></p>
+              <p>{{$url1}}</p>
+              <p>{{$url2}}</p>
+              <p>{{$url3}}</p>
+              <input style="display: none;" type="url" name="url1" value="{{$url1}}">
+              <input style="display: none;" type="url" name="url2" value="{{$url2}}">
+              <input style="display: none;" type="url" name="url3" value="{{$url3}}">
             </li>
             <li class="entryform-list_message">
               <label>
                 <h3>弊社へのメッセージ</h3>
               </label>
-              <p><!-- 入力されたメッセージの出力 --></p>
+              <p>{!! nl2br($message) !!}</p>
+              <input style="display: none;" type="text" name="message" value="{{$message}}">
             </li>
           </ul>
           <div id="entryform-submit-btn">

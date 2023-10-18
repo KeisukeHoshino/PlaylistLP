@@ -17,8 +17,7 @@
             display: block;
             position: absolute;
             right: 0;
-            height: 95vh;
-            top: 60px;
+            height: 100vh;
             background-color: variables.$color-white;
         }
     }
@@ -31,6 +30,7 @@
     @media (width <= 960px) {
         gap: 60px;
         opacity: 0;
+        pointer-events: none;
         transition: all .5s;
         display: block;
         position: absolute;
@@ -41,6 +41,7 @@
         &.open{
             background-color: variables.$color-white;
             opacity: 1;
+            pointer-events: all;
             padding-top: 60px;
         }
     }
@@ -72,10 +73,10 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    height: 60px;
+    height: 90px;
 
     @media (width <= 960px) {
-        height: 90px;
+        height: 60px;
     }
 }
 
@@ -177,6 +178,7 @@
         display: flex;
         justify-content: start;
         align-items: center;
+        transition:all 1s ease;
 
         &:hover{
             flex-direction: column;
@@ -186,8 +188,15 @@
 }
 
 // 見出しの色を赤色にする
-.c-headerMenubar-nav ul li:hover a#c-headerMenubar-navTop__heading {
+.c-headerMenubar-nav ul li a#c-headerMenubar-navTop__heading {
     color: variables.$color-logo-parts01;
+
+    @media (960px <= width) {
+        color: variables.$color-black;
+        &:hover{
+            color: variables.$color-logo-parts01;
+        }
+    }
 }
 
 // 子要素としてスタイルを調整、親要素の中央に表示させるように更新
@@ -236,6 +245,7 @@
         display: flex;
         justify-content: start;
         align-items: center;
+        transition:all 1s ease;
 
         &:hover{
             flex-direction: column;
@@ -245,8 +255,14 @@
 }
 
 // 見出しの色をオレンジ色にする
-.c-headerMenubar-nav ul li:hover a#c-headerMenubar-navMember__heading {
+.c-headerMenubar-nav ul li a#c-headerMenubar-navMember__heading {
     color: variables.$color-logo-parts02;
+    @media (960px <= width) {
+        color: variables.$color-black;
+        &:hover{
+            color: variables.$color-logo-parts02;
+        }
+    }
 }
 
 // 子要素としてスタイルを調整、親要素の中央に表示させるように更新
@@ -296,6 +312,7 @@
         display: flex;
         justify-content: start;
         align-items: center;
+        transition:all 1s ease;
 
         &:hover{
             flex-direction: column;
@@ -305,8 +322,14 @@
 }
 
 // 見出しの色を青色にする
-.c-headerMenubar-nav ul li:hover a#c-headerMenubar-navRequirements__heading {
+.c-headerMenubar-nav ul li a#c-headerMenubar-navRequirements__heading {
     color: variables.$color-logo-parts03;
+    @media (960px <= width) {
+        color: variables.$color-black;
+        &:hover{
+            color: variables.$color-logo-parts03;
+        }
+    }
 }
 
 // 子要素としてスタイルを調整、親要素の中央に表示させるように更新
@@ -339,39 +362,64 @@
 }
 
 // エントリーボタン
-.entry-btn_grad {
-    position: relative;
-    display: inline-block;
-    width: 150px;
-    max-width: 100%;
-    padding: 4px 10px;
-    background: linear-gradient(90deg, variables.$color-logo-parts01 0%, variables.$color-logo-parts01 25%, variables.$color-logo-parts02 25%, variables.$color-logo-parts02 50%, variables.$color-logo-parts04 50%, variables.$color-logo-parts04 75%, variables.$color-logo-parts03 75%, variables.$color-logo-parts03 100%);
-    border-radius: 9999px;
-    color: variables.$color-black;
-    font-size: 14px;
-    text-align: center;
-    text-decoration: none;
-    transition: 0.25s;
-    z-index: 0; /* z-indexをauto以外にする */
-    cursor: not-allowed;
-
-    &>.entry-btn_arrow{
-        position: unset;
+.c-header-entryBtn{
+    @media (width <= 960px) {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        margin-top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
-    &::before {
-        content: "";
+    .entry-btn_grad{
+        display: block;
+        position: relative;
+        transform: rotateZ(1);
+        margin: 0 auto;
+        border-radius: 9999px;
+        background-color: variables.$color-white;
+        padding: 6px 40px;
+        width: 150px;
+        font-size: 14px;
+        font-family: variables.$base-font-English;
+
+        &:hover {
+        &::after {
+            right: 19px;
+        }
+        }
+
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            border-radius: 9999px;
+            background: linear-gradient(95deg, variables.$color-logo-parts01 0%, variables.$color-logo-parts01 25%, variables.$color-logo-parts02 25%, variables.$color-logo-parts02 50%, variables.$color-logo-parts04 50%, variables.$color-logo-parts04 75%, variables.$color-logo-parts03 75%, variables.$color-logo-parts03 100%);
+            width: calc(100% + 3px);
+            height: calc(100% + 3px);
+            content: "";
+        }
+
+        &::after {
+        display: block;
         position: absolute;
-        background: #fff;  /* 白抜き用の背景 */
-        vertical-align: middle;
-        top: 2px;
-        right: 2px;
-        bottom: 2px;
-        left: 2px;
-        border-radius: 9999px;  /* border-radiusを調整 */
-        z-index: -1;  /* z-indexを指定 */
+        top: 30%;
+        right: 24px;
+        transform: rotate(-135deg) translateY(-50%);
+        transition: 0.3s ease-in-out;
+        background-image: url("/public/img/top/ico-triangle-black.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 10px;
+        height: 10px;
+        content: "";
+        }
     }
 }
+
 .toggle-btn{
     display: none;
 
@@ -416,17 +464,5 @@
         .open~& span:nth-child(3) {
             transform: translateY(-10px) rotate(315deg);
         }
-    }
-}
-
-.c-header-entryBtn{
-    @media (width <= 960px) {
-        display: flex;
-        justify-content: center;
-        position: fixed;
-        margin-top: 5vh;
-        bottom: 16px;
-        left: 50%;
-        transform: translateX(-50%);
     }
 }
