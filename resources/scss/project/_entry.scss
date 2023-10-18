@@ -244,6 +244,11 @@ input[type="file"] {
         transform: translate(2px, 2px);
         box-shadow: none;
     }
+    .entryform-check-btn:disabled {
+        opacity: 0.3;
+        box-shadow: none;
+        transform: none;
+    }
     .entry-btn_arrow {
         position: absolute;
         inset: 22px 0px 0px 300px;
