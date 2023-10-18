@@ -40,8 +40,34 @@
     }
 }
 
+.error-message-area {
+    margin: 50px auto;
+    max-width: 720px;
+    @media (640px <= width) {
+        margin: 56px auto;
+    }
+    ul {
+        font-family: variables.$base-font-Japanese;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25.2px; /* 180% */
+        letter-spacing: 0.56px;
+        @media (640px <= width) {
+            font-size: 12px;
+            line-height: 21.6px; /* 180% */
+            letter-spacing: 0.48px;
+        }
+        padding: 20px 18px;
+        color: var(--color-logo-parts01, #F35A5A);
+        background: #FFD3D3;
+        border-radius: 4px;
+    }
+}
+
 .entryform {
-    margin-bottom: 130px;
+    max-width: 720px;
+    margin: 0 auto 130px auto;
     ul {
         margin-top: 50px;
         li {
