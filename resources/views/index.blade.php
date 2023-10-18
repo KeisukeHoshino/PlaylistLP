@@ -45,7 +45,8 @@
   </div>
 
   {{--  Playlistについて --}}
-  <div class="p-top-about">
+  {{-- Playlistについて --}}
+  <section class="p-top-about">
     <div class="c-top-inner-pc c-top-inner-sp">
       <h2 class="c-top-heading-h2"><span>ABOUT US</span>Playlistについて</h2>
       <div class="p-top-about_pic">
@@ -115,7 +116,7 @@
         </ul>
       </div>
     </div>
-  </div>
+  </section>
 
   @yield('entry_btn')
 
