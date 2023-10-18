@@ -221,11 +221,12 @@
             border-radius: 65px;
             color: variables.$color-black;
             cursor: pointer;
-            box-shadow: 2px 2px 0 variables.$color-black;
+            box-shadow: 4px 4px 0 variables.$color-black;
             text-align: center;
             &:hover {
-                transform: translate(2px, 2px);
+                transform: translate(4px, 4px);
                 box-shadow: none;
+                transition: all 0.2s ease-in-out;
             }
         }
         &_jump {
