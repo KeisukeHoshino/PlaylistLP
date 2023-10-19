@@ -14,7 +14,7 @@ function formValueCheck(data){
     const furigana = document.forms[0].furigana.value;
     const email = document.forms[0].email.value;
     const tel = document.forms[0].tel.value;
-    const pdf = document.forms[0].pdf.value;
+    let pdf = document.forms[0].pdf.value;
     const pdf_file = document.forms[0].pdf.files[0];
     // pdfが選択されている場合、input下のテキストをファイルパスに変更する
     if (pdf) {
