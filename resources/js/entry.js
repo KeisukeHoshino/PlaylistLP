@@ -4,12 +4,12 @@ window.onload = function(){
 }
 // フォーム内容変更時
 // dataは変更された対象データ
-document.querySelector(".entryform").addEventListener('change', (data) => {
-    formValueCheck(data);
+document.querySelector(".entryform").addEventListener('change', () => {
+    formValueCheck();
 });
 
 // フォーム入力内容チェック関数
-function formValueCheck(data){
+function formValueCheck(){
     const name = document.forms[0].name.value;
     const furigana = document.forms[0].furigana.value;
     const email = document.forms[0].email.value;
