@@ -12,7 +12,7 @@
 //
 .c-headerMenubarWrapper{
     background-color: variables.$color-white;
-    @media (width <= 960px) {     
+    @media (width <= 960px) {
         .c-headerMenubar.open{
             display: block;
             position: absolute;
@@ -105,27 +105,35 @@
         &.c-headerMenubar-nav-listCenter{
             margin: 0 auto;
 
-            &::before{
-                content: "+";
-                position: absolute;
-                top: 50%;
-                right: 20px;
-                transform: translateY(-50%);
-                font-size: 16px;
-            }
-
-            &:hover{
-                &::before{
-                    content: "－";
-                    position: absolute;
-                    top: 13.0%;
-                    right: 20px;
-                    transform: translateY(-50%);
-                    font-size: 16px;
+            &.is-open {
+                &::after {
+                    transform: rotate(0deg);
                 }
             }
+
+            &::before,
+            &::after {
+                position: absolute;
+                top: 32px;
+                right: 10px;
+                transition: 0.3s ease-in-out;
+                border-radius: 9999px;
+                background: variables.$color-black;
+                width: 17px;
+                height: 2px;
+                content: "";
+
+                @media (640px <=width) {
+                    top: 36px;
+                    right: 13px;
+                }
+            }
+
+            &::after {
+                transform: rotate(-90deg);
+            }
         }
-    }    
+    }
 }
 
 // ナビ要素内のサブメニューのスタイルを調整
@@ -175,14 +183,26 @@
 
     @media (width <= 960px) {
         width: 70%;
-        display: flex;
+        display: grid;
         justify-content: start;
         align-items: center;
-        transition:all 1s ease;
 
-        &:hover{
+        .subMenu--display{
+            max-height: 0;
+            padding: 0 20px;
+            transition: padding 0.4s, max-height 0.3s;
+            overflow: hidden;
+        }
+
+        &.is-open{
             flex-direction: column;
             align-items: flex-start;
+
+            .subMenu--display{
+                transition: padding 0.4s, max-height 0.3s;
+                max-height: 100vh;
+                padding: 20px;
+            }
         }
     }
 }
@@ -242,14 +262,26 @@
 
     @media (width <= 960px) {
         width: 70%;
-        display: flex;
+        display: grid;
         justify-content: start;
         align-items: center;
-        transition:all 1s ease;
 
-        &:hover{
+        .subMenu--display{
+            max-height: 0;
+            padding: 0 20px;
+            transition: padding 0.4s, max-height 0.3s;
+            overflow: hidden;
+        }
+
+        &.is-open{
             flex-direction: column;
             align-items: flex-start;
+
+            .subMenu--display{
+                transition: padding 0.4s, max-height 0.3s;
+                max-height: 100vh;
+                padding: 20px;
+            }
         }
     }
 }
@@ -309,14 +341,26 @@
 
     @media (width <= 960px) {
         width: 70%;
-        display: flex;
+        display: grid;
         justify-content: start;
         align-items: center;
-        transition:all 1s ease;
 
-        &:hover{
+        .subMenu--display{
+            max-height: 0;
+            padding: 0 20px;
+            transition: padding 0.4s, max-height 0.3s;
+            overflow: hidden;
+        }
+
+        &.is-open{
             flex-direction: column;
             align-items: flex-start;
+
+            .subMenu--display{
+                transition: padding 0.4s, max-height 0.3s;
+                max-height: 100vh;
+                padding: 20px;
+            }
         }
     }
 }
@@ -397,7 +441,7 @@
             transform: translate(-50%, -50%);
             z-index: -1;
             border-radius: 9999px;
-            background: linear-gradient(95deg, variables.$color-logo-parts01 0%, variables.$color-logo-parts01 25%, variables.$color-logo-parts02 25%, variables.$color-logo-parts02 50%, variables.$color-logo-parts04 50%, variables.$color-logo-parts04 75%, variables.$color-logo-parts03 75%, variables.$color-logo-parts03 100%);
+            background:-gradient(95deg, variables.$color-logo-parts01 0%, variables.$color-logo-parts01 25%, variables.$color-logo-parts02 25%, variables.$color-logo-parts02 50%, variables.$color-logo-parts04 50%, variables.$color-logo-parts04 75%, variables.$color-logo-parts03 75%, variables.$color-logo-parts03 100%);
             width: calc(100% + 3px);
             height: calc(100% + 3px);
             content: "";
