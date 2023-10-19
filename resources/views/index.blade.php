@@ -44,8 +44,21 @@
     </div>
   </div>
 
-  {{--  Playlistについて --}}
-  <div class="p-top-about">
+  {{-- お知らせ --}}
+  <section id="news" class="p-top-news">
+    <div class="c-top-inner-pc c-top-inner-sp">
+      <h2 class="c-top-heading-h2"><span>NEWS</span>お知らせ</h2>
+      <ul class="p-top-news_list">
+        <li>
+          <p class="p-top-news_date">2023/10/23</p>
+          <p class="p-top-news_contents"><a href="https://tenshoku.mynavi.jp/event/tokyo/20231123A/" target="_blank">11/23（木・祝）転職フェアに参加いたします</a></p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  {{-- Playlistについて --}}
+  <section id="aboutus" class="p-top-about">
     <div class="c-top-inner-pc c-top-inner-sp">
       <h2 class="c-top-heading-h2"><span>ABOUT US</span>Playlistについて</h2>
       <div class="p-top-about_pic">
@@ -115,12 +128,12 @@
         </ul>
       </div>
     </div>
-  </div>
+  </section>
 
   @yield('entry_btn')
 
-  {{--  代表メッセージ --}}
-  <section class="p-top-message">
+  {{-- 代表メッセージ --}}
+  <section id="message" class="p-top-message">
     <div class="c-top-inner-pc c-top-inner-sp">
       <h2 class="c-top-heading-h2"><span>MESSAGE</span>代表メッセージ</h2>
       <div class="p-top-message_column">
@@ -139,8 +152,8 @@
     </div>
   </section>
 
-  {{--  お気に入りポイント --}}
-  <section class="p-top-points u-top-bg-orange">
+  {{-- お気に入りポイント --}}
+  <section id="points" class="p-top-points u-top-bg-orange">
     <div class="c-top-inner-pc c-top-inner-sp">
       <h2 class="c-top-heading-h2 -white"><span>Playlist <br class="u-top-only-sp">POINTS</span>実際に働く社員のPlaylistお気に入りポイント</h2>
       <ul class="p-top-points_list">
@@ -189,8 +202,8 @@
     </div>
   </section>
 
-  {{--  よくある質問 --}}
-  <section class="p-top-faq">
+  {{-- よくある質問 --}}
+  <section id="faq" class="p-top-faq">
     <div class="c-top-inner-pc c-top-inner-sp">
       <h2 class="c-top-heading-h2"><span>FAQ</span>よくある質問</h2>
       <dl class="p-top-faq_list js-accordion">
