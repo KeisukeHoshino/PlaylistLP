@@ -309,3 +309,14 @@ input[type="file"] {
         }
     }
 }
+
+.entry-thanks-message {
+    text-align: center;
+    margin-bottom: 130px;
+    .pc_br {
+        display: inline;
+        @media (640px <= width) {
+            display: none;
+        }
+    }
+}
