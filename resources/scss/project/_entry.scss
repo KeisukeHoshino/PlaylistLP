@@ -4,11 +4,17 @@
 .entry-wrapper {
     width: 90.66%;
     margin: 0 auto;
+    @media (640px <= width) {
+        width: 80.52%;
+    }
 }
 
 .entry-title {
     padding: 120px 0px 70px 0px;
     margin: 0 auto;
+    @media (640px <= width) {
+        padding: 200px 0px 100px 0px;
+    }
     h1 {
         font-family: variables.$base-font-English;
         color: variables.$color-logo-parts04;
@@ -16,20 +22,61 @@
         line-height: 48px;
         letter-spacing: 1.44px;
         text-align: center;
+        @media (640px <= width) {
+            font-size: 64px;
+            font-weight: 800;
+            letter-spacing: 2.56px;
+            margin-bottom: 24px;
+        }
     }
     h2 {
         text-align: center;
     }
 }
 
+.entry-headline>p {
+    @media (640px <= width) {
+        text-align: center;
+    }
+}
+
+.error-message-area {
+    margin: 50px auto;
+    max-width: 720px;
+    @media (640px <= width) {
+        margin: 56px auto;
+    }
+    ul {
+        font-family: variables.$base-font-Japanese;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25.2px; /* 180% */
+        letter-spacing: 0.56px;
+        @media (640px <= width) {
+            font-size: 12px;
+            line-height: 21.6px; /* 180% */
+            letter-spacing: 0.48px;
+        }
+        padding: 20px 18px;
+        color: var(--color-logo-parts01, #F35A5A);
+        background: #FFD3D3;
+        border-radius: 4px;
+    }
+}
+
 .entryform {
-    margin-bottom: 130px;
+    max-width: 720px;
+    margin: 0 auto 130px auto;
     ul {
         margin-top: 50px;
         li {
             margin: 0 auto;
             width: 100%;
             margin-bottom: 30px;
+            @media (640px <= width) {
+                margin-bottom: 42px;
+            }
             label {
                 margin-bottom: 26px;
                 display: block;
@@ -38,6 +85,11 @@
                     line-height: 1.8;
                     letter-spacing: 0.56px;
                     position: relative;
+                    @media (640px <= width) {
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.64px;
+                    }
                     span {
                         color: variables.$color-logo-parts01;
                         border: 1px solid variables.$color-logo-parts01;
@@ -67,9 +119,15 @@
                 border-radius: 4px;
                 height: 32px;
                 padding: 5px 20px;
+                @media (640px <= width) {
+                    height: 36px;
+                }
             }
             :focus {
                 outline: none;
+            }
+            .entryform-attention {
+                color: variables.$color-gray-black;                margin-top: 15px;
             }
         }
         .entryform-list_file {
@@ -83,10 +141,16 @@
                 width: 100%;
                 padding: 5px 20px;
                 cursor: pointer;
+                @media (640px <= width) {
+                    height: 36px;
+                }
             }
             &_attention {
                 font-size: 10px;
                 color: variables.$color-gray-black;
+                @media (640px <= width) {
+                    font-size: 12px;
+                }
             }
             &_selectfile {
                 color: variables.$color-gray-black;
@@ -105,6 +169,9 @@
                 height: 215px;
                 padding: 5px;
                 resize: none;
+                @media (640px <= width) {
+                    padding: 10px;
+                }
             }
         }
     }
@@ -122,14 +189,24 @@ input[type="file"] {
     padding: 20px 18px;
     border: 1px solid #000;
     overflow-y: scroll;
+    border-radius: 4px;
+    @media (640px <= width) {
+        height: 250px;
+    }
     h3 {
         font-size: 18px;
         margin-bottom: 15px;
         color: variables.$color-black;
+        @media (640px <= width) {
+            font-size: 20px;
+        }
     }
     h4 {
         font-size: 15px;
         color: variables.$color-black-light;
+        @media (640px <= width) {
+            font-size: 18px;
+        }
     }
     p {
         margin-bottom: 15px;
@@ -140,6 +217,9 @@ input[type="file"] {
 #entryform-check-btn {
     position: relative;
     height: 61px;
+    @media (640px <= width) {
+        height: 85px;
+    }
     .entryform-check-btn {
         width: 340px;
         margin: auto;
@@ -156,13 +236,75 @@ input[type="file"] {
         box-shadow: 2px 2px 0 variables.$color-black;
         margin: 0 auto;
         text-align: center;
+        @media (640px <= width) {
+            font-size: 16px;
+        }
     }
     .entryform-check-btn:hover {
+        transform: translate(2px, 2px);
+        box-shadow: none;
+    }
+    .entryform-check-btn:disabled {
+        opacity: 0.3;
+        box-shadow: none;
+        transform: none;
+    }
+    .entry-btn_arrow {
+        position: absolute;
+        inset: 22px 0px 0px 300px;
+        @media (640px <= width) {
+            inset: 32px 0px 0px 300px;
+        }
+    }
+}
+
+#entryform-submit-btn {
+    position: relative;
+    height: 61px;
+    @media (640px <= width) {
+        height: 85px;
+    }
+    .entryform-submit-btn {
+        width: 340px;
+        margin: auto;
+        inset: 0px 0px 0px 0px;
+        font-size: 14px;
+        position: absolute;
+        text-decoration: none;
+        padding: 5px 35px;
+        background-color: variables.$color-white;
+        border: 2px solid variables.$color-black;
+        border-radius: 65px;
+        color: variables.$color-black;
+        cursor: pointer;
+        box-shadow: 2px 2px 0 variables.$color-black;
+        margin: 0 auto;
+        text-align: center;
+        @media (640px <= width) {
+            font-size: 16px;
+        }
+    }
+    .entryform-submit-btn:hover {
         transform: translate(2px, 2px);
         box-shadow: none;
     }
     .entry-btn_arrow {
         position: absolute;
         inset: 22px 0px 0px 300px;
+        @media (640px <= width) {
+            inset: 32px 0px 0px 300px;
+        }
+    }
+}
+
+#entryform-back{
+    margin-top: 20px;
+    text-align: center;
+    .entryform-back{
+        font-size: 14px;
+        text-decoration-line: underline;
+        @media (640px <= width) {
+            font-size: 16px;
+        }
     }
 }

@@ -12,7 +12,7 @@
           エントリー
         </h2>
       </div>
-      <div>
+      <div class="entry-headline">
         <p>以下のフォームへ入力をお願いします。<br />
           内容を確認の上、3営業日以内に担当者よりご連絡させて頂きます。
         </p>
@@ -21,38 +21,40 @@
       <div class="error-message-area">
         <ul>
           @foreach ($errors->all() as $error)
-          <li>{{ $error }}</li>
+          <li>・{{ $error }}</li>
           @endforeach
         </ul>
       </div>
       @endif
       <section id="entryform">
-        <form class="entryform" action="/entry_check" method="GET" enctype="multipart/form-data">
+        <form class="entryform" action="/entry_check" method="POST" enctype="multipart/form-data">
           @csrf
           <ul>
             <li>
               <label>
                 <h3>氏名<span>必須</span></h3>
               </label>
-              <input type="text" inputmode="text" name="name" value="{{old('name')}}" placeholder="山田 太郎" required>
+              <input type="text" inputmode="text" name="name" value="{{old('name')}}" placeholder="山田 太郎" maxlength="21" required>
             </li>
             <li>
               <label>
                 <h3>ふりがな<span>必須</span></h3>
               </label>
-              <input type="text" inputmode="kana" name="furigana" value="{{old('furigana')}}" placeholder="やまだ たろう" required>
+              <input type="text" inputmode="kana" name="furigana" value="{{old('furigana')}}" placeholder="やまだ たろう" maxlength="41" required>
             </li>
             <li>
               <label>
                 <h3>メールアドレス<span>必須</span></h3>
               </label>
               <input type="email" inputmode="email" name="email" value="{{old('email')}}" placeholder="yamada.taro0623@playlist.co.jp" required>
+              <p class="entryform-attention">※半角英数字で入力してください。</p>
             </li>
             <li>
               <label>
                 <h3>電話番号<span>必須</span></h3>
               </label>
               <input type="tel" inputmode="numeric" name="tel" value="{{old('tel')}}" placeholder="0123456789" required>
+              <p class="entryform-attention">※半角数字で、ハイフンなしで入力してください。</p>
             </li>
             <li class="entryform-list_file">
               <label>
@@ -63,7 +65,7 @@
                 <input type="file" accept=".pdf" name="pdf" value="{{old('pdf')}}" multiple required>+ ファイルを選択
               </label>
               <p class="entryform-list_file_selectfile">選択されていません</p>
-              <p class="entryform-list_file_attention">※アップロード可能なファイルの最大サイズはxxMBです。</p>
+              <p class="entryform-list_file_attention">※アップロード可能なファイルの最大サイズは1.6MBです。</p>
               <p class="entryform-list_file_attention">※最大0ファイルまで登録できます。</p>
             </li>
             <li class="entryform-list_url">
@@ -115,7 +117,7 @@
             </p>
           </div>
           <div id="entryform-check-btn">
-            <button class="entryform-check-btn" type="submit">
+            <button class="entryform-check-btn" type="submit" disabled>
               プライバシーポリシーに同意して<br />入力内容の確認へ
               <svg class="entry-btn_arrow" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
                 <path d="M8.2458 14.394C7.93621 14.7087 7.36656 14.4254 7.36991 13.9583L7.46358 1.04965C7.46674 0.611324 7.98084 0.43609 8.30287 0.76349L14.5124 7.07647C14.7823 7.35096 14.7817 7.79618 14.5108 8.06954L8.2458 14.394Z" fill="#333333" />
