@@ -184,7 +184,7 @@
                     <div class="career-path-b cp-b-pc">
                         <div class="career-path-about">
                             <div class="career-path-about-name">
-                                <p>Keisuke.H（25歳）</p>
+                                <p>Keisuke.H（26歳）</p>
                             </div>
                             <div class="career-path-about-text pc">
                                 <p>
@@ -205,7 +205,7 @@
                             <div class="career-path-b cp-b-sp">
                                 <div class="career-path-about">
                                     <div class="career-path-about-name">
-                                        <p>Keisuke.H（25歳）</p>
+                                        <p>Keisuke.H（26歳）</p>
                                     </div>
                                     <div class="career-path-about-text">
                                         <p>独学でIT知識やプログラミング知識・技術を1年学習。Playlistへ⼊社後、1年で開発案件を担当。現在はWebエンジニアを⽬指し活躍中。</p>
@@ -228,7 +228,7 @@
                                     <div class="content">
                                         入社
                                         <br>
-                                        テスト案件
+                                        電力システム会社のテスト案件
                                     </div>
                                 </li>
                                 <li>
@@ -254,7 +254,7 @@
                                         </svg>
                                     </div>
                                     <div class="content">
-                                        テスト案件
+                                        生命保険会社のテスト案件
                                     </div>
                                 </li>
                                 <li>
@@ -279,7 +279,7 @@
                     <div class="career-path-b cp-b-pc">
                         <div class="career-path-about">
                             <div class="career-path-about-name">
-                                <p>Ryo.W（26歳）</p>
+                                <p>Ryo.W（27歳）</p>
                             </div>
                             <div class="career-path-about-text pc">
                                 <p>
@@ -301,7 +301,7 @@
                             <div class="career-path-b cp-b-sp">
                                 <div class="career-path-about">
                                     <div class="career-path-about-name">
-                                        <p>Ryo.W（26歳）</p>
+                                        <p>Ryo.W（27歳）</p>
                                     </div>
                                     <div class="career-path-about-text">
                                         <p>SIer企業にてエンジニアのキャリアをスタート。データを活⽤した技術への成⻑を⽬指しSIer企業からPlaylistへ転職。⼊社後6ヶ⽉でPythonを使⽤した案件への参画を実現。社内では、若⼿エンジニアの教育や社内の課題解決などリードメンバーとしてPlaylistを推進。</p>
