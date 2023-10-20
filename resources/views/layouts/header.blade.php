@@ -16,9 +16,10 @@
                         <a href="/" id="c-headerMenubar-navTop__heading">TOP</a>
                         <div class="subMenu--display c-headerMenubar-navTop__subMenu">
                             <ul>
+                                <li><a href="/#news">お知らせ</a></li>
                                 <li><a href="/#aboutus">playlistについて</a></li>
                                 <li><a href="/#message">代表メッセージ</a></li>
-                                <li><a href="/#playlist-points">実際に働く社員のplaylistお気に入りポイント</a></li>
+                                <li><a href="/#points">実際に働く社員のplaylistお気に入りポイント</a></li>
                                 <li><a href="/#faq">よくある質問</a></li>
                             </ul>
                         </div>
