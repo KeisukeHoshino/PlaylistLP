@@ -114,20 +114,14 @@
             &::before,
             &::after {
                 position: absolute;
-                top: 32px;
-                right: 10px;
+                top: 38%;
+                right: 5%;
                 transition: 0.3s ease-in-out;
                 border-radius: 9999px;
                 background: variables.$color-black;
                 width: 17px;
                 height: 2px;
                 content: "";
-
-                @media (640px <=width) {
-                    top: 36px;
-                    right: 13px;
-
-                }
             }
 
             &::after {
