@@ -4,7 +4,7 @@
 <header class="c-headerMenubarWrapper">
     <div class="c-headerMenubarContainer">
         <div class="c-headerTitle c-headerTitle--img" id="js-headerTitle">
-            <a href="#" class="c-headerTitle__link">
+            <a href="/" class="c-headerTitle__link">
                 <img src="{{ asset('img/layout/logo_Playlist_header.svg') }}" alt="playlistRecruitment-sitelogo">
                 <span>採用サイト</span>
             </a>
