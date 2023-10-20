@@ -186,7 +186,7 @@
                             <div class="career-path-about-name">
                                 <p>Keisuke.H（25歳）</p>
                             </div>
-                            <div class="career-path-about-text">
+                            <div class="career-path-about-text pc">
                                 <p>独学でIT知識やプログラミング知識・技術を1年学習。Playlistへ⼊社後、1年で開発案件を担当。現在はWebエンジニアを⽬指し活躍中。</p>
                             </div>
                         </div>
@@ -277,7 +277,7 @@
                             <div class="career-path-about-name">
                                 <p>Ryo.W（26歳）</p>
                             </div>
-                            <div class="career-path-about-text">
+                            <div class="career-path-about-text pc">
                                 <p>SIer企業にてエンジニアのキャリアをスタート。データを活⽤した技術への成⻑を⽬指しSIer企業からPlaylistへ転職。⼊社後6ヶ⽉でPythonを使⽤した案件への参画を実現。社内では、若⼿エンジニアの教育や社内の課題解決などリードメンバーとしてPlaylistを推進。</p>
                             </div>
                         </div>
@@ -347,7 +347,7 @@
                             <div class="career-path-about-name">
                                 <p>Mao.U（25歳）</p>
                             </div>
-                            <div class="career-path-about-text">
+                            <div class="career-path-about-text pc">
                                 <p>新卒でWeb制作会社にて、フロントエンドエンジニアとして複数クライアントのWebサイトのコーディングに携わる。キャリアアップを目標にさらに自分の可能性を広げられると思い、Playlistへ転職する。現在のプロジェクトは、大手小売店の自社サイトの開発、更新、検証を担当。社内業務として、採用LP制作においてプロジェクト推進中。</p>
                             </div>
                         </div>
@@ -412,7 +412,7 @@
                             <div class="career-path-about-name">
                                 <p>Mao.O（30歳）</p>
                             </div>
-                            <div class="career-path-about-text">
+                            <div class="career-path-about-text pc">
                                 <p>新しいことを勉強するのが好きだったためシステムエンジニアを目指す。新卒にてSIerで、汎用系システム開発やWeb、基幹システム開発に携わる。その後、Playlistの創業メンバーとして、RPA、Pythonを用いてAI事業やデータ分析、DX支援業務に携わる。現在はSalesforceに携わり業務支援業務プロジェクト推進するほか、新人研修でVBAやSQL研修を作成する。</p>
                             </div>
                         </div>
