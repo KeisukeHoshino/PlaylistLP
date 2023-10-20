@@ -126,6 +126,7 @@
                 @media (640px <=width) {
                     top: 36px;
                     right: 13px;
+
                 }
             }
 
@@ -448,9 +449,8 @@
         }
 
         &::after {
-        display: block;
         position: absolute;
-        top: 30%;
+        top: 25%;
         right: 24px;
         transform: rotate(-135deg) translateY(-50%);
         transition: 0.3s ease-in-out;

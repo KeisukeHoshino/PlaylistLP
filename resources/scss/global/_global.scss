@@ -4,6 +4,7 @@
 
 html{
     scroll-behavior: smooth;
+    scroll-padding-top: 60px;
 }
 
 body {
@@ -16,6 +17,10 @@ body {
 }
 
 @media (640px <= width) {
+    html{
+        scroll-padding-top: 90px;
+    }
+
     body {
         font-size: 14px;
         letter-spacing: 0.56px;
