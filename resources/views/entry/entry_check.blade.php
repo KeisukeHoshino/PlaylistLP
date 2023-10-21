@@ -12,8 +12,8 @@
           エントリー
         </h2>
       </div>
-      <div>
-        <p clss="entry-headline">
+      <div class="entry-headline">
+        <p>
           内容を確認の上、3営業日以内に担当者よりご連絡させて頂きます。
         </p>
       </div>

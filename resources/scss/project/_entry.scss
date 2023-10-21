@@ -245,9 +245,13 @@ input[type="file"] {
         box-shadow: none;
     }
     .entryform-check-btn:disabled {
-        opacity: 0.3;
+        color: variables.$color-gray-black;
+        border-color: variables.$color-gray-black;
         box-shadow: none;
         transform: none;
+        path {
+            fill: variables.$color-gray-black;
+        }
     }
     .entry-btn_arrow {
         position: absolute;
