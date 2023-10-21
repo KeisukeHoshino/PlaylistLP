@@ -12,8 +12,10 @@
         <nav class="c-headerMenubar" id="navArea">
             <div class="c-headerMenubar-nav">
                 <ul>
-                    <li class="c-headerMenubar-nav-listCenter active" id="c-headerMenubar-navTop">
+                    <li class="c-headerMenubar-nav-listheading" id="c-headerMenubar-navTop">
                         <a href="/" id="c-headerMenubar-navTop__heading">TOP</a>
+                    </li>
+                    <li class="c-headerMenubar-nav-listCenter" id="c-headerMenubar-navTop">
                         <div class="subMenu--display c-headerMenubar-navTop__subMenu">
                             <ul>
                                 <li><a href="/#news">お知らせ</a></li>
@@ -24,8 +26,10 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="c-headerMenubar-nav-listCenter" id="c-headerMenubar-navMember">
+                    <li class="c-headerMenubar-nav-listheading" id="c-headerMenubar-navMember">
                         <a href="member" id="c-headerMenubar-navMember__heading">社員紹介</a>
+                    </li>
+                    <li class="c-headerMenubar-nav-listCenter" id="c-headerMenubar-navMember">
                         <div class="subMenu--display c-headerMenubar-navMember__subMenu">
                             <ul>
                                 <li><a href="member#member">メンバー</a></li>
@@ -34,8 +38,10 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="c-headerMenubar-nav-listCenter" id="c-headerMenubar-navRequirements">
+                    <li class="c-headerMenubar-nav-listheading" id="c-headerMenubar-navRequirements">
                         <a href="requirements" id="c-headerMenubar-navRequirements__heading">募集要項・選考フロー</a>
+                    </li>
+                    <li class="c-headerMenubar-nav-listCenter" id="c-headerMenubar-navRequirements">
                         <div class="subMenu--display c-headerMenubar-navRequirements__subMenu">
                             <ul>
                                 <li><a href="requirements#requirements">募集要項</a></li>
