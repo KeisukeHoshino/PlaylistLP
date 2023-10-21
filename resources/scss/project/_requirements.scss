@@ -5,11 +5,11 @@
     width: 90.66%;
     padding: 120px 0px 70px 0px;
     margin: 0 auto;
-    display: grid;
 
     @media (640px <= width) {
-        width: 80.52%;
-        padding: 200px 0 100px 0;
+        width: 100%;
+        max-width: 1150px;
+        padding: 200px 25px 100px 25px;
         gap: 24px;
     }
 
@@ -33,11 +33,13 @@
 .requirements-subtitle {
     color: variables.$color-black;
     text-align: center;
+    margin-top: 8px;
 
     @media (640px <= width) {
         font-size: 16px;
         line-height: 24px;
         letter-spacing: 0.64px;
+        margin-top: 24px;
     }
 }
 
@@ -48,7 +50,9 @@
     padding-bottom: 70px;
 
     @media (640px <= width) {
-        width: 80.52%;
+        padding: 0 25px;
+        width: 100%;
+        max-width: 1150px;
         padding-bottom: 100px;
     }
 
@@ -139,8 +143,10 @@
     padding-bottom: 34px;
 
     @media (640px <= width) {
-        width: 80.52%;
-        padding-bottom: 48px;
+        margin: 0 auto;
+        padding: 0 25px 48px 25px;
+        width: 100%;
+        max-width: 1150px;
         text-align: center;
     }
 
@@ -176,7 +182,9 @@
     gap: 30px;
 
     @media (640px <= width) {
-        width: 80.52%;
+        padding: 0 25px;
+        width: 100%;
+        max-width: 1150px;
         gap: 22px;
     }
 
@@ -256,7 +264,9 @@
     gap: 15px;
 
     @media (640px <= width) {
-        width: 80.52%;
+        padding: 0 25px;
+        width: 100%;
+        max-width: 1150px;
     }
 
     @media (960px <= width) {
