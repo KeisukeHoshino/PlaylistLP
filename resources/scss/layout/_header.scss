@@ -1,0 +1,652 @@
+@use "../global/variables"as variables;
+//
+// header
+//
+
+//
+// 共通対応
+//
+
+//
+// header 全体
+//
+.c-headerMenubarWrapper{
+    background-color: variables.$color-white;
+    @media (width <= 961px) {
+        .c-headerMenubar.open{
+            display: block;
+            position: absolute;
+            right: 0;
+            height: 100vh;
+            background-color: variables.$color-white;
+        }
+    }
+}
+
+.c-headerMenubar{
+    display: flex;
+    align-items: center;
+
+    @media (width <= 961px) {
+        gap: 60px;
+        opacity: 0;
+        pointer-events: none;
+        transition: all .5s;
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 60px;
+        width: 100%;
+        &.open{
+            background-color: variables.$color-white;
+            opacity: 1;
+            pointer-events: all;
+            padding-top: 60px;
+            padding-bottom: 160px;
+            overflow-y: auto;
+        }
+    }
+}
+
+.c-headerMenubar-nav {
+    text-align: center;
+
+    @media (width <= 961px) {
+        width: 100%;
+    }
+}
+
+// ヘッダーの固定
+.c-headerMenubarWrapper{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: variables.$color-white;
+
+    @media (width <= 961px) {
+    }
+}
+
+// フレキシブルにしてロゴとナビ要素を左右に寄せる、など
+.c-headerMenubarContainer{
+    width: 80%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 90px;
+
+    @media (width <= 961px) {
+        height: 60px;
+    }
+}
+
+// フレキシブルにしてロゴとナビ要素を横並び下部でそろえる
+.c-headerTitle__link{
+    display: flex;
+    align-items: flex-end;
+    gap: 2vw;
+
+    @media (width <= 961px) {
+        width: 20em;
+    }
+}
+
+// ナビ要素内の見出しスタイルを調整
+.c-headerMenubar-nav ul li {
+    display: inline-block;
+    width: max-content;
+    padding-top: 8px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+
+
+    &.c-headerMenubar-nav-listCenter{
+        padding: 0;
+        &>div{
+            display: none;
+        }
+    }
+    @media (961px <= width) {
+        &.c-headerMenubar-nav-listheading>a{
+            padding-bottom: 55px;
+        }
+    }
+
+    @media (width <= 961px) {
+        padding: 0px 0px 25px 0px;
+        &.c-headerMenubar-nav-listheading{
+            margin: 0 auto;
+
+            &.is-open {
+                &::after {
+                    transform: rotate(0deg);
+                }
+            }
+
+            &::before,
+            &::after {
+                position: absolute;
+                top: 36px;
+                right: 5%;
+                transition: 0.3s ease-in-out;
+                border-radius: 9999px;
+                background: variables.$color-black;
+                width: 17px;
+                height: 2px;
+                content: "";
+            }
+
+            &::after {
+                transform: rotate(-90deg);
+            }
+        }
+        .c-headerMenubar-nav-listcenter{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+// ナビ要素内のサブメニューのスタイルを調整
+.c-headerMenubar-nav>ul>li>a {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 20px 5px;
+
+    @media (width <= 961px) {
+        font-size: 18px;
+        text-align: left;
+    }
+}
+
+// 文字色を栗で統一
+.c-headerMenubar-nav ul li:hover a {
+    color: variables.$color-black-light;
+}
+
+// 出たり消えたりする部分のスタイル調整
+.subMenu--display  {
+    display: none;
+    opacity: 0;
+    & a{
+        &::before{
+            content: url('/public/img/layout/icon_arrow-right.svg');
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+    }
+}
+
+//
+// 個別対応
+//
+
+//
+// TOPのnav用
+//
+
+// 親要素としてスタイルを調整
+#c-headerMenubar-navTop{
+    position: relative;
+    &>ul>li>a{
+        padding: 20px 5px;
+    }
+
+    @media (961px <= width) {
+        &.c-headerMenubar-nav-listheading:hover{
+            &~#c-headerMenubar-navTop>div {
+                display: inline-block;
+                opacity: 1;
+                position: absolute;
+                top: 30px;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    @media (width <= 961px) {
+        &.c-headerMenubar-nav-listheading{
+            &~#c-headerMenubar-navTop>div {
+                display: block;
+                opacity: 1;
+            }
+        }
+        width: 70%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        margin: 0 auto;
+        padding: 0;
+
+        .subMenu--display{
+            max-height: 0;
+            padding: 0 20px;
+            opacity: 0;
+            transition: padding 0.4s, max-height 0.3s;
+            overflow: hidden;
+        }
+
+        &.is-open{
+            flex-direction: column;
+            align-items: flex-start;
+
+            .subMenu--display{
+                opacity: 1;
+                transition: padding 0.4s, max-height 0.3s, opacity 0.1s;
+                max-height: 100vh;
+                padding: 20px 0 0 20px;
+            }
+        }
+    }
+}
+
+// 見出しの色を赤色にする
+.c-headerMenubar-nav ul li a#c-headerMenubar-navTop__heading {
+    color: variables.$color-logo-parts01;
+
+    @media (961px <= width) {
+        color: variables.$color-black;
+        &:hover{
+            color: variables.$color-logo-parts01;
+        }
+    }
+}
+
+// 子要素としてスタイルを調整、親要素の中央に表示させるように更新
+.c-headerMenubar-nav ul li{
+    &:hover .c-headerMenubar-navTop__subMenu {
+        display: block;
+        opacity: 1;
+        padding: 20px;
+        align-items: center;
+    }
+
+    @media (961px <= width) {
+        &:hover .c-headerMenubar-navTop__subMenu {
+            position: absolute;
+            top: 30px;
+            transform: translateX(-50%);
+        }
+
+        .c-headerMenubar-navTop__subMenu {
+            background-color: variables.$color-white;
+            border: 1px solid variables.$color-logo-parts01;
+            box-shadow: 2px 2px 0 variables.$color-logo-parts01;
+            border-radius: 5px;
+            margin: 16px auto;
+            padding: 20px;
+            align-items: center;
+        }
+    }
+}
+
+// 出たり消えたりする部分のli周りを調整
+.c-headerMenubar-nav ul li{
+    .c-headerMenubar-navTop__subMenu ul li {
+        display: none;
+    }
+    .c-headerMenubar-navTop__subMenu ul li {
+        display: block;
+        opacity: 1;
+        border-bottom: 1px dotted white;
+        &>a:hover{
+            color: variables.$color-logo-parts01;
+        }
+    }
+
+    @media (width <= 961px) {
+        .c-headerMenubar-navTop__subMenu ul li {
+            display: block;
+            opacity: 1;
+        }
+    }
+
+}
+
+
+//
+// 社員紹介のnav用
+//
+
+// 親要素としてスタイルを調整
+#c-headerMenubar-navMember{
+    position: relative;
+    &>ul>li>a{
+        padding: 20px 5px;
+    }
+
+    @media (961px <= width) {
+        &.c-headerMenubar-nav-listheading:hover{
+            &~#c-headerMenubar-navMember>div {
+                display: inline-block;
+                opacity: 1;
+                position: absolute;
+                top: 30px;
+                transform: translateX(-70%);
+            }
+        }
+    }
+
+    @media (width <= 961px) {
+        &.c-headerMenubar-nav-listheading{
+            &~#c-headerMenubar-navMember>div {
+                display: block;
+                opacity: 1;
+            }
+        }
+        width: 70%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        margin: 0 auto;
+        padding: 0;
+
+        .subMenu--display{
+            max-height: 0;
+            padding: 0 20px;
+            opacity: 0;
+            transition: padding 0.4s, max-height 0.3s;
+            overflow: hidden;
+        }
+
+        &.is-open{
+            flex-direction: column;
+            align-items: flex-start;
+
+            .subMenu--display{
+                opacity: 1;
+            transition: padding 0.4s, max-height 0.3s, opacity 0.1s;
+                max-height: 100vh;
+            }
+        }
+    }
+}
+
+// 見出しの色をオレンジ色にする
+.c-headerMenubar-nav ul li a#c-headerMenubar-navMember__heading {
+    color: variables.$color-logo-parts02;
+    @media (961px <= width) {
+        color: variables.$color-black;
+        &:hover{
+            color: variables.$color-logo-parts02;
+        }
+    }
+}
+
+// 子要素としてスタイルを調整、親要素の中央に表示させるように更新
+.c-headerMenubar-nav ul li{
+    &:hover .c-headerMenubar-navMember__subMenu {
+        display: block;
+        opacity: 1;
+        padding: 20px;
+        align-items: center;
+    }
+
+    @media (961px <= width) {
+        &:hover .c-headerMenubar-navMember__subMenu {
+            position: absolute;
+            top: 30px;
+            transform: translateX(-70%);
+        }
+
+        .c-headerMenubar-navMember__subMenu {
+            background-color: variables.$color-white;
+            border: 1px solid variables.$color-logo-parts02;
+            box-shadow: 2px 2px 0 variables.$color-logo-parts02;
+            border-radius: 5px;
+            margin: 16px auto;
+            padding: 20px;
+            align-items: center;
+        }
+    }
+}
+
+// 出たり消えたりする部分のli周りを調整
+.c-headerMenubar-nav ul li{
+    .c-headerMenubar-navMember__subMenu ul li {
+        display: none;
+    }
+    .c-headerMenubar-navMember__subMenu ul li {
+        display: block;
+        opacity: 1;
+        border-bottom: 1px dotted white;
+        &>a:hover{
+            color: variables.$color-logo-parts02;
+        }
+    }
+
+    @media (width <= 961px) {
+        .c-headerMenubar-navMember__subMenu ul li {
+            display: block;
+            opacity: 1;
+        }
+    }
+}
+
+//
+// 募集要項のnav用
+//
+
+// 親要素としてスタイルを調整
+#c-headerMenubar-navRequirements{
+    position: relative;
+    &>ul>li>a{
+        padding: 20px;
+    }
+
+    @media (961px <= width) {
+        &.c-headerMenubar-nav-listheading:hover{
+            &~#c-headerMenubar-navRequirements>div {
+                display: inline-block;
+                opacity: 1;
+                position: absolute;
+                top: 30px;
+                transform: translateX(-90%);
+            }
+        }
+    }
+
+    @media (width <= 961px) {
+        &.c-headerMenubar-nav-listheading{
+            &~#c-headerMenubar-navRequirements>div {
+                display: block;
+                opacity: 1;
+            }
+        }
+        width: 70%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        margin: 0 auto;
+        padding: 0;
+
+        .subMenu--display{
+            max-height: 0;
+            padding: 0 20px;
+            opacity: 0;
+            transition: padding 0.4s, max-height 0.3s;
+            overflow: hidden;
+        }
+
+        &.is-open{
+            flex-direction: column;
+            align-items: flex-start;
+
+            .subMenu--display{
+                opacity: 1;
+                transition: padding 0.4s, max-height 0.3s, opacity 0.1s;
+                max-height: 100vh;
+                padding: 20px 0 0 20px;
+            }
+        }
+    }
+}
+
+// 見出しの色を青色にする
+.c-headerMenubar-nav ul li a#c-headerMenubar-navRequirements__heading {
+    color: variables.$color-logo-parts03;
+    @media (961px <= width) {
+        color: variables.$color-black;
+        &:hover{
+            color: variables.$color-logo-parts03;
+        }
+    }
+}
+
+// 子要素としてスタイルを調整、親要素の中央に表示させるように更新
+.c-headerMenubar-nav ul li{
+    &:hover .c-headerMenubar-navRequirements__subMenu {
+        display: block;
+        opacity: 1;
+        padding: 20px;
+        align-items: center;
+    }
+
+    @media (961px <= width) {
+        &:hover .c-headerMenubar-navRequirements__subMenu {
+            position: absolute;
+            top: 30px;
+            transform: translateX(-90%);
+        }
+
+        .c-headerMenubar-navRequirements__subMenu {
+            background-color: variables.$color-white;
+            border: 1px solid variables.$color-logo-parts03;
+            box-shadow: 2px 2px 0 variables.$color-logo-parts03;
+            border-radius: 5px;
+            margin: 16px auto;
+            padding: 20px;
+            align-items: center;
+        }
+    }
+}
+
+// 出たり消えたりする部分のli周りを調整
+.c-headerMenubar-nav ul li{
+    .c-headerMenubar-navRequirements__subMenu ul li {
+        display: none;
+    }
+    .c-headerMenubar-navRequirements__subMenu ul li {
+        display: block;
+        opacity: 1;
+        border-bottom: 1px dotted white;
+        &>a:hover{
+            color: variables.$color-logo-parts03;
+        }
+    }
+
+    @media (width <= 961px) {
+        .c-headerMenubar-navRequirements__subMenu ul li {
+            display: block;
+            opacity: 1;
+        }
+    }
+}
+
+// エントリーボタン
+.c-header-entryBtn{
+    @media (width <= 961px) {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        margin-top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .entry-btn_grad{
+        display: block;
+        position: relative;
+        transform: rotateZ(1);
+        margin: 0 auto;
+        border-radius: 9999px;
+        background-color: variables.$color-white;
+        padding: 6px 40px;
+        width: 150px;
+        font-size: 14px;
+        font-family: variables.$base-font-English;
+
+        &:hover {
+            &::after {
+                right: 19px;
+            }
+        }
+
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            border-radius: 9999px;
+            background:linear-gradient(95deg, variables.$color-logo-parts01 0%, variables.$color-logo-parts01 25%, variables.$color-logo-parts02 25%, variables.$color-logo-parts02 50%, variables.$color-logo-parts04 50%, variables.$color-logo-parts04 75%, variables.$color-logo-parts03 75%, variables.$color-logo-parts03 100%);
+            width: calc(100% + 3px);
+            height: calc(100% + 3px);
+            content: "";
+        }
+
+        &::after {
+            position: absolute;
+            top: 25%;
+            right: 24px;
+            transform: rotate(-135deg) translateY(-50%);
+            transition: 0.3s ease-in-out;
+            background-image: url("/public/img/top/ico-triangle-black.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 10px;
+            height: 10px;
+            content: "";
+        }
+    }
+}
+
+.toggle-btn{
+    display: none;
+
+    @media (width <= 961px) {
+        display: block;
+        position: relative;
+        right: 30px;
+        width: 30px;
+        height: 30px;
+        z-index: 3;
+        cursor: pointer;
+
+        & span {
+            position: absolute;
+            display: block;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background-color: #333;
+            transition: all 0.5s;
+            border-radius: 4px;
+        }
+
+        & span:nth-child(1) {
+            top: 4px;
+        }
+        & span:nth-child(2) {
+            top: 14px;
+        }
+        & span:nth-child(3) {
+            bottom: 4px;
+        }
+
+        .open~& span:nth-child(1) {
+            transform: translateY(10px) rotate(-315deg);
+        }
+
+        .open~& span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .open~& span:nth-child(3) {
+            transform: translateY(-10px) rotate(315deg);
+        }
+    }
+}

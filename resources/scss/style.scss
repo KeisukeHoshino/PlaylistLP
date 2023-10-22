@@ -1,5 +1,8 @@
+// vendor
+@use "./vendor/swiper" as swiper;
 // global
 @use "./global/reset" as reset;
+@use "./global/global" as global;
 @use "./global/mixin" as mixin;
 @use "./global/variables" as variables;
 // layout

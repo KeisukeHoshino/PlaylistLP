@@ -1,1 +1,84 @@
 // エントリーボタン
+@use "../global/variables" as variables;
+
+#entry-btn {
+    position: relative;
+    height: 186px;
+    .entry-btn_background {
+        display: flex;
+        position: relative;
+        .entry-btn_bg-red {
+            position: absolute;
+            background-color: variables.$color-logo-parts01;
+            height: 186px;
+            width: 30%;
+            clip-path: polygon(-5vmax 0, 100% 0, 50% 100%, -5vmax 100%);
+            box-shadow: 0 0 0 100vmax variables.$color-logo-parts01;
+        }
+        .entry-btn_bg-orange {
+            position: absolute;
+            left: 13%;
+            background-color: variables.$color-logo-parts02;
+            height: 186px;
+            width: 50%;
+            clip-path: polygon(29% 0, 100% 0, 0% 300%, 0% 100%);
+        }
+        .entry-btn_bg-green {
+            position: absolute;
+            left: 42%;
+            background-color: variables.$color-logo-parts04;
+            height: 186px;
+            width: 50%;
+            clip-path: polygon(29% 0, 100% 0, 0% 300%, 0% 100%);
+        }
+        .entry-btn_bg-blue {
+            position: absolute;
+            right: 0;
+            background-color: variables.$color-logo-parts03;
+            height: 186px;
+            width: 30%;
+            clip-path: polygon(40% 0, 100vmax 0, 100vmax 100%, 0% 100%);
+            box-shadow: 0 0 0 100vmax variables.$color-logo-parts03;
+        }
+    }
+    .entry-btn_link_entry {
+        width: 340px;
+        margin: auto;
+        inset: 50px 0px 75px 0px;
+        font: 800 18px/1.5 variables.$base-font-English;
+        position: absolute;
+        text-decoration: none;
+        padding: 17px 35px;
+        background-color: variables.$color-white;
+        border: 2px solid variables.$color-black;
+        border-radius: 65px;
+        color: variables.$color-black;
+        cursor: pointer;
+        box-shadow: 4px 4px 0 variables.$color-black;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .entry-btn_link_entry:hover {
+        transform: translate(4px, 4px);
+        box-shadow: none;
+        transition: all 0.2s ease-in-out;
+    }
+    .entry-btn_arrow {
+        position: absolute;
+        inset: 22px 0px 0px 300px;
+    }
+    .entry-btn_link_requirements {
+        position: absolute;
+        color: variables.$color-white;
+        inset: 50% auto auto 50%;
+        translate: -50% 140%;
+        text-decoration: underline;
+        font-size: 14px;
+        line-height: 1.8;
+        letter-spacing: 0.56px;
+        cursor: pointer;
+    }
+    .entry-btn_link_requirements:hover{
+        opacity: 0.8;
+    }
+}
