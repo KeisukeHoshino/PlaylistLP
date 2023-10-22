@@ -237,7 +237,7 @@
                 opacity: 1;
                 transition: padding 0.4s, max-height 0.3s, opacity 0.1s;
                 max-height: 100vh;
-                padding: 20px;
+                padding: 20px 0 0 20px;
             }
         }
     }
@@ -358,9 +358,8 @@
 
             .subMenu--display{
                 opacity: 1;
-                transition: padding 0.4s, max-height 0.3s, opacity 0.1s;
+            transition: padding 0.4s, max-height 0.3s, opacity 0.1s;
                 max-height: 100vh;
-                padding: 20px;
             }
         }
     }
@@ -480,7 +479,7 @@
                 opacity: 1;
                 transition: padding 0.4s, max-height 0.3s, opacity 0.1s;
                 max-height: 100vh;
-                padding: 20px;
+                padding: 20px 0 0 20px;
             }
         }
     }

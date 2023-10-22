@@ -34,3 +34,15 @@ accordionNavItems.forEach(accordionNavItem => {
         accordionNavItem.classList.toggle('is-open');
     };
 });
+
+/**
+ * ナビゲーションのリンクがクリックされたときにハンバーガーメニューを閉じる処理
+ */
+const navListLink = document.querySelectorAll('.c-headerMenubar-nav a')
+navListLink.forEach((navListLink) => {
+
+    navListLink.onclick = () => {
+        // ハンバーガーメニューを閉じる
+        nav.classList.remove("open");
+    }
+})

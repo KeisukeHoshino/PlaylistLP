@@ -9,7 +9,7 @@
     @media (640px <= width) {
         width: 100%;
         max-width: 1150px;
-        padding: 200px 25px 100px 25px;
+        padding: 200px 0 100px 0;
         gap: 24px;
     }
 
@@ -333,7 +333,7 @@
             font-weight: 800;
 
             @media (640px <= width) {
-                height: 18.00%;                
+                height: 18.00%;
             }
 
             @media (960px <= width) {
@@ -376,7 +376,7 @@
 
                 .selectionFlow-br{
                     @media (width <= 960px) {
-                        display: none;  
+                        display: none;
                     }
                 }
 

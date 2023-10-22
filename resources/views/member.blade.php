@@ -5,9 +5,9 @@
 <div class="member-introduction-wrapper">
     {{-- タイトル --}}
     <div class="member-introduction-title">
-        <h2 class="member-introduction-h1">
+        <h1 class="member-introduction-h1">
             INTRODUCTION
-        </h2>
+        </h1>
         <p class="member-introduction-subtitle">
             社員紹介
         </p>
@@ -17,7 +17,7 @@
     <div class="title-anchor">
         <ul>
             <li>
-                <a href="#member">
+                <a class="link-anchor" href="#member">
                     <div>
                         <h3>メンバー</h3>
                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
@@ -27,7 +27,7 @@
                 </a>
             </li>
             <li>
-                <a href="#interview">
+                <a class="link-anchor" href="#interview">
                     <div>
                         <h3>社員インタビュー</h3>
                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
@@ -39,7 +39,7 @@
             </li>
 
             <li>
-                <a href="#career-path">
+                <a class="link-anchor" href="#career-path">
                     <div>
                         <h3>キャリアパス</h3>
                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
