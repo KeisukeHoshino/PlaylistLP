@@ -13,9 +13,9 @@
   <meta property="og:title" content="Playlist株式会社採用サイト">
   <meta property="og:type" content="website">
   <meta property="og:description" content="アプリケーション開発・運用、システムエンジニアリングサービスを展開しているPlaylist株式会社の採用サイトです。「お気に入りを創出する」を経営理念に掲げています。">
-  <meta property="og:url" content="https://www.recruit-lp.playlist.co.jp/">
-  <meta property="og:image" content="img/ogp/ogimage.jpg">
-  <meta property="og:site_name" content="任天堂ホームページ">
+  <meta property="og:url" content="https://recruit.playlist.co.jp/">
+  <meta property="og:image" content="https://recruit.playlist.co.jp/img/ogp/ogimage.jpg">
+  <meta property="og:site_name" content="Playlist採用サイト">
   {{-- ogp:twitter --}}
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@Playlist0623">
