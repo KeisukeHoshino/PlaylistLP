@@ -125,48 +125,56 @@
         </h3>
         <ul>
             <li class="interview-list">
-                <div class="interview-list_img">
-                    <img src="{{asset('img/member/interview_kigure.jpeg')}}" alt="木暮暁のインタビュー">
-                </div>
-                <p class="interview-list_date">
-                    <time datetime="2023-05-09">2023/05/09</time>
-                </p>
-                <p class="interview-list_content">
-                    【エンジニアインタビュー】正直モチベーションが下がったらどうしてる？
-                </p>
+                <a href="https://www.wantedly.com/companies/Playlist0623/post_articles/505474" target="_blank">
+                    <div class="interview-list_img">
+                        <img src="{{asset('img/member/interview_kigure.jpeg')}}" alt="木暮暁のインタビュー">
+                    </div>
+                    <p class="interview-list_date">
+                        <time datetime="2023-05-09">2023/05/09</time>
+                    </p>
+                    <p class="interview-list_content">
+                        【エンジニアインタビュー】正直モチベーションが下がったらどうしてる？
+                    </p>
+                </a>
             </li>
             <li class="interview-list">
-                <div class="interview-list_img">
-                    <img src="{{asset('img/member/interview_hasegawa.jpeg')}}" alt="長谷川太一のインタビュー">
-                </div>
-                <p class="interview-list_date">
-                    <time datetime="2023-04-27">2023/04/27</time>
-                </p>
-                <p class="interview-list_content">
-                    【体験談】「自分の手でサービスを作れたら」淡い気持ちが形になり始めた…初プロジェクトを終えて長谷川さんへインタビュー
-                </p>
+                <a href="https://www.wantedly.com/companies/Playlist0623/post_articles/501617" target="_blank">
+                    <div class="interview-list_img">
+                        <img src="{{asset('img/member/interview_hasegawa.jpeg')}}" alt="長谷川太一のインタビュー">
+                    </div>
+                    <p class="interview-list_date">
+                        <time datetime="2023-04-27">2023/04/27</time>
+                    </p>
+                    <p class="interview-list_content">
+                        【体験談】「自分の手でサービスを作れたら」淡い気持ちが形になり始めた…初プロジェクトを終えて長谷川さんへインタビュー
+                    </p>
+                </a>
             </li>
             <li class="interview-list">
-                <div class="interview-list_img">
-                    <img src="{{asset('img/member/interview_yoshimura.jpeg')}}" alt="吉村優太のインタビュー">
-                </div>
-                <p class="interview-list_date">
-                    <time datetime="2023-04-20">2023/04/20</time>
-                </p>
-                <p class="interview-list_content">
-                    【CEOインタビュー】「最初はPCの電源の付け方もわからなかった」エンジニア歴15年以上、吉村が目指すPlaylistとは？
-                </p>
+                <a href="https://www.wantedly.com/companies/Playlist0623/post_articles/495705" target="_blank">
+                    <div class="interview-list_img">
+                        <img src="{{asset('img/member/interview_yoshimura.jpeg')}}" alt="吉村優太のインタビュー">
+                    </div>
+                    <p class="interview-list_date">
+                        <time datetime="2023-04-20">2023/04/20</time>
+                    </p>
+                    <p class="interview-list_content">
+                        【CEOインタビュー】「最初はPCの電源の付け方もわからなかった」エンジニア歴15年以上、吉村が目指すPlaylistとは？
+                    </p>
+                </a>
             </li>
             <li class="interview-list">
-                <div class="interview-list_img">
-                    <img src="{{asset('img/member/interview_hiruma.jpeg')}}" alt="昼間みなみのインタビュー">
-                </div>
-                <p class="interview-list_date">
-                    <time datetime="2023-04-13">2023/04/13</time>
-                </p>
-                <p class="interview-list_content">
-                    【Java研修を終えて】目標はアプリ開発！入社3カ月での変化
-                </p>
+                <a href="https://www.wantedly.com/companies/Playlist0623/post_articles/498210" target="_blank">
+                    <div class="interview-list_img">
+                        <img src="{{asset('img/member/interview_hiruma.jpeg')}}" alt="昼間みなみのインタビュー">
+                    </div>
+                    <p class="interview-list_date">
+                        <time datetime="2023-04-13">2023/04/13</time>
+                    </p>
+                    <p class="interview-list_content">
+                        【Java研修を終えて】目標はアプリ開発！入社3カ月での変化
+                    </p>
+                </a>
             </li>
         </ul>
         <div class="interview-seemore">
