@@ -178,7 +178,7 @@
             <span class="annotation">※情報は2023年8月時点のものです。</span>
         </div>
         <div class="career-path-wrapper">
-            <div class="row">
+            <div class="row-1">
                 {{-- 1人目（星野さん） --}}
                 <div class="career-path-1 career-path-main">
                     <div class="career-path-b cp-b-pc">
@@ -195,7 +195,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row-2">
                         <div class="d-flex">
                             <div class="career-path-a">
                                 <div class="career-path-img">
@@ -291,7 +291,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row-2">
                         <div class="d-flex">
                             <div class="career-path-a">
                                 <div class="career-path-img">
@@ -347,7 +347,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row-1">
                 {{-- 3人目 (上田さん) --}}
                 <div class="career-path-3 career-path-main">
                     <div class="career-path-b cp-b-pc">
@@ -365,7 +365,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row-2">
                         <div class="d-flex">
                             <div class="career-path-a">
                                 <div class="career-path-img">
@@ -435,7 +435,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row-2">
                         <div class="d-flex">
                             <div class="career-path-a">
                                 <div class="career-path-img">

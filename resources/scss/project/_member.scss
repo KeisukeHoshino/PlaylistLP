@@ -290,7 +290,7 @@
         }
     }
     .career-path-wrapper {
-        .row {
+        .row-1 {
             display: block;
             @media (960px <= width) {
                 display: flex;
@@ -304,6 +304,12 @@
             }
             .d-flex {
                 display: flex;
+            }
+            .row-2 {
+                display: block;
+                @media (960px <= width) {
+                    display: flex;
+                }
             }
         }
         .career-path-1 {
