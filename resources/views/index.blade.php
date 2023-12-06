@@ -221,7 +221,7 @@
         </div>
         <div class="p-top-faq_item">
           <dt><span>Q.</span>応募前に話をきいてみたいのですが、可能ですか？</dt>
-          <dd><span>A.</span>可能です。カジュアル面談を設けておりますので、<a href="/entry/">エントリー</a>よりお気軽にご連絡下さい。</a></dd>
+          <dd><span>A.</span>可能です。カジュアル面談を設けておりますので、<a href="/entry/">エントリー</a>よりお気軽にご連絡下さい。</dd>
         </div>
         <div class="p-top-faq_item">
           <dt><span>Q.</span>髪型や服装に決まりはありますか？</dt>
