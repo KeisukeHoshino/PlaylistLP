@@ -19,7 +19,7 @@
         <div class="title-anchor">
             <ul>
                 <li>
-                    <a href="#requirements">
+                    <a class="link-anchor" href="#requirements">
                         <div>
                             <h6>募集要項</h6>
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
@@ -29,7 +29,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#welcome-skils">
+                    <a class="link-anchor" href="#welcome-skils">
                         <div>
                             <h6>歓迎スキル</h6>
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
@@ -39,7 +39,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#career-advancement">
+                    <a class="link-anchor" href="#career-advancement">
                         <div>
                             <h6>将来キャリアアップ</h6>
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
@@ -50,7 +50,7 @@
                 </li>
                 <li class="spacer"></li>
                 <li>
-                    <a href="#project-case">
+                    <a class="link-anchor" href="#project-case">
                         <div>
                             <h6>プロジェクト例</h6>
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
@@ -60,7 +60,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#selection-flow">
+                    <a class="link-anchor" href="#selection-flow">
                         <div>
                             <h6>選考フロー</h6>
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
@@ -317,7 +317,7 @@
                 </svg>
                 <div class="c-selectionFlow-item">
                     <div class="c-selectionFlow-itemNum">
-                    <p>STEP<span>2</span></p>
+                        <p>STEP<span>2</span></p>
                     </div>
                     <div class="c-selectionFlow-itemText">
                         <P>
@@ -334,7 +334,7 @@
                 </svg>
                 <div class="c-selectionFlow-item">
                     <div class="c-selectionFlow-itemNum">
-                    <p>STEP<span>3</span></p>
+                        <p>STEP<span>3</span></p>
                     </div>
                     <div class="c-selectionFlow-itemText">
                         <P>
@@ -350,7 +350,7 @@
                 </svg>
                 <div class="c-selectionFlow-item">
                     <div class="c-selectionFlow-itemNum">
-                    <p>STEP<span>4</span></p>
+                        <p>STEP<span>4</span></p>
                     </div>
                     <div class="c-selectionFlow-itemText selectionFlow-getOffer">
                         <p>内定</p>

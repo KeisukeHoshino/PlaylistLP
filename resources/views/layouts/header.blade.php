@@ -4,7 +4,7 @@
 <header class="c-headerMenubarWrapper">
     <div class="c-headerMenubarContainer">
         <div class="c-headerTitle c-headerTitle--img" id="js-headerTitle">
-            <a href="#" class="c-headerTitle__link">
+            <a href="/" class="c-headerTitle__link">
                 <img src="{{ asset('img/layout/logo_Playlist_header.svg') }}" alt="playlistRecruitment-sitelogo">
                 <span>採用サイト</span>
             </a>
@@ -12,19 +12,24 @@
         <nav class="c-headerMenubar" id="navArea">
             <div class="c-headerMenubar-nav">
                 <ul>
-                    <li class="c-headerMenubar-nav-listCenter active" id="c-headerMenubar-navTop">
+                    <li class="c-headerMenubar-nav-listheading" id="c-headerMenubar-navTop">
                         <a href="/" id="c-headerMenubar-navTop__heading">TOP</a>
+                    </li>
+                    <li class="c-headerMenubar-nav-listCenter" id="c-headerMenubar-navTop">
                         <div class="subMenu--display c-headerMenubar-navTop__subMenu">
                             <ul>
+                                <li><a href="/#news">お知らせ</a></li>
                                 <li><a href="/#aboutus">playlistについて</a></li>
                                 <li><a href="/#message">代表メッセージ</a></li>
-                                <li><a href="/#playlist-points">実際に働く社員のplaylistお気に入りポイント</a></li>
+                                <li><a href="/#points">実際に働く社員のplaylistお気に入りポイント</a></li>
                                 <li><a href="/#faq">よくある質問</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="c-headerMenubar-nav-listCenter" id="c-headerMenubar-navMember">
+                    <li class="c-headerMenubar-nav-listheading" id="c-headerMenubar-navMember">
                         <a href="member" id="c-headerMenubar-navMember__heading">社員紹介</a>
+                    </li>
+                    <li class="c-headerMenubar-nav-listCenter" id="c-headerMenubar-navMember">
                         <div class="subMenu--display c-headerMenubar-navMember__subMenu">
                             <ul>
                                 <li><a href="member#member">メンバー</a></li>
@@ -33,8 +38,10 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="c-headerMenubar-nav-listCenter" id="c-headerMenubar-navRequirements">
+                    <li class="c-headerMenubar-nav-listheading" id="c-headerMenubar-navRequirements">
                         <a href="requirements" id="c-headerMenubar-navRequirements__heading">募集要項・選考フロー</a>
+                    </li>
+                    <li class="c-headerMenubar-nav-listCenter" id="c-headerMenubar-navRequirements">
                         <div class="subMenu--display c-headerMenubar-navRequirements__subMenu">
                             <ul>
                                 <li><a href="requirements#requirements">募集要項</a></li>

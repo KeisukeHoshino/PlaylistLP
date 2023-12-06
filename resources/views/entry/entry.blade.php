@@ -17,15 +17,15 @@
           内容を確認の上、3営業日以内に担当者よりご連絡させて頂きます。
         </p>
       </div>
+      @if ($errors->any())
       <div class="error-message-area">
         <ul>
-          @if ($errors->any())
           @foreach ($errors->all() as $error)
           <li>・{{ $error }}</li>
           @endforeach
-          @endif
         </ul>
       </div>
+      @endif
       <section id="entryform">
         <form class="entryform" action="/entry_check" method="POST" enctype="multipart/form-data">
           @csrf
@@ -65,7 +65,7 @@
                 <input type="file" accept=".pdf" name="pdf" value="{{old('pdf')}}" multiple required>+ ファイルを選択
               </label>
               <p class="entryform-list_file_selectfile">選択されていません</p>
-              <p class="entryform-list_file_attention">※アップロード可能なファイルの最大サイズはxxMBです。</p>
+              <p class="entryform-list_file_attention">※アップロード可能なファイルの最大サイズは1.6MBです。</p>
               <p class="entryform-list_file_attention">※最大0ファイルまで登録できます。</p>
             </li>
             <li class="entryform-list_url">

@@ -54,13 +54,14 @@
         border-radius: 65px;
         color: variables.$color-black;
         cursor: pointer;
-        box-shadow: 2px 2px 0 variables.$color-black;
+        box-shadow: 4px 4px 0 variables.$color-black;
         margin: 0 auto;
         text-align: center;
     }
     .entry-btn_link_entry:hover {
-        transform: translate(2px, 2px);
+        transform: translate(4px, 4px);
         box-shadow: none;
+        transition: all 0.2s ease-in-out;
     }
     .entry-btn_arrow {
         position: absolute;
@@ -76,5 +77,8 @@
         line-height: 1.8;
         letter-spacing: 0.56px;
         cursor: pointer;
+    }
+    .entry-btn_link_requirements:hover{
+        opacity: 0.8;
     }
 }

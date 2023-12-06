@@ -34,7 +34,7 @@
     }
 }
 
-.entry-headline>p {
+.entry-headline > p {
     @media (640px <= width) {
         text-align: center;
     }
@@ -59,8 +59,8 @@
             letter-spacing: 0.48px;
         }
         padding: 20px 18px;
-        color: var(--color-logo-parts01, #F35A5A);
-        background: #FFD3D3;
+        color: var(--color-logo-parts01, #f35a5a);
+        background: #ffd3d3;
         border-radius: 4px;
     }
 }
@@ -127,7 +127,8 @@
                 outline: none;
             }
             .entryform-attention {
-                color: variables.$color-gray-black;                margin-top: 15px;
+                color: variables.$color-gray-black;
+                margin-top: 15px;
             }
         }
         .entryform-list_file {
@@ -244,6 +245,15 @@ input[type="file"] {
         transform: translate(2px, 2px);
         box-shadow: none;
     }
+    .entryform-check-btn:disabled {
+        color: variables.$color-gray-black;
+        border-color: variables.$color-gray-black;
+        box-shadow: none;
+        transform: none;
+        path {
+            fill: variables.$color-gray-black;
+        }
+    }
     .entry-btn_arrow {
         position: absolute;
         inset: 22px 0px 0px 300px;
@@ -292,14 +302,25 @@ input[type="file"] {
     }
 }
 
-#entryform-back{
+#entryform-back {
     margin-top: 20px;
     text-align: center;
-    .entryform-back{
+    .entryform-back {
         font-size: 14px;
         text-decoration-line: underline;
         @media (640px <= width) {
             font-size: 16px;
+        }
+    }
+}
+
+.entry-thanks-message {
+    text-align: center;
+    margin-bottom: 130px;
+    .pc_br {
+        display: inline;
+        @media (640px <= width) {
+            display: none;
         }
     }
 }

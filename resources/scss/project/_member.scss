@@ -12,8 +12,23 @@
     margin: 0 auto;
 
     @media (640px <= width) {
+        width: 100%;
+        max-width: 1150px;
+        padding: 200px 0 100px 0;
+        gap: 24px;
     }
-    @media (960px <= width) {
+    h1 {
+        font-family: variables.$base-font-English;
+        color: variables.$color-logo-parts02;
+        text-align: center;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: 1.44px;
+
+        @media (640px <= width) {
+            font-size: 64px;
+            letter-spacing: 2.56px;
+        }
     }
 }
 
@@ -24,8 +39,8 @@
     font-weight: 700;
 
     @media (640px <= width) {
-    }
-    @media (960px <= width) {
+        font-size: 16px;
+        margin-top: 24px;
     }
 }
 
@@ -204,6 +219,9 @@
                 }
             }
         }
+        :hover{
+            opacity: 0.9;
+        }
     }
     .interview-seemore {
         position: relative;
@@ -221,11 +239,12 @@
             border-radius: 65px;
             color: variables.$color-black;
             cursor: pointer;
-            box-shadow: 2px 2px 0 variables.$color-black;
+            box-shadow: 4px 4px 0 variables.$color-black;
             text-align: center;
             &:hover {
-                transform: translate(2px, 2px);
+                transform: translate(4px, 4px);
                 box-shadow: none;
+                transition: all 0.2s ease-in-out;
             }
         }
         &_jump {
