@@ -5,12 +5,9 @@
   },
   "prettier.configPath": ".prettierrc.json",
   "editor.formatOnSave": false,
-  "[javascript][json]": {
+  "[javascript][json][scss]": {
     "editor.detectIndentation":false,
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[scss]":{
-    "editor.formatOnSave": true,
-  }
 }
