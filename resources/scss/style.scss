@@ -1,17 +1,21 @@
 // vendor
-@use "./vendor/swiper" as swiper;
+@use './vendor/swiper' as swiper;
+
 // global
-@use "./global/reset" as reset;
-@use "./global/global" as global;
-@use "./global/mixin" as mixin;
-@use "./global/variables" as variables;
+@use './global/reset' as reset;
+@use './global/global' as global;
+@use './global/mixin' as mixin;
+@use './global/variables' as variables;
+
 // layout
-@use "./layout/footer" as footer;
-@use "./layout/header" as header;
+@use './layout/footer' as footer;
+@use './layout/header' as header;
+
 // components
-@use "./components/btn" as btn;
+@use './components/btn' as btn;
+
 // project
-@use "./project/_index" as index;
-@use "./project/member" as member;
-@use "./project/requirements" as requirements;
-@use "./project/entry" as entry;
+@use './project/_index' as index;
+@use './project/member' as member;
+@use './project/requirements' as requirements;
+@use './project/entry' as entry;
