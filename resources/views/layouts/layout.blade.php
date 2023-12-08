@@ -1,7 +1,7 @@
 @include('layouts.footer')
 @include('layouts.header')
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head prefix="og: https://ogp.me/ns#">
   <meta charset="UTF-8">
