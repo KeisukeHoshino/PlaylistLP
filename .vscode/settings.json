@@ -1,7 +1,7 @@
 {
   "scss.validate": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.stylelint":true
+    "source.fixAll.stylelint": true
   },
   "prettier.configPath": ".prettierrc.json",
   "editor.formatOnSave": false,
@@ -10,4 +10,16 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+    "stylelint.validate": [
+    "css",
+    "less",
+    "postcss",
+    "scss"
+  ],
+  "stylelint.snippet": [
+    "css",
+    "less",
+    "postcss",
+    "scss"
+  ],
 }
