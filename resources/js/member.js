@@ -74,3 +74,24 @@ window.addEventListener('resize', adjustVerticalLine);
 // 画面が読み込まれたときと画面サイズが変更されたときに紹介文の高さ調整
 window.addEventListener('DOMContentLoaded', adjustIntroductionText);
 window.addEventListener('resize', adjustIntroductionText);
+
+/**
+ * アンカーリンクがクリックされたときにurlにidを付与しないようにする処理
+ */
+const anchors = document.querySelectorAll('.link-anchor');
+
+anchors.forEach((anchor) => {
+    anchor.onclick = () => {
+        // ページのurl
+        let page_url = location.href;
+        // アンカーリンクのhref属性
+        let page_hash = anchor.getAttribute('href');
+        // ページのurlからハッシュを取り除いた値
+        let b = page_url.split(page_hash);
+
+        // 非同期のためsetTimeoutでurlを書き換える
+        setTimeout(() => {
+            window.history.pushState(null, '', b[0]);
+        }, );
+    }
+})
