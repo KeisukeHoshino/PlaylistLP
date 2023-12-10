@@ -136,7 +136,6 @@
         width: 17px;
         height: 2px;
         content: '';
-        background: variables.$color-black;
         border-radius: 9999px;
         transition: 0.3s ease-in-out;
       }
@@ -214,6 +213,11 @@
 
   @media (width <= 961px) {
     &.c-headerMenubar-nav-listheading {
+      &::before,
+      &::after {
+        background: variables.$color-logo-parts01;
+      }
+
       & ~ #c-headerMenubar-navTop > div {
         display: block;
         opacity: 1;
@@ -344,6 +348,11 @@
 
   @media (width <= 961px) {
     &.c-headerMenubar-nav-listheading {
+      &::before,
+      &::after {
+        background: variables.$color-logo-parts02;
+      }
+
       & ~ #c-headerMenubar-navMember > div {
         display: block;
         opacity: 1;
@@ -473,6 +482,11 @@
 
   @media (width <= 961px) {
     &.c-headerMenubar-nav-listheading {
+      &::before,
+      &::after {
+        background: variables.$color-logo-parts03;
+      }
+
       & ~ #c-headerMenubar-navRequirements > div {
         display: block;
         opacity: 1;
