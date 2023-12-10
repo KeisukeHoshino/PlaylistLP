@@ -196,7 +196,7 @@
 
     {{-- CAREER PATH --}}
     <section id="career-path">
-        <div class="">
+        <div>
             <h2>
                 CAREER PATH
             </h2>
