@@ -5,237 +5,6 @@
 // =====================================================================
 
 // =====================================================================
-// 共通対応
-// =====================================================================
-
-// ヘッダーの固定
-.l-header__wrapper {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  background-color: variables.$color-white;
-
-  .l-gnav.open {
-    position: absolute;
-    right: 0;
-    display: block;
-    height: 100vh;
-    background-color: variables.$color-white;
-
-    // 960px以上の場合の追加スタイル
-    @media (960px <= width) {
-      display: contents;
-      background-color: variables.$color-white;
-    }
-  }
-}
-
-// ナビ要素内の見出しスタイルを調整
-.l-gnav__menu ul {
-  li {
-    display: flex;
-    padding: 8px 20px;
-
-    &.l-gnav__menu-item {
-      padding: 0;
-
-      & > div {
-        display: none;
-      }
-    }
-
-    // 960px以下のデフォルトスタイル
-    padding: 0 0 25px;
-
-    &.l-gnav__menu-heading {
-      margin: 0 auto;
-
-      &:not(:first-child) {
-        line-height: 2em;
-        list-style-type: disc;
-        border-top: 1px solid #f4f4f4;
-      }
-
-      &.is-open {
-        &::after {
-          transform: rotate(0deg);
-        }
-      }
-
-      &::before,
-      &::after {
-        position: absolute;
-        top: 3.5em;
-        right: 5%;
-        width: 17px;
-        height: 2px;
-        content: '';
-        border-radius: 9999px;
-        transition: 0.3s ease-in-out;
-      }
-
-      &::after {
-        transform: rotate(-90deg);
-      }
-
-      @media (960px <= width) {
-        &::before,
-        &::after {
-          background: variables.$color-white;
-        }
-      }
-    }
-
-    .l-gnav__menu-item {
-      display: block;
-      margin: 0 auto;
-    }
-
-    @media (960px <= width) {
-      display: inline-block;
-      width: max-content;
-
-      &.l-gnav__menu-heading > a {
-        padding-bottom: 55px;
-      }
-    }
-  }
-
-  @media (960px <= width) {
-    display: inline-block;
-  }
-}
-
-.l-gnav {
-  position: absolute;
-  top: 60px;
-  left: 50%;
-  display: block;
-  gap: 60px;
-  align-items: center;
-  width: 100%;
-  pointer-events: none;
-  opacity: 0;
-  transition: all 0.5s;
-  transform: translateX(-50%);
-
-  &__menu {
-    width: 100%;
-    text-align: right;
-  }
-
-  &.open {
-    padding-top: 32px;
-    padding-bottom: 160px;
-    overflow-y: auto;
-    pointer-events: all;
-    background-color: variables.$color-white;
-    opacity: 1;
-  }
-
-  @media (960px <= width) {
-    position: relative;
-    top: auto;
-    left: auto;
-    display: flex;
-    gap: 20px;
-    pointer-events: all;
-    opacity: 1;
-    transform: none;
-
-    &.open {
-      padding-top: 0;
-      padding-bottom: 0;
-      overflow-y: visible;
-      background-color: transparent;
-    }
-  }
-
-  .l-gnav__menu ul li {
-    display: flex;
-    padding: 8px 20px;
-
-    &.l-gnav__menu-item {
-      padding: 0;
-
-      & > div {
-        display: inline-block;
-
-        @media (960px <= width) {
-          display: none;
-        }
-      }
-    }
-
-    @media (960px <= width) {
-      display: inline-block;
-      width: max-content;
-
-      &.l-gnav__menu-heading > a {
-        padding-bottom: 55px;
-      }
-    }
-  }
-
-  .l-gnav__menu > ul > li > a {
-    padding: 20px 5px;
-    font-size: 1rem;
-    font-weight: 600;
-    text-decoration: none;
-
-    @media (960px <= width) {
-      font-size: 1rem;
-      text-align: left;
-    }
-  }
-}
-
-// フレキシブルにしてロゴとナビ要素を左右に寄せる、など
-.l-header__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 88%;
-  height: 60px;
-  margin: 0 auto;
-
-  @media (960px <= width) {
-    height: 90px;
-  }
-}
-
-// フレキシブルにしてロゴとナビ要素を横並び下部でそろえる
-.l-header__link {
-  display: flex;
-  gap: 2vw;
-  align-items: flex-end;
-  width: 20em;
-
-  @media (960px <= width) {
-    width: max-content;
-  }
-}
-
-// 出たり消えたりする部分のデフォルトスタイル調整
-.subMenu--display {
-  display: none;
-  opacity: 0;
-
-  & a {
-    &::before {
-      margin-right: 10px;
-      vertical-align: middle;
-      content: url(/public/img/layout/icon_arrow-right.svg);
-    }
-  }
-
-  @media (960px <= width) {
-    display: block;
-    opacity: 1;
-  }
-}
-
-// =====================================================================
 // 個別対応
 // =====================================================================
 
@@ -296,21 +65,23 @@
 
     @media (960px <= width) {
       &.l-gnav__menu-heading:hover {
-        & ~ .l-gnav__menu-item--#{$section} > div {
-          position: absolute;
-          top: 1em;
-          display: inline-block;
-          opacity: 1;
-          transform: translateX($translateX);
+        & ~ .l-gnav__menu-item--#{$section} {
+          div {
+            position: absolute;
+            top: 1em;
+            display: inline-block;
+            opacity: 1;
+            transform: translateX($translateX);
+          }
         }
       }
     }
   }
 
   // 見出しの色を指定色にする
-  .l-gnav__menu ul li {
-    &.l-gnav__menu {
-      &-heading--#{$section} {
+  .l-gnav__menu {
+    li {
+      &.l-gnav__menu-heading--#{$section} {
         a {
           color: $color;
 
@@ -326,55 +97,267 @@
           }
         }
       }
-    }
-  }
 
-  // 子要素としてスタイルを調整、親要素の中央に表示させるように更新
-  .l-gnav__menu ul li.l-gnav__menu-item--#{$section} {
-    text-align: left;
+      &.l-gnav__menu-item--#{$section} {
+        text-align: left;
 
-    &:hover .l-gnav__megamenu {
-      display: block;
-      align-items: center;
-      opacity: 1;
-    }
+        &:hover .l-gnav__megamenu {
+          display: block;
+          align-items: center;
+          opacity: 1;
+        }
 
-    @media (960px <= width) {
-      &:hover .l-gnav__megamenu {
-        position: absolute;
-        top: 1em;
-        transform: translateX($translateX);
-      }
+        @media (960px <= width) {
+          &:hover .l-gnav__megamenu {
+            position: absolute;
+            top: 1em;
+            transform: translateX($translateX);
+          }
 
-      .l-gnav__megamenu {
-        align-items: center;
-        padding: 20px;
-        margin: 16px auto;
-        background-color: variables.$color-white;
-        border: 1px solid $color;
-        border-radius: 5px;
-        box-shadow: 2px 2px 0 $color;
-      }
-    }
+          .l-gnav__megamenu {
+            align-items: center;
+            padding: 20px;
+            margin: 16px auto;
+            background-color: variables.$color-white;
+            border: 1px solid $color;
+            border-radius: 5px;
+            box-shadow: 2px 2px 0 $color;
+          }
+        }
 
-    // 出たり消えたりする部分のli周りを調整
-    .l-gnav__megamenu ul li {
-      display: block;
-      border-bottom: 1px dotted white;
-      opacity: 1;
+        // 出たり消えたりする部分のli周りを調整
+        .l-gnav__megamenu ul li {
+          display: block;
+          border-bottom: 1px dotted white;
+          opacity: 1;
 
-      & > a:hover {
-        color: $color;
+          & > a:hover {
+            color: $color;
+          }
+        }
       }
     }
   }
 }
 
-@include gnav-style-base(top, variables.$color-logo-parts01);
-@include gnav-style-base(member, variables.$color-logo-parts02);
-@include gnav-style-base(requirements, variables.$color-logo-parts03, -90%);
+// =====================================================================
+// 共通対応
+// =====================================================================
 
+// ヘッダーの固定
+.l-header__wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: variables.$color-white;
+
+  // フレキシブルにしてロゴとナビ要素を左右に寄せる、など
+  .l-header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 88%;
+    height: 60px;
+    margin: 0 auto;
+
+    // フレキシブルにしてロゴとナビ要素を横並び下部でそろえる
+    .l-header__link {
+      display: flex;
+      gap: 2vw;
+      align-items: flex-end;
+      width: 20em;
+
+      @media (960px <= width) {
+        width: max-content;
+      }
+    }
+
+    @media (960px <= width) {
+      height: 90px;
+    }
+
+    .l-gnav {
+      position: absolute;
+      top: 60px;
+      left: 50%;
+      display: block;
+      gap: 60px;
+      align-items: center;
+      width: 100%;
+      pointer-events: none;
+      opacity: 0;
+      transition: all 0.5s;
+      transform: translateX(-50%);
+
+      &__menu {
+        width: 100%;
+        text-align: right;
+      }
+
+      &.open {
+        position: absolute;
+        right: 0;
+        display: block;
+        height: 100vh;
+        padding-top: 32px;
+        padding-bottom: 160px;
+        overflow-y: auto;
+        pointer-events: all;
+        background-color: variables.$color-white;
+        opacity: 1;
+      }
+
+      @media (960px <= width) {
+        position: relative;
+        top: auto;
+        left: auto;
+        display: flex;
+        gap: 20px;
+        pointer-events: all;
+        opacity: 1;
+        transform: none;
+
+        &.open {
+          display: contents;
+          padding-top: 0;
+          padding-bottom: 0;
+          overflow-y: visible;
+          background-color: variables.$color-white;
+          background-color: transparent;
+        }
+      }
+
+      // ナビ要素内の見出しスタイルを調整
+      .l-gnav__menu ul {
+        li {
+          display: flex;
+          padding: 8px 20px;
+
+          &.l-gnav__menu-item {
+            padding: 0;
+
+            & > div {
+              @media (960px <= width) {
+                display: none;
+              }
+            }
+          }
+
+          &.l-gnav__menu-heading {
+            margin: 0 auto;
+
+            &:not(:first-child) {
+              line-height: 2em;
+              list-style-type: disc;
+              border-top: 1px solid #f4f4f4;
+            }
+
+            &.is-open {
+              &::after {
+                transform: rotate(0deg);
+              }
+            }
+
+            &::before,
+            &::after {
+              position: absolute;
+              top: 3.5em;
+              right: 5%;
+              width: 17px;
+              height: 2px;
+              content: '';
+              border-radius: 9999px;
+              transition: 0.3s ease-in-out;
+            }
+
+            &::after {
+              transform: rotate(-90deg);
+            }
+
+            @media (960px <= width) {
+              &::before,
+              &::after {
+                background: variables.$color-white;
+              }
+            }
+          }
+
+          .l-gnav__menu-item {
+            display: block;
+            margin: 0 auto;
+          }
+
+          @media (960px <= width) {
+            display: inline-block;
+            width: max-content;
+
+            &.l-gnav__menu-heading > a {
+              padding-bottom: 55px;
+            }
+          }
+
+          @media (960px <= width) {
+            display: inline-block;
+            width: max-content;
+
+            &.l-gnav__menu-heading > a {
+              padding-bottom: 55px;
+            }
+          }
+        }
+
+        @media (960px <= width) {
+          display: inline-block;
+        }
+      }
+
+      .l-gnav__menu {
+        a {
+          padding: 20px 5px;
+          font-size: 1rem;
+          font-weight: 600;
+          text-decoration: none;
+
+          @media (960px <= width) {
+            font-size: 1rem;
+            text-align: left;
+          }
+        }
+      }
+
+      @include gnav-style-base(top, variables.$color-logo-parts01);
+      @include gnav-style-base(member, variables.$color-logo-parts02);
+      @include gnav-style-base(
+        requirements,
+        variables.$color-logo-parts03,
+        -90%
+      );
+
+      // 出たり消えたりする部分のデフォルトスタイル調整
+      .subMenu--display {
+        opacity: 0;
+
+        & a {
+          &::before {
+            margin-right: 10px;
+            vertical-align: middle;
+            content: url(/public/img/layout/icon_arrow-right.svg);
+          }
+        }
+
+        @media (960px <= width) {
+          display: block;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+// =====================================================================
 // エントリーボタン
+// =====================================================================
+
 .c-gnav-btn__entry {
   @media (width <= 961px) {
     position: fixed;
@@ -441,6 +424,10 @@
     }
   }
 }
+
+// =====================================================================
+// ハンバーガメニュー(SP版のみ)
+// =====================================================================
 
 .l-gnav__hamburger-menu {
   display: none;

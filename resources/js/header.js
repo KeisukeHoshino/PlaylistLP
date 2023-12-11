@@ -3,13 +3,23 @@
 // =====================================================================
 
 function checkWindowSize() {
-  const element = document.querySelector('.l-gnav');
+  const gnav = document.querySelector('.l-gnav');
+  const gnavHeading = document.querySelector('.l-gnav__menu-heading');
+  const gnavItem = document.querySelector('.l-gnav__menu-item');
   // ウィンドウの幅を取得
   const width = window.innerWidth;
 
   // 特定のピクセル値（例：960px）を基準に条件分岐
-  if (960 <= width && element.classList.contains('open')) {
-    element.classList.remove('open');
+  if (960 <= width && gnav.classList.contains('open')) {
+    gnav.classList.remove('open');
+  }
+  if (
+    960 <= width &&
+    gnavHeading.classList.contains('is-open') &&
+    gnavItem.classList.contains('is-open')
+  ) {
+    gnavHeading.classList.remove('is-open');
+    gnavItem.classList.remove('is-open');
   }
 }
 window.addEventListener('resize', checkWindowSize);
