@@ -301,12 +301,14 @@
                         <P>
                             エントリーフォームから<br class="selectionFlow-br">ご応募
                         </P>
-                        <button class="selectionFlow-entryBtm">
-                            ENTRY
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none" class="selectionFlow-entryBtm-arrow">
-                                <path d="M7.6155 14.3938C7.32701 14.7085 6.7962 14.4252 6.79932 13.9581L6.88661 1.04944C6.88955 0.611111 7.3686 0.435877 7.66868 0.763277L13.4548 7.07626C13.7064 7.35074 13.7057 7.79596 13.4534 8.06932L7.6155 14.3938Z" fill="#333333" />
-                            </svg>
-                        </button>
+                        <a href="/entry">
+                            <button class="selectionFlow-entryBtm">
+                                ENTRY
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none" class="selectionFlow-entryBtm-arrow">
+                                    <path d="M7.6155 14.3938C7.32701 14.7085 6.7962 14.4252 6.79932 13.9581L6.88661 1.04944C6.88955 0.611111 7.3686 0.435877 7.66868 0.763277L13.4548 7.07626C13.7064 7.35074 13.7057 7.79596 13.4534 8.06932L7.6155 14.3938Z" fill="#333333" />
+                                </svg>
+                            </button>
+                        </a>
                         <p>
                             3営業日以内にご連絡させて頂きます。
                         </p>

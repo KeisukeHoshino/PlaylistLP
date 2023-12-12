@@ -422,6 +422,12 @@
       }
     }
 
+    .selectionFlow-entryBtm:hover {
+      box-shadow: none;
+      transition: all 0.2s ease-in-out;
+      transform: translate(2px, 2px);
+    }
+
     .selectionFlow-getOffer {
       @media (960px <= width) {
         position: absolute;
