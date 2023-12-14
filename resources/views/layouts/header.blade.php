@@ -1,9 +1,9 @@
 {{-- headerについて --}}
 @section('header')
 
-<header class="l-header l-header__wrapper">
+<header class="l-header__wrapper">
     <div class="l-header__container">
-        <div class="l-header__sitelogo" id="js-headerSiteLogo">
+        <div>
             <a href="/" class="l-header__link">
                 <img src="{{ asset('img/layout/logo_Playlist_header.svg') }}" alt="playlistRecruitment-sitelogo">
                 <span>採用サイト</span>
@@ -12,10 +12,10 @@
         <nav class="l-gnav" id="navArea">
             <div class="l-gnav__menu">
                 <ul>
-                    <li class="l-gnav__menu-heading l-gnav__menu-heading--top" id="l-header__menuNavTop">
-                        <a href="/" id="l-headerMenubar-navTop__heading">TOP</a>
+                    <li class="l-gnav__menu-heading l-gnav__menu-heading--top">
+                        <a href="/">TOP</a>
                     </li>
-                    <li class="l-gnav__menu-item l-gnav__menu-item--top" id="l-headerMenubar-navTop">
+                    <li class="l-gnav__menu-item l-gnav__menu-item--top">
                         <div class="subMenu--display l-gnav__megamenu">
                             <ul>
                                 <li><a href="/#news">お知らせ</a></li>
@@ -28,10 +28,10 @@
                     </li>
                 </ul>
                 <ul>
-                    <li class="l-gnav__menu-heading l-gnav__menu-heading--member" id="l-headerMenubar-navMember">
-                        <a href="member" id="l-headerMenubar-navMember__heading">社員紹介</a>
+                    <li class="l-gnav__menu-heading l-gnav__menu-heading--member">
+                        <a href="member">社員紹介</a>
                     </li>
-                    <li class="l-gnav__menu-item l-gnav__menu-item--member" id="l-headerMenubar-navMember">
+                    <li class="l-gnav__menu-item l-gnav__menu-item--member">
                         <div class="subMenu--display l-gnav__megamenu">
                             <ul>
                                 <li><a href="member#member">メンバー</a></li>
@@ -42,10 +42,10 @@
                     </li>
                 </ul>
                 <ul>
-                    <li class="l-gnav__menu-heading l-gnav__menu-heading--requirements" id="l-headerMenubar-navRequirements">
-                        <a href="requirements" id="l-headerMenubar-navRequirements__heading">募集要項・選考フロー</a>
+                    <li class="l-gnav__menu-heading l-gnav__menu-heading--requirements">
+                        <a href="requirements">募集要項・選考フロー</a>
                     </li>
-                    <li class="l-gnav__menu-item l-gnav__menu-item--requirements" id="l-headerMenubar-navRequirements">
+                    <li class="l-gnav__menu-item l-gnav__menu-item--requirements">
                         <div class="subMenu--display l-gnav__megamenu">
                             <ul>
                                 <li><a href="requirements#requirements">募集要項</a></li>
