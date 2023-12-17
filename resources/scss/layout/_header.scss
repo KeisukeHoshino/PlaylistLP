@@ -208,11 +208,11 @@
       }
 
       @media (960px <= width) {
-        position: relative;
+        // position: relative;
         top: auto;
         left: auto;
         display: flex;
-        gap: 20px;
+        gap: 0px;
         pointer-events: all;
         opacity: 1;
         transform: none;
@@ -359,69 +359,68 @@
 // =====================================================================
 
 .c-gnav-btn__entry {
-  @media (width <= 961px) {
-    position: fixed;
-    left: 50%;
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
-    transform: translateX(-50%);
-  }
-
+  position: fixed;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  transform: translateX(-50%);
   &--grad {
     position: relative;
-    display: block;
     width: 150px;
     padding: 6px 40px;
-    margin: 0 auto;
     font-family: variables.$base-font-English;
     font-size: 14px;
     background-color: variables.$color-white;
     border-radius: 9999px;
-    transform: rotateZ(1);
+  }
 
-    &:hover {
-      &::after {
-        right: 19px;
-      }
-    }
-
-    &::before {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      z-index: -1;
-      width: calc(100% + 3px);
-      height: calc(100% + 3px);
-      content: '';
-      background: linear-gradient(
-        95deg,
-        variables.$color-logo-parts01 0%,
-        variables.$color-logo-parts01 25%,
-        variables.$color-logo-parts02 25%,
-        variables.$color-logo-parts02 50%,
-        variables.$color-logo-parts04 50%,
-        variables.$color-logo-parts04 75%,
-        variables.$color-logo-parts03 75%,
-        variables.$color-logo-parts03 100%
-      );
-      border-radius: 9999px;
-      transform: translate(-50%, -50%);
-    }
-
+  &:hover {
     &::after {
-      position: absolute;
-      top: 25%;
-      right: 24px;
-      width: 10px;
-      height: 10px;
-      content: '';
-      background-image: url(/public/img/top/ico-triangle-black.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
-      transition: 0.3s ease-in-out;
-      transform: rotate(-135deg) translateY(-50%);
+      right: 19px;
     }
+  }
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    width: calc(100% + 3px);
+    height: calc(100% + 3px);
+    content: '';
+    background: linear-gradient(
+      95deg,
+      variables.$color-logo-parts01 0%,
+      variables.$color-logo-parts01 25%,
+      variables.$color-logo-parts02 25%,
+      variables.$color-logo-parts02 50%,
+      variables.$color-logo-parts04 50%,
+      variables.$color-logo-parts04 75%,
+      variables.$color-logo-parts03 75%,
+      variables.$color-logo-parts03 100%
+    );
+    border-radius: 9999px;
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    position: absolute;
+    top: 25%;
+    right: 24px;
+    width: 10px;
+    height: 10px;
+    content: '';
+    background-image: url(/public/img/top/ico-triangle-black.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.3s ease-in-out;
+    transform: rotate(-135deg) translateY(-50%);
+  }
+
+  @media (960px <= width) {
+    position: static;
+    margin: 0 6%;
   }
 }
 
@@ -430,49 +429,49 @@
 // =====================================================================
 
 .l-gnav__hamburger-menu {
-  display: none;
+  position: relative;
+  z-index: 3;
+  display: block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 
-  @media (width <= 961px) {
-    position: relative;
-    z-index: 3;
+  & span {
+    position: absolute;
+    left: 0;
     display: block;
     width: 30px;
-    height: 30px;
-    cursor: pointer;
+    height: 2px;
+    background-color: #333;
+    border-radius: 4px;
+    transition: all 0.5s;
+  }
 
-    & span {
-      position: absolute;
-      left: 0;
-      display: block;
-      width: 30px;
-      height: 2px;
-      background-color: #333;
-      border-radius: 4px;
-      transition: all 0.5s;
-    }
+  & span:nth-child(1) {
+    top: 4px;
+  }
 
-    & span:nth-child(1) {
-      top: 4px;
-    }
+  & span:nth-child(2) {
+    top: 14px;
+  }
 
-    & span:nth-child(2) {
-      top: 14px;
-    }
+  & span:nth-child(3) {
+    bottom: 4px;
+  }
 
-    & span:nth-child(3) {
-      bottom: 4px;
-    }
+  .open ~ & span:nth-child(1) {
+    transform: translateY(10px) rotate(-315deg);
+  }
 
-    .open ~ & span:nth-child(1) {
-      transform: translateY(10px) rotate(-315deg);
-    }
+  .open ~ & span:nth-child(2) {
+    opacity: 0;
+  }
 
-    .open ~ & span:nth-child(2) {
-      opacity: 0;
-    }
+  .open ~ & span:nth-child(3) {
+    transform: translateY(-10px) rotate(315deg);
+  }
 
-    .open ~ & span:nth-child(3) {
-      transform: translateY(-10px) rotate(315deg);
-    }
+  @media (960px <= width) {
+    display: none;
   }
 }
