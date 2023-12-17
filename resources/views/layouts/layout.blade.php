@@ -1,7 +1,7 @@
 @include('layouts.footer')
 @include('layouts.header')
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head prefix="og: https://ogp.me/ns#">
   <meta charset="UTF-8">
@@ -25,6 +25,19 @@
   @vite(['resources/scss/style.scss', 'resources/js/app.js'])
 
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B9T941X1FD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-B9T941X1FD');
+</script>
 
 <body>
   @yield('header')
