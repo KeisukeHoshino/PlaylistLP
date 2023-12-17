@@ -177,10 +177,9 @@
     }
 
     .l-gnav {
-      position: absolute;
+      position: relative;
       top: 60px;
-      left: 50%;
-      display: block;
+      display: none;
       gap: 60px;
       align-items: center;
       width: 100%;
@@ -197,6 +196,7 @@
       &.open {
         position: absolute;
         right: 0;
+        left: 50%;
         display: block;
         height: 100vh;
         padding-top: 32px;
@@ -212,7 +212,7 @@
         top: auto;
         left: auto;
         display: flex;
-        gap: 0px;
+        gap: 0;
         pointer-events: all;
         opacity: 1;
         transform: none;
@@ -363,8 +363,9 @@
   left: 50%;
   display: flex;
   justify-content: center;
-  margin-top: 5px;
-  transform: translateX(-50%);
+  margin-top: 36px;
+  translate: -50% -100%;
+
   &--grad {
     position: relative;
     width: 150px;
@@ -420,7 +421,8 @@
 
   @media (960px <= width) {
     position: static;
-    margin: 0 6%;
+    margin: 0;
+    translate:0;
   }
 }
 
