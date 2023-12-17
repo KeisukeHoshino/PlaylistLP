@@ -1,48 +1,83 @@
-//
-// ハンバーガーメニューを開く（SP版対応）
-//
+// =====================================================================
+// ウィンドウサイズによりクラスのはく奪を行う（SP->PC版対応）
+// =====================================================================
 
-const nav = document.querySelector("#navArea");
-const btn = document.querySelector(".toggle-btn");
+function checkWindowSize() {
+  const gnav = document.querySelector('.l-gnav');
+  const gnavHeading = document.querySelector('.l-gnav__menu-heading');
+  const gnavItem = document.querySelector('.l-gnav__menu-item');
+  // ウィンドウの幅を取得
+  const width = window.innerWidth;
 
-btn.onclick = () => {
-    nav.classList.toggle("open");
-};
+  // 特定のピクセル値（例：960px）を基準に条件分岐
+  if (960 <= width && gnav.classList.contains('open')) {
+    gnav.classList.remove('open');
+  }
+  if (
+    960 <= width &&
+    gnavHeading.classList.contains('is-open') &&
+    gnavItem.classList.contains('is-open')
+  ) {
+    gnavHeading.classList.remove('is-open');
+    gnavItem.classList.remove('is-open');
+  }
+}
+window.addEventListener('resize', checkWindowSize);
 
+// 初期ロード時にも関数を実行
+checkWindowSize();
 
-//
-// クリックによりaccordionを開く（SP版対応）
-//
+// =====================================================================
+// body要素ホバー時にheading要素に色を付ける（PC版対応）
+// =====================================================================
 
-const accordionNavItems = document.querySelectorAll(".c-headerMenubar-nav-listheading");
+document.addEventListener('DOMContentLoaded', function () {
+  let headerTitle = document.querySelectorAll('.l-gnav__menu-heading');
+  let headerBody = document.querySelectorAll('.l-gnav__menu-item');
 
-accordionNavItems.forEach(accordionNavItem => {
-    accordionNavItem.onclick = () => {
-        if (accordionNavItem.nextElementSibling.classList.contains('is-open')) {
-            // クリックしたli要素からクラスを削除します
-            accordionNavItem.nextElementSibling.classList.remove('is-open');
-        } else {
-            // すべてのli要素からクラスを削除します
-            accordionNavItems.forEach((accordionNavItem) => {
-                accordionNavItem.classList.remove('is-open');
-                accordionNavItem.nextElementSibling.classList.remove('is-open');
-            });
+  headerBody.forEach((headerItem, idx) => {
+    headerItem.parentElement.addEventListener('mouseenter', function () {
+      headerTitle[idx].classList.add('hovered');
+    });
 
-            // クリックしたli要素にクラスを追加します
-            accordionNavItem.nextElementSibling.classList.add('is-open');
-        }
-        accordionNavItem.classList.toggle('is-open');
-    };
+    headerItem.parentElement.addEventListener('mouseleave', function () {
+      headerTitle[idx].classList.remove('hovered');
+    });
+  });
 });
 
-/**
- * ナビゲーションのリンクがクリックされたときにハンバーガーメニューを閉じる処理
- */
-const navListLink = document.querySelectorAll('.c-headerMenubar-nav a')
-navListLink.forEach((navListLink) => {
+// =====================================================================
+// ハンバーガーメニューを開く（SP版対応）
+// =====================================================================
 
-    navListLink.onclick = () => {
-        // ハンバーガーメニューを閉じる
-        nav.classList.remove("open");
+const nav = document.querySelector('#navArea');
+const btn = document.querySelector('.l-gnav__hamburger-menu');
+
+btn.onclick = () => {
+  nav.classList.toggle('open');
+};
+
+// =====================================================================
+// クリックによりaccordionを開く（SP版対応）
+// =====================================================================
+
+const accordionNavItems = document.querySelectorAll('.l-gnav__menu-heading');
+
+accordionNavItems.forEach((accordionNavItem) => {
+  accordionNavItem.onclick = () => {
+    if (accordionNavItem.nextElementSibling.classList.contains('is-open')) {
+      // クリックしたli要素からクラスを削除します
+      accordionNavItem.nextElementSibling.classList.remove('is-open');
+    } else {
+      // すべてのli要素からクラスを削除します
+      accordionNavItems.forEach((accordionNavItem) => {
+        accordionNavItem.classList.remove('is-open');
+        accordionNavItem.nextElementSibling.classList.remove('is-open');
+      });
+
+      // クリックしたli要素にクラスを追加します
+      accordionNavItem.nextElementSibling.classList.add('is-open');
     }
-})
+    accordionNavItem.classList.toggle('is-open');
+  };
+});
