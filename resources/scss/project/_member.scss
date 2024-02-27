@@ -308,7 +308,7 @@
         }
     }
     .career-path-wrapper {
-        .row {
+        .row-1 {
             display: block;
             @media (960px <= width) {
                 display: flex;
@@ -322,6 +322,12 @@
             }
             .d-flex {
                 display: flex;
+            }
+            .row-2 {
+                display: block;
+                @media (960px <= width) {
+                    display: flex;
+                }
             }
         }
         .career-path-1 {
@@ -390,12 +396,12 @@
                 .career-path-about-name {
                     font-size: 16px;
                     font-weight: 700;
-                    line-height: 24px; /* 150% */
+                    line-height: 24px;
                     letter-spacing: 0.64px;
                     position: relative;
                     @media (640px <= width) {
                         font-size: 25px;
-                        line-height: 30px; /* 120% */
+                        line-height: 30px;
                         letter-spacing: 1px;
                     }
                     &:after {
@@ -416,12 +422,11 @@
                     font-size: 12px;
                     font-weight: 700;
                     line-height: 21.6px;
-                    /* 180% */
                     letter-spacing: 0.48px;
                     margin-top: 23px;
                     @media (640px <= width) {
                         font-size: 14px;
-                        line-height: 25.2px; /* 180% */
+                        line-height: 25.2px;
                         letter-spacing: 0.56px;
                         margin-top: 32.21px;
                     }
@@ -459,12 +464,12 @@
                 color: white;
                 font-size: 10px;
                 font-weight: 800;
-                line-height: 18px; /* 180% */
+                line-height: 18px;
                 letter-spacing: 0.4px;
                 background: variables.$color-logo-parts02;
                 @media (640px <= width) {
                     font-size: 12px;
-                    line-height: 18px; /* 150% */
+                    line-height: 18px;
                     letter-spacing: 0.48px;
                 }
             }
@@ -490,15 +495,15 @@
             }
 
             .content {
-                font-family: Noto Sans JP;
+                font-family: variables.$base-font-Japanese;
                 font-size: 12px;
                 font-weight: 700;
-                line-height: 21.6px; /* 180% */
+                line-height: 21.6px;
                 letter-spacing: 0.48px;
                 margin: 0;
                 @media (640px <= width) {
                     font-size: 16px;
-                    line-height: 24px; /* 150% */
+                    line-height: 24px;
                     letter-spacing: 0.64px;
                 }
             }

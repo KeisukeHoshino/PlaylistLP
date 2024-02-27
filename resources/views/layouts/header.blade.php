@@ -1,22 +1,22 @@
 {{-- headerについて --}}
 @section('header')
 
-<header class="c-headerMenubarWrapper">
-    <div class="c-headerMenubarContainer">
-        <div class="c-headerTitle c-headerTitle--img" id="js-headerTitle">
-            <a href="/" class="c-headerTitle__link">
+<header class="l-header__wrapper">
+    <div class="l-header__container">
+        <div>
+            <a href="/" class="l-header__link">
                 <img src="{{ asset('img/layout/logo_Playlist_header.svg') }}" alt="playlistRecruitment-sitelogo">
                 <span>採用サイト</span>
             </a>
         </div>
-        <nav class="c-headerMenubar" id="navArea">
-            <div class="c-headerMenubar-nav">
+        <nav class="l-gnav" id="navArea">
+            <div class="l-gnav__menu">
                 <ul>
-                    <li class="c-headerMenubar-nav-listheading" id="c-headerMenubar-navTop">
-                        <a href="/" id="c-headerMenubar-navTop__heading">TOP</a>
+                    <li class="l-gnav__menu-heading l-gnav__menu-heading--top">
+                        <a href="/">TOP</a>
                     </li>
-                    <li class="c-headerMenubar-nav-listCenter" id="c-headerMenubar-navTop">
-                        <div class="subMenu--display c-headerMenubar-navTop__subMenu">
+                    <li class="l-gnav__menu-item l-gnav__menu-item--top">
+                        <div class="subMenu--display l-gnav__megamenu">
                             <ul>
                                 <li><a href="/#news">お知らせ</a></li>
                                 <li><a href="/#aboutus">playlistについて</a></li>
@@ -26,11 +26,13 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="c-headerMenubar-nav-listheading" id="c-headerMenubar-navMember">
-                        <a href="member" id="c-headerMenubar-navMember__heading">社員紹介</a>
+                </ul>
+                <ul>
+                    <li class="l-gnav__menu-heading l-gnav__menu-heading--member">
+                        <a href="member">社員紹介</a>
                     </li>
-                    <li class="c-headerMenubar-nav-listCenter" id="c-headerMenubar-navMember">
-                        <div class="subMenu--display c-headerMenubar-navMember__subMenu">
+                    <li class="l-gnav__menu-item l-gnav__menu-item--member">
+                        <div class="subMenu--display l-gnav__megamenu">
                             <ul>
                                 <li><a href="member#member">メンバー</a></li>
                                 <li><a href="member#interview">社員インタビュー</a></li>
@@ -38,11 +40,13 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="c-headerMenubar-nav-listheading" id="c-headerMenubar-navRequirements">
-                        <a href="requirements" id="c-headerMenubar-navRequirements__heading">募集要項・選考フロー</a>
+                </ul>
+                <ul>
+                    <li class="l-gnav__menu-heading l-gnav__menu-heading--requirements">
+                        <a href="requirements">募集要項・選考フロー</a>
                     </li>
-                    <li class="c-headerMenubar-nav-listCenter" id="c-headerMenubar-navRequirements">
-                        <div class="subMenu--display c-headerMenubar-navRequirements__subMenu">
+                    <li class="l-gnav__menu-item l-gnav__menu-item--requirements">
+                        <div class="subMenu--display l-gnav__megamenu">
                             <ul>
                                 <li><a href="requirements#requirements">募集要項</a></li>
                                 <li><a href="requirements#welcome-skils">歓迎スキル</a></li>
@@ -54,11 +58,11 @@
                     </li>
                 </ul>
             </div>
-            <div class="c-header-entryBtn">
-                <a href="/entry" class="entry-btn_grad">ENTRY</a>
+            <div class="c-gnav-btn__entry">
+                <a href="/entry" class="c-gnav-btn__entry--grad">ENTRY</a>
             </div>
         </nav>
-        <div class="toggle-btn">
+        <div class="l-gnav__hamburger-menu">
             <span></span>
             <span></span>
             <span></span>

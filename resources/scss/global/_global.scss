@@ -1,45 +1,45 @@
 // 共通処理
 @charset "UTF-8";
-@use "./variables" as variables;
+@use './variables' as variables;
 
-html{
-    scroll-behavior: smooth;
-    scroll-padding-top: 60px;
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
 }
 
 body {
-    font-family: variables.$base-font-Japanese;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.8;
-    letter-spacing: 0.48px;
-    color: variables.$color-black;
+  font-family: variables.$base-font-Japanese;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.8;
+  color: variables.$color-black;
+  letter-spacing: 0.48px;
 }
 
 @media (640px <= width) {
-    html{
-        scroll-padding-top: 90px;
-    }
+  html {
+    scroll-padding-top: 90px;
+  }
 
-    body {
-        font-size: 14px;
-        letter-spacing: 0.56px;
-    }
+  body {
+    font-size: 14px;
+    letter-spacing: 0.56px;
+  }
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 a {
-    color: variables.$color-black;
-    text-decoration: none;
+  color: variables.$color-black;
+  text-decoration: none;
 }
 
 img {
-    vertical-align: bottom;
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
 }
