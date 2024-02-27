@@ -1,1 +1,451 @@
 // 募集要項ページについて
+@use '../global/variables' as variables;
+
+.requirements-title {
+  width: 90.66%;
+  padding: 120px 0 70px;
+  margin: 0 auto;
+
+  @media (640px <= width) {
+    gap: 24px;
+    width: 100%;
+    max-width: 1150px;
+    padding: 200px 0 100px;
+  }
+
+  h1 {
+    font-family: variables.$base-font-English;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 48px;
+    color: variables.$color-logo-parts03;
+    text-align: center;
+    letter-spacing: 1.44px;
+
+    @media (640px <= width) {
+      font-size: 64px;
+      letter-spacing: 2.56px;
+    }
+  }
+}
+
+.requirements-subtitle {
+  margin-top: 8px;
+  color: variables.$color-black;
+  text-align: center;
+
+  @media (640px <= width) {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+  }
+}
+
+// メンバーページと募集要項ページのタイトル下のアンカー
+.title-anchor {
+  width: 90.66%;
+  padding-bottom: 70px;
+  margin: 0 auto;
+
+  @media (640px <= width) {
+    width: 100%;
+    max-width: 1150px;
+    padding: 0 25px;
+    padding-bottom: 100px;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 20px;
+
+    @media (640px <= width) {
+      flex-wrap: wrap;
+      gap: 10px 40px;
+      justify-content: center;
+      margin-left: 39px;
+    }
+
+    @media (960px <= width) {
+      flex-wrap: nowrap;
+      gap: 40px;
+      justify-content: center;
+      margin-left: 0;
+    }
+
+    li {
+      align-items: center;
+      justify-content: space-between;
+      width: calc((100% - 20px) / 2);
+      border-bottom: 1px solid variables.$color-black;
+
+      @media (640px <= width) {
+        justify-content: center;
+        width: auto;
+        border: none;
+      }
+
+      @media (960px <= width) {
+        justify-content: center;
+        width: auto;
+      }
+
+      h6 {
+        margin: 0;
+        font-size: 12px;
+
+        @media (640px <= width) {
+          font-size: 14px;
+        }
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 30px;
+
+        @media (640px <= width) {
+          gap: 15px;
+          width: auto;
+          border-bottom: 1px solid variables.$color-black;
+        }
+      }
+    }
+
+    .spacer {
+      display: none;
+
+      @media (640px <= width) {
+        display: block;
+        width: 100%;
+      }
+
+      @media (960px <= width) {
+        display: none;
+      }
+    }
+
+    :nth-child(5) {
+      @media (640px <= width) {
+        margin-left: -90px;
+      }
+
+      @media (960px <= width) {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.c-requirements-container {
+  margin-bottom: 100px;
+}
+
+.c-requirements-heading {
+  width: 90.66%;
+  padding-bottom: 34px;
+  margin: 0 auto;
+
+  @media (640px <= width) {
+    width: 100%;
+    max-width: 1150px;
+    padding: 0 25px 48px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  span {
+    font-family: variables.$base-font-English;
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 27px;
+    color: variables.$color-logo-parts03;
+    letter-spacing: 0.4px;
+
+    @media (640px <= width) {
+      font-size: 12px;
+    }
+  }
+
+  h3 {
+    font-size: 18px;
+
+    @media (640px <= width) {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 36px;
+      letter-spacing: 0.96px;
+    }
+  }
+}
+
+.c-requirements-items {
+  display: grid;
+  gap: 30px;
+  width: 90.66%;
+  margin: 0 auto;
+
+  @media (640px <= width) {
+    gap: 22px;
+    width: 100%;
+    max-width: 1150px;
+    padding: 0 25px;
+  }
+
+  tr {
+    padding: 16px 0;
+
+    @media (640px <= width) {
+      margin: 0;
+      border-bottom: 1px solid #f4f4f4;
+
+      &:first-child {
+        border-top: 1px solid #f4f4f4;
+      }
+    }
+  }
+
+  .c-requirements-item {
+    display: grid;
+    gap: 15px;
+
+    @media (640px <= width) {
+      display: flex;
+      gap: 40px;
+      width: 93.63%;
+      padding-right: 55px;
+      padding-left: 55px;
+      margin: 0 50;
+    }
+
+    th {
+      position: relative;
+      display: inline-block;
+      height: 25px;
+      margin-bottom: 8px;
+      font-size: 14px;
+      text-align: start;
+
+      @media (640px <= width) {
+        width: 30%;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.64px;
+      }
+    }
+
+    th::before {
+      position: absolute;
+      bottom: -5px;
+      display: inline-block;
+      width: 20px;
+      height: 3px;
+      content: '';
+      background-color: variables.$color-logo-parts03;
+      border-radius: 2px;
+
+      @media (640px <= width) {
+        bottom: -8px;
+      }
+    }
+
+    td {
+      display: block;
+
+      @media (640px <= width) {
+        width: 85%;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.c-requirements-headingGrid {
+  display: grid;
+  gap: 15px;
+  width: 90.66%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+
+  @media (640px <= width) {
+    width: 100%;
+    max-width: 1150px;
+    padding: 0 25px;
+  }
+
+  @media (960px <= width) {
+    display: flex;
+    gap: 40px;
+  }
+
+  .c-headingText {
+    display: grid;
+    gap: 20px;
+    margin: auto 0;
+  }
+
+  .c-requirements-img {
+    border-radius: 10px;
+
+    @media (960px <= width) {
+      width: 56.81%;
+      height: 100%;
+    }
+  }
+}
+
+.headingGrid-reverse {
+  flex-direction: row-reverse;
+}
+
+.requirements-selectionFlowHeading {
+  margin-top: 60px;
+}
+
+.selectionFlow-container {
+  display: block;
+  width: 90.66%;
+  margin: 0 auto;
+
+  @media (960px <= width) {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1150px;
+    padding: 0 25px;
+  }
+
+  .c-selectionFlow-item {
+    position: relative;
+    flex-shrink: 0;
+    background: #f2f7ff;
+    border-radius: 10px;
+
+    @media (960px <= width) {
+      width: calc((100% - 90px) / 4);
+      height: 290px;
+    }
+
+    .c-selectionFlow-itemNum {
+      flex-shrink: 0;
+      width: 23.23%;
+      height: 16.21%;
+      font-family: variables.$base-font-English;
+      font-weight: 800;
+      color: variables.$color-white;
+      background-color: variables.$color-logo-parts03;
+      border-radius: 10px 0;
+
+      @media (640px <= width) {
+        height: 18%;
+      }
+
+      @media (960px <= width) {
+        width: 35.51%;
+        height: 16.21%;
+      }
+
+      p {
+        text-align: center;
+
+        @media (960px <= width) {
+          padding-top: 5px;
+        }
+      }
+
+      p > span {
+        padding-left: 5px;
+        font-size: 20px;
+
+        @media (960px <= width) {
+          font-size: 22px;
+        }
+      }
+    }
+
+    .c-selectionFlow-itemText {
+      width: 88.23%;
+      padding-bottom: 30px;
+      margin: 0 auto;
+      text-align: center;
+
+      @media (960px <= width) {
+        padding-bottom: 0;
+      }
+
+      p:nth-child(1) {
+        margin: 10px 0;
+        font-size: 14px;
+        line-height: 25.2px;
+        color: variables.$color-logo-parts03;
+        letter-spacing: 0.56px;
+
+        .selectionFlow-br {
+          @media (width <= 960px) {
+            display: none;
+          }
+        }
+
+        @media (960px <= width) {
+          margin: 25px 0;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0.64px;
+        }
+      }
+    }
+
+    .selectionFlow-entryBtm {
+      inset: 50px 0 75px;
+      width: 83.64%;
+      padding: 17px 35px;
+      margin: 0 auto 10px;
+      font: 800 18px/1.5 variables.$base-font-English;
+      color: variables.$color-black;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      background-color: variables.$color-white;
+      border: 2px solid variables.$color-black;
+      border-radius: 65px;
+      box-shadow: 2px 2px 0 variables.$color-black;
+
+      @media (960px <= width) {
+        margin: 0 auto 10px;
+      }
+
+      .selectionFlow-entryBtm-arrow {
+        inset: 22px 0 0 300px;
+      }
+    }
+
+    .selectionFlow-entryBtm:hover {
+      box-shadow: none;
+      transition: all 0.2s ease-in-out;
+      transform: translate(2px, 2px);
+    }
+
+    .selectionFlow-getOffer {
+      @media (960px <= width) {
+        position: absolute;
+        top: 30%;
+        left: 5%;
+      }
+    }
+  }
+
+  .c-selectionFlow-arrow {
+    width: 100%;
+    margin: 25px auto;
+
+    @media (960px <= width) {
+      width: 22px;
+      height: 22px;
+      margin: auto 5px;
+      transform: rotate(-90deg);
+    }
+  }
+}

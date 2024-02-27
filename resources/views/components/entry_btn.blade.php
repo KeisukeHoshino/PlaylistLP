@@ -1,6 +1,6 @@
 @section('entry_btn')
 {{-- ENTRYボタン --}}
-<section id="entry-btn">
+<section class="entry-btn">
   <div class="entry-btn_background">
     <div class="entry-btn_bg-red"></div>
     <div class="entry-btn_bg-orange"></div>
