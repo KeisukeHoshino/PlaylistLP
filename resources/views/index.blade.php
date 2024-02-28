@@ -50,12 +50,8 @@
       <h2 class="c-top-heading-h2"><span>NEWS</span>お知らせ</h2>
       <ul class="p-top-news_list">
         <li>
-          <p class="p-top-news_date">2023/12/15</p>
-          <p class="p-top-news_contents"><a href="https://tenshoku.mynavi.jp/event/tokyo/20240127A/" target="_blank">1/27（土）転職フェアに参加いたします</a></p>
-        </li>
-        <li>
-          <p class="p-top-news_date">2023/12/15</p>
-          <p class="p-top-news_contents"><a href="https://tenshoku.mynavi.jp/event/tokyo/20240223A/" target="_blank">2/23（金・祝）転職フェアに参加いたします</a></p>
+          <p class="p-top-news_date">2024/02/29</p>
+          <p class="p-top-news_contents"><a href="https://tenshoku.mynavi.jp/event/tokyo/20240323A/" target="_blank">3/23（土）転職フェアに参加いたします</a></p>
         </li>
       </ul>
     </div>

@@ -30,7 +30,7 @@
         </li>
       </ul>
     </div>
-    <p class="l-footer_copyright"><small>&copy;2023 Playlist</small></p>
+    <p class="l-footer_copyright"><small>&copy;2024 Playlist</small></p>
   </div>
 </footer>
 
