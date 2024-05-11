@@ -107,6 +107,10 @@
           opacity: 1;
         }
 
+        & .l-gnav__megamenu a span {
+          padding-left: 35px;
+        }
+
         @media (960px <= width) {
           &:hover .l-gnav__megamenu {
             position: absolute;
@@ -122,6 +126,14 @@
             border: 1px solid $color;
             border-radius: 5px;
             box-shadow: 2px 2px 0 $color;
+
+            &_br {
+              display: none;
+            }
+
+            & a span {
+              padding-left: 0;
+            }
           }
         }
 
@@ -313,7 +325,7 @@
 
       .l-gnav__menu {
         a {
-          padding: 20px 5px;
+          padding: 15px 5px;
           font-size: 1rem;
           font-weight: 600;
           text-decoration: none;
@@ -338,6 +350,8 @@
         opacity: 0;
 
         & a {
+          padding: 25px 0;
+
           &::before {
             margin-right: 10px;
             vertical-align: middle;
@@ -422,7 +436,7 @@
   @media (960px <= width) {
     position: static;
     margin: 0;
-    translate:0;
+    translate: 0;
   }
 }
 

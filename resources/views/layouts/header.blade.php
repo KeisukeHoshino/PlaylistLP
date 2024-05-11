@@ -18,10 +18,10 @@
                     <li class="l-gnav__menu-item l-gnav__menu-item--top">
                         <div class="subMenu--display l-gnav__megamenu">
                             <ul>
-                                <li><a href="/#news">お知らせ</a></li>
-                                <li><a href="/#aboutus">playlistについて</a></li>
+                                <li><a href="/#aboutus">Playlistについて</a></li>
+                                <li><a href="/#data">データで見るPlaylist</a></li>
                                 <li><a href="/#message">代表メッセージ</a></li>
-                                <li><a href="/#points">実際に働く社員のplaylistお気に入りポイント</a></li>
+                                <li><a href="/#points">実際に働く社員の<br class="l-gnav__megamenu_br" /><span>Playlistお気に入りポイント</span></a></li>
                                 <li><a href="/#faq">よくある質問</a></li>
                             </ul>
                         </div>
