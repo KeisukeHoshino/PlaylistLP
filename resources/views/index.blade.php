@@ -31,15 +31,15 @@
       </div>
       <div class="p-top-kv_animation">
         <img class="p-top-kv_animation-arrow u-top-img" src="{{asset('img/top/kv-arrow.svg')}}" alt="">
-        <img class="p-top-kv_animation-scroll u-top-img" src="{{asset('img/top/kv-scroll.svg')}}" alt="SCROLL">
+        <img class="p-top-kv_animation-scroll u-top-img" src="{{asset('img/top/kv-scroll.svg')}}" alt="スクロール">
       </div>
     </div>
     <div class="p-top-kv_text c-top-inner-sp">
       <p class="p-top-kv_heading-sub">GROWTH OPPORTUNITIES ARE HERE.</p>
       <h1 class="p-top-kv_heading">成長機会が<br>ここにある</h1>
       <div class="p-top-kv_entry">
-        <a href="/entry/" class="p-top-kv_entry_btn">ENTRY</a>
-        <a href="/requirements/" class="p-top-kv_entry_textlink">募集要項はこちら</a>
+        <a href="/entry/" class="p-top-kv_entry_btn" data-gtm-click="kv_entry">ENTRY</a>
+        <a href="/requirements/" class="p-top-kv_entry_textlink" data-gtm-click="kv_requirements">募集要項はこちら</a>
       </div>
     </div>
   </div>
@@ -51,11 +51,11 @@
       <ul class="p-top-news_list">
         <li>
           <p class="p-top-news_date">2024/03/28</p>
-          <p class="p-top-news_contents"><a href="https://tenshoku.mynavi.jp/event/tokyo/20240519A/" target="_blank">5/19（日）マイナビ転職フェアに参加いたします</a></p>
+          <p class="p-top-news_contents"><a href="https://tenshoku.mynavi.jp/event/tokyo/20240519A/" target="_blank" data-gtm-click="news_01">5/19（日）マイナビ転職フェアに参加いたします</a></p>
         </li>
         <li>
           <p class="p-top-news_date">2024/03/28</p>
-          <p class="p-top-news_contents">6/22（土）マイナビ転職フェアに参加いたします</p>
+          <p class="p-top-news_contents"><a data-gtm-click="news_02">6/22（土）マイナビ転職フェアに参加いたします</a></p>
         </li>
       </ul>
     </div>
@@ -68,7 +68,7 @@
       <div class="p-top-about_pic">
         <picture>
           <source srcset="{{asset('img/top/aboutus-pc.png')}}" media="(min-width:640px)" type="image/png">
-          <img class="u-top-img" src="{{asset('img/top/aboutus.png')}}" alt="">
+          <img class="u-top-img" src="{{asset('img/top/aboutus.png')}}" alt="複数人の社員が２列に並んでいる写真">
         </picture>
       </div>
     </div>
@@ -115,7 +115,7 @@
             <div class="p-top-about_business_item_img">
               <picture>
                 <source srcset="{{asset('img/top/aboutus-figure-ses-pc.png')}}" media="(min-width:640px)" type="image/png">
-                <img class="u-top-img" src="{{asset('img/top/aboutus-figure-ses.png')}}" alt="">
+                <img class="u-top-img" src="{{asset('img/top/aboutus-figure-ses.png')}}" alt="SES事業を表した図">
               </picture>
             </div>
           </li>
@@ -125,7 +125,7 @@
             <div class="p-top-about_business_item_img">
               <picture>
                 <source srcset="{{asset('img/top/aboutus-figure-labo-pc.png')}}" media="(min-width:640px)" type="image/png">
-                <img class="u-top-img" src="{{asset('img/top/aboutus-figure-labo.png')}}" alt="">
+                <img class="u-top-img" src="{{asset('img/top/aboutus-figure-labo.png')}}" alt="ラボ開発事業を表した図">
               </picture>
             </div>
           </li>
@@ -144,7 +144,7 @@
         <div class="p-top-message_img">
           <picture>
             <source srcset="{{asset('img/top/message-pc.png')}}" media="(min-width:640px)" type="image/png">
-            <img class="u-top-img" src="{{asset('img/top/message.png')}}" alt="吉村優太">
+            <img class="u-top-img" src="{{asset('img/top/message.png')}}" alt="CEO吉村優太の写真">
           </picture>
         </div>
         <div class="p-top-message_text">
@@ -202,7 +202,7 @@
           </p>
         </li>
       </ul>
-      <a href="/member/" class="p-top-points_btn">社員のことをもっと知る</a>
+      <a href="/member/" class="p-top-points_btn" data-gtm-click="points">社員のことをもっと知る</a>
     </div>
   </section>
 
@@ -212,23 +212,23 @@
       <h2 class="c-top-heading-h2"><span>FAQ</span>よくある質問</h2>
       <dl class="p-top-faq_list js-accordion">
         <div class="p-top-faq_item">
-          <dt><span>Q.</span>IT業界の経験は必要ですか？</dt>
+          <dt data-gtm-click="faq_01"><span>Q.</span>IT業界の経験は必要ですか？</dt>
           <dd><span>A.</span>IT未経験でも今までの経験やスキルを活かしたプロジェクトで活躍していただくことが可能です。</dd>
         </div>
         <div class="p-top-faq_item">
-          <dt><span>Q.</span>面接場所について教えて下さい。</dt>
+          <dt data-gtm-click="faq_02"><span>Q.</span>面接場所について教えて下さい。</dt>
           <dd><span>A.</span>基本はオンラインです。希望者はオフラインで武蔵小杉オフィスで実施可能です。</dd>
         </div>
         <div class="p-top-faq_item">
-          <dt><span>Q.</span>応募前に話をきいてみたいのですが、可能ですか？</dt>
+          <dt data-gtm-click="faq_03"><span>Q.</span>応募前に話をきいてみたいのですが、可能ですか？</dt>
           <dd><span>A.</span>可能です。カジュアル面談を設けておりますので、<a href="/entry/">エントリー</a>よりお気軽にご連絡下さい。</dd>
         </div>
         <div class="p-top-faq_item">
-          <dt><span>Q.</span>髪型や服装に決まりはありますか？</dt>
+          <dt data-gtm-click="faq_04"><span>Q.</span>髪型や服装に決まりはありますか？</dt>
           <dd><span>A.</span>参画したプロジェクトによって異なりますが、基本はオフィスカジュアルです。TPOに応じた清潔感のある服装を心がけて下さい。</dd>
         </div>
         <div class="p-top-faq_item">
-          <dt><span>Q.</span>研修はありますか？</dt>
+          <dt data-gtm-click="faq_05"><span>Q.</span>研修はありますか？</dt>
           <dd><span>A.</span>「成長に繋がるコミュニケーション」を軸に積極的な社内研修を実施しています。自社で研修を構築しているところが強みです。<br>●フロントエンド研修（自己紹介サイト）<br>●SQL研修（SQLの基本操作）<br>●VBA研修（ツール作成）<br>●RPA研修（資格取得サポート）<br>●その他（Udemyでオンライン講座：入社前研修）</dd>
         </div>
       </dl>
