@@ -363,20 +363,23 @@
 
 .c-gnav-btn__entry {
   position: fixed;
-  left: 50%;
   display: flex;
-  justify-content: center;
-  margin-top: 36px;
-  translate: -50% -100%;
+  width: 90%;
+  text-align: center;
+  transform: translateX(6%);
 
   &--grad {
     position: relative;
-    width: 150px;
-    padding: 6px 40px;
+    width: 100%;
+    padding: 17px 35px;
     font-family: variables.$base-font-English;
-    font-size: 14px;
+    font-size: 18px;
     background-color: variables.$color-white;
     border-radius: 9999px;
+
+    @media (960px <= width) {
+      padding: 6px 35px;
+    }
   }
 
   &:hover {
@@ -410,7 +413,7 @@
 
   &::after {
     position: absolute;
-    top: 25%;
+    top: 35%;
     right: 24px;
     width: 10px;
     height: 10px;
@@ -420,10 +423,15 @@
     background-size: contain;
     transition: 0.3s ease-in-out;
     transform: rotate(-135deg) translateY(-50%);
+
+    @media (960px <= width) {
+      top: 29%;
+    }
   }
 
   @media (960px <= width) {
     position: static;
+    width: 30%;
     margin: 0;
     translate: 0;
   }
