@@ -36,7 +36,6 @@
 
     .subMenu--display {
       max-height: 0;
-      padding: 0 20px;
       overflow: hidden;
       opacity: 0;
       transition:
@@ -126,14 +125,6 @@
             border: 1px solid $color;
             border-radius: 5px;
             box-shadow: 2px 2px 0 $color;
-
-            &_br {
-              display: none;
-            }
-
-            & a span {
-              padding-left: 0;
-            }
           }
         }
 
@@ -247,6 +238,13 @@
 
           &.l-gnav__menu-item {
             padding: 0;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #f4f4f4;
+
+            @media (960px <= width) {
+              padding-bottom: 0;
+              border-bottom: none;
+            }
 
             & > div {
               @media (960px <= width) {
@@ -257,6 +255,8 @@
 
           &.l-gnav__menu-heading {
             margin: 0 auto;
+            /* stylelint-disable-next-line order/properties-order */
+            padding: 8px 0;
 
             &:not(:first-child) {
               line-height: 2em;
@@ -287,6 +287,8 @@
             }
 
             @media (960px <= width) {
+              padding: 8px 20px;
+
               &::before,
               &::after {
                 background: variables.$color-white;
@@ -302,19 +304,6 @@
           @media (960px <= width) {
             display: inline-block;
             width: max-content;
-
-            &.l-gnav__menu-heading > a {
-              padding-bottom: 55px;
-            }
-          }
-
-          @media (960px <= width) {
-            display: inline-block;
-            width: max-content;
-
-            &.l-gnav__menu-heading > a {
-              padding-bottom: 55px;
-            }
           }
         }
 
