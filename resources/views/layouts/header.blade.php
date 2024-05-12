@@ -5,7 +5,7 @@
     <div class="l-header__container">
         <div>
             <a href="/" class="l-header__link">
-                <img src="{{ asset('img/layout/logo_Playlist_header.svg') }}" alt="playlistRecruitment-sitelogo">
+                <img src="{{ asset('img/layout/logo_Playlist_header.svg') }}" alt="プレイリストのロゴ">
                 <span>採用サイト</span>
             </a>
         </div>
@@ -62,11 +62,11 @@
                 <a href="/entry" class="c-gnav-btn__entry--grad">ENTRY</a>
             </div>
         </nav>
-        <div class="l-gnav__hamburger-menu">
+        <bottom class="l-gnav__hamburger-menu" aria-expanded="false" aria-controls="navArea" aria-label="メニューを開く">
             <span></span>
             <span></span>
             <span></span>
-        </div>
+        </bottom>
     </div>
 </header>
 
