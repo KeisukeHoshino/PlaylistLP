@@ -12,19 +12,19 @@
           <div class="swiper-slide">
             <picture>
               <source srcset="{{asset('img/top/kv01-pc.jpg')}}" media="(min-width:640px)" type="image/jpeg">
-              <img class="u-top-img" src="{{asset('img/top/kv01.jpg')}}" alt="">
+              <img class="u-top-img" src="{{asset('img/top/kv01.jpg')}}" alt="女性社員２名が笑っている写真">
             </picture>
           </div>
           <div class="swiper-slide">
             <picture>
               <source srcset="{{asset('img/top/kv02-pc.jpg')}}" media="(min-width:640px)" type="image/jpeg">
-              <img class="u-top-img" src="{{asset('img/top/kv02.jpg')}}" alt="">
+              <img class="u-top-img" src="{{asset('img/top/kv02.jpg')}}" alt="男性社員がパソコンで作業している写真">
             </picture>
           </div>
           <div class="swiper-slide">
             <picture>
               <source srcset="{{asset('img/top/kv03-pc.jpg')}}" media="(min-width:640px)" type="image/jpeg">
-              <img class="u-top-img" src="{{asset('img/top/kv03.jpg')}}" alt="">
+              <img class="u-top-img" src="{{asset('img/top/kv03.jpg')}}" alt="男性社員と女性社員が会話している写真">
             </picture>
           </div>
         </div>

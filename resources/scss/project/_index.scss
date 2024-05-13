@@ -83,14 +83,12 @@
 // ---------------------------------------
 .p-top-kv {
   position: relative;
-  padding: 60px 0 25px;
 
   @media (640px <=width) {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: flex-start;
-    padding: 110px 0;
   }
 
   &_pic {
@@ -143,9 +141,9 @@
     }
 
     &-scroll {
-      animation: rotateScroll 10s linear infinite;
+      animation: rotate-scroll 10s linear infinite;
 
-      @keyframes rotateScroll {
+      @keyframes rotate-scroll {
         from {
           transform: rotate(0);
         }
