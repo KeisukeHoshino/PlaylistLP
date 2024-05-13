@@ -50,13 +50,13 @@
       <h2 class="c-top-heading-h2"><span>NEWS</span>お知らせ</h2>
       <ul class="p-top-news_list">
         <li>
-          <p class="p-top-news_date">2024/03/28</p>
-          <p class="p-top-news_contents"><a href="https://tenshoku.mynavi.jp/event/tokyo/20240519A/" target="_blank" data-gtm-click="news_01">5/19（日）マイナビ転職フェアに参加いたします</a></p>
+          <p class="p-top-news_date">2024/06/05</p>
+          <p class="p-top-news_contents"><a href="https://tenshoku.mynavi.jp/event/tokyo/20240622A/" target="_blank" data-gtm-click="news_01">6/22（土）マイナビ転職フェアに参加いたします</a></p>
         </li>
-        <li>
+        <!-- <li>
           <p class="p-top-news_date">2024/03/28</p>
-          <p class="p-top-news_contents"><a data-gtm-click="news_02">6/22（土）マイナビ転職フェアに参加いたします</a></p>
-        </li>
+          <p class="p-top-news_contents"><a href="" target="_blank" data-gtm-click="news_02"></a></p>
+        </li> -->
       </ul>
     </div>
   </section>
