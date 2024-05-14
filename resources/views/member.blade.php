@@ -1,5 +1,4 @@
 @extends('layouts.layout')
-@include('components.entry_btn')
 
 @section('content')
 <div class="member-introduction-wrapper">
@@ -192,7 +191,7 @@
     </section>
 
     {{-- エントリーボタンの呼び出し --}}
-    @yield('entry_btn')
+    @include('components.entry_btn',['entryGtm' => 'introduction_entry_01','requirementsGtm' => 'introduction_requirements_01'])
 
     {{-- CAREER PATH --}}
     <section id="career-path">
@@ -524,6 +523,6 @@
     </section>
 
     {{-- エントリーボタンの呼び出し --}}
-    @yield('entry_btn')
+    @include('components.entry_btn',['entryGtm' => 'introduction_entry_02','requirementsGtm' => 'introduction_requirements_02'])
 </div>
 @endsection
