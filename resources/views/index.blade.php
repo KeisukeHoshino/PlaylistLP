@@ -1,5 +1,4 @@
 @extends('layouts.layout')
-@include('components.entry_btn')
 
 @section('content')
 <main>
@@ -134,7 +133,9 @@
     </div>
   </section>
 
-  @yield('entry_btn')
+  @include('components.entry_btn',['entryGtm' => 'top_entry_01','requirementsGtm' => 'top_requirements_01'])
+
+  @include('components.entry_btn',['entryGtm' => 'top_entry_02','requirementsGtm' => 'top_requirements_02'])
 
   {{-- 代表メッセージ --}}
   <section id="message" class="p-top-message">
@@ -235,7 +236,7 @@
     </div>
   </section>
 
-  @yield('entry_btn')
+  @include('components.entry_btn',['entryGtm' => 'top_entry_03','requirementsGtm' => 'top_requirements_03'])
 
 </main>
 
