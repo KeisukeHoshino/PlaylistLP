@@ -107,7 +107,7 @@
         }
 
         & .l-gnav__megamenu a span {
-          padding-left: 35px;
+          padding-left: 33px;
         }
 
         @media (960px <= width) {
@@ -255,7 +255,6 @@
 
           &.l-gnav__menu-heading {
             margin: 0 auto;
-            /* stylelint-disable-next-line order/properties-order */
             padding: 8px 0;
 
             &:not(:first-child) {
@@ -314,13 +313,13 @@
 
       .l-gnav__menu {
         a {
-          padding: 15px 5px;
+          padding: 12.5px 5px;
           font-size: 1rem;
           font-weight: 600;
           text-decoration: none;
 
           @media (960px <= width) {
-            font-size: 1rem;
+            padding: 15px 5px;
             text-align: left;
           }
         }
@@ -339,11 +338,14 @@
         opacity: 0;
 
         & a {
-          padding: 25px 0;
+          position: relative;
+          padding-left: 2em;
 
           &::before {
-            margin-right: 10px;
-            vertical-align: middle;
+            position: absolute;
+            left: 0;
+            top: 58%;
+            transform: translateY(-50%);
             content: url(/public/img/layout/icon_arrow-right.svg);
           }
         }
