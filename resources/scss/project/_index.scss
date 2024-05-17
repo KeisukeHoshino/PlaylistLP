@@ -524,6 +524,58 @@
   }
 }
 
+// data SP用
+.p-top-data {
+  padding: 100px 0;
+
+  &-pc {
+    display: none;
+  }
+
+  &_item {
+    margin-bottom: 19px;
+  }
+
+  &_flexitems {
+    display: flex;
+    gap: 19px;
+  }
+}
+
+// data PC用
+/* stylelint-disable-next-line no-duplicate-selectors */
+@media (640px <=width) {
+  .p-top-data {
+    padding: 130px 0;
+
+    &-sp {
+      display: none;
+    }
+
+    .p-top-data-pc {
+      display: block;
+
+      &_column {
+        display: flex;
+        gap: 30px;
+
+        li {
+          margin-bottom: 30px;
+        }
+      }
+
+      &_container {
+        width: calc((100% - 30px) / 2);
+
+        &_flexitems {
+          display: flex;
+          gap: 30px;
+        }
+      }
+    }
+  }
+}
+
 .p-top-message {
   padding: 100px 0;
 

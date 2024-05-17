@@ -135,6 +135,183 @@
 
   @include('components.entry_btn',['entryGtm' => 'top_entry_01','requirementsGtm' => 'top_requirements_01'])
 
+{{-- Playlist Data --}}
+<section id="data" class="p-top-data">
+  <div class="c-top-inner-pc c-top-inner-sp">
+    <h2 class="c-top-heading-h2"><span>Playlist Data</span>データで見るPlaylist</h2>
+    <!-- SP用 -->
+    <div class="p-top-data-sp">
+      <ul class="p-top-data_column">
+        <div class="p-top-data_flexitems">
+          <li class="p-top-data_item">
+            <div class="p-top-data_item_img">
+              <picture>
+                <source srcset="{{asset('img/top/data-figure-old-pc.png')}}" media="(min-width:640px)" type="image/png">
+                <img class="u-top-img" src="{{asset('img/top/data-figure-old.png')}}" alt="平均年齢27歳を表した図">
+              </picture>
+            </div>
+          </li>
+          <li class="p-top-data_item">
+            <div class="p-top-data_item_img">
+              <picture>
+                <source srcset="{{asset('img/top/data-figure-overtime-pc.png')}}" media="(min-width:640px)" type="image/png">
+                <img class="u-top-img" src="{{asset('img/top/data-figure-overtime.png')}}" alt="平均残業時間12時間を表した図">
+              </picture>
+            </div>
+          </li>
+        </div>
+        <li class="p-top-data_item">
+          <div class="p-top-data_item_img">
+            <picture>
+              <source srcset="{{asset('img/top/data-figure-persons-pc.png')}}" media="(min-width:640px)" type="image/png">
+              <img class="u-top-img" src="{{asset('img/top/data-figure-persons.png')}}" alt="社員数の増加を表した図">
+            </picture>
+          </div>
+        </li>
+        <div class="p-top-data_flexitems">
+          <li class="p-top-data_item">
+            <div class="p-top-data_item_img">
+              <picture>
+                <source srcset="{{asset('img/top/data-figure-former-pc.png')}}" media="(min-width:640px)" type="image/png">
+                <img class="u-top-img" src="{{asset('img/top/data-figure-former.png')}}" alt="社員の前職を表した図">
+              </picture>
+            </div>
+          </li>
+          <li class="p-top-data_item">
+            <div class="p-top-data_item_img">
+              <picture>
+                <source srcset="{{asset('img/top/data-figure-remote-pc.png')}}" media="(min-width:640px)" type="image/png">
+                <img class="u-top-img" src="{{asset('img/top/data-figure-remote.png')}}" alt="勤務形態を表した図">
+              </picture>
+            </div>
+          </li>
+        </div>
+        <li class="p-top-data_item">
+          <div class="p-top-data_item_img">
+            <picture>
+              <source srcset="{{asset('img/top/data-figure-jobtype-pc.png')}}" media="(min-width:640px)" type="image/png">
+              <img class="u-top-img" src="{{asset('img/top/data-figure-jobtype.png')}}" alt="現在の職種を表した図">
+            </picture>
+          </div>
+        </li>
+        <div class="p-top-data_flexitems">
+          <li class="p-top-data_item">
+            <div class="p-top-data_item_img">
+              <picture>
+                <source srcset="{{asset('img/top/data-figure-study-pc.png')}}" media="(min-width:640px)" type="image/png">
+                <img class="u-top-img" src="{{asset('img/top/data-figure-study.png')}}" alt="文系か理系分野を表した図">
+              </picture>
+            </div>
+          </li>
+          <li class="p-top-data_item">
+            <div class="p-top-data_item_img">
+              <picture>
+                <source srcset="{{asset('img/top/data-figure-benefits-pc.png')}}" media="(min-width:640px)" type="image/png">
+                <img class="u-top-img" src="{{asset('img/top/data-figure-benefits.png')}}" alt="福利厚生を表した図">
+              </picture>
+            </div>
+          </li>
+        </div>
+        <li class="p-top-data_item">
+          <div class="p-top-data_item_img">
+            <picture>
+              <source srcset="{{asset('img/top/data-figure-from-pc.png')}}" media="(min-width:640px)" type="image/png">
+              <img class="u-top-img" src="{{asset('img/top/data-figure-from.png')}}" alt="社員の出身地を表した図">
+            </picture>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- PC用 -->
+    <div class="p-top-data-pc">
+      <ul class="p-top-data-pc_column">
+        <div class="p-top-data-pc_container">
+          <div class="p-top-data-pc_container_flexitems">
+            <li class="p-top-data-pc_item">
+              <div class="p-top-data-pc_item_img">
+                <picture>
+                  <source srcset="{{asset('img/top/data-figure-old-pc.png')}}" media="(min-width:640px)" type="image/png">
+                  <img class="u-top-img" src="{{asset('img/top/data-figure-old.png')}}" alt="平均年齢27歳を表した図">
+                </picture>
+              </div>
+            </li>
+            <li class="p-top-data-pc_item">
+              <div class="p-top-data-pc_item_img">
+                <picture>
+                  <source srcset="{{asset('img/top/data-figure-overtime-pc.png')}}" media="(min-width:640px)" type="image/png">
+                  <img class="u-top-img" src="{{asset('img/top/data-figure-overtime.png')}}" alt="平均残業時間12時間を表した図">
+                </picture>
+              </div>
+            </li>
+          </div>
+          <div class="p-top-data-pc_container_flexitems">
+            <li class="p-top-data-pc_item">
+              <div class="p-top-data-pc_item_img">
+                <picture>
+                  <source srcset="{{asset('img/top/data-figure-former-pc.png')}}" media="(min-width:640px)" type="image/png">
+                  <img class="u-top-img" src="{{asset('img/top/data-figure-former.png')}}" alt="社員の前職を表した図">
+                </picture>
+              </div>
+            </li>
+            <li class="p-top-data-pc_item">
+              <div class="p-top-data-pc_item_img">
+                <picture>
+                  <source srcset="{{asset('img/top/data-figure-remote-pc.png')}}" media="(min-width:640px)" type="image/png">
+                  <img class="u-top-img" src="{{asset('img/top/data-figure-remote.png')}}" alt="勤務形態を表した図">
+                </picture>
+              </div>
+            </li>
+          </div>
+          <li class="p-top-data-pc_item">
+            <div class="p-top-data-pc_item_img">
+              <picture>
+                <source srcset="{{asset('img/top/data-figure-from-pc.png')}}" media="(min-width:640px)" type="image/png">
+                <img class="u-top-img" src="{{asset('img/top/data-figure-from.png')}}" alt="社員の出身地を表した図">
+              </picture>
+            </div>
+          </li>
+        </div>
+        <div class="p-top-data-pc_container">
+          <li class="p-top-data-pc_item">
+            <div class="p-top-data-pc_item_img">
+              <picture>
+                <source srcset="{{asset('img/top/data-figure-persons-pc.png')}}" media="(min-width:640px)" type="image/png">
+                <img class="u-top-img" src="{{asset('img/top/data-figure-persons.png')}}" alt="社員数の増加を表した図">
+              </picture>
+            </div>
+          </li>
+          <div class="p-top-data-pc_container_flexitems">
+            <li class="p-top-data-pc_item">
+              <div class="p-top-data-pc_item_img">
+                <picture>
+                  <source srcset="{{asset('img/top/data-figure-study-pc.png')}}" media="(min-width:640px)" type="image/png">
+                  <img class="u-top-img" src="{{asset('img/top/data-figure-study.png')}}" alt="文系か理系分野を表した図">
+                </picture>
+              </div>
+            </li>
+            <li class="p-top-data-pc_item">
+              <div class="p-top-data-pc_item_img">
+                <picture>
+                  <source srcset="{{asset('img/top/data-figure-benefits-pc.png')}}" media="(min-width:640px)" type="image/png">
+                  <img class="u-top-img" src="{{asset('img/top/data-figure-benefits.png')}}" alt="福利厚生を表した図">
+                </picture>
+              </div>
+            </li>
+          </div>
+          <li class="p-top-data-pc_item">
+            <div class="p-top-data-pc_item_img">
+              <picture>
+                <source srcset="{{asset('img/top/data-figure-jobtype-pc.png')}}" media="(min-width:640px)" type="image/png">
+                <img class="u-top-img" src="{{asset('img/top/data-figure-jobtype.png')}}" alt="現在の職種を表した図">
+              </picture>
+            </div>
+          </li>
+        </div>
+      </ul>
+    </div>
+  </div>
+</section>
+
   @include('components.entry_btn',['entryGtm' => 'top_entry_02','requirementsGtm' => 'top_requirements_02'])
 
   {{-- 代表メッセージ --}}
