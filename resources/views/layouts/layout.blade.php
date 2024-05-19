@@ -22,7 +22,7 @@
   {{-- タイトル --}}
   <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
   <title>Playlist採用サイト</title>
-  @vite(['resources/scss/style.scss?cash=243006', 'resources/js/app.js?cash=240506'])
+  @vite(['resources/scss/style.scss', 'resources/js/app.js'])
 
 </head>
 

@@ -62,56 +62,83 @@
             PlaylistはIT未経験からエンジニアを目指している人が多い会社です。<br class="sp_br">
             社内メンバーと共に一緒に成長していける環境を整えていますので、エンジニアになるためのキャリアを私たちと共に描きましょう！！
         </p>
-        <ul>
-            <li>
-                <img src="{{asset('img/member/member_yutay.jpg')}}" alt="吉村優太">
-                <p class="role">CEO</p>
-                <h4>Yuta.Y</h4>
-            </li>
-            <li>
-                <img src="{{asset('img/member/member_takahiroa.jpg')}}" alt="新垣貴弘">
-                <p class="role">COO/SALES</p>
-                <h4>Takahiro.A</h4>
-            </li>
-            <li>
-                <img src="{{asset('img/member/member_tarot.jpg')}}" alt="武井太郎">
-                <p class="role">CHO/HR/PR</p>
-                <h4>Taro.T</h4>
-            </li>
-            <li>
-                <img src="{{asset('img/member/member_minamiy.jpg')}}" alt="安井みなみ">
-                <p class="role">BDR</p>
-                <h4>Minami.Y</h4>
-            </li>
-            <li>
-                <img src="{{asset('img/member/member_maoo.jpg')}}" alt="大澤舞緒">
-                <p class="role">ENGINEER</p>
-                <h4>Mao.O</h4>
-            </li>
-            <li>
-                <img src="{{asset('img/member/member_takuyam.jpg')}}" alt="増田拓也">
-                <p class="role">ENGINEER</p>
-                <h4>Takuya.M</h4>
-            </li>
-            <li>
-                <img src="{{asset('img/member/member_ryow.jpg')}}" alt="渡部諒">
-                <p class="role">ENGINEER</p>
-                <h4>Ryo.W</h4>
-            </li>
-            <li>
-                <img src="{{asset('img/member/member_masahiros.jpg')}}" alt="園田将宏">
-                <p class="role">ENGINEER</p>
-                <h4>Masahiro.S</h4>
-            </li>
-            <li>
-                <img src="{{asset('img/member/member_yuio.jpg')}}" alt="小口結">
-                <p class="role">ENGINEER</p>
-                <h4>Yui.O</h4>
-            </li>
-            <li class="andmore">
+        <ul class="member-list">
+            @foreach ($members as $member)
+                @php
+                    $id = strtolower(str_replace('.', '', $member['name']));
+                @endphp
+                <li class="member-item">
+                    <button class="member-btn js-modalOpen" data-modal-target="{{ $id }}" type="button" aria-label="{{ $member['name'] }}の詳細情報を見る">
+                        <span class="member-img">
+                            <img src="{{ asset('img/member/portrait/' . $id . '01.jpg') }}" alt="{{ $member['name'] }}">
+                            <img src="{{ asset('img/member/portrait/' . $id . '02.jpg') }}" alt="{{ $member['name'] }}">
+                        </span>
+                        <span class="member-position">{{ $member['position'] }}</span>
+                        <span class="member-name">{{ $member['name'] }}</span>
+                    </button>
+                </li>
+            @endforeach
+            <li class="member-item andmore">
                 <p>and more...</p>
             </li>
         </ul>
+        <div class="member-modal-list">
+            @foreach ($members as $member)
+                @php
+                    $id = strtolower(str_replace('.', '', $member['name']));
+                @endphp
+                <div class="member-modal-item js-modalPanel" data-modal-id="{{ $id }}">
+                    <div class="member-modal-bg js-modalClose"></div>
+                    <div class="member-modal-panel">
+                        <div class="member-modal-panel-inner">
+                            <button class="member-modal-close js-modalClose" type="button" aria-label="モーダルを閉じる"></button>
+                            <div class="member-modal-panel-contents">
+                                <div class="member-modal-portrait">
+                                    <div class="member-modal-img">
+                                        <img src="{{ asset('img/member/portrait/' . $id . '02.jpg') }}" alt="{{ $member['name'] }}">
+                                    </div>
+                                    <p class="member-position">{{ $member['position'] }}</p>
+                                    <p class="member-name">{{ $member['name'] }}</p>
+                                </div>
+                                <div class="member-modal-detail">
+                                    <table class="member-modal-detail-table">
+                                        <tr>
+                                            <th>入社時期</th>
+                                            <td>{{ $member['joinDate'] }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>前職</th>
+                                            <td>{{ $member['formerJob'] }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>私の仕事</th>
+                                            <td>{{ $member['myJob'] }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>スキル</th>
+                                            <td>{{ $member['skill'] }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>好きなこと</th>
+                                            <td>{{ $member['hobby'] }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Playlistの<br>お気に入り<br class="u-member-only-sp">ポイント</th>
+                                            <td>{{ $member['favoritePoint'] }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>求職者への<br class="u-member-only-sp">一言</th>
+                                            <td>{{ $member['message'] }}</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <button class="member-modal-close-btn js-modalClose" type="button">閉じる</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+        </div>
     </section>
 
     {{-- INTERBVIEW --}}
