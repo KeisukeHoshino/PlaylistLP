@@ -1,5 +1,4 @@
 @extends('layouts.layout')
-@include('components.entry_btn')
 
 
 @section('content')
@@ -19,7 +18,7 @@
         <div class="title-anchor">
             <ul>
                 <li>
-                    <a class="link-anchor" href="#requirements">
+                    <a class="link-anchor" href="#requirements" data-gtm-click=”requirements_anchor_01”>
                         <div>
                             <h6>募集要項</h6>
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
@@ -29,7 +28,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="link-anchor" href="#welcome-skils">
+                    <a class="link-anchor" href="#welcome-skils" data-gtm-click=”requirements_anchor_02”>
                         <div>
                             <h6>歓迎スキル</h6>
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
@@ -39,7 +38,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="link-anchor" href="#career-advancement">
+                    <a class="link-anchor" href="#career-advancement"  data-gtm-click=”requirements_anchor_03”>
                         <div>
                             <h6>将来キャリアアップ</h6>
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
@@ -50,7 +49,7 @@
                 </li>
                 <li class="spacer"></li>
                 <li>
-                    <a class="link-anchor" href="#project-case">
+                    <a class="link-anchor" href="#project-case" data-gtm-click=”requirements_anchor_04”>
                         <div>
                             <h6>プロジェクト例</h6>
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
@@ -60,7 +59,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="link-anchor" href="#selection-flow">
+                    <a class="link-anchor" href="#selection-flow"  data-gtm-click=”requirements_anchor_05”>
                         <div>
                             <h6>選考フロー</h6>
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
@@ -156,7 +155,8 @@
                         各種保険完備<br>
                         定期健康診断<br>
                         慶弔見舞金<br>
-                        リファラル採用（インセンティブ有）
+                        リファラル採用（インセンティブ有）<br>
+                        アウトソーシングサービスによる福利厚生1000種類以上
                     </td>
                 </tr>
                 <tr class="c-requirements-item">
@@ -280,7 +280,7 @@
         </div>
     </div>
 
-    @yield('entry_btn')
+    @include('components.entry_btn',['entryGtm' => {{requirements_entry_01}},'requirementsGtm' => {{requirements_requirements_01}}])
 
     <div class="c-requirements-wrapper">
         <div id="selection-flow" class="c-requirements-container">
@@ -299,7 +299,7 @@
                     </div>
                     <div class="c-selectionFlow-itemText">
                         <P>
-                            エントリーフォームから<br class="selectionFlow-br">ご応募
+                            エントリーフォームから<br class="selectionFlow-br"  data-gtm-click=”selectionflow_entry”>ご応募
                         </P>
                         <a href="/entry">
                             <button class="selectionFlow-entryBtm">
@@ -362,7 +362,7 @@
         </div>
     </div>
 
-    @yield('entry_btn')
+    @include('components.entry_btn',['entryGtm' => {{requirements_entry_02}},'requirementsGtm' => {{requirements_requirements_02}}])
 
 </main>
 
