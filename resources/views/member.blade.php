@@ -51,17 +51,20 @@
     </div>
 
     {{-- MEMBER --}}
-    <section id="member">
+    <section class="member" id="member">
         <h2>
             MEMBER
         </h2>
         <h3>
             メンバー
         </h3>
-        <p class="member-message">
-            PlaylistはIT未経験からエンジニアを目指している人が多い会社です。<br class="sp_br">
-            社内メンバーと共に一緒に成長していける環境を整えていますので、エンジニアになるためのキャリアを私たちと共に描きましょう！！
-        </p>
+        <div class="member-message">
+            <p class="member-message-lead">
+                PlaylistはIT未経験からエンジニアを目指している人が多い会社です。<br class="sp_br">
+                社内メンバーと共に一緒に成長していける環境を整えていますので、エンジニアになるためのキャリアを私たちと共に描きましょう！！
+            </p>
+            <p class="annotation">※<span class="u-member-only-pc">クリック</span><span class="u-member-only-sp">タップ</span>するとプロフィールをご覧いただけます。<br>※情報は2024年6月時点のものです。</p>
+        </div>
         <ul class="member-list">
             @foreach ($members as $member)
                 @php
@@ -142,7 +145,7 @@
     </section>
 
     {{-- INTERBVIEW --}}
-    <section id="interview">
+    <section class="interview" id="interview">
         <h2>
             INTERVIEW
         </h2>
@@ -221,7 +224,7 @@
     @include('components.entry_btn',['entryGtm' => 'introduction_entry_01','requirementsGtm' => 'introduction_requirements_01'])
 
     {{-- CAREER PATH --}}
-    <section id="career-path">
+    <section class="career-path" id="career-path">
         <div>
             <h2>
                 CAREER PATH
@@ -231,8 +234,8 @@
             </h3>
         </div>
         <div class="career-path-message">
-            <p>Playlist社員の入社後のキャリアパスをご紹介します。</p>
-            <span class="annotation">※情報は2023年8月時点のものです。</span>
+            <p class="career-path-message-lead">Playlist社員の入社後のキャリアパスをご紹介します。</p>
+            <p class="annotation">※情報は2024年6月時点のものです。</p>
         </div>
         <div class="career-path-list">
             {{-- 1人目（星野さん） --}}

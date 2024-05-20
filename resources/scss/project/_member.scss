@@ -16,15 +16,26 @@
   }
 }
 
-.member-introduction-wrapper {
-  font-family: variables.$base-font-Japanese;
-  width: 90.66%;
+.member,
+.interview,
+.career-path {
   margin: 0 auto;
+
+  @media (639px >=width) {
+    width: 90.66%;
+  }
+
+  @media (640px <=width) {
+    max-width: 1150px;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 .member-introduction-title {
   width: 90.66%;
-  padding: 120px 0px 70px 0px;
+  padding: 60px 0px 70px 0px;
   margin: 0 auto;
 
   @media (640px <=width) {
@@ -107,10 +118,10 @@
   }
 
   .member-message {
-    line-height: 1.8;
     margin-bottom: 40px;
 
     @media (640px <=width) {
+      text-align: center;
       margin-bottom: 45px;
     }
 
@@ -118,11 +129,28 @@
       margin-bottom: 50px;
     }
 
-    .sp_br {
-      display: none;
+    .member-message-lead {
+      color: variables.$color-black-light;
+      line-height: 1.8;
+
+      .sp_br {
+        display: none;
+
+        @media (640px <=width) {
+          display: inline;
+        }
+      }
+    }
+
+    .annotation {
+      font-family: variables.$base-font-Japanese;
+      font-size: 10px;
+      color: variables.$color-gray-black;
+      margin-top: 5px;
 
       @media (640px <=width) {
-        display: inline;
+        margin-top: 0px;
+        font-size: 12px;
       }
     }
   }
@@ -642,12 +670,18 @@
       text-align: center;
     }
 
+    .career-path-message-lead {
+      color: variables.$color-black-light;
+    }
+
     .annotation {
       font-family: variables.$base-font-Japanese;
       font-size: 10px;
       color: variables.$color-gray-black;
+      margin-top: 5px;
 
       @media (640px <=width) {
+        margin-top: 0;
         font-size: 12px;
       }
     }
