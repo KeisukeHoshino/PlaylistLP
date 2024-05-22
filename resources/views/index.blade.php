@@ -66,7 +66,7 @@
       <h2 class="c-top-heading-h2"><span>ABOUT US</span>Playlistについて</h2>
       <div class="p-top-about_pic">
         <picture>
-          <source srcset="{{asset('img/top/aboutus-pc.jpg')}}" media="(min-width:640px)" type="image/jpg">
+          <source srcset="{{asset('img/top/aboutus-pc.jpg')}}" media="(min-width:640px)" type="image/jpeg">
           <img class="u-top-img" src="{{asset('img/top/aboutus.jpg')}}" alt="複数人の社員が２列に並んでいる写真">
         </picture>
       </div>

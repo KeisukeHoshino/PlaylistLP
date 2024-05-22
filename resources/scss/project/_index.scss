@@ -380,6 +380,11 @@
     padding-top: 90px;
   }
 
+  &_pic {
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
   &_mvv {
     padding: 90px 0 60px;
     margin-top: -50px;
