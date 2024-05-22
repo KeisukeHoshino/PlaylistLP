@@ -308,6 +308,12 @@
 }
 
 .p-top-news {
+  padding-top: 122px;
+
+  @media (640px <= width) {
+    padding-top: 111px;
+  }
+
   &_list {
     border-top: 1px solid variables.$color-gray-light;
 
