@@ -18,7 +18,7 @@
         <div class="title-anchor">
             <ul>
                 <li>
-                    <a class="link-anchor" href="#requirements" data-gtm-click=”requirements_anchor_01”>
+                    <a class="link-anchor" href="#requirements" data-gtm-click="requirements_anchor_01">
                         <div>
                             <h6>募集要項</h6>
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
@@ -28,7 +28,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="link-anchor" href="#welcome-skils" data-gtm-click=”requirements_anchor_02”>
+                    <a class="link-anchor" href="#welcome-skils" data-gtm-click="requirements_anchor_02">
                         <div>
                             <h6>歓迎スキル</h6>
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
@@ -38,7 +38,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="link-anchor" href="#career-advancement"  data-gtm-click=”requirements_anchor_03”>
+                    <a class="link-anchor" href="#career-advancement" data-gtm-click="requirements_anchor_03">
                         <div>
                             <h6>将来キャリアアップ</h6>
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
@@ -49,7 +49,7 @@
                 </li>
                 <li class="spacer"></li>
                 <li>
-                    <a class="link-anchor" href="#project-case" data-gtm-click=”requirements_anchor_04”>
+                    <a class="link-anchor" href="#project-case" data-gtm-click="requirements_anchor_04">
                         <div>
                             <h6>プロジェクト例</h6>
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
@@ -59,7 +59,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="link-anchor" href="#selection-flow"  data-gtm-click=”requirements_anchor_05”>
+                    <a class="link-anchor" href="#selection-flow" data-gtm-click="requirements_anchor_05">
                         <div>
                             <h6>選考フロー</h6>
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
@@ -208,7 +208,7 @@
                 </h3>
             </div>
             <div class="c-requirements-headingGrid">
-                <img src="{{asset('img/requirements/requirements.jpeg')}}" class="c-requirements-img">
+                <img src="{{asset('img/requirements/requirements.jpg')}}" class="c-requirements-img">
                 <div class="c-headingText">
                     <p>
                         下記一つでも当てはまれば、お気軽にご連絡下さい。
@@ -265,7 +265,7 @@
                 </h3>
             </div>
             <div class="c-requirements-headingGrid">
-                <img src="{{asset('/img/requirements/project_case.jpeg')}}" class="c-requirements-img">
+                <img src="{{asset('/img/requirements/project_case.jpg')}}" class="c-requirements-img">
                 <div class="c-headingText">
                     ・社内DX化に向けた業務自動化開発<br>
                     ・車載ソフトウェアの開発<br>
@@ -280,7 +280,7 @@
         </div>
     </div>
 
-    @include('components.entry_btn',['entryGtm' => {{requirements_entry_01}},'requirementsGtm' => {{requirements_requirements_01}}])
+    @include('components.entry_btn',['entryGtm' => 'requirements_entry_01','requirementsGtm' => 'requirements_requirements_01'])
 
     <div class="c-requirements-wrapper">
         <div id="selection-flow" class="c-requirements-container">
@@ -299,10 +299,10 @@
                     </div>
                     <div class="c-selectionFlow-itemText">
                         <P>
-                            エントリーフォームから<br class="selectionFlow-br"  data-gtm-click=”selectionflow_entry”>ご応募
+                            エントリーフォームから<br class="selectionFlow-br">ご応募
                         </P>
                         <a href="/entry">
-                            <button class="selectionFlow-entryBtm">
+                            <button class="selectionFlow-entryBtm" data-gtm-click="selectionflow_entry">
                                 ENTRY
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none" class="selectionFlow-entryBtm-arrow">
                                     <path d="M7.6155 14.3938C7.32701 14.7085 6.7962 14.4252 6.79932 13.9581L6.88661 1.04944C6.88955 0.611111 7.3686 0.435877 7.66868 0.763277L13.4548 7.07626C13.7064 7.35074 13.7057 7.79596 13.4534 8.06932L7.6155 14.3938Z" fill="#333333" />
@@ -362,7 +362,7 @@
         </div>
     </div>
 
-    @include('components.entry_btn',['entryGtm' => {{requirements_entry_02}},'requirementsGtm' => {{requirements_requirements_02}}])
+    @include('components.entry_btn',['entryGtm' => 'requirements_entry_02','requirementsGtm' => 'requirements_requirements_02'])
 
 </main>
 
