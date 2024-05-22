@@ -19,9 +19,9 @@ Route::get('/member', function () {
             "formerJob" => "フルスタックエンジニア",
             "myJob" => "経営、開発",
             "skill" => "PHP/Javascript/HTML/CSS/VBA/C/C++",
-            "hobby" => "TVを見ることです。バラエティやドラマ関係なくテレビが大好きです",
-            "favoritePoint" => "様々なことに挑戦できる会社があったらいいなと思って創業しました",
-            "message" => "ITで挑戦したい事がある方、何事も最後までやり遂げる自信がある方大歓迎です"
+            "hobby" => "TVを見ることです。バラエティやドラマ関係なくテレビが大好きです。",
+            "favoritePoint" => "様々なことに挑戦できる会社があったらいいなと思って創業しました。",
+            "message" => "ITで挑戦したい事がある方、何事も最後までやり遂げる自信がある方大歓迎です。"
         ],
         [
             "position" => "COO/SALES",
@@ -80,6 +80,17 @@ Route::get('/member', function () {
         ],
         [
             "position" => "ENGINEER",
+            "name" => "Takuya.M",
+            "joinDate" => "2021年3月",
+            "formerJob" => "エンジニア",
+            "myJob" => "Salesforce開発支援",
+            "skill" => "SQL、HTML、CSS、APEX、VMware、AWS、teraterm、Jmeter",
+            "hobby" => "運動、お酒を飲むこと",
+            "favoritePoint" => "自身がやりたいことについて、背中を押してくれる",
+            "message" => "常に好奇心を持ち、積極的に学び続けることで大きく成長できます！一緒に頑張りましょう！"
+        ],
+        [
+            "position" => "ENGINEER",
             "name" => "Keisuke.H",
             "joinDate" => "2021年9月",
             "formerJob" => "施工管理",
@@ -91,28 +102,6 @@ Route::get('/member', function () {
         ],
         [
             "position" => "ENGINEER",
-            "name" => "Takuya.M",
-            "joinDate" => "2021年3月",
-            "formerJob" => "エンジニア",
-            "myJob" => "Salesforce開発支援",
-            "skill" => "SQL、HTML、CSS、APEX、VMware、AWS、teraterm、Jmeter",
-            "hobby" => "運動、お酒を飲むこと",
-            "favoritePoint" => "自身がやりたいことについて、背中を押してくれる／若手社員の教育をしたい",
-            "message" => "常に好奇心を持ち、積極的に学び続けることで大きく成長できます！一緒に頑張りましょう！"
-        ],
-        [
-            "position" => "ENGINEER",
-            "name" => "Masahiro.S",
-            "joinDate" => "2022年6月",
-            "formerJob" => "営業職(農芸温室)",
-            "myJob" => "某外資企業のPower BI開発支援、保守",
-            "skill" => "言語：Java、VBA、GAS、HTML、CSS<br>ツール：salesforce、Power BI",
-            "hobby" => "最近クロスバイクを購入したのでサイクリングにハマっています！",
-            "favoritePoint" => "・Playlistの展望を分け隔てなくお話を伺えること<br>・常日頃からロードマップや技術の相談をさせて頂ける環境",
-            "message" => "Playlistは成長フェーズであるため、経験年数に関係なく挑戦できることが多く存在します。課題解決を通じて技術やマネジメント力などを一緒に高められたらいいなと思います！"
-        ],
-        [
-            "position" => "ENGINEER",
             "name" => "Ryo.W",
             "joinDate" => "2022年2月",
             "formerJob" => "技術職(android端末のSIMカード機能実装、評価)",
@@ -121,6 +110,17 @@ Route::get('/member', function () {
             "hobby" => "体を動かすこと、映画鑑賞、読書",
             "favoritePoint" => "キャリアチェンジを目指し、挑戦できる環境があるところ",
             "message" => "アイデアを形にできるエンジニアを目指して一緒に頑張りましょう！"
+        ],
+        [
+            "position" => "ENGINEER",
+            "name" => "Masahiro.S",
+            "joinDate" => "2022年6月",
+            "formerJob" => "営業職(農芸温室)",
+            "myJob" => "某外資企業のPower BI開発支援、保守",
+            "skill" => "言語：Java、VBA、GAS、HTML、CSS、ツール：salesforce、Power BI",
+            "hobby" => "最近クロスバイクを購入したのでサイクリングにハマっています！",
+            "favoritePoint" => "Playlistの展望を分け隔てなくお話を伺えること、常日頃からロードマップや技術の相談をさせて頂ける環境",
+            "message" => "Playlistは成長フェーズであるため、経験年数に関係なく挑戦できることが多く存在します。課題解決を通じて技術やマネジメント力などを一緒に高められたらいいなと思います！"
         ],
         [
             "position" => "ENGINEER",
@@ -142,7 +142,7 @@ Route::get('/member', function () {
             "skill" => "Java、Cobol、SQL",
             "hobby" => "旅行、アウトドアアクティビティ、お酒",
             "favoritePoint" => "社員一人一人にフォーカスを置き、各人が目指す理想のエンジニア像に向けて支援してくれる",
-            "message" => "未経験の方へ<br>必要なのはスキルや知識でなく、やる気があればそれだけ大丈夫です！<br>Playlistでエンジニアになって一緒に働きましょう。"
+            "message" => "未経験の方へ、必要なのはスキルや知識でなく、やる気があればそれだけ大丈夫です！Playlistでエンジニアになって一緒に働きましょう。"
         ],
         [
             "position" => "ENGINEER",
@@ -172,9 +172,9 @@ Route::get('/member', function () {
             "joinDate" => "2023年4月",
             "formerJob" => "管理職（施工管理）",
             "myJob" => "Salesforce環境構築支援",
-            "skill" => "・Salesforce標準機能（関数の利用や自動化ツール含め）<br>・Apex（Salesforce独自言語、Javaに似てる、学習中）<br>・HTML。CSS（Salesforceでも利用するため学習中）<br>・VBA（一部研修済）",
+            "skill" => "Salesforce標準機能（関数の利用や自動化ツール含め）、Apex（Salesforce独自言語）、HTML、CSS、VBA",
             "hobby" => "映画、漫画",
-            "favoritePoint" => "SES事業だけでなく受託や自社開発の事業が走っていて展望がある",
+            "favoritePoint" => "SES事業だけでなく受託や自社開発の事業が走っていて展望がある。",
             "message" => "いろんな観点で挑戦できる環境がPlaylistにはあると思う。"
         ],
         [
@@ -183,7 +183,7 @@ Route::get('/member', function () {
             "joinDate" => "2023月6月",
             "formerJob" => "宿泊業",
             "myJob" => "某自動車会社でのPMO業務",
-            "skill" => "HTML、CSS、Ruby(Ruby on Rails)、PHP(Laravel)",
+            "skill" => "HTML、CSS、Ruby、PHP(Laravel)",
             "hobby" => "硬式テニス",
             "favoritePoint" => "社員同士の交流場が多く、年代も近いので相談しやすい環境が整っている",
             "message" => "未経験者でも経験者でもやる気があれば応援し、サポートしてくれる頼もしい会社です。一緒にスキルを伸ばしていきましょう！"
@@ -216,9 +216,9 @@ Route::get('/member', function () {
             "joinDate" => "2024年4月",
             "formerJob" => "看護師",
             "myJob" => "某通信会社の商用保守",
-            "skill" => "Ruby on Rails,HTML,CSS,JavaScript",
+            "skill" => "Ruby,HTML,CSS,JavaScript",
             "hobby" => "作曲と絵を描くことが趣味です！",
-            "favoritePoint" => "①1つの会社で開発を行うのではなく、SESで様々な会社の開発に携わり色々なスキルを伸ばせるところ②業界未経験の方の入社してからの感想やフォロー体制などが明示されているところ",
+            "favoritePoint" => "1つの会社で開発を行うのではなく、SESで様々な会社の開発に携わり色々なスキルを伸ばせるところ。業界未経験の方の入社してからの感想やフォロー体制などが明示されているところ。",
             "message" => "未経験でSESを目指す方はぜひPlaylistへ！"
         ]
     ];

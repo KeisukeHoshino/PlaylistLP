@@ -18,7 +18,6 @@ const modalOpen = () => {
     // モダールを閉じる
     modalCloseBtns.forEach((modalCloseBtn) => {
         modalCloseBtn.addEventListener('click', () => {
-            console.log(modalCloseBtn)
             const modalTargetPanel = modalCloseBtn.closest('.js-modalPanel')
             modalTargetPanel.classList.remove('is-show')
             document.body.style.overflow = 'auto'

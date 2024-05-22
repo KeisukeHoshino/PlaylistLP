@@ -281,6 +281,7 @@
   .member-position {
     margin-top: 10px;
     color: variables.$color-black-light;
+    line-height: 1.2;
 
     @media (639px >=width) {
       font-size: 10px;
@@ -292,6 +293,8 @@
   }
 
   .member-name {
+    line-height: 1.5;
+
     @media (639px >=width) {
       font-size: 14px;
     }
@@ -452,11 +455,19 @@
         @media (639px >=width) {
           width: 82px;
         }
+
+        @media (640px <=width) {
+          width: 150px;
+        }
       }
 
       td {
         @media (639px >=width) {
           width: calc(100% - 82px);
+        }
+
+        @media (640px <=width) {
+          width: calc(100% - 150px);
         }
       }
     }
@@ -537,7 +548,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 
     .interview-list {
       margin-bottom: 30px;
@@ -624,6 +635,8 @@
       position: absolute;
       inset: 90px auto auto 50%;
       translate: -50% -50%;
+      width: 100%;
+      text-align: center;
     }
   }
 }
@@ -711,6 +724,7 @@
       display: grid;
       grid-template-rows: subgrid;
       grid-row: span 2;
+      gap: 30px;
     }
 
     &+.career-path-item {

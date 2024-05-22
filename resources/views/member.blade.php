@@ -73,8 +73,8 @@
                 <li class="member-item">
                     <button class="member-btn js-modalOpen" data-modal-target="{{ $id }}"  data-gtm-click="member_{{ $id }}" type="button" aria-label="{{ $member['name'] }}の詳細情報を見る">
                         <span class="member-img">
-                            <img src="{{ asset('img/member/portrait/' . $id . '01.jpg') }}" alt="{{ $member['name'] }}">
-                            <img src="{{ asset('img/member/portrait/' . $id . '02.jpg') }}" alt="{{ $member['name'] }}">
+                            <img src="{{ asset('img/member/portrait/' . $id . '01.jpg') }}" alt="{{ $member['name'] }}の写真">
+                            <img src="{{ asset('img/member/portrait/' . $id . '02.jpg') }}" alt="{{ $member['name'] }}の写真">
                         </span>
                         <span class="member-position">{{ $member['position'] }}</span>
                         <span class="member-name">{{ $member['name'] }}</span>
@@ -98,7 +98,7 @@
                             <div class="member-modal-panel-contents">
                                 <div class="member-modal-portrait">
                                     <div class="member-modal-img">
-                                        <img src="{{ asset('img/member/portrait/' . $id . '02.jpg') }}" alt="{{ $member['name'] }}">
+                                        <img src="{{ asset('img/member/portrait/' . $id . '02.jpg') }}" alt="{{ $member['name'] }}の写真">
                                     </div>
                                     <p class="member-position">{{ $member['position'] }}</p>
                                     <p class="member-name">{{ $member['name'] }}</p>
@@ -156,7 +156,7 @@
             <li class="interview-list">
                 <a href="https://www.wantedly.com/companies/Playlist0623/post_articles/505474" target="_blank"  data-gtm-click="interview_01">
                     <div class="interview-list_img">
-                        <img src="{{asset('img/member/interview_kigure.jpeg')}}" alt="木暮暁のインタビュー">
+                        <img src="{{asset('img/member/interview_kigure.jpeg')}}" alt="記事サムネイル">
                     </div>
                     <p class="interview-list_date">
                         <time datetime="2023-05-09">2023/05/09</time>
@@ -169,7 +169,7 @@
             <li class="interview-list">
                 <a href="https://www.wantedly.com/companies/Playlist0623/post_articles/501617" target="_blank" data-gtm-click="interview_02">
                     <div class="interview-list_img">
-                        <img src="{{asset('img/member/interview_hasegawa.jpeg')}}" alt="長谷川太一のインタビュー">
+                        <img src="{{asset('img/member/interview_hasegawa.jpeg')}}" alt="記事サムネイル">
                     </div>
                     <p class="interview-list_date">
                         <time datetime="2023-04-27">2023/04/27</time>
@@ -182,7 +182,7 @@
             <li class="interview-list">
                 <a href="https://www.wantedly.com/companies/Playlist0623/post_articles/495705" target="_blank" data-gtm-click="interview_03">
                     <div class="interview-list_img">
-                        <img src="{{asset('img/member/interview_yoshimura.jpeg')}}" alt="吉村優太のインタビュー">
+                        <img src="{{asset('img/member/interview_yoshimura.jpeg')}}"  alt="記事サムネイル">
                     </div>
                     <p class="interview-list_date">
                         <time datetime="2023-04-20">2023/04/20</time>
@@ -195,7 +195,7 @@
             <li class="interview-list">
                 <a href="https://www.wantedly.com/companies/Playlist0623/post_articles/498210" target="_blank" data-gtm-click="interview_04">
                     <div class="interview-list_img">
-                        <img src="{{asset('img/member/interview_hiruma.jpeg')}}" alt="昼間みなみのインタビュー">
+                        <img src="{{asset('img/member/interview_hiruma.jpeg')}}" alt="記事サムネイル">
                     </div>
                     <p class="interview-list_date">
                         <time datetime="2023-04-13">2023/04/13</time>
@@ -241,7 +241,7 @@
             {{-- 1人目（星野さん） --}}
             <div class="career-path-item">
                 <div class="career-path-img u-member-only-sp">
-                    <img src="{{asset('img/member/careerpath-keisukeh.jpg')}}">
+                    <img src="{{asset('img/member/careerpath-keisukeh.jpg')}}" alt="Keisuke.Hの写真">
                 </div>
                 <div class="career-path-intro">
                     <p class="career-path-name">Keisuke.H（26歳）</p>
@@ -253,7 +253,7 @@
                 </div>
                 <div class="career-path-pc-column">
                     <div class="career-path-img u-member-only-pc">
-                        <img src="{{asset('img/member/careerpath-keisukeh.jpg')}}">
+                        <img src="{{asset('img/member/careerpath-keisukeh.jpg')}}" alt="Keisuke.Hの写真">
                     </div>
                     <ol class="career-path-timeline">
                         <li class="career-path-timeline-item">
@@ -289,7 +289,7 @@
             {{-- 2人目 (渡部さん) --}}
             <div class="career-path-item">
                 <div class="career-path-img u-member-only-sp">
-                    <img src="{{asset('img/member/careerpath-ryow.jpg')}}">
+                    <img src="{{asset('img/member/careerpath-ryow.jpg')}}" alt="Ryo.Wの写真">
                 </div>
                 <div class="career-path-intro">
                     <p class="career-path-name">Ryo.W（27歳）</p>
@@ -302,7 +302,7 @@
                 </div>
                 <div class="career-path-pc-column">
                     <div class="career-path-img u-member-only-pc">
-                        <img src="{{asset('img/member/careerpath-ryow.jpg')}}">
+                        <img src="{{asset('img/member/careerpath-ryow.jpg')}}" alt="Ryo.Wの写真">
                     </div>
                     <ol class="career-path-timeline">
                         <li class="career-path-timeline-item">
@@ -328,7 +328,7 @@
             {{-- 3人目 (上田さん) --}}
             <div class="career-path-item">
                 <div class="career-path-img u-member-only-sp">
-                    <img src="{{asset('img/member/careerpath-maou.jpg')}}">
+                    <img src="{{asset('img/member/careerpath-maou.jpg')}}" alt="Mao.Uの写真">
                 </div>
                 <div class="career-path-intro">
                     <p class="career-path-name">Mao.U（25歳）</p>
@@ -341,7 +341,7 @@
                 </div>
                 <div class="career-path-pc-column">
                     <div class="career-path-img u-member-only-pc">
-                        <img src="{{asset('img/member/careerpath-maou.jpg')}}">
+                        <img src="{{asset('img/member/careerpath-maou.jpg')}}" alt="Mao.Uの写真">
                     </div>
                     <ol class="career-path-timeline">
                         <li class="career-path-timeline-item">
@@ -365,7 +365,7 @@
             {{-- 4人目 (藤原さん) --}}
             <div class="career-path-item">
                 <div class="career-path-img u-member-only-sp">
-                    <img src="{{asset('img/member/careerpath-kaedef.jpg')}}">
+                    <img src="{{asset('img/member/careerpath-kaedef.jpg')}}" alt="Kaede.Fの写真">
                 </div>
                 <div class="career-path-intro">
                     <p class="career-path-name">Kaede.F（25歳）</p>
@@ -377,7 +377,7 @@
                 </div>
                 <div class="career-path-pc-column">
                     <div class="career-path-img u-member-only-pc">
-                        <img src="{{asset('img/member/careerpath-kaedef.jpg')}}">
+                        <img src="{{asset('img/member/careerpath-kaedef.jpg')}}" alt="Kaede.Fの写真">
                     </div>
                     <ol class="career-path-timeline">
                         <li class="career-path-timeline-item">
