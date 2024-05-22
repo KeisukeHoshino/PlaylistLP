@@ -16,7 +16,7 @@
     <div class="title-anchor">
         <ul>
             <li>
-                <a class="link-anchor" href="#member">
+                <a class="link-anchor" href="#member" data-gtm-click="introduction_anchor_01">
                     <div>
                         <h3>メンバー</h3>
                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
@@ -26,7 +26,7 @@
                 </a>
             </li>
             <li>
-                <a class="link-anchor" href="#interview">
+                <a class="link-anchor" href="#interview" data-gtm-click="introduction_anchor_02">
                     <div>
                         <h3>社員インタビュー</h3>
                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
@@ -38,7 +38,7 @@
             </li>
 
             <li>
-                <a class="link-anchor" href="#career-path">
+                <a class="link-anchor" href="#career-path" data-gtm-click="introduction_anchor_03">
                     <div>
                         <h3>キャリアパス</h3>
                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
@@ -71,7 +71,7 @@
                     $id = strtolower(str_replace('.', '', $member['name']));
                 @endphp
                 <li class="member-item">
-                    <button class="member-btn js-modalOpen" data-modal-target="{{ $id }}" type="button" aria-label="{{ $member['name'] }}の詳細情報を見る">
+                    <button class="member-btn js-modalOpen" data-modal-target="{{ $id }}"  data-gtm-click="member_{{ $id }}" type="button" aria-label="{{ $member['name'] }}の詳細情報を見る">
                         <span class="member-img">
                             <img src="{{ asset('img/member/portrait/' . $id . '01.jpg') }}" alt="{{ $member['name'] }}">
                             <img src="{{ asset('img/member/portrait/' . $id . '02.jpg') }}" alt="{{ $member['name'] }}">
@@ -154,7 +154,7 @@
         </h3>
         <ul>
             <li class="interview-list">
-                <a href="https://www.wantedly.com/companies/Playlist0623/post_articles/505474" target="_blank">
+                <a href="https://www.wantedly.com/companies/Playlist0623/post_articles/505474" target="_blank"  data-gtm-click="interview_01">
                     <div class="interview-list_img">
                         <img src="{{asset('img/member/interview_kigure.jpeg')}}" alt="木暮暁のインタビュー">
                     </div>
@@ -167,7 +167,7 @@
                 </a>
             </li>
             <li class="interview-list">
-                <a href="https://www.wantedly.com/companies/Playlist0623/post_articles/501617" target="_blank">
+                <a href="https://www.wantedly.com/companies/Playlist0623/post_articles/501617" target="_blank" data-gtm-click="interview_02">
                     <div class="interview-list_img">
                         <img src="{{asset('img/member/interview_hasegawa.jpeg')}}" alt="長谷川太一のインタビュー">
                     </div>
@@ -180,7 +180,7 @@
                 </a>
             </li>
             <li class="interview-list">
-                <a href="https://www.wantedly.com/companies/Playlist0623/post_articles/495705" target="_blank">
+                <a href="https://www.wantedly.com/companies/Playlist0623/post_articles/495705" target="_blank" data-gtm-click="interview_03">
                     <div class="interview-list_img">
                         <img src="{{asset('img/member/interview_yoshimura.jpeg')}}" alt="吉村優太のインタビュー">
                     </div>
@@ -193,7 +193,7 @@
                 </a>
             </li>
             <li class="interview-list">
-                <a href="https://www.wantedly.com/companies/Playlist0623/post_articles/498210" target="_blank">
+                <a href="https://www.wantedly.com/companies/Playlist0623/post_articles/498210" target="_blank" data-gtm-click="interview_04">
                     <div class="interview-list_img">
                         <img src="{{asset('img/member/interview_hiruma.jpeg')}}" alt="昼間みなみのインタビュー">
                     </div>
@@ -207,7 +207,7 @@
             </li>
         </ul>
         <div class="interview-seemore">
-            <a href="https://www.wantedly.com/companies/Playlist0623/stories" target="_blank" class="interview-seemore_btn">
+            <a href="https://www.wantedly.com/companies/Playlist0623/stories" target="_blank" class="interview-seemore_btn" data-gtm-click="interview_more">
                 もっと見る
                 <svg class="interview-seemore_jump" xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
                     <rect x="1.25" y="3.75" width="10.5" height="10.5" rx="1.25" stroke="#333333" stroke-width="1.5" />
