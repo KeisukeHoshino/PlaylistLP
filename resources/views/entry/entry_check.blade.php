@@ -76,7 +76,7 @@
             </li>
           </ul>
           <div id="entryform-submit-btn">
-            <button class="entryform-submit-btn" type="submit" data-gtm-click=”entry_submit”>
+            <button class="entryform-submit-btn" type="submit" data-gtm-click="entry_submit">
               送信
               <svg class="entry-btn_arrow" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
                 <path d="M8.2458 14.394C7.93621 14.7087 7.36656 14.4254 7.36991 13.9583L7.46358 1.04965C7.46674 0.611324 7.98084 0.43609 8.30287 0.76349L14.5124 7.07647C14.7823 7.35096 14.7817 7.79618 14.5108 8.06954L8.2458 14.394Z" fill="#333333" />
