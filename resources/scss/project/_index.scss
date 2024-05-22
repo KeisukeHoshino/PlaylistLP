@@ -528,17 +528,18 @@
 .p-top-data {
   padding: 100px 0;
 
+  &_column {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 19px;
+  }
+
   &-pc {
     display: none;
   }
 
-  &_item {
-    margin-bottom: 19px;
-  }
-
-  &_flexitems {
-    display: flex;
-    gap: 19px;
+  &_item[data-card-size='half'] {
+    width: calc((100% - 19px) / 2);
   }
 }
 
@@ -552,25 +553,18 @@
       display: none;
     }
 
-    .p-top-data-pc {
-      display: block;
+    &-pc {
+      display: flex;
+      gap: 30px;
 
       &_column {
         display: flex;
+        flex-wrap: wrap;
         gap: 30px;
-
-        li {
-          margin-bottom: 30px;
-        }
       }
 
-      &_container {
+      &_item[data-card-size='half'] {
         width: calc((100% - 30px) / 2);
-
-        &_flexitems {
-          display: flex;
-          gap: 30px;
-        }
       }
     }
   }
