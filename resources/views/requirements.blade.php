@@ -298,19 +298,17 @@
                         <p>STEP<span>1</span></p>
                     </div>
                     <div class="c-selectionFlow-itemText">
-                        <P>
-                            エントリーフォームから<br class="selectionFlow-br">ご応募
-                        </P>
-                        <a href="/entry">
-                            <button class="selectionFlow-entryBtm" data-gtm-click="selectionflow_entry">
-                                ENTRY
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none" class="selectionFlow-entryBtm-arrow">
-                                    <path d="M7.6155 14.3938C7.32701 14.7085 6.7962 14.4252 6.79932 13.9581L6.88661 1.04944C6.88955 0.611111 7.3686 0.435877 7.66868 0.763277L13.4548 7.07626C13.7064 7.35074 13.7057 7.79596 13.4534 8.06932L7.6155 14.3938Z" fill="#333333" />
-                                </svg>
-                            </button>
+                        <p class="c-selectionFlow-itemHeading">
+                            エントリーフォームから<br class="u-requirements-only-pc">ご応募
+                        </p>
+                        <a href="/entry" class="selectionFlow-entryBtn" data-gtm-click="selectionflow_entry">
+                            ENTRY
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none" class="selectionFlow-entryBtm-arrow">
+                                <path d="M7.6155 14.3938C7.32701 14.7085 6.7962 14.4252 6.79932 13.9581L6.88661 1.04944C6.88955 0.611111 7.3686 0.435877 7.66868 0.763277L13.4548 7.07626C13.7064 7.35074 13.7057 7.79596 13.4534 8.06932L7.6155 14.3938Z" fill="#333333" />
+                            </svg>
                         </a>
-                        <p>
-                            3営業日以内にご連絡させて頂きます。
+                        <p class="c-selectionFlow-itemDesc">
+                            3営業日以内に<br class="u-requirements-only-pc">ご連絡させて頂きます。
                         </p>
                     </div>
                 </div>
@@ -322,10 +320,10 @@
                         <p>STEP<span>2</span></p>
                     </div>
                     <div class="c-selectionFlow-itemText">
-                        <P>
+                        <p class="c-selectionFlow-itemHeading">
                             カジュアル面談
-                        </P>
-                        <p>
+                        </p>
+                        <p class="c-selectionFlow-itemDesc">
                             選考前に会社の社風や働き方を知ってもらうために、お話する機会を設けています。
                             その後、希望者には面接に進んで頂きます。
                         </p>
@@ -339,12 +337,12 @@
                         <p>STEP<span>3</span></p>
                     </div>
                     <div class="c-selectionFlow-itemText">
-                        <P>
+                        <p class="c-selectionFlow-itemHeading">
                             面接1〜2回
-                        </P>
-                        <p>
+                        </p>
+                        <p class="c-selectionFlow-itemDesc">
                             基本的には一次面接のみですが、稀に二次面接が必要となる場合がございます。 </p>
-                        </P>
+                        </p>
                     </div>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12" fill="none" class="c-selectionFlow-arrow">
@@ -354,8 +352,8 @@
                     <div class="c-selectionFlow-itemNum">
                         <p>STEP<span>4</span></p>
                     </div>
-                    <div class="c-selectionFlow-itemText selectionFlow-getOffer">
-                        <p>内定</p>
+                    <div class="c-selectionFlow-itemText">
+                        <p class="c-selectionFlow-itemHeading">内定</p>
                     </div>
                 </div>
             </div>
