@@ -53,7 +53,6 @@
 
       .subMenu--display {
         max-height: 100vh;
-        padding: 20px auto;
         opacity: 1;
         transition:
           padding 0.4s,
@@ -239,7 +238,6 @@
 
           &.l-gnav__menu-item {
             padding: 0;
-            margin-bottom: 15px;
             border-bottom: 1px solid #f4f4f4;
 
             @media (960px <= width) {
@@ -273,7 +271,7 @@
             &::before,
             &::after {
               position: absolute;
-              top: 3.5em;
+              top: 50%;
               right: 5%;
               width: 17px;
               height: 2px;
@@ -317,6 +315,7 @@
           padding: 12.5px 5px;
           font-size: 1rem;
           font-weight: 600;
+          color: variables.$color-black-light;
           text-decoration: none;
 
           @media (960px <= width) {
@@ -368,7 +367,7 @@
   position: fixed;
   display: flex;
   width: 90%;
-  margin-top: 15px;
+  margin-top: 25px;
   text-align: center;
   transform: translateX(6%);
 
