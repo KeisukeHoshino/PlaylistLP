@@ -166,11 +166,12 @@
     // フレキシブルにしてロゴとナビ要素を横並び下部でそろえる
     .l-header__link {
       display: flex;
-      gap: 2vw;
-      align-items: flex-end;
+      gap: 10px;
+      align-items: center;
       width: 20em;
 
       @media (960px <= width) {
+        gap: 20px;
         width: max-content;
       }
     }
@@ -254,8 +255,8 @@
           }
 
           &.l-gnav__menu-heading {
-            margin: 0 auto;
             padding: 8px 0;
+            margin: 0 auto;
 
             &:not(:first-child) {
               line-height: 2em;
@@ -343,10 +344,10 @@
 
           &::before {
             position: absolute;
-            left: 0;
             top: 58%;
-            transform: translateY(-50%);
+            left: 0;
             content: url(/public/img/layout/icon_arrow-right.svg);
+            transform: translateY(-50%);
           }
         }
 
@@ -367,6 +368,7 @@
   position: fixed;
   display: flex;
   width: 90%;
+  margin-top: 15px;
   text-align: center;
   transform: translateX(6%);
 
@@ -376,6 +378,7 @@
     padding: 17px 35px;
     font-family: variables.$base-font-English;
     font-size: 18px;
+    line-height: 1.5;
     background-color: variables.$color-white;
     border-radius: 9999px;
 
@@ -434,6 +437,7 @@
   @media (960px <= width) {
     position: static;
     width: 30%;
+    max-width: 220px;
     margin: 0;
     translate: 0;
   }
