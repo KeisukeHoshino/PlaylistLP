@@ -566,16 +566,17 @@
 
     &-pc {
       display: flex;
-      gap: 30px;
+      gap: 40px;
 
       &_column {
         display: flex;
         flex-wrap: wrap;
-        gap: 30px;
+        gap: 40px;
+        width: calc((100% - 40px) / 2);
       }
 
       &_item[data-card-size='half'] {
-        width: calc((100% - 30px) / 2);
+        width: calc((100% - 40px) / 2);
       }
     }
   }
