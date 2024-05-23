@@ -36,7 +36,6 @@
 
     .subMenu--display {
       max-height: 0;
-      padding: 0 20px;
       overflow: hidden;
       opacity: 0;
       transition:
@@ -54,7 +53,7 @@
 
       .subMenu--display {
         max-height: 100vh;
-        padding: 20px auto;
+        margin-bottom: 15px;
         opacity: 1;
         transition:
           padding 0.4s,
@@ -105,6 +104,10 @@
           display: block;
           align-items: center;
           opacity: 1;
+        }
+
+        & .l-gnav__megamenu a span {
+          padding-left: 33px;
         }
 
         @media (960px <= width) {
@@ -163,11 +166,12 @@
     // フレキシブルにしてロゴとナビ要素を横並び下部でそろえる
     .l-header__link {
       display: flex;
-      gap: 2vw;
-      align-items: flex-end;
+      gap: 10px;
+      align-items: center;
       width: 20em;
 
       @media (960px <= width) {
+        gap: 20px;
         width: max-content;
       }
     }
@@ -235,6 +239,12 @@
 
           &.l-gnav__menu-item {
             padding: 0;
+            border-bottom: 1px solid #f4f4f4;
+
+            @media (960px <= width) {
+              padding-bottom: 0;
+              border-bottom: none;
+            }
 
             & > div {
               @media (960px <= width) {
@@ -244,6 +254,7 @@
           }
 
           &.l-gnav__menu-heading {
+            padding: 8px 0;
             margin: 0 auto;
 
             &:not(:first-child) {
@@ -261,7 +272,7 @@
             &::before,
             &::after {
               position: absolute;
-              top: 3.5em;
+              top: 50%;
               right: 5%;
               width: 17px;
               height: 2px;
@@ -275,6 +286,8 @@
             }
 
             @media (960px <= width) {
+              padding: 8px 20px;
+
               &::before,
               &::after {
                 background: variables.$color-white;
@@ -290,19 +303,6 @@
           @media (960px <= width) {
             display: inline-block;
             width: max-content;
-
-            &.l-gnav__menu-heading > a {
-              padding-bottom: 55px;
-            }
-          }
-
-          @media (960px <= width) {
-            display: inline-block;
-            width: max-content;
-
-            &.l-gnav__menu-heading > a {
-              padding-bottom: 55px;
-            }
           }
         }
 
@@ -313,13 +313,14 @@
 
       .l-gnav__menu {
         a {
-          padding: 20px 5px;
+          padding: 12.5px 5px;
           font-size: 1rem;
           font-weight: 600;
+          color: variables.$color-black-light;
           text-decoration: none;
 
           @media (960px <= width) {
-            font-size: 1rem;
+            padding: 15px 5px;
             text-align: left;
           }
         }
@@ -338,10 +339,15 @@
         opacity: 0;
 
         & a {
+          position: relative;
+          padding-left: 2em;
+
           &::before {
-            margin-right: 10px;
-            vertical-align: middle;
+            position: absolute;
+            top: 58%;
+            left: 0;
             content: url(/public/img/layout/icon_arrow-right.svg);
+            transform: translateY(-50%);
           }
         }
 
@@ -360,20 +366,25 @@
 
 .c-gnav-btn__entry {
   position: fixed;
-  left: 50%;
   display: flex;
-  justify-content: center;
-  margin-top: 36px;
-  translate: -50% -100%;
+  width: 90%;
+  margin-top: 25px;
+  text-align: center;
+  transform: translateX(6%);
 
   &--grad {
     position: relative;
-    width: 150px;
-    padding: 6px 40px;
+    width: 100%;
+    padding: 17px 35px;
     font-family: variables.$base-font-English;
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 1.5;
     background-color: variables.$color-white;
     border-radius: 9999px;
+
+    @media (960px <= width) {
+      padding: 6px 35px;
+    }
   }
 
   &:hover {
@@ -407,7 +418,7 @@
 
   &::after {
     position: absolute;
-    top: 25%;
+    top: 35%;
     right: 24px;
     width: 10px;
     height: 10px;
@@ -417,12 +428,18 @@
     background-size: contain;
     transition: 0.3s ease-in-out;
     transform: rotate(-135deg) translateY(-50%);
+
+    @media (960px <= width) {
+      top: 29%;
+    }
   }
 
   @media (960px <= width) {
     position: static;
+    width: 30%;
+    max-width: 220px;
     margin: 0;
-    translate:0;
+    translate: 0;
   }
 }
 
