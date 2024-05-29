@@ -96,46 +96,48 @@
                         <div class="member-modal-panel-inner">
                             <button class="member-modal-close js-modalClose" type="button" aria-label="モーダルを閉じる"></button>
                             <div class="member-modal-panel-contents">
-                                <div class="member-modal-portrait">
-                                    <div class="member-modal-img">
-                                        <img src="{{ asset('img/member/portrait/' . $id . '02.jpg') }}" alt="{{ $member['name'] }}の写真">
+                                <div class="member-modal-panel-contents-inner">
+                                    <div class="member-modal-portrait">
+                                        <div class="member-modal-img">
+                                            <img src="{{ asset('img/member/portrait/' . $id . '02.jpg') }}" alt="{{ $member['name'] }}の写真">
+                                        </div>
+                                        <p class="member-position">{{ $member['position'] }}</p>
+                                        <p class="member-name">{{ $member['name'] }}</p>
                                     </div>
-                                    <p class="member-position">{{ $member['position'] }}</p>
-                                    <p class="member-name">{{ $member['name'] }}</p>
+                                    <div class="member-modal-detail">
+                                        <table class="member-modal-detail-table">
+                                            <tr>
+                                                <th>入社時期</th>
+                                                <td>{{ $member['joinDate'] }}</td>
+                                            </tr>
+                                            <tr>
+                                                <th>前職</th>
+                                                <td>{{ $member['formerJob'] }}</td>
+                                            </tr>
+                                            <tr>
+                                                <th>私の仕事</th>
+                                                <td>{{ $member['myJob'] }}</td>
+                                            </tr>
+                                            <tr>
+                                                <th>スキル</th>
+                                                <td>{{ $member['skill'] }}</td>
+                                            </tr>
+                                            <tr>
+                                                <th>好きなこと</th>
+                                                <td>{{ $member['hobby'] }}</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Playlistの<br>お気に入り<br class="u-member-only-sp">ポイント</th>
+                                                <td>{{ $member['favoritePoint'] }}</td>
+                                            </tr>
+                                            <tr>
+                                                <th>求職者への<br class="u-member-only-sp">一言</th>
+                                                <td>{{ $member['message'] }}</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <button class="member-modal-close-btn js-modalClose" type="button">閉じる</button>
                                 </div>
-                                <div class="member-modal-detail">
-                                    <table class="member-modal-detail-table">
-                                        <tr>
-                                            <th>入社時期</th>
-                                            <td>{{ $member['joinDate'] }}</td>
-                                        </tr>
-                                        <tr>
-                                            <th>前職</th>
-                                            <td>{{ $member['formerJob'] }}</td>
-                                        </tr>
-                                        <tr>
-                                            <th>私の仕事</th>
-                                            <td>{{ $member['myJob'] }}</td>
-                                        </tr>
-                                        <tr>
-                                            <th>スキル</th>
-                                            <td>{{ $member['skill'] }}</td>
-                                        </tr>
-                                        <tr>
-                                            <th>好きなこと</th>
-                                            <td>{{ $member['hobby'] }}</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Playlistの<br>お気に入り<br class="u-member-only-sp">ポイント</th>
-                                            <td>{{ $member['favoritePoint'] }}</td>
-                                        </tr>
-                                        <tr>
-                                            <th>求職者への<br class="u-member-only-sp">一言</th>
-                                            <td>{{ $member['message'] }}</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <button class="member-modal-close-btn js-modalClose" type="button">閉じる</button>
                             </div>
                         </div>
                     </div>
