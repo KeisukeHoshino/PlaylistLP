@@ -391,7 +391,9 @@
     @media (639px >=width) {
       padding: 30px 18px;
     }
+  }
 
+  .member-modal-panel-contents-inner {
     @media (640px <=width) {
       display: flex;
       flex-wrap: wrap;
