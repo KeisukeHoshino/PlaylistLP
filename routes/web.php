@@ -76,7 +76,7 @@ Route::get('/member', function () {
             "skill" => "Java、HTML、CSS、JavaScript、VBA",
             "hobby" => "オンラインゲーム",
             "favoritePoint" => "会社全体で一人一人の進路を応援してくれる",
-            "message" => "フレンドリーな仲間たちと一緒に成長できる会社です！一緒に成長してきませんか！"
+            "message" => "フレンドリーな仲間たちと一緒に成長できる会社です！一緒に成長していきませんか！"
         ],
         [
             "position" => "ENGINEER",
