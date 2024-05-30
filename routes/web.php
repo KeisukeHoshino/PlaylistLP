@@ -18,7 +18,7 @@ Route::get('/member', function () {
             "joinDate" => "2020年06月",
             "formerJob" => "フルスタックエンジニア",
             "myJob" => "経営、開発",
-            "skill" => "PHP、Javascript、HTML、CSS、VBA、C、C++",
+            "skill" => "PHP、JavaScript、HTML、CSS、VBA、C、C++",
             "hobby" => "TVを見ることです。バラエティやドラマ関係なくテレビが大好きです。",
             "favoritePoint" => "様々なことに挑戦できる会社があったらいいなと思って創業しました。",
             "message" => "ITで挑戦したい事がある方、何事も最後までやり遂げる自信がある方大歓迎です。"
@@ -172,7 +172,7 @@ Route::get('/member', function () {
             "joinDate" => "2023年4月",
             "formerJob" => "管理職（施工管理）",
             "myJob" => "Salesforce環境構築支援",
-            "skill" => "Salesforce標準機能（関数の利用や自動化ツール含め）、Apex（Salesforce独自言語）、HTML、CSS、VBA",
+            "skill" => "Salesforce標準機能（関数の利用や自動化ツール含め）、Apex、HTML、CSS、VBA",
             "hobby" => "映画、漫画",
             "favoritePoint" => "SES事業だけでなく受託や自社開発の事業が走っていて展望がある。",
             "message" => "いろんな観点で挑戦できる環境がPlaylistにはあると思う。"
