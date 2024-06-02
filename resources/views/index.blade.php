@@ -377,7 +377,7 @@
       <dl class="p-top-faq_list js-accordion">
         <div class="p-top-faq_item">
           <dt data-gtm-click="faq_01"><span>Q.</span>IT業界の経験は必要ですか？</dt>
-          <dd><span>A.</span>IT未経験でも今までの経験やスキルを活かしたプロジェクトで活躍していただくことが可能です。</dd>
+          <dd><span>A.</span>IT業界未経験でも今までの経験やスキルを活かしたプロジェクトで活躍していただくことが可能です。</dd>
         </div>
         <div class="p-top-faq_item">
           <dt data-gtm-click="faq_02"><span>Q.</span>面接場所について教えて下さい。</dt>
