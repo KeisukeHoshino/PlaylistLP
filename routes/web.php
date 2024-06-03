@@ -57,17 +57,6 @@ Route::get('/member', function () {
             "message" => "一緒にPlaylistで頑張っていける人、募集中です！"
         ],
         [
-            "position" => "SALES",
-            "name" => "Yuta.M",
-            "joinDate" => "2020年10月",
-            "formerJob" => "技術職",
-            "myJob" => "営業対応",
-            "skill" => "HTML、CSS、JavaScript、VBA、WinActor",
-            "hobby" => "野球、アニメ",
-            "favoritePoint" => "キャリアアップや方向性について社内の方とも一緒に考えていただける環境がある。",
-            "message" => "未経験から入社し、現場の経験や研修を得て少しずつスキルアップできたと実感しています！一度、Playlistでキャリアアップを目指してみませんか！"
-        ],
-        [
             "position" => "ENGINEER",
             "name" => "Akira.M",
             "joinDate" => "2020年8月",
