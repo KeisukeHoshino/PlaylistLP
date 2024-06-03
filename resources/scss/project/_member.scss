@@ -165,7 +165,6 @@
     }
 
     li {
-      flex-grow: 1;
       width: 42.66%;
       margin-bottom: 5px;
 
@@ -190,24 +189,32 @@
   }
 
   .member-list {
-    .andmore {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      p {
-        font-size: 16px;
-        font-family: variables.$base-font-English;
-        letter-spacing: 0.64px;
-        color: variables.$color-black-light;
-      }
-    }
-
     .member-item {
       margin-bottom: 0;
+      width: calc((100% - 20px) / 2);
 
       @media (640px <=width) {
         width: calc((100% - 30px * 4) / 5);
+      }
+
+      &.andmore {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+
+        @media (640px <=width) {
+          width: calc((100% - 30px * 4) / 5);
+          margin-top: 0;
+        }
+
+        p {
+          font-size: 16px;
+          font-family: variables.$base-font-English;
+          letter-spacing: 0.64px;
+          color: variables.$color-black-light;
+        }
       }
     }
 
