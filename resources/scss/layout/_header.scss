@@ -279,6 +279,10 @@
               content: '';
               border-radius: 9999px;
               transition: 0.3s ease-in-out;
+
+              @media (960px <=width) {
+                display: none;
+              }
             }
 
             &::after {
