@@ -1,16 +1,31 @@
 // 募集要項ページについて
-@use '../global/variables' as variables;
+@use '../global/variables'as variables;
+
+// ---------------------------------------
+// utility
+// ---------------------------------------
+.u-requirements-only-sp {
+  @media (640px <=width) {
+    display: none;
+  }
+}
+
+.u-requirements-only-pc {
+  @media (639px >=width) {
+    display: none;
+  }
+}
 
 .requirements-title {
   width: 90.66%;
-  padding: 120px 0 70px;
+  padding: 60px 0 70px;
   margin: 0 auto;
 
-  @media (640px <= width) {
+  @media (640px <=width) {
     gap: 24px;
     width: 100%;
     max-width: 1150px;
-    padding: 200px 0 100px;
+    padding: 113px 0 100px;
   }
 
   h1 {
@@ -22,7 +37,7 @@
     text-align: center;
     letter-spacing: 1.44px;
 
-    @media (640px <= width) {
+    @media (640px <=width) {
       font-size: 64px;
       letter-spacing: 2.56px;
     }
@@ -34,7 +49,7 @@
   color: variables.$color-black;
   text-align: center;
 
-  @media (640px <= width) {
+  @media (640px <=width) {
     margin-top: 24px;
     font-size: 16px;
     line-height: 24px;
@@ -48,7 +63,7 @@
   padding-bottom: 70px;
   margin: 0 auto;
 
-  @media (640px <= width) {
+  @media (640px <=width) {
     width: 100%;
     max-width: 1150px;
     padding: 0 25px;
@@ -60,14 +75,14 @@
     flex-wrap: wrap;
     gap: 16px 20px;
 
-    @media (640px <= width) {
+    @media (640px <=width) {
       flex-wrap: wrap;
       gap: 10px 40px;
       justify-content: center;
       margin-left: 39px;
     }
 
-    @media (960px <= width) {
+    @media (960px <=width) {
       flex-wrap: nowrap;
       gap: 40px;
       justify-content: center;
@@ -80,13 +95,13 @@
       width: calc((100% - 20px) / 2);
       border-bottom: 1px solid variables.$color-black;
 
-      @media (640px <= width) {
+      @media (640px <=width) {
         justify-content: center;
         width: auto;
         border: none;
       }
 
-      @media (960px <= width) {
+      @media (960px <=width) {
         justify-content: center;
         width: auto;
       }
@@ -95,7 +110,7 @@
         margin: 0;
         font-size: 12px;
 
-        @media (640px <= width) {
+        @media (640px <=width) {
           font-size: 14px;
         }
       }
@@ -107,7 +122,7 @@
         width: 100%;
         height: 30px;
 
-        @media (640px <= width) {
+        @media (640px <=width) {
           gap: 15px;
           width: auto;
           border-bottom: 1px solid variables.$color-black;
@@ -118,22 +133,22 @@
     .spacer {
       display: none;
 
-      @media (640px <= width) {
+      @media (640px <=width) {
         display: block;
         width: 100%;
       }
 
-      @media (960px <= width) {
+      @media (960px <=width) {
         display: none;
       }
     }
 
     :nth-child(5) {
-      @media (640px <= width) {
+      @media (640px <=width) {
         margin-left: -90px;
       }
 
-      @media (960px <= width) {
+      @media (960px <=width) {
         margin-left: 0;
       }
     }
@@ -149,7 +164,7 @@
   padding-bottom: 34px;
   margin: 0 auto;
 
-  @media (640px <= width) {
+  @media (640px <=width) {
     width: 100%;
     max-width: 1150px;
     padding: 0 25px 48px;
@@ -165,7 +180,7 @@
     color: variables.$color-logo-parts03;
     letter-spacing: 0.4px;
 
-    @media (640px <= width) {
+    @media (640px <=width) {
       font-size: 12px;
     }
   }
@@ -173,7 +188,7 @@
   h3 {
     font-size: 18px;
 
-    @media (640px <= width) {
+    @media (640px <=width) {
       font-size: 24px;
       font-weight: 700;
       line-height: 36px;
@@ -188,7 +203,7 @@
   width: 90.66%;
   margin: 0 auto;
 
-  @media (640px <= width) {
+  @media (640px <=width) {
     gap: 22px;
     width: 100%;
     max-width: 1150px;
@@ -198,7 +213,7 @@
   tr {
     padding: 16px 0;
 
-    @media (640px <= width) {
+    @media (640px <=width) {
       margin: 0;
       border-bottom: 1px solid #f4f4f4;
 
@@ -212,13 +227,11 @@
     display: grid;
     gap: 15px;
 
-    @media (640px <= width) {
+    @media (640px <=width) {
       display: flex;
       gap: 40px;
-      width: 93.63%;
-      padding-right: 55px;
-      padding-left: 55px;
-      margin: 0 50;
+      padding-right: 35px;
+      padding-left: 35px;
     }
 
     th {
@@ -229,7 +242,7 @@
       font-size: 14px;
       text-align: start;
 
-      @media (640px <= width) {
+      @media (640px <=width) {
         width: 30%;
         font-size: 16px;
         line-height: 24px;
@@ -247,15 +260,16 @@
       background-color: variables.$color-logo-parts03;
       border-radius: 2px;
 
-      @media (640px <= width) {
+      @media (640px <=width) {
         bottom: -8px;
       }
     }
 
     td {
       display: block;
+      color: variables.$color-black-light;
 
-      @media (640px <= width) {
+      @media (640px <=width) {
         width: 85%;
         font-size: 14px;
       }
@@ -270,13 +284,13 @@
   margin: 0 auto;
   margin-bottom: 60px;
 
-  @media (640px <= width) {
+  @media (640px <=width) {
     width: 100%;
     max-width: 1150px;
     padding: 0 25px;
   }
 
-  @media (960px <= width) {
+  @media (960px <=width) {
     display: flex;
     gap: 40px;
   }
@@ -285,12 +299,13 @@
     display: grid;
     gap: 20px;
     margin: auto 0;
+    color: variables.$color-black-light;
   }
 
   .c-requirements-img {
     border-radius: 10px;
 
-    @media (960px <= width) {
+    @media (960px <=width) {
       width: 56.81%;
       height: 100%;
     }
@@ -310,7 +325,7 @@
   width: 90.66%;
   margin: 0 auto;
 
-  @media (960px <= width) {
+  @media (960px <=width) {
     display: flex;
     align-items: stretch;
     width: 100%;
@@ -323,44 +338,37 @@
     flex-shrink: 0;
     background: #f2f7ff;
     border-radius: 10px;
+    padding: 40px 0 25px 0;
 
-    @media (960px <= width) {
+    @media (960px <=width) {
       width: calc((100% - 90px) / 4);
-      height: 290px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 67px 0 47px 0;
     }
 
     .c-selectionFlow-itemNum {
-      flex-shrink: 0;
-      width: 23.23%;
-      height: 16.21%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 80px;
       font-family: variables.$base-font-English;
       font-weight: 800;
       color: variables.$color-white;
       background-color: variables.$color-logo-parts03;
       border-radius: 10px 0;
+      text-align: center;
 
-      @media (640px <= width) {
-        height: 18%;
-      }
-
-      @media (960px <= width) {
+      @media (960px <=width) {
         width: 35.51%;
-        height: 16.21%;
       }
 
-      p {
-        text-align: center;
-
-        @media (960px <= width) {
-          padding-top: 5px;
-        }
-      }
-
-      p > span {
+      p>span {
         padding-left: 5px;
         font-size: 20px;
 
-        @media (960px <= width) {
+        @media (960px <=width) {
           font-size: 22px;
         }
       }
@@ -368,40 +376,34 @@
 
     .c-selectionFlow-itemText {
       width: 88.23%;
-      padding-bottom: 30px;
       margin: 0 auto;
       text-align: center;
+    }
 
-      @media (960px <= width) {
-        padding-bottom: 0;
-      }
+    .c-selectionFlow-itemHeading {
+      margin: 15px 0;
+      font-size: 14px;
+      line-height: 25.2px;
+      color: variables.$color-logo-parts03;
+      letter-spacing: 0.56px;
 
-      p:nth-child(1) {
-        margin: 10px 0;
-        font-size: 14px;
-        line-height: 25.2px;
-        color: variables.$color-logo-parts03;
-        letter-spacing: 0.56px;
-
-        .selectionFlow-br {
-          @media (width <= 960px) {
-            display: none;
-          }
-        }
-
-        @media (960px <= width) {
-          margin: 25px 0;
-          font-size: 16px;
-          line-height: 24px;
-          letter-spacing: 0.64px;
-        }
+      @media (960px <=width) {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.64px;
       }
     }
 
-    .selectionFlow-entryBtm {
+    .c-selectionFlow-itemDesc {
+      color: variables.$color-black-light;
+      text-align: left;
+    }
+
+    .selectionFlow-entryBtn {
+      display: block;
       inset: 50px 0 75px;
       width: 83.64%;
-      padding: 17px 35px;
+      padding: 10px;
       margin: 0 auto 10px;
       font: 800 18px/1.5 variables.$base-font-English;
       color: variables.$color-black;
@@ -412,13 +414,19 @@
       border: 2px solid variables.$color-black;
       border-radius: 65px;
       box-shadow: 2px 2px 0 variables.$color-black;
+      max-width: 220px;
 
-      @media (960px <= width) {
+      @media (960px <=width) {
         margin: 0 auto 10px;
+        max-width: inherit;
       }
 
       .selectionFlow-entryBtm-arrow {
         inset: 22px 0 0 300px;
+      }
+
+      &+.c-selectionFlow-itemDesc {
+        text-align: center;
       }
     }
 
@@ -427,21 +435,13 @@
       transition: all 0.2s ease-in-out;
       transform: translate(2px, 2px);
     }
-
-    .selectionFlow-getOffer {
-      @media (960px <= width) {
-        position: absolute;
-        top: 30%;
-        left: 5%;
-      }
-    }
   }
 
   .c-selectionFlow-arrow {
     width: 100%;
     margin: 25px auto;
 
-    @media (960px <= width) {
+    @media (960px <=width) {
       width: 22px;
       height: 22px;
       margin: auto 5px;

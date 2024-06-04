@@ -1,5 +1,4 @@
 @extends('layouts.layout')
-@include('components.entry_btn')
 
 @section('content')
 <main>
@@ -12,34 +11,34 @@
           <div class="swiper-slide">
             <picture>
               <source srcset="{{asset('img/top/kv01-pc.jpg')}}" media="(min-width:640px)" type="image/jpeg">
-              <img class="u-top-img" src="{{asset('img/top/kv01.jpg')}}" alt="">
+              <img class="u-top-img" src="{{asset('img/top/kv01.jpg')}}" alt="女性社員２名が笑っている写真">
             </picture>
           </div>
           <div class="swiper-slide">
             <picture>
               <source srcset="{{asset('img/top/kv02-pc.jpg')}}" media="(min-width:640px)" type="image/jpeg">
-              <img class="u-top-img" src="{{asset('img/top/kv02.jpg')}}" alt="">
+              <img class="u-top-img" src="{{asset('img/top/kv02.jpg')}}" alt="男性社員がパソコンで作業している写真">
             </picture>
           </div>
           <div class="swiper-slide">
             <picture>
               <source srcset="{{asset('img/top/kv03-pc.jpg')}}" media="(min-width:640px)" type="image/jpeg">
-              <img class="u-top-img" src="{{asset('img/top/kv03.jpg')}}" alt="">
+              <img class="u-top-img" src="{{asset('img/top/kv03.jpg')}}" alt="男性社員と女性社員が会話している写真">
             </picture>
           </div>
         </div>
       </div>
       <div class="p-top-kv_animation">
         <img class="p-top-kv_animation-arrow u-top-img" src="{{asset('img/top/kv-arrow.svg')}}" alt="">
-        <img class="p-top-kv_animation-scroll u-top-img" src="{{asset('img/top/kv-scroll.svg')}}" alt="SCROLL">
+        <img class="p-top-kv_animation-scroll u-top-img" src="{{asset('img/top/kv-scroll.svg')}}" alt="スクロール">
       </div>
     </div>
     <div class="p-top-kv_text c-top-inner-sp">
       <p class="p-top-kv_heading-sub">GROWTH OPPORTUNITIES ARE HERE.</p>
       <h1 class="p-top-kv_heading">成長機会が<br>ここにある</h1>
       <div class="p-top-kv_entry">
-        <a href="/entry/" class="p-top-kv_entry_btn">ENTRY</a>
-        <a href="/requirements/" class="p-top-kv_entry_textlink">募集要項はこちら</a>
+        <a href="/entry/" class="p-top-kv_entry_btn" data-gtm-click="kv_entry">ENTRY</a>
+        <a href="/requirements/" class="p-top-kv_entry_textlink" data-gtm-click="kv_requirements">募集要項はこちら</a>
       </div>
     </div>
   </div>
@@ -50,12 +49,12 @@
       <h2 class="c-top-heading-h2"><span>NEWS</span>お知らせ</h2>
       <ul class="p-top-news_list">
         <li>
-          <p class="p-top-news_date">2024/03/28</p>
-          <p class="p-top-news_contents"><a href="https://tenshoku.mynavi.jp/event/tokyo/20240519A/" target="_blank">5/19（日）マイナビ転職フェアに参加いたします</a></p>
+          <p class="p-top-news_date">2024/06/05</p>
+          <p class="p-top-news_contents"><a href="https://tenshoku.mynavi.jp/event/tokyo/20240622A/" target="_blank" data-gtm-click="news_01">6/22（土）マイナビ転職フェアに参加いたします</a></p>
         </li>
         <li>
-          <p class="p-top-news_date">2024/03/28</p>
-          <p class="p-top-news_contents">6/22（土）マイナビ転職フェアに参加いたします</p>
+          <p class="p-top-news_date">2024/06/05</p>
+          <p class="p-top-news_contents">9/14（土）マイナビ転職フェアに参加いたします</p>
         </li>
       </ul>
     </div>
@@ -67,8 +66,8 @@
       <h2 class="c-top-heading-h2"><span>ABOUT US</span>Playlistについて</h2>
       <div class="p-top-about_pic">
         <picture>
-          <source srcset="{{asset('img/top/aboutus-pc.png')}}" media="(min-width:640px)" type="image/png">
-          <img class="u-top-img" src="{{asset('img/top/aboutus.png')}}" alt="">
+          <source srcset="{{asset('img/top/aboutus-pc.jpg')}}" media="(min-width:640px)" type="image/jpeg">
+          <img class="u-top-img" src="{{asset('img/top/aboutus.jpg')}}" alt="複数人の社員が２列に並んでいる写真">
         </picture>
       </div>
     </div>
@@ -115,7 +114,7 @@
             <div class="p-top-about_business_item_img">
               <picture>
                 <source srcset="{{asset('img/top/aboutus-figure-ses-pc.png')}}" media="(min-width:640px)" type="image/png">
-                <img class="u-top-img" src="{{asset('img/top/aboutus-figure-ses.png')}}" alt="">
+                <img class="u-top-img" src="{{asset('img/top/aboutus-figure-ses.png')}}" alt="SES事業を表した図">
               </picture>
             </div>
           </li>
@@ -125,7 +124,7 @@
             <div class="p-top-about_business_item_img">
               <picture>
                 <source srcset="{{asset('img/top/aboutus-figure-labo-pc.png')}}" media="(min-width:640px)" type="image/png">
-                <img class="u-top-img" src="{{asset('img/top/aboutus-figure-labo.png')}}" alt="">
+                <img class="u-top-img" src="{{asset('img/top/aboutus-figure-labo.png')}}" alt="ラボ開発事業を表した図">
               </picture>
             </div>
           </li>
@@ -134,7 +133,172 @@
     </div>
   </section>
 
-  @yield('entry_btn')
+  @include('components.entry_btn',['entryGtm' => 'top_entry_01','requirementsGtm' => 'top_requirements_01'])
+
+{{-- Playlist Data --}}
+<section id="data" class="p-top-data">
+  <div class="c-top-inner-pc c-top-inner-sp">
+    <h2 class="c-top-heading-h2"><span>Playlist Data</span>データで見るPlaylist</h2>
+    <!-- SP用 -->
+    <div class="p-top-data-sp">
+      <ul class="p-top-data_column">
+        <li class="p-top-data_item" data-card-size="half">
+          <div class="p-top-data_item_img">
+            <picture>
+              <source srcset="{{asset('img/top/data-figure-old-pc.png')}}" media="(min-width:640px)" type="image/png">
+              <img class="u-top-img" src="{{asset('img/top/data-figure-old.png')}}" alt="平均年齢27歳を表した図">
+            </picture>
+          </div>
+        </li>
+        <li class="p-top-data_item" data-card-size="half">
+          <div class="p-top-data_item_img">
+            <picture>
+              <source srcset="{{asset('img/top/data-figure-overtime-pc.png')}}" media="(min-width:640px)" type="image/png">
+              <img class="u-top-img" src="{{asset('img/top/data-figure-overtime.png')}}" alt="平均残業時間12時間を表した図">
+            </picture>
+          </div>
+        </li>
+        <li class="p-top-data_item">
+          <div class="p-top-data_item_img">
+            <picture>
+              <source srcset="{{asset('img/top/data-figure-persons-pc.png')}}" media="(min-width:640px)" type="image/png">
+              <img class="u-top-img" src="{{asset('img/top/data-figure-persons.png')}}" alt="社員数の増加を表した図">
+            </picture>
+          </div>
+        </li>
+        <li class="p-top-data_item" data-card-size="half">
+          <div class="p-top-data_item_img">
+            <picture>
+              <source srcset="{{asset('img/top/data-figure-former-pc.png')}}" media="(min-width:640px)" type="image/png">
+              <img class="u-top-img" src="{{asset('img/top/data-figure-former.png')}}" alt="社員の前職を表した図">
+            </picture>
+          </div>
+        </li>          
+        <li class="p-top-data_item"  data-card-size="half">
+          <div class="p-top-data_item_img">
+            <picture>
+              <source srcset="{{asset('img/top/data-figure-remote-pc.png')}}" media="(min-width:640px)" type="image/png">
+              <img class="u-top-img" src="{{asset('img/top/data-figure-remote.png')}}" alt="勤務形態を表した図">
+            </picture>
+          </div>
+        </li>
+        <li class="p-top-data_item">
+          <div class="p-top-data_item_img">
+            <picture>
+              <source srcset="{{asset('img/top/data-figure-jobtype-pc.png')}}" media="(min-width:640px)" type="image/png">
+              <img class="u-top-img" src="{{asset('img/top/data-figure-jobtype.png')}}" alt="現在の職種を表した図">
+            </picture>
+          </div>
+        </li>
+        <li class="p-top-data_item" data-card-size="half">
+          <div class="p-top-data_item_img">
+            <picture>
+              <source srcset="{{asset('img/top/data-figure-study-pc.png')}}" media="(min-width:640px)" type="image/png">
+              <img class="u-top-img" src="{{asset('img/top/data-figure-study.png')}}" alt="文系か理系分野を表した図">
+            </picture>
+          </div>
+        </li>
+        <li class="p-top-data_item"  data-card-size="half">
+          <div class="p-top-data_item_img">
+            <picture>
+              <source srcset="{{asset('img/top/data-figure-benefits-pc.png')}}" media="(min-width:640px)" type="image/png">
+              <img class="u-top-img" src="{{asset('img/top/data-figure-benefits.png')}}" alt="福利厚生を表した図">
+            </picture>
+          </div>
+        </li>
+        <li class="p-top-data_item">
+          <div class="p-top-data_item_img">
+            <picture>
+              <source srcset="{{asset('img/top/data-figure-from-pc.png')}}" media="(min-width:640px)" type="image/png">
+              <img class="u-top-img" src="{{asset('img/top/data-figure-from.png')}}" alt="社員の出身地を表した図">
+            </picture>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- PC用 -->
+    <div class="p-top-data-pc">
+      <ul class="p-top-data-pc_column">
+        <li class="p-top-data-pc_item"  data-card-size="half">
+          <div class="p-top-data-pc_item_img">
+            <picture>
+              <source srcset="{{asset('img/top/data-figure-old-pc.png')}}" media="(min-width:640px)" type="image/png">
+              <img class="u-top-img" src="{{asset('img/top/data-figure-old.png')}}" alt="平均年齢27歳を表した図">
+            </picture>
+          </div>
+        </li>
+        <li class="p-top-data-pc_item" data-card-size="half">
+          <div class="p-top-data-pc_item_img">
+            <picture>
+              <source srcset="{{asset('img/top/data-figure-overtime-pc.png')}}" media="(min-width:640px)" type="image/png">
+              <img class="u-top-img" src="{{asset('img/top/data-figure-overtime.png')}}" alt="平均残業時間12時間を表した図">
+            </picture>
+          </div>
+        </li>
+        <li class="p-top-data-pc_item" data-card-size="half">
+          <div class="p-top-data-pc_item_img">
+            <picture>
+              <source srcset="{{asset('img/top/data-figure-former-pc.png')}}" media="(min-width:640px)" type="image/png">
+              <img class="u-top-img" src="{{asset('img/top/data-figure-former.png')}}" alt="社員の前職を表した図">
+            </picture>
+          </div>
+        </li>
+        <li class="p-top-data-pc_item" data-card-size="half">
+          <div class="p-top-data-pc_item_img">
+            <picture>
+              <source srcset="{{asset('img/top/data-figure-remote-pc.png')}}" media="(min-width:640px)" type="image/png">
+              <img class="u-top-img" src="{{asset('img/top/data-figure-remote.png')}}" alt="勤務形態を表した図">
+            </picture>
+          </div>
+        </li>
+        <li class="p-top-data-pc_item">
+          <div class="p-top-data-pc_item_img">
+            <picture>
+              <source srcset="{{asset('img/top/data-figure-from-pc.png')}}" media="(min-width:640px)" type="image/png">
+              <img class="u-top-img" src="{{asset('img/top/data-figure-from.png')}}" alt="社員の出身地を表した図">
+            </picture>
+          </div>
+        </li>
+      </ul>
+      <ul class="p-top-data-pc_column">
+        <li class="p-top-data-pc_item">
+          <div class="p-top-data-pc_item_img">
+            <picture>
+              <source srcset="{{asset('img/top/data-figure-persons-pc.png')}}" media="(min-width:640px)" type="image/png">
+              <img class="u-top-img" src="{{asset('img/top/data-figure-persons.png')}}" alt="社員数の増加を表した図">
+            </picture>
+          </div>
+        </li>
+        <li class="p-top-data-pc_item" data-card-size="half">
+          <div class="p-top-data-pc_item_img">
+            <picture>
+              <source srcset="{{asset('img/top/data-figure-study-pc.png')}}" media="(min-width:640px)" type="image/png">
+              <img class="u-top-img" src="{{asset('img/top/data-figure-study.png')}}" alt="文系か理系分野を表した図">
+            </picture>
+          </div>
+        </li>
+        <li class="p-top-data-pc_item" data-card-size="half">
+          <div class="p-top-data-pc_item_img">
+            <picture>
+              <source srcset="{{asset('img/top/data-figure-benefits-pc.png')}}" media="(min-width:640px)" type="image/png">
+              <img class="u-top-img" src="{{asset('img/top/data-figure-benefits.png')}}" alt="福利厚生を表した図">
+            </picture>
+          </div>
+        </li>
+        <li class="p-top-data-pc_item">
+          <div class="p-top-data-pc_item_img">
+            <picture>
+              <source srcset="{{asset('img/top/data-figure-jobtype-pc.png')}}" media="(min-width:640px)" type="image/png">
+              <img class="u-top-img" src="{{asset('img/top/data-figure-jobtype.png')}}" alt="現在の職種を表した図">
+            </picture>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  @include('components.entry_btn',['entryGtm' => 'top_entry_02','requirementsGtm' => 'top_requirements_02'])
 
   {{-- 代表メッセージ --}}
   <section id="message" class="p-top-message">
@@ -144,7 +308,7 @@
         <div class="p-top-message_img">
           <picture>
             <source srcset="{{asset('img/top/message-pc.png')}}" media="(min-width:640px)" type="image/png">
-            <img class="u-top-img" src="{{asset('img/top/message.png')}}" alt="吉村優太">
+            <img class="u-top-img" src="{{asset('img/top/message.png')}}" alt="CEO吉村優太の写真">
           </picture>
         </div>
         <div class="p-top-message_text">
@@ -202,7 +366,7 @@
           </p>
         </li>
       </ul>
-      <a href="/member/" class="p-top-points_btn">社員のことをもっと知る</a>
+      <a href="/member/" class="p-top-points_btn" data-gtm-click="points">社員のことをもっと知る</a>
     </div>
   </section>
 
@@ -212,30 +376,30 @@
       <h2 class="c-top-heading-h2"><span>FAQ</span>よくある質問</h2>
       <dl class="p-top-faq_list js-accordion">
         <div class="p-top-faq_item">
-          <dt><span>Q.</span>IT業界の経験は必要ですか？</dt>
-          <dd><span>A.</span>IT未経験でも今までの経験やスキルを活かしたプロジェクトで活躍していただくことが可能です。</dd>
+          <dt data-gtm-click="faq_01"><span>Q.</span>IT業界の経験は必要ですか？</dt>
+          <dd><span>A.</span>IT業界未経験でも今までの経験やスキルを活かしたプロジェクトで活躍していただくことが可能です。</dd>
         </div>
         <div class="p-top-faq_item">
-          <dt><span>Q.</span>面接場所について教えて下さい。</dt>
+          <dt data-gtm-click="faq_02"><span>Q.</span>面接場所について教えて下さい。</dt>
           <dd><span>A.</span>基本はオンラインです。希望者はオフラインで武蔵小杉オフィスで実施可能です。</dd>
         </div>
         <div class="p-top-faq_item">
-          <dt><span>Q.</span>応募前に話をきいてみたいのですが、可能ですか？</dt>
+          <dt data-gtm-click="faq_03"><span>Q.</span>応募前に話をきいてみたいのですが、可能ですか？</dt>
           <dd><span>A.</span>可能です。カジュアル面談を設けておりますので、<a href="/entry/">エントリー</a>よりお気軽にご連絡下さい。</dd>
         </div>
         <div class="p-top-faq_item">
-          <dt><span>Q.</span>髪型や服装に決まりはありますか？</dt>
+          <dt data-gtm-click="faq_04"><span>Q.</span>髪型や服装に決まりはありますか？</dt>
           <dd><span>A.</span>参画したプロジェクトによって異なりますが、基本はオフィスカジュアルです。TPOに応じた清潔感のある服装を心がけて下さい。</dd>
         </div>
         <div class="p-top-faq_item">
-          <dt><span>Q.</span>研修はありますか？</dt>
+          <dt data-gtm-click="faq_05"><span>Q.</span>研修はありますか？</dt>
           <dd><span>A.</span>「成長に繋がるコミュニケーション」を軸に積極的な社内研修を実施しています。自社で研修を構築しているところが強みです。<br>●フロントエンド研修（自己紹介サイト）<br>●SQL研修（SQLの基本操作）<br>●VBA研修（ツール作成）<br>●RPA研修（資格取得サポート）<br>●その他（Udemyでオンライン講座：入社前研修）</dd>
         </div>
       </dl>
     </div>
   </section>
 
-  @yield('entry_btn')
+  @include('components.entry_btn',['entryGtm' => 'top_entry_03','requirementsGtm' => 'top_requirements_03'])
 
 </main>
 
