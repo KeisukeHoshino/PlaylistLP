@@ -105,36 +105,36 @@
                                         <p class="member-name">{{ $member['name'] }}</p>
                                     </div>
                                     <div class="member-modal-detail">
-                                        <table class="member-modal-detail-table">
-                                            <tr>
-                                                <th>入社時期</th>
-                                                <td>{{ $member['joinDate'] }}</td>
-                                            </tr>
-                                            <tr>
-                                                <th>前職</th>
-                                                <td>{{ $member['formerJob'] }}</td>
-                                            </tr>
-                                            <tr>
-                                                <th>私の仕事</th>
-                                                <td>{{ $member['myJob'] }}</td>
-                                            </tr>
-                                            <tr>
-                                                <th>スキル</th>
-                                                <td>{{ $member['skill'] }}</td>
-                                            </tr>
-                                            <tr>
-                                                <th>好きなこと</th>
-                                                <td>{{ $member['hobby'] }}</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Playlistの<br>お気に入り<br class="u-member-only-sp">ポイント</th>
-                                                <td>{{ $member['favoritePoint'] }}</td>
-                                            </tr>
-                                            <tr>
-                                                <th>求職者への<br class="u-member-only-sp">一言</th>
-                                                <td>{{ $member['message'] }}</td>
-                                            </tr>
-                                        </table>
+                                        <dl class="member-modal-detail-table">
+                                            <div class="member-modal-detail-item">
+                                                <dt>入社時期</dt>
+                                                <dd><span></span>{{ $member['joinDate'] }}</span></dd>
+                                            </div>
+                                            <div class="member-modal-detail-item">
+                                                <dt>前職</dt>
+                                                <dd><span>{{ $member['formerJob'] }}</span></dd>
+                                            </div>
+                                            <div class="member-modal-detail-item">
+                                                <dt>私の仕事</dt>
+                                                <dd><span>{{ $member['myJob'] }}</span></dd>
+                                            </div>
+                                            <div class="member-modal-detail-item">
+                                                <dt>スキル</dt>
+                                                <dd><span>{{ $member['skill'] }}</span></dd>
+                                            </div>
+                                            <div class="member-modal-detail-item">
+                                                <dt>好きなこと</dt>
+                                                <dd><span>{{ $member['hobby'] }}</span></dd>
+                                            </div>
+                                            <div class="member-modal-detail-item">
+                                                <dt>Playlistの<br>お気に入り<br class="u-member-only-sp">ポイント</dt>
+                                                <dd><span>{{ $member['favoritePoint'] }}</span></dd>
+                                            </div>
+                                            <div class="member-modal-detail-item">
+                                                <dt>求職者への<br class="u-member-only-sp">一言</dt>
+                                                <dd><span>{{ $member['message'] }}</dd>
+                                            </div>
+                                        </dl>
                                     </div>
                                     <button class="member-modal-close-btn js-modalClose" type="button">閉じる</button>
                                 </div>
