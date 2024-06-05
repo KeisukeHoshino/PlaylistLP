@@ -15,7 +15,7 @@ Route::get('/member', function () {
         [
             "position" => "CEO",
             "name" => "Yuta.Y",
-            "joinDate" => "2020年06月",
+            "joinDate" => "2020年6月",
             "formerJob" => "フルスタックエンジニア",
             "myJob" => "経営、開発",
             "skill" => "PHP、JavaScript、HTML、CSS、VBA、C、C++",
